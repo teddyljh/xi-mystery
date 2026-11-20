@@ -5,6 +5,7 @@ on:
     paths:
       - 'reaction_photos/**'
       - 'scripts/sync_reactions.py'
+      - 'scripts/upgrade_hard.py'
       - '.github/workflows/sync-reactions.yml'
   workflow_dispatch:
 permissions:
@@ -19,6 +20,20 @@ jobs:
           persist-credentials: true
       - name: Update embedded reaction gallery
         run: python3 scripts/sync_reactions.py
+      - name: Add historic and powerhouse XIs to Hard mode
+        run: python3 scripts/upgrade_hard.py
+      - name: Check generated quiz JavaScript
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          source = Path('index.html').read_text(encoding='utf-8')
+          marker = '/* XI Mystery — client-only, offline-capable quiz engine. */'
+          start = source.index(marker)
+          end = source.index('</script>', start)
+          assert 'function isImportedHardFixture(f)' in source[start:end]
+          Path('/tmp/xi-quiz-engine.js').write_text(source[start:end], encoding='utf-8')
+          PY
+          node --check /tmp/xi-quiz-engine.js
       - name: Commit generated index when changed
         run: |
           git config user.name "github-actions[bot]"
