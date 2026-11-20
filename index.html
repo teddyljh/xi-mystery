@@ -1588,7 +1588,9 @@ function displayFinishReaction(reaction){
   function buildChoices(f){
     const group=f.mode==='club'?DATA.teams:DATA.nations;
     const options=Object.keys(group).filter(key=>key!==f.team);
-    if(state.difficulty!=='easy')return shuffle([f.team,...shuffle(options).slice(0,3)]);
+    // Easy choices and Moderate hint choices use the same league/recognition-based distractors.
+    // Hard retains its original random fallback when options become available.
+    if(state.difficulty==='hard')return shuffle([f.team,...shuffle(options).slice(0,3)]);
 
     if(f.mode==='club'){
       const league=EASY_CLUB_LEAGUE_BY_KEY[f.team];

@@ -9,8 +9,14 @@ Open Settings -> Pages -> Build and deployment:
 - Branch: main
 - Folder: /(root)
 
-Public URL: https://teddyljh.github.io/xi-mystery/
+Public URL: https://1tthinking.github.io/xi-mystery/
 
 `index.html` is a self-contained static HTML version of the game. Some club crests and archived reaction photos are requested from online sources, so visitors need Internet access for those. The 64 locally supplied reaction images and user-supplied homepage pictures are embedded.
 
 This is an independent fan project. Verify image rights before publishing.
+
+## Update 2026-11-20
+
+Moderate hint options now use the exact same distractor generation as Easy choices.
+Club questions draw one same-league choice and two from other leagues when possible; national-team questions use recognition-level bands.
+Hard mode and all other gameplay remain unchanged.
