@@ -33,7 +33,7 @@ vm.runInContext(rules + '\n' + hints + `
   globalThis.api = {buildHardMask, isImportedHardFixture, isFeaturedHardFixture,
     selectHardForward, picks: HARD_FORWARD_PICKS, getHint, available,
     usesLeagueHardMask, hardLeagueNation, usesNationHardMask,
-    hardNationDomesticSlots, hardNationProtectedSlots, mediumNations:HARD_MEDIUM_NATIONS};
+    hardNationDomesticSlots, hardNationHiddenSlots, mediumNations:HARD_MEDIUM_NATIONS};
 `, context);
 const api = context.api;
 const midfield = new Set(['AM', 'CM', 'DM', 'LM', 'RM']);
@@ -118,41 +118,36 @@ for (const f of underdogs) {
   assert.deepEqual(context.state.masked, [], f.id + ': original hint two');
 }
 
-// Other middle-band national teams keep protected clues through hints.
-// Japan/Korea restore one masked clue per hint, preferring overseas clubs.
+// Every middle-band national team masks only domestic-club/key-player clues.
+// Each hint restores one masked player, preferring overseas clubs every time.
+const nationMaskCounts={BEL:2,SCO:2,POL:2,HUN:2,BIH:2,IRL:2,UKR:6,WAL:2,CRO:2,SRB:2,SVK:2,ROU:3,MAR:2,JPN:4,KOR:5};
 for (const f of nations) {
   fixture=f;
   const domestic=[...api.hardNationDomesticSlots(f)];
-  const locked=[...api.hardNationProtectedSlots(f)];
-  const protectedOnly=f.team==='JPN'||f.team==='KOR';
-  assert.ok(domestic.every(i=>locked.includes(i)),f.id+': all domestic clues protected');
-  assert.ok(locked.length>=2,f.id+': identifying export clues protected');
+  const locked=[...api.hardNationHiddenSlots(f)];
+  assert.ok(domestic.every(i=>locked.includes(i)),f.id+': all domestic clues hidden initially');
+  assert.ok(locked.length>=2,f.id+': identifying player clues selected');
   const previous=api.picks[f.id.replace(/-medium$/,'')];
-  if(previous)assert.ok(locked.some(i=>f.players[i].name===previous),f.id+': original iconic forward stays protected');
+  if(previous)assert.ok(locked.some(i=>f.players[i].name===previous),f.id+': original iconic forward hidden initially');
   for(let sample=0;sample<=20;sample++){
     roll=sample/20*0.999999;
     const mask=[...api.buildHardMask(f)];
-    assert.ok(mask.length>=4 && mask.length<=9,f.id+': more clues hidden while retaining visible clues');
+    const expectedCount=f.team==='CHE'?(f.date==='2026-11-16'?4:2):nationMaskCounts[f.team];
+    assert.equal(mask.length,expectedCount,f.id+': no extra players masked for hints');
     assert.equal(new Set(mask).size,mask.length);
-    assert.ok(locked.every(i=>mask.includes(i)),f.id);
-    assert.deepEqual(mask.slice(protectedOnly?0:2),locked,f.id+': only intended clues are masked');
+    assert.deepEqual(mask,locked,f.id+': only domestic-club/key-player clues masked');
     reset(mask);
-    if(protectedOnly){
-      const expected=[...mask];
-      for(let h=0;h<2;h++){
-        const overseas=expected.findIndex(i=>!domestic.includes(i));
-        expected.splice(overseas===-1?0:overseas,1);
-        api.getHint();
-        assert.deepEqual(context.state.masked,expected,f.id+': overseas-first hint '+(h+1));
-        assert.equal(context.state.hints,h+1);
-        assert.equal(feedback.textContent,'uncovered');
-      }
-      assert.equal(context.state.choicesShown,false,f.id+': hints never show answer choices');
-      assert.deepEqual(context.state.removed,[],f.id+': hints never remove answer choices');
-    }else{
-      api.getHint();api.getHint();
-      assert.deepEqual(context.state.masked,locked,f.id+': domestic and key clues survive both hints');
+    const expected=[...mask];
+    for(let h=0;h<2;h++){
+      const overseas=expected.findIndex(i=>!domestic.includes(i));
+      expected.splice(overseas===-1?0:overseas,1);
+      api.getHint();
+      assert.deepEqual(context.state.masked,expected,f.id+': overseas-first hint '+(h+1));
+      assert.equal(context.state.hints,h+1);
+      assert.equal(feedback.textContent,'uncovered');
     }
+    assert.equal(context.state.choicesShown,false,f.id+': hints never show answer choices');
+    assert.deepEqual(context.state.removed,[],f.id+': hints never remove answer choices');
     const afterHints=[...context.state.masked];
     api.getHint();
     assert.deepEqual(context.state.masked,afterHints);
@@ -161,10 +156,16 @@ for (const f of nations) {
   // Selection remains correct even when a mask queue is reordered.
   roll=0;
   const mask=[...api.buildHardMask(f)];
-  reset([...locked,...mask.filter(i=>!locked.includes(i))]);
+  reset([...mask].reverse());
+  const firstOverseas=context.state.masked.findIndex(i=>!domestic.includes(i));
+  const expected=[...context.state.masked];
+  expected.splice(firstOverseas===-1?0:firstOverseas,1);
   api.getHint();
-  if(protectedOnly)assert.ok(domestic.every(i=>context.state.masked.includes(i)),f.id+': overseas clue restored ahead of domestic clues');
-  else assert.ok(locked.every(i=>context.state.masked.includes(i)),f.id+': no protected-clue leak');
+  assert.deepEqual(context.state.masked,expected,f.id+': restore order independent of mask queue');
+  reset([]);
+  api.getHint();
+  assert.equal(context.state.choicesShown,false,f.id+': empty mask never switches to choices');
+  assert.equal(context.state.hints,0);
 }
 const japan=data.fixtures.find(f=>f.id==='historic-nation-JPN-2022-11-23-50');
 const korea=data.fixtures.find(f=>f.id==='historic-nation-KOR-2022-12-02-51');
@@ -172,8 +173,8 @@ assert.deepEqual([...api.hardNationDomesticSlots(japan)],[6,9,10]);
 assert.deepEqual([...api.hardNationDomesticSlots(korea)],[0,6,7,9]);
 assert.deepEqual([...api.buildHardMask(japan)].sort((a,b)=>a-b),[1,6,9,10],'Japan hides exactly the requested four players');
 assert.deepEqual([...api.buildHardMask(korea)].sort((a,b)=>a-b),[0,1,6,7,9],'Korea hides exactly the requested five players');
-assert.ok(api.hardNationProtectedSlots(japan).some(i=>japan.players[i].name==='Takefusa Kubo'));
-assert.ok(api.hardNationProtectedSlots(korea).some(i=>korea.players[i].name==='Son Heung-min'));
+assert.ok(api.hardNationHiddenSlots(japan).some(i=>japan.players[i].name==='Takefusa Kubo'));
+assert.ok(api.hardNationHiddenSlots(korea).some(i=>korea.players[i].name==='Son Heung-min'));
 for(const f of hard.filter(f=>f.mode==='nation' && f.team==='WAL')){
   assert.deepEqual([...api.hardNationDomesticSlots(f)],[],'Welsh clubs in the English league system are not Welsh-league clues');
 }
@@ -182,7 +183,7 @@ assert.deepEqual([...api.mediumNations].sort(),[...new Set([...bands[1],...bands
 for(const f of data.fixtures.filter(f=>f.mode==='club'))assert.equal(api.usesNationHardMask(f),false);
 for(const key of ['FRA','ARG','KSA','CRC','ISL','GEO'])assert.equal(api.usesNationHardMask({mode:'nation',team:key}),false,key+': unchanged recognition group');
 
-// If no masked overseas clue remains, Japan/Korea hints may restore domestic
+// If no masked overseas clue remains, national-team hints restore domestic
 // clues. They never fall back to answer choices, even with an empty mask.
 fixture={...japan,id:'future-domestic-xi',players:japan.players.map((p,i)=>({...p,value:i<2?p.value:'fctokyo'}))};
 const domesticMask=[...api.buildHardMask(fixture)];
@@ -337,4 +338,4 @@ try {
 }
 
 console.log(`PASS: ${featured.length} featured fixtures, ${Object.keys(api.picks).length} unique XIs, ` +
-  `${league.length} league-nationality masks, ${nations.length} national-team masks, ${underdogs.length} unchanged two-clue fixtures; protected domestic clues, hints, exact legacy fallbacks and updater checks passed.`);
+  `${league.length} league-nationality masks, ${nations.length} national-team masks, ${underdogs.length} unchanged two-clue fixtures; overseas-first player hints, exact legacy fallbacks and updater checks passed.`);

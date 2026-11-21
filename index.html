@@ -1709,12 +1709,12 @@ function displayFinishReaction(reaction){
     if(!usesNationHardMask(f))return [];
     return f.players.map((_,i)=>i).filter(i=>HARD_NATION_HOME_CLUB_COUNTRIES[f.players[i].value]===f.team);
   }
-  function hardNationProtectedSlots(f){
+  function hardNationHiddenSlots(f){
     if(!usesNationHardMask(f))return [];
     const domestic=hardNationDomesticSlots(f),locked=new Set(domestic);
-    // At least two protected clues, plus two hintable foreign-club clues.
-    // Add an identifying star when up to four domestic clues exist. Domestic
-    // clues always stay hidden, even in XIs with a large home-league contingent.
+    // Select only domestic-club and identifying player clues for the initial
+    // mask. Add a key star when up to four domestic clues exist; do not add
+    // separate masked players just to support hints.
     const target=Math.max(2,domestic.length+(domestic.length<5?1:0));
     const previous=HARD_FORWARD_PICKS[f.id.replace(/-medium$/,'')];
     const names=[...(previous?[previous]:[]),...(HARD_NATION_KEY_PLAYERS[f.team]||'').split('|')];
@@ -1730,20 +1730,7 @@ function displayFinishReaction(reaction){
     return [...locked];
   }
   function buildNationHardMask(f){
-    const locked=hardNationProtectedSlots(f),hints=[];
-    // Japan/Korea conceal only domestic-club clues and their identifying star.
-    // Hints restore these clues, preferring overseas clubs before home clubs.
-    if(f.team==='JPN'||f.team==='KOR')return locked;
-    // Leave at least two visible clues if a future XI is almost all domestic.
-    const hintCount=Math.min(2,Math.max(0,f.players.length-2-locked.length));
-    for(const roles of [HARD_MIDFIELD_ROLES,HARD_DEFENDER_ROLES]){
-      if(hints.length>=hintCount)break;
-      const remaining=f.players.map((_,i)=>i).filter(i=>!locked.includes(i)&&!hints.includes(i));
-      const preferred=remaining.filter(i=>roles.has(f.players[i].role));
-      const outfield=remaining.filter(i=>f.players[i].role!=='GK');
-      if(remaining.length)hints.push(selectNotableMidDef(f,preferred.length?preferred:outfield.length?outfield:remaining));
-    }
-    return [...hints,...locked];
+    return hardNationHiddenSlots(f);
   }
   function hardAttackerSlots(f){
     return f.players.map((_,i)=>i).filter(i=>HARD_FORWARD_ROLES.has(f.players[i].role)||
@@ -2120,10 +2107,9 @@ function displayFinishReaction(reaction){
   function getHint(){
     if(state.revealed||state.hints>=2)return;
     const f=current();
-    const restoreNationClues=state.difficulty==='hard'&&f.mode==='nation'&&(f.team==='JPN'||f.team==='KOR');
-    const protectedSlots=state.difficulty==='hard'&&!restoreNationClues?hardNationProtectedSlots(f):[];
+    const restoreNationClues=state.difficulty==='hard'&&usesNationHardMask(f);
     const overseasIndex=restoreNationClues?state.masked.findIndex(i=>HARD_NATION_HOME_CLUB_COUNTRIES[f.players[i].value]!==f.team):-1;
-    const hintIndex=overseasIndex!==-1?overseasIndex:state.masked.findIndex(i=>!protectedSlots.includes(i));
+    const hintIndex=overseasIndex!==-1?overseasIndex:state.masked.length?0:-1;
     if(restoreNationClues&&hintIndex===-1)return;
     if(hintIndex!==-1){state.masked.splice(hintIndex,1);state.hints++;$('feedback').textContent=tr('uncovered');}
     else if(!state.choicesShown){state.choicesShown=true;state.hints++;$('feedback').textContent=tr('showOptions');}
