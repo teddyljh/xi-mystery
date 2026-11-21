@@ -1821,6 +1821,14 @@ function displayFinishReaction(reaction){
     return [...pair,striker];
   }
   function buildHardMask(f){
+    if(f.mode==='nation'&&f.team==='NED'&&f.date==='2014-06-13'){
+      // Keep Cillessen (Ajax) and Janmaat (Feyenoord) visible. The first two
+      // entries are the hint order; the three Eredivisie clues stay masked.
+      const names=['Robin van Persie','Wesley Sneijder','Daley Blind','Bruno Martins Indi','Stefan de Vrij'];
+      const mask=names.map(name=>f.players.findIndex(p=>hardName(p.name)===hardName(name)));
+      if(mask.includes(-1))throw Error('Missing Netherlands 2014 player: '+f.id);
+      return mask;
+    }
     if(usesNationHardMask(f))return buildNationHardMask(f);
     if(usesLeagueHardMask(f))return buildLeagueHardMask(f,selectHardForward(f),hardLeagueNation(f));
     if(!isFeaturedHardFixture(f))return [4,7];

@@ -43,7 +43,8 @@ const hard = data.fixtures.filter(f => f.tier === 'hard' || api.isImportedHardFi
 const featured = hard.filter(api.isFeaturedHardFixture);
 const league = hard.filter(api.usesLeagueHardMask);
 const nations = hard.filter(api.usesNationHardMask);
-const threeClues = hard.filter(f => !api.usesNationHardMask(f) && (api.isFeaturedHardFixture(f) || api.usesLeagueHardMask(f)));
+const isNetherlands2014=f=>f.mode==='nation'&&f.team==='NED'&&f.date==='2014-06-13';
+const threeClues = hard.filter(f => !isNetherlands2014(f) && !api.usesNationHardMask(f) && (api.isFeaturedHardFixture(f) || api.usesLeagueHardMask(f)));
 const underdogs = hard.filter(f => !api.isFeaturedHardFixture(f) && !api.usesLeagueHardMask(f) && !api.usesNationHardMask(f));
 
 function reset(mask, difficulty = 'hard') {
@@ -52,6 +53,34 @@ function reset(mask, difficulty = 'hard') {
     choices: [fixture.team, 'wrong-a', 'wrong-b', 'wrong-c'], removed: []};
   renders = 0;
   feedback.textContent = '';
+}
+
+// This historic XI leaves one visible Ajax clue and one visible Feyenoord
+// clue. Hints restore the two overseas players while domestic clues stay masked.
+const netherlands2014=hard.filter(isNetherlands2014);
+assert.ok(netherlands2014.length);
+for(const f of netherlands2014){
+  fixture=f;
+  for(roll of [0,0.5,0.999999]){
+    const mask=[...api.buildHardMask(f)];
+    assert.deepEqual(mask.map(i=>f.players[i].name),[
+      'Robin van Persie','Wesley Sneijder','Daley Blind','Bruno Martins Indi','Stefan de Vrij'
+    ],f.id+': exact five hidden players and hint order');
+    for(const [club,visible] of [['ajax','Jasper Cillessen'],['feyenoord','Daryl Janmaat']]){
+      assert.deepEqual(f.players.filter((p,i)=>p.value===club&&!mask.includes(i)).map(p=>p.name),[visible],f.id+': one visible '+club+' player');
+    }
+    reset(mask);
+    api.getHint();
+    assert.deepEqual(context.state.masked,mask.slice(1),f.id+': Van Persie restored first');
+    api.getHint();
+    assert.deepEqual(context.state.masked,mask.slice(2),f.id+': Sneijder restored second');
+    assert.equal(context.state.hints,2);
+    assert.equal(context.state.choicesShown,false);
+    assert.deepEqual(context.state.removed,[]);
+    api.getHint();
+    assert.deepEqual(context.state.masked,mask.slice(2),f.id+': no third hint');
+    assert.equal(renders,2);
+  }
 }
 
 // Include extreme random values to cover every pair-selection tie. League
