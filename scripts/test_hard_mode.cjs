@@ -33,7 +33,8 @@ vm.runInContext(rules + '\n' + hints + `
   globalThis.api = {buildHardMask, isImportedHardFixture, isFeaturedHardFixture,
     selectHardForward, picks: HARD_FORWARD_PICKS, getHint, available,
     usesLeagueHardMask, hardLeagueNation, usesNationHardMask,
-    hardNationDomesticSlots, hardNationHiddenSlots, mediumNations:HARD_MEDIUM_NATIONS};
+    hardNationDomesticSlots, hardNationHiddenSlots, hardNationMaskOverride,
+    mediumNations:HARD_MEDIUM_NATIONS};
 `, context);
 const api = context.api;
 const midfield = new Set(['AM', 'CM', 'DM', 'LM', 'RM']);
@@ -44,7 +45,7 @@ const featured = hard.filter(api.isFeaturedHardFixture);
 const league = hard.filter(api.usesLeagueHardMask);
 const nations = hard.filter(api.usesNationHardMask);
 const isNetherlands2014=f=>f.mode==='nation'&&f.team==='NED'&&f.date==='2014-06-13';
-const threeClues = hard.filter(f => !isNetherlands2014(f) && !api.usesNationHardMask(f) && (api.isFeaturedHardFixture(f) || api.usesLeagueHardMask(f)));
+const threeClues = hard.filter(f => !api.hardNationMaskOverride(f) && !api.usesNationHardMask(f) && (api.isFeaturedHardFixture(f) || api.usesLeagueHardMask(f)));
 const underdogs = hard.filter(f => !api.isFeaturedHardFixture(f) && !api.usesLeagueHardMask(f) && !api.usesNationHardMask(f));
 
 function reset(mask, difficulty = 'hard') {
@@ -80,6 +81,32 @@ for(const f of netherlands2014){
     api.getHint();
     assert.deepEqual(context.state.masked,mask.slice(2),f.id+': no third hint');
     assert.equal(renders,2);
+  }
+}
+
+// Belgium adds Doku to the two existing clues. Italy has a custom goalkeeper,
+// forward and midfielder mask, with City restored before Inter.
+for(const [id,names,clubs] of [
+  ['nation-2026/27-12',['Kevin De Bruyne','Jérémy Doku','Brandon Mechele'],['napoli','city','brugge']],
+  ['nation-2026/27-75',['Gianluigi Donnarumma','Francesco Pio Esposito','Nicolò Fagioli'],['city','inter','fiorentina']]
+]){
+  const f=hard.find(f=>f.id===id);
+  assert.ok(f,id);
+  fixture=f;
+  for(roll of [0,0.5,0.999999]){
+    const mask=[...api.buildHardMask(f)];
+    assert.deepEqual(mask.map(i=>f.players[i].name),names,id+': exact requested players');
+    assert.deepEqual(mask.map(i=>f.players[i].value),clubs,id+': exact club clues');
+    reset(mask);
+    api.getHint();
+    assert.deepEqual(context.state.masked,mask.slice(1),id+': first requested hint');
+    api.getHint();
+    assert.deepEqual(context.state.masked,mask.slice(2),id+': second requested hint');
+    assert.equal(context.state.hints,2);
+    assert.equal(context.state.choicesShown,false);
+    assert.deepEqual(context.state.removed,[]);
+    api.getHint();
+    assert.deepEqual(context.state.masked,mask.slice(2),id+': remaining clue stays hidden');
   }
 }
 
@@ -149,7 +176,7 @@ for (const f of underdogs) {
 
 // Every middle-band national team masks only domestic-club/key-player clues.
 // Each hint restores one masked player, preferring overseas clubs every time.
-const nationMaskCounts={BEL:2,SCO:2,POL:2,HUN:2,BIH:2,IRL:2,UKR:6,WAL:2,CRO:2,SRB:2,SVK:2,ROU:3,MAR:2,JPN:4,KOR:5};
+const nationMaskCounts={BEL:3,SCO:2,POL:2,HUN:2,BIH:2,IRL:2,UKR:6,WAL:2,CRO:2,SRB:2,SVK:2,ROU:3,MAR:2,JPN:4,KOR:5};
 for (const f of nations) {
   fixture=f;
   const domestic=[...api.hardNationDomesticSlots(f)];

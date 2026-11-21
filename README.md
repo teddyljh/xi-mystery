@@ -29,4 +29,6 @@ All Hard national-team questions in the existing two middle recognition bands hi
 
 Netherlands 2014-06-13 has a Hard-only five-player mask: Robin van Persie, Wesley Sneijder, Daley Blind, Bruno Martins Indi, and Stefan de Vrij. Jasper Cillessen is the only initially visible Ajax player, and Daryl Janmaat is the only initially visible Feyenoord player. The two hints restore Van Persie and then Sneijder; the three other clues remain hidden until the answer reveal. The fixture's Moderate gameplay is unchanged.
 
+Belgium 2026-11-12 hides Kevin De Bruyne (Napoli), Jérémy Doku (Manchester City), and Brandon Mechele (Club Brugge). Its two hints restore De Bruyne and then Doku. Italy 2026-11-15 hides Gianluigi Donnarumma (Manchester City goalkeeper), Francesco Pio Esposito (Inter forward), and Nicolò Fagioli (Fiorentina midfielder). Its two hints restore the City goalkeeper and then the Inter forward, leaving the Fiorentina clue hidden. These match-specific rules apply only in Hard.
+
 `scripts/upgrade_hard.py` owns these rules and refreshes the embedded HTML during gallery synchronization. Run `node scripts/test_hard_mode.cjs` to check every Hard fixture, hint behavior, and updater idempotence.

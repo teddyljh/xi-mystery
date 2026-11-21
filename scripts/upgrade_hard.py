@@ -69,7 +69,7 @@ FORWARD_PICKS = {
     "club-2024/25-69": "Rafael Leão",
     "club-2024/25-70": "Pedro Gonçalves",
     "club-2024/25-71": "Erling Haaland",
-    "nation-2026/27-75": "Luca Koleosho",
+    "nation-2026/27-75": "Francesco Pio Esposito",
     "nation-2025/26-78": "Memphis Depay",
     "nation-2024/25-83": "Rafael Leão",
     "nation-2024/25-99": "Mateo Retegui",
@@ -159,6 +159,21 @@ RULES = r"""
   // iconic attackers listed as AM/LM/RM (e.g. Ronaldo in 2008) to stay hidden.
   const HARD_FORWARD_PICKS=Object.freeze(__HARD_FORWARD_PICKS__);
   const HARD_KNOWN_FORWARDS=new Set(Object.values(HARD_FORWARD_PICKS).map(hardName));
+  // Curated match-specific masks. Their order also specifies the hint order
+  // for top-tier nations; middle-band nations still prefer overseas clues.
+  const HARD_NATION_MASK_OVERRIDES=Object.freeze({
+    'historic-nation-NED-2014-06-13-47':['Robin van Persie','Wesley Sneijder','Daley Blind','Bruno Martins Indi','Stefan de Vrij'],
+    'nation-2026/27-12':['Kevin De Bruyne','Jérémy Doku','Brandon Mechele'],
+    'nation-2026/27-75':['Gianluigi Donnarumma','Francesco Pio Esposito','Nicolò Fagioli']
+  });
+  function hardNationMaskOverride(f){
+    if(f.mode!=='nation')return null;
+    const names=HARD_NATION_MASK_OVERRIDES[f.id.replace(/-medium$/,'')];
+    if(!names)return null;
+    const mask=names.map(name=>f.players.findIndex(p=>hardName(p.name)===hardName(name)));
+    if(mask.includes(-1))throw Error('Missing curated national-team player: '+f.id);
+    return mask;
+  }
   // The existing two middle recognition bands. Top-nine and low-recognition
   // national teams keep their previous rules; club questions are unaffected.
   const HARD_MEDIUM_NATIONS=new Set('BEL CRO URU DEN CHE COL MAR SEN JPN KOR USA MEX TUR NOR SWE AUT POL UKR SRB CZE SCO WAL RUS GRE ECU NGA CIV DZA CAN IRL HUN SVN BIH ROU SVK'.split(' '));
@@ -196,6 +211,8 @@ RULES = r"""
   }
   function hardNationHiddenSlots(f){
     if(!usesNationHardMask(f))return [];
+    const override=hardNationMaskOverride(f);
+    if(override)return override;
     const domestic=hardNationDomesticSlots(f),locked=new Set(domestic);
     // Select only domestic-club and identifying player clues for the initial
     // mask. Add a key star when up to four domestic clues exist; do not add
@@ -306,14 +323,8 @@ RULES = r"""
     return [...pair,striker];
   }
   function buildHardMask(f){
-    if(f.mode==='nation'&&f.team==='NED'&&f.date==='2014-06-13'){
-      // Keep Cillessen (Ajax) and Janmaat (Feyenoord) visible. The first two
-      // entries are the hint order; the three Eredivisie clues stay masked.
-      const names=['Robin van Persie','Wesley Sneijder','Daley Blind','Bruno Martins Indi','Stefan de Vrij'];
-      const mask=names.map(name=>f.players.findIndex(p=>hardName(p.name)===hardName(name)));
-      if(mask.includes(-1))throw Error('Missing Netherlands 2014 player: '+f.id);
-      return mask;
-    }
+    const override=hardNationMaskOverride(f);
+    if(override)return override;
     if(usesNationHardMask(f))return buildNationHardMask(f);
     if(usesLeagueHardMask(f))return buildLeagueHardMask(f,selectHardForward(f),hardLeagueNation(f));
     if(!isFeaturedHardFixture(f))return [4,7];
