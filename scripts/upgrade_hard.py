@@ -216,6 +216,9 @@ RULES = r"""
   }
   function buildNationHardMask(f){
     const locked=hardNationProtectedSlots(f),hints=[];
+    // Japan/Korea conceal only domestic-club clues and their identifying star.
+    // With no extra masked players, hints use the existing answer-choice help.
+    if(f.team==='JPN'||f.team==='KOR')return locked;
     // Leave at least two visible clues if a future XI is almost all domestic.
     const hintCount=Math.min(2,Math.max(0,f.players.length-2-locked.length));
     for(const roles of [HARD_MIDFIELD_ROLES,HARD_DEFENDER_ROLES]){
