@@ -73,7 +73,7 @@ FORWARD_PICKS = {
     "nation-2025/26-78": "Memphis Depay",
     "nation-2024/25-83": "Rafael Leão",
     "nation-2024/25-99": "Mateo Retegui",
-    "nation-2025/26-106": "Mateo Retegui",
+    "nation-2025/26-106": "Francesco Pio Esposito",
     "historic-club-chelsea-2005-03-08-0": "Eidur Gudjohnsen",
     "historic-club-milan-2005-05-25-1": "Andriy Shevchenko",
     "historic-club-liverpool-2005-05-25-2": "Milan Baros",
@@ -164,7 +164,8 @@ RULES = r"""
   const HARD_NATION_MASK_OVERRIDES=Object.freeze({
     'historic-nation-NED-2014-06-13-47':['Robin van Persie','Wesley Sneijder','Daley Blind','Bruno Martins Indi','Stefan de Vrij'],
     'nation-2026/27-12':['Kevin De Bruyne','Jérémy Doku','Brandon Mechele'],
-    'nation-2026/27-75':['Gianluigi Donnarumma','Francesco Pio Esposito','Nicolò Fagioli']
+    'nation-2025/26-106':['Gianluigi Donnarumma','Francesco Pio Esposito','Federico Dimarco','Nicolò Barella'],
+    'nation-2026/27-75':['Gianluigi Donnarumma','Francesco Pio Esposito','Nicolò Fagioli','Alessandro Bastoni']
   });
   function hardNationMaskOverride(f){
     if(f.mode!=='nation')return null;

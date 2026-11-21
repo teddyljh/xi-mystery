@@ -84,11 +84,12 @@ for(const f of netherlands2014){
   }
 }
 
-// Belgium adds Doku to the two existing clues. Italy has a custom goalkeeper,
-// forward and midfielder mask, with City restored before Inter.
+// Belgium adds Doku to the two existing clues. Italy hides the City goalkeeper
+// and three Serie A players, with City restored before the Inter forward.
 for(const [id,names,clubs] of [
   ['nation-2026/27-12',['Kevin De Bruyne','Jérémy Doku','Brandon Mechele'],['napoli','city','brugge']],
-  ['nation-2026/27-75',['Gianluigi Donnarumma','Francesco Pio Esposito','Nicolò Fagioli'],['city','inter','fiorentina']]
+  ['nation-2025/26-106',['Gianluigi Donnarumma','Francesco Pio Esposito','Federico Dimarco','Nicolò Barella'],['city','inter','inter','inter']],
+  ['nation-2026/27-75',['Gianluigi Donnarumma','Francesco Pio Esposito','Nicolò Fagioli','Alessandro Bastoni'],['city','inter','fiorentina','inter']]
 ]){
   const f=hard.find(f=>f.id===id);
   assert.ok(f,id);
