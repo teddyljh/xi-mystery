@@ -6,6 +6,7 @@ on:
       - 'reaction_photos/**'
       - 'scripts/sync_reactions.py'
       - 'scripts/upgrade_hard.py'
+      - 'scripts/test_hard_mode.cjs'
       - '.github/workflows/sync-reactions.yml'
   workflow_dispatch:
 permissions:
@@ -34,6 +35,8 @@ jobs:
           Path('/tmp/xi-quiz-engine.js').write_text(source[start:end], encoding='utf-8')
           PY
           node --check /tmp/xi-quiz-engine.js
+      - name: Check Hard masks and hint behavior
+        run: node scripts/test_hard_mode.cjs
       - name: Commit generated index when changed
         run: |
           git config user.name "github-actions[bot]"

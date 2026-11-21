@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Upgrade the XI Mystery Hard question pool without changing source fixtures.
 
-Idempotent: once patched, subsequent gallery synchronizations preserve the change.
+Idempotent: gallery synchronizations refresh these rules without changing fixtures.
 """
 from __future__ import annotations
 from pathlib import Path
@@ -9,6 +9,89 @@ import json
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
+
+# The -medium copies share their original match's attacking clue.
+FORWARD_PICKS = {
+    "club-2026/27-3": "Viktor Gyökeres",
+    "club-2026/27-4": "Désiré Doué",
+    "club-2026/27-5": "Marcus Thuram",
+    "nation-2026/27-10": "Lamine Yamal",
+    "nation-2026/27-11": "Harry Kane",
+    "club-2025/26-14": "Harry Kane",
+    "club-2024/25-16": "Robert Lewandowski",
+    "club-2026/27-20": "Bradley Barcola",
+    "club-2026/27-21": "Serhou Guirassy",
+    "club-2026/27-22": "André Silva",
+    "club-2026/27-23": "Ivan Perišić",
+    "club-2026/27-25": "Romelu Lukaku",
+    "club-2026/27-27": "Victor Osimhen",
+    "club-2026/27-33": "Geny Catamo",
+    "club-2025/26-36": "Estêvão",
+    "club-2025/26-37": "Oscar Gloukh",
+    "club-2025/26-44": "Vangelis Pavlidis",
+    "club-2025/26-46": "Rasmus Højlund",
+    "club-2025/26-48": "Fotis Ioannidis",
+    "club-2025/26-53": "Ivan Perišić",
+    "club-2024/25-60": "Antoine Griezmann",
+    "club-2024/25-62": "Luuk de Jong",
+    "club-2024/25-66": "Kyogo Furuhashi",
+    "club-2024/25-69": "Rafael Leão",
+    "club-2024/25-70": "Viktor Gyökeres",
+    "club-2024/25-71": "Erling Haaland",
+    "nation-2026/27-75": "Luca Koleosho",
+    "nation-2025/26-78": "Memphis Depay",
+    "nation-2024/25-83": "Rafael Leão",
+    "nation-2024/25-99": "Mateo Retegui",
+    "nation-2025/26-106": "Mateo Retegui",
+    "historic-club-chelsea-2005-03-08-0": "Eidur Gudjohnsen",
+    "historic-club-milan-2005-05-25-1": "Andriy Shevchenko",
+    "historic-club-liverpool-2005-05-25-2": "Milan Baros",
+    "historic-club-manunited-2008-05-21-3": "Cristiano Ronaldo",
+    "historic-club-chelsea-2008-05-21-4": "Didier Drogba",
+    "historic-club-barcelona-2011-05-28-5": "Lionel Messi",
+    "historic-club-manunited-2011-05-28-6": "Javier Hernandez",
+    "historic-club-inter-2010-05-22-7": "Samuel Eto’o",
+    "historic-club-bayern-2010-05-22-8": "Arjen Robben",
+    "historic-club-barcelona-2015-06-06-9": "Lionel Messi",
+    "historic-club-juventus-2015-06-06-10": "Carlos Tevez",
+    "historic-club-realmadrid-2014-05-24-11": "Gareth Bale",
+    "historic-club-atletico-2014-05-24-12": "Diego Costa",
+    "historic-club-psg-2020-08-23-13": "Kylian Mbappe",
+    "historic-club-bayern-2020-08-23-14": "Robert Lewandowski",
+    "historic-club-city-2023-06-10-15": "Erling Haaland",
+    "historic-club-inter-2023-06-10-16": "Edin Dzeko",
+    "historic-club-liverpool-2019-06-01-17": "Mohamed Salah",
+    "historic-club-spurs-2019-06-01-18": "Son Heung-min",
+    "historic-club-milan-2007-05-23-19": "Kaka",
+    "historic-club-chelsea-2012-05-19-20": "Didier Drogba",
+    "historic-club-dortmund-2013-05-25-21": "Robert Lewandowski",
+    "historic-nation-ESP-2024-07-14-30": "Lamine Yamal",
+    "historic-nation-ENG-2024-07-14-31": "Harry Kane",
+    "historic-nation-ARG-2022-12-18-32": "Lionel Messi",
+    "historic-nation-FRA-2022-12-18-33": "Kylian Mbappe",
+    "historic-nation-FRA-2018-07-15-34": "Kylian Mbappe",
+    "historic-nation-CRO-2018-07-15-35": "Mario Mandzukic",
+    "historic-nation-GER-2014-07-13-36": "Miroslav Klose",
+    "historic-nation-ARG-2014-07-13-37": "Lionel Messi",
+    "historic-nation-ESP-2010-07-11-38": "David Villa",
+    "historic-nation-NED-2010-07-11-39": "Arjen Robben",
+    "historic-nation-ITA-2006-07-09-40": "Luca Toni",
+    "historic-nation-FRA-2006-07-09-41": "Thierry Henry",
+    "historic-nation-POR-2016-07-10-42": "Cristiano Ronaldo",
+    "historic-nation-FRA-2016-07-10-43": "Antoine Griezmann",
+    "historic-nation-BRA-2002-06-30-44": "Ronaldo",
+    "historic-nation-GER-2002-06-30-45": "Miroslav Klose",
+    "historic-nation-ESP-2012-07-01-46": "Andres Iniesta",
+    "historic-nation-NED-2014-06-13-47": "Robin van Persie",
+    "historic-nation-POR-2024-06-26-48": "Cristiano Ronaldo",
+    "historic-club-bayern-2012-05-19-22": "Arjen Robben",
+    "historic-club-liverpool-2007-05-23-23": "Dirk Kuyt",
+    "historic-club-porto-2004-05-26-24": "Benni McCarthy",
+    "historic-club-juventus-2017-06-03-26": "Mario Mandzukic",
+    "historic-club-atletico-2016-05-28-27": "Antoine Griezmann",
+    "historic-club-barcelona-2005-03-08-28": "Ronaldinho",
+    "historic-club-bayern-2013-05-25-29": "Franck Ribery"
+}
 
 RULES = r"""
   // Hard includes every historical XI from Easy/Moderate and prominent
@@ -25,12 +108,22 @@ RULES = r"""
       (f.tier===state.difficulty||(state.difficulty==='hard'&&isImportedHardFixture(f))));
   }
 
-  // Featured Hard XI: conceal one attacker, one recognizable midfielder or
-  // defender, and a third randomly selected different player (3 of 11 total).
-  // Original Hard fixtures retain their former two hidden positions.
+  // Imported classics/powerhouses and historical powerhouse clubs use three
+  // hidden clues. Underdogs, including their historic XIs, keep [4,7].
+  // This mask policy does not change eligibility or the existing session mix.
+  function isFeaturedHardFixture(f){
+    const historical=f.id.startsWith('historic-')||f.date<'2024-01-01';
+    return isImportedHardFixture(f)||(historical&&f.mode==='club'&&HARD_FAMOUS_CLUBS.has(f.team));
+  }
   const HARD_FORWARD_ROLES=new Set(['ST','LS','RS','LW','RW']);
-  const HARD_MIDDEF_ROLES=new Set(['AM','CM','DM','LM','RM','LB','CB','RB','LWB','RWB']);
+  const HARD_ATTACKING_ROLES=new Set([...HARD_FORWARD_ROLES,'AM','LM','RM']);
+  const HARD_MIDFIELD_ROLES=new Set(['AM','CM','DM','LM','RM']);
+  const HARD_DEFENDER_ROLES=new Set(['LB','CB','RB','LWB','RWB']);
   const hardName=n=>n.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+  // Shared by the easy/moderate copies of each historical match. Names allow
+  // iconic attackers listed as AM/LM/RM (e.g. Ronaldo in 2008) to stay hidden.
+  const HARD_FORWARD_PICKS=Object.freeze(__HARD_FORWARD_PICKS__);
+  const HARD_KNOWN_FORWARDS=new Set(Object.values(HARD_FORWARD_PICKS).map(hardName));
   const HARD_NOTABLE=new Set(('Zinedine Zidane|Kaka|Kevin De Bruyne|Luka Modric|Andres Iniesta|Xavi Hernandez|Andrea Pirlo|Sergio Ramos|Virgil van Dijk|Frank Lampard|Steven Gerrard|Rodri|Jude Bellingham|Pedri|Declan Rice|Joshua Kimmich|Bruno Fernandes|Thomas Muller|Nicolò Barella|Hakan Çalhanoğlu|Frenkie de Jong|Theo Hernández|Bernardo Silva|John Terry|Sergio Busquets|Bastian Schweinsteiger|Paolo Maldini|Ashley Cole|Ruben Dias|Lilian Thuram|Toni Kroos|Philipp Lahm|Marco Reus|Mats Hummels|Wesley Sneijder|Koke|Xabi Alonso|Paul Scholes|Gerard Pique|Dani Alves|João Neves|Vitinha|Achraf Hakimi|Federico Dimarco|Ilkay Gundogan|Joško Gvardiol|Claude Makelele|Clarence Seedorf|N’Golo Kante|Paul Pogba|Cafu|Javier Mascherano|Sandro Tonali|Carles Puyol|Dani Carvajal|Trent Alexander-Arnold|João Palhinha|Roméo Lavia|Reece James|Antoine Griezmann|David Alaba|David Luiz|Iñigo Martínez|Denzel Dumfries|Fabián Ruiz|Marc Cucurella|Phil Foden|Marquinhos|Leonardo Bonucci|Raphael Varane|Marcelo Brozovic|Roberto Carlos|Bernd Schneider|Torsten Frings|Dietmar Hamann|Michael Carrick|Park Ji-sung|Leandro Paredes|Patrick Vieira|Pepe|Jordi Alba|Juan Mata|Manuel Akanji|Michael Ballack|Fabio Cannavaro|Georginio Wijnaldum|Lucas Hernández|Christian Pulisic|Mikel Merino|Dominik Szoboszlai|Enzo Fernandez|Alexis Mac Allister|John Stones|Nico Schlotterbeck|Rodrigo de Paul|Jan Vertonghen|Toby Alderweireld|Christian Eriksen|Lucas Torreira|Mario Lemina|Mattéo Guendouzi|Gabri Veiga|Joey Veerman|Guus Til|Morten Hjulmand|Pedro Gonçalves|Davy Klaassen|Scott McTominay|Callum McGregor|Reo Hatate|Richard Ríos|Jules Koundé|Dani Olmo|Marten de Roon|Ivan Perišić|Manuel Locatelli|Piero Hincapié|Jobe Bellingham|Fikayo Tomori|Alphonso Davies|Sebastian Szymański|İsmail Yüksek|Conor Gallagher|Malik Tillman|Mauro Júnior|Gabriel Magalhães|Leon Goretzka|Enzo Barrenechea|Aleksandar Pavlović|Victor Froholdt|Giorgio Chiellini|Claudio Marchisio|Harry Winks|Moussa Sissoko|Sergi Altimira|Thomas Müller|Mikel Oyarzabal|Declan Rice|Kevin Grosskreutz|Aleix García|John Obi Mikel|Youri Tielemans|Christian Eriksen|Gabriel Magalhães').split('|').map(hardName));
   // Heuristic fallback favors a player who appears repeatedly in the
   // historical/current database when a new lineup isn't in the curated list.
@@ -47,19 +140,36 @@ RULES = r"""
     const top=pool.filter(i=>(HARD_PLAYER_FREQUENCY.get(hardName(f.players[i].name))||0)===best);
     return top[Math.floor(Math.random()*top.length)];
   }
-  function buildHardMask(f){
-    if(!isImportedHardFixture(f))return [4,7];
-    const slots=f.players.map((_,i)=>i);
-    const attackers=slots.filter(i=>HARD_FORWARD_ROLES.has(f.players[i].role));
-    const midfieldDefenders=slots.filter(i=>HARD_MIDDEF_ROLES.has(f.players[i].role));
-    if(!attackers.length||!midfieldDefenders.length)throw Error('Invalid featured XI: '+f.id);
-    const striker=attackers[Math.floor(Math.random()*attackers.length)];
-    const notable=selectNotableMidDef(f,midfieldDefenders.filter(i=>i!==striker));
-    const rest=slots.filter(i=>i!==striker&&i!==notable);
-    const third=rest[Math.floor(Math.random()*rest.length)];
-    return [striker,notable,third];
+  function selectHardForward(f){
+    const preferred=HARD_FORWARD_PICKS[f.id.replace(/-medium$/,'')];
+    if(preferred){
+      const i=f.players.findIndex(p=>hardName(p.name)===hardName(preferred)&&HARD_ATTACKING_ROLES.has(p.role));
+      if(i!==-1)return i;
+    }
+    // Future XIs: prioritize known attackers, then a rare nationality/club
+    // clue, then recognition within the archive. Never pick a random forward.
+    const attackers=f.players.map((_,i)=>i).filter(i=>HARD_FORWARD_ROLES.has(f.players[i].role)||
+      (HARD_ATTACKING_ROLES.has(f.players[i].role)&&HARD_KNOWN_FORWARDS.has(hardName(f.players[i].name))));
+    const known=attackers.filter(i=>HARD_KNOWN_FORWARDS.has(hardName(f.players[i].name)));
+    const pool=known.length?known:attackers;
+    const clueCount=i=>f.players.filter(p=>p.value===f.players[i].value).length;
+    return pool.sort((a,b)=>clueCount(a)-clueCount(b)||
+      (HARD_PLAYER_FREQUENCY.get(hardName(f.players[b].name))||0)-(HARD_PLAYER_FREQUENCY.get(hardName(f.players[a].name))||0)||a-b)[0];
   }
-"""
+  function buildHardMask(f){
+    if(!isFeaturedHardFixture(f))return [4,7];
+    const slots=f.players.map((_,i)=>i);
+    const striker=selectHardForward(f);
+    const midfielders=slots.filter(i=>i!==striker&&HARD_MIDFIELD_ROLES.has(f.players[i].role));
+    const defenders=slots.filter(i=>HARD_DEFENDER_ROLES.has(f.players[i].role));
+    if(striker===undefined||!midfielders.length||!defenders.length)throw Error('Invalid featured XI: '+f.id);
+    const midfielder=selectNotableMidDef(f,midfielders);
+    const defender=selectNotableMidDef(f,defenders);
+    // getHint consumes this queue from the front, with a two-hint limit.
+    // The protected attacker therefore stays hidden until the answer reveal.
+    return [midfielder,defender,striker];
+  }
+""".replace("__HARD_FORWARD_PICKS__", json.dumps(FORWARD_PICKS, ensure_ascii=False, indent=4))
 
 HARD_BALANCE = r"""    if(state.difficulty==='hard'){
       // 3 recognisable/classic and 2 original Hard XIs per five-question
@@ -93,9 +203,6 @@ def once(source: str, old: str, new: str) -> str:
 
 def main() -> None:
     source = INDEX.read_text(encoding="utf-8")
-    if "function isImportedHardFixture(f)" in source:
-        print("Hard mode upgrade already present; skipping")
-        return
     data_marker = "window.LINEUP_DATA = "
     data_text = source.split(data_marker, 1)[1].split(";\n", 1)[0]
     fixtures = json.loads(data_text)["fixtures"]
@@ -104,11 +211,28 @@ def main() -> None:
     nations = set("ENG FRA GER ESP POR BRA ARG ITA NED".split())
     added = [f for f in fixtures if (historical(f) and f["tier"] in ("easy", "moderate")) or
              (f["tier"] == "moderate" and (f["team"] in (clubs if f["mode"]=="club" else nations)))]
-    forward = {"ST", "LS", "RS", "LW", "RW"}
-    middef = {"AM", "CM", "DM", "LM", "RM", "LB", "CB", "RB", "LWB", "RWB"}
-    for f in added:
-        if not any(p["role"] in forward for p in f["players"]) or not any(p["role"] in middef for p in f["players"]):
+    featured = [f for f in fixtures if f in added or
+                (historical(f) and f["mode"] == "club" and f["team"] in clubs)]
+    forward = {"ST", "LS", "RS", "LW", "RW", "AM", "LM", "RM"}
+    midfield = {"AM", "CM", "DM", "LM", "RM"}
+    defense = {"LB", "CB", "RB", "LWB", "RWB"}
+    for f in featured:
+        preferred = FORWARD_PICKS.get(f["id"].removesuffix("-medium"))
+        if preferred and not any(p["name"] == preferred and p["role"] in forward for p in f["players"]):
+            raise ValueError("Missing selected attacker in: " + f["id"])
+        if (not any(p["role"] in forward for p in f["players"]) or
+                not any(p["role"] in midfield and p["name"] != preferred for p in f["players"]) or
+                not any(p["role"] in defense for p in f["players"])):
             raise ValueError("Cannot mask target positions in: " + f["id"])
+
+    if "function isImportedHardFixture(f)" in source:
+        start = source.index("  // Hard includes every historical XI")
+        end = source.index("  // Shuffle-bag rotation", start)
+        updated = source[:start] + RULES.strip("\n") + "\n\n" + source[end:]
+        if updated != source:
+            INDEX.write_text(updated, encoding="utf-8")
+        print(f"Hard masking rules synchronized: {len(featured)} fixtures; underdogs unchanged")
+        return
 
     source = once(source,
         "  function available(){return DATA.fixtures.filter(f=>f.mode===state.mode && f.tier===state.difficulty);}",
