@@ -107,7 +107,7 @@ FORWARD_PICKS = {
     "historic-nation-ESP-2010-07-11-38": "David Villa",
     "historic-nation-NED-2010-07-11-39": "Arjen Robben",
     "historic-nation-ITA-2006-07-09-40": "Luca Toni",
-    "historic-nation-FRA-2006-07-09-41": "Thierry Henry",
+    "historic-nation-FRA-2006-07-09-41": "Florent Malouda",
     "historic-nation-POR-2016-07-10-42": "Cristiano Ronaldo",
     "historic-nation-FRA-2016-07-10-43": "Antoine Griezmann",
     "historic-nation-BRA-2002-06-30-44": "Ronaldo",
