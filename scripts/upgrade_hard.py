@@ -159,6 +159,74 @@ RULES = r"""
   // iconic attackers listed as AM/LM/RM (e.g. Ronaldo in 2008) to stay hidden.
   const HARD_FORWARD_PICKS=Object.freeze(__HARD_FORWARD_PICKS__);
   const HARD_KNOWN_FORWARDS=new Set(Object.values(HARD_FORWARD_PICKS).map(hardName));
+  // The existing two middle recognition bands. Top-nine and low-recognition
+  // national teams keep their previous rules; club questions are unaffected.
+  const HARD_MEDIUM_NATIONS=new Set('BEL CRO URU DEN CHE COL MAR SEN JPN KOR USA MEX TUR NOR SWE AUT POL UKR SRB CZE SCO WAL RUS GRE ECU NGA CIV DZA CAN IRL HUN SVN BIH ROU SVK'.split(' '));
+  const HARD_NATION_HOME_CLUB_COUNTRIES=Object.freeze({
+    ...HARD_NON_BIG_FIVE_NATIONS,
+    gent:'BEL',anderlecht:'BEL',standardliege:'BEL',
+    dinamo:'CRO',sion:'CHE',basel:'CHE',zurich:'CHE',winterthur:'CHE',
+    aberdeen:'SCO',rosenborg:'NOR',ferencvaros:'HUN',
+    polissya:'UKR',dynamokyiv:'UKR',craiova:'ROU',dinamobucharest:'ROU',
+    fctokyo:'JPN',urawa:'JPN',shimizu:'JPN',gamba:'JPN',
+    jeonbuk:'KOR',ulsan:'KOR',gwangju:'KOR',wydad:'MAR'
+  });
+  const HARD_NATION_KEY_PLAYERS=Object.freeze({
+    BEL:'Kevin De Bruyne|Romelu Lukaku|Jérémy Doku|Youri Tielemans',
+    CRO:'Luka Modric|Joško Gvardiol|Mateo Kovacic|Ivan Rakitic|Mario Mandzukic',
+    CHE:'Granit Xhaka|Manuel Akanji|Ardon Jashari|Remo Freuler|Yann Sommer',
+    SCO:'Scott McTominay|Andrew Robertson|John McGinn|Kieran Tierney',
+    POL:'Robert Lewandowski|Piotr Zielinski',
+    HUN:'Dominik Szoboszlai|Milos Kerkez',
+    BIH:'Edin Dzeko|Ermedin Demirovic|Amar Dedic|Haris Tabakovic|Esmir Bajraktarevic',
+    UKR:'Oleksandr Zinchenko|Mykhailo Mudryk|Illia Zabarnyi|Roman Yaremchuk',
+    IRL:'Caoimhin Kelleher|Nathan Collins|Seamus Coleman|Troy Parrott',
+    WAL:'Gareth Bale|Aaron Ramsey|Harry Wilson|Brennan Johnson|Dan James|Ben Davies',
+    SRB:'Dusan Vlahovic|Aleksandar Mitrovic|Sergej Milinkovic-Savic|Luka Jovic|Nikola Milenkovic',
+    SVK:'Stanislav Lobotka|Milan Skriniar|David Hancko',
+    ROU:'Ianis Hagi|Radu Dragusin|Dennis Man',
+    MAR:'Achraf Hakimi|Hakim Ziyech|Youssef En-Nesyri',
+    JPN:'Takefusa Kubo|Kaoru Mitoma|Wataru Endo|Daichi Kamada',
+    KOR:'Son Heung-min|Kim Min-jae|Lee Kang-in'
+  });
+  const usesNationHardMask=f=>f.mode==='nation'&&HARD_MEDIUM_NATIONS.has(f.team);
+  function hardNationDomesticSlots(f){
+    if(!usesNationHardMask(f))return [];
+    return f.players.map((_,i)=>i).filter(i=>HARD_NATION_HOME_CLUB_COUNTRIES[f.players[i].value]===f.team);
+  }
+  function hardNationProtectedSlots(f){
+    if(!usesNationHardMask(f))return [];
+    const domestic=hardNationDomesticSlots(f),locked=new Set(domestic);
+    // At least two protected clues, plus two hintable foreign-club clues.
+    // Add an identifying star when up to four domestic clues exist. Domestic
+    // clues always stay hidden, even in XIs with a large home-league contingent.
+    const target=Math.max(2,domestic.length+(domestic.length<5?1:0));
+    const previous=HARD_FORWARD_PICKS[f.id.replace(/-medium$/,'')];
+    const names=[...(previous?[previous]:[]),...(HARD_NATION_KEY_PLAYERS[f.team]||'').split('|')];
+    for(const name of names){
+      if(locked.size>=target)break;
+      const i=f.players.findIndex(p=>hardName(p.name)===hardName(name));
+      if(i!==-1)locked.add(i);
+    }
+    const fallback=f.players.map((_,i)=>i).sort((a,b)=>
+      Number(HARD_NOTABLE.has(hardName(f.players[b].name)))-Number(HARD_NOTABLE.has(hardName(f.players[a].name)))||
+      (HARD_PLAYER_FREQUENCY.get(hardName(f.players[b].name))||0)-(HARD_PLAYER_FREQUENCY.get(hardName(f.players[a].name))||0)||a-b);
+    for(const i of fallback){if(locked.size>=target)break;locked.add(i);}
+    return [...locked];
+  }
+  function buildNationHardMask(f){
+    const locked=hardNationProtectedSlots(f),hints=[];
+    // Leave at least two visible clues if a future XI is almost all domestic.
+    const hintCount=Math.min(2,Math.max(0,f.players.length-2-locked.length));
+    for(const roles of [HARD_MIDFIELD_ROLES,HARD_DEFENDER_ROLES]){
+      if(hints.length>=hintCount)break;
+      const remaining=f.players.map((_,i)=>i).filter(i=>!locked.includes(i)&&!hints.includes(i));
+      const preferred=remaining.filter(i=>roles.has(f.players[i].role));
+      const outfield=remaining.filter(i=>f.players[i].role!=='GK');
+      if(remaining.length)hints.push(selectNotableMidDef(f,preferred.length?preferred:outfield.length?outfield:remaining));
+    }
+    return [...hints,...locked];
+  }
   function hardAttackerSlots(f){
     return f.players.map((_,i)=>i).filter(i=>HARD_FORWARD_ROLES.has(f.players[i].role)||
       (HARD_ATTACKING_ROLES.has(f.players[i].role)&&HARD_KNOWN_FORWARDS.has(hardName(f.players[i].name))));
@@ -248,6 +316,7 @@ RULES = r"""
     return [...pair,striker];
   }
   function buildHardMask(f){
+    if(usesNationHardMask(f))return buildNationHardMask(f);
     if(usesLeagueHardMask(f))return buildLeagueHardMask(f,selectHardForward(f),hardLeagueNation(f));
     if(!isFeaturedHardFixture(f))return [4,7];
     const slots=f.players.map((_,i)=>i);
@@ -263,6 +332,20 @@ RULES = r"""
   }
 """.replace("__HARD_FORWARD_PICKS__", json.dumps(FORWARD_PICKS, ensure_ascii=False, indent=4)).replace(
     "__HARD_NON_BIG_FIVE_NATIONS__", json.dumps(NON_BIG_FIVE_NATIONS, ensure_ascii=False, indent=4))
+
+HINT_HANDLER = r"""  function getHint(){
+    if(state.revealed||state.hints>=2)return;
+    const f=current();
+    const protectedSlots=state.difficulty==='hard'?hardNationProtectedSlots(f):[];
+    const hintIndex=state.masked.findIndex(i=>!protectedSlots.includes(i));
+    if(hintIndex!==-1){state.masked.splice(hintIndex,1);state.hints++;$('feedback').textContent=tr('uncovered');}
+    else if(!state.choicesShown){state.choicesShown=true;state.hints++;$('feedback').textContent=tr('showOptions');}
+    else if(state.difficulty==='easy'&&state.hints===0){state.removed=state.choices.filter(x=>x!==f.team).slice(0,2);state.hints++;$('feedback').textContent=tr('easyHint');}
+    else if(!state.removed.length){state.removed=state.choices.filter(x=>x!==f.team).slice(0,2);state.hints++;$('feedback').textContent=tr('easyHint');}
+    else return;
+    renderGame();
+  }
+"""
 
 HARD_BALANCE = r"""    if(state.difficulty==='hard'){
       // 3 recognisable/classic and 2 original Hard XIs per five-question
@@ -296,6 +379,7 @@ def once(source: str, old: str, new: str) -> str:
 
 def main() -> None:
     source = INDEX.read_text(encoding="utf-8")
+    original = source
     data_marker = "window.LINEUP_DATA = "
     data_text = source.split(data_marker, 1)[1].split(";\n", 1)[0]
     fixtures = json.loads(data_text)["fixtures"]
@@ -318,11 +402,25 @@ def main() -> None:
                 not any(p["role"] in defense for p in f["players"])):
             raise ValueError("Cannot mask target positions in: " + f["id"])
 
+    for old, new in (
+        ("罕见或古早首发、冷门球队与小联赛 · 更少线索", "豪门、经典与冷门阵容 · 隐藏更有辨识度的线索"),
+        ("豪门与经典历史阵容混合冷门球队 · 豪门/经典阵容隐藏 3 名球员", "豪门、经典与冷门阵容 · 隐藏更有辨识度的线索"),
+        ("Rare and vintage XIs, smaller clubs · Fewer clues", "Powerhouse, classic and underdog XIs · More identifying clues hidden"),
+        ("Classic and famous XIs mixed with underdogs · Three clues hidden for iconic XIs", "Powerhouse, classic and underdog XIs · More identifying clues hidden"),
+        ("Onces raros o históricos y equipos modestos · Menos pistas", "Onces clásicos, grandes y modestos · Más pistas reveladoras ocultas"),
+        ("Onces clásicos y grandes mezclados con equipos modestos · Tres pistas ocultas en los clásicos", "Onces clásicos, grandes y modestos · Más pistas reveladoras ocultas"),
+    ):
+        source = source.replace(old, new)
+
+    hint_start = source.index("  function getHint(){")
+    hint_end = source.index("  function next(){", hint_start)
+    source = source[:hint_start] + HINT_HANDLER + source[hint_end:]
+
     if "function isImportedHardFixture(f)" in source:
         start = source.index("  // Hard includes every historical XI")
         end = source.index("  // Shuffle-bag rotation", start)
         updated = source[:start] + RULES.strip("\n") + "\n\n" + source[end:]
-        if updated != source:
+        if updated != original:
             INDEX.write_text(updated, encoding="utf-8")
         print(f"Hard rules synchronized: {len(featured)} featured fixtures; non-big-five clubs use nationality rules when feasible")
         return
@@ -337,15 +435,6 @@ def main() -> None:
     source = once(source,
         "state.masked=state.difficulty==='hard'?[4,7]:[];",
         "state.masked=state.difficulty==='hard'?buildHardMask(current()):[];")
-    for old, new in (
-        ("hardExplain:'罕见或古早首发、冷门球队与小联赛 · 更少线索'",
-         "hardExplain:'豪门与经典历史阵容混合冷门球队 · 豪门/经典阵容隐藏 3 名球员'"),
-        ("hardExplain:'Rare and vintage XIs, smaller clubs · Fewer clues'",
-         "hardExplain:'Classic and famous XIs mixed with underdogs · Three clues hidden for iconic XIs'"),
-        ("hardExplain:'Onces raros o históricos y equipos modestos · Menos pistas'",
-         "hardExplain:'Onces clásicos y grandes mezclados con equipos modestos · Tres pistas ocultas en los clásicos'"),
-    ):
-        source = once(source, old, new)
     INDEX.write_text(source, encoding="utf-8")
     print(f"Hard mode upgraded. Imported {len(added)} fixtures: "+
           f"{sum(f['mode']=='club' for f in added)} club, "+

@@ -32,7 +32,8 @@ const context = vm.createContext({
 vm.runInContext(rules + '\n' + hints + `
   globalThis.api = {buildHardMask, isImportedHardFixture, isFeaturedHardFixture,
     selectHardForward, picks: HARD_FORWARD_PICKS, getHint, available,
-    usesLeagueHardMask, hardLeagueNation};
+    usesLeagueHardMask, hardLeagueNation, usesNationHardMask,
+    hardNationDomesticSlots, hardNationProtectedSlots, mediumNations:HARD_MEDIUM_NATIONS};
 `, context);
 const api = context.api;
 const midfield = new Set(['AM', 'CM', 'DM', 'LM', 'RM']);
@@ -41,8 +42,9 @@ const attack = new Set(['ST', 'LS', 'RS', 'LW', 'RW', 'AM', 'LM', 'RM']);
 const hard = data.fixtures.filter(f => f.tier === 'hard' || api.isImportedHardFixture(f));
 const featured = hard.filter(api.isFeaturedHardFixture);
 const league = hard.filter(api.usesLeagueHardMask);
-const threeClues = hard.filter(f => api.isFeaturedHardFixture(f) || api.usesLeagueHardMask(f));
-const underdogs = hard.filter(f => !api.isFeaturedHardFixture(f) && !api.usesLeagueHardMask(f));
+const nations = hard.filter(api.usesNationHardMask);
+const threeClues = hard.filter(f => !api.usesNationHardMask(f) && (api.isFeaturedHardFixture(f) || api.usesLeagueHardMask(f)));
+const underdogs = hard.filter(f => !api.isFeaturedHardFixture(f) && !api.usesLeagueHardMask(f) && !api.usesNationHardMask(f));
 
 function reset(mask, difficulty = 'hard') {
   context.state = {difficulty, mode: fixture.mode, masked: [...mask], hints: 0,
@@ -115,6 +117,64 @@ for (const f of underdogs) {
   api.getHint();
   assert.deepEqual(context.state.masked, [], f.id + ': original hint two');
 }
+
+// Domestic-league crests/names are protected even when hints are used. Two
+// separate foreign-club clues remain available as hints, and key export clues
+// stay hidden as well. Exercise every affected fixture and random tie edge.
+for (const f of nations) {
+  fixture=f;
+  const domestic=[...api.hardNationDomesticSlots(f)];
+  const locked=[...api.hardNationProtectedSlots(f)];
+  assert.ok(domestic.every(i=>locked.includes(i)),f.id+': all domestic clues protected');
+  assert.ok(locked.length>=2,f.id+': identifying export clues protected');
+  const previous=api.picks[f.id.replace(/-medium$/,'')];
+  if(previous)assert.ok(locked.some(i=>f.players[i].name===previous),f.id+': original iconic forward stays protected');
+  for(let sample=0;sample<=20;sample++){
+    roll=sample/20*0.999999;
+    const mask=[...api.buildHardMask(f)];
+    assert.ok(mask.length>=4 && mask.length<=9,f.id+': more clues hidden while retaining visible clues');
+    assert.equal(new Set(mask).size,mask.length);
+    assert.ok(locked.every(i=>mask.includes(i)),f.id);
+    assert.deepEqual(mask.slice(2),locked,f.id+': only the first two clues can be hinted');
+    reset(mask);
+    api.getHint();api.getHint();
+    assert.deepEqual(context.state.masked,locked,f.id+': domestic and key clues survive both hints');
+    api.getHint();
+    assert.deepEqual(context.state.masked,locked);
+    assert.equal(context.state.hints,2);
+  }
+  // The hint handler must skip protected positions, even if a queue is reordered.
+  roll=0;
+  const mask=[...api.buildHardMask(f)];
+  reset([...locked,...mask.slice(0,2)]);
+  api.getHint();
+  assert.ok(locked.every(i=>context.state.masked.includes(i)),f.id+': no protected-clue leak');
+}
+const japan=data.fixtures.find(f=>f.id==='historic-nation-JPN-2022-11-23-50');
+const korea=data.fixtures.find(f=>f.id==='historic-nation-KOR-2022-12-02-51');
+assert.deepEqual([...api.hardNationDomesticSlots(japan)],[6,9,10]);
+assert.deepEqual([...api.hardNationDomesticSlots(korea)],[0,6,7,9]);
+assert.equal(api.buildHardMask(japan).length,6);
+assert.equal(api.buildHardMask(korea).length,7);
+assert.ok(api.hardNationProtectedSlots(japan).some(i=>japan.players[i].name==='Takefusa Kubo'));
+assert.ok(api.hardNationProtectedSlots(korea).some(i=>korea.players[i].name==='Son Heung-min'));
+for(const f of hard.filter(f=>f.mode==='nation' && f.team==='WAL')){
+  assert.deepEqual([...api.hardNationDomesticSlots(f)],[],'Welsh clubs in the English league system are not Welsh-league clues');
+}
+const bands=source.split('const EASY_NATION_LEVELS=[',2)[1].split('].map(keys=>keys.split',1)[0].match(/'[^']*'/g).map(s=>s.slice(1,-1).split(' '));
+assert.deepEqual([...api.mediumNations].sort(),[...new Set([...bands[1],...bands[2]])].sort(),'recognition groups stay aligned');
+for(const f of data.fixtures.filter(f=>f.mode==='club'))assert.equal(api.usesNationHardMask(f),false);
+for(const key of ['FRA','ARG','KSA','CRC','ISL','GEO'])assert.equal(api.usesNationHardMask({mode:'nation',team:key}),false,key+': unchanged recognition group');
+
+// In a future heavily domestic XI, hints may offer choices rather than exposing
+// a protected home-club clue. Two visible foreign clues stay visible initially.
+fixture={...japan,id:'future-domestic-xi',players:japan.players.map((p,i)=>({...p,value:i<2?p.value:'fctokyo'}))};
+const domesticMask=[...api.buildHardMask(fixture)];
+assert.equal(domesticMask.length,9);
+reset(domesticMask);
+api.getHint();api.getHint();
+assert.deepEqual(context.state.masked,domesticMask);
+assert.equal(context.state.choicesShown,true);
 
 // These players are deliberately protected even when their stored position is
 // LM/RM/AM rather than a conventional ST/LW/RW role.
@@ -192,6 +252,11 @@ reset([], 'easy');
 api.getHint();
 assert.deepEqual(context.state.removed, ['wrong-a', 'wrong-b']);
 assert.equal(context.state.hints, 1);
+fixture=japan;
+reset([], 'moderate');
+api.getHint();
+assert.equal(context.state.choicesShown,true,'Moderate national hints unchanged');
+assert.deepEqual(context.state.masked,[]);
 
 // Fallbacks for future/unlisted XIs stay deterministic and hide an informative
 // clue. A known attacker marked LM is still eligible; defenders never are.
@@ -237,9 +302,12 @@ try {
   assert.equal(fs.readFileSync(index, 'utf8'), source, 'updater refreshes existing installations');
   upgrade();
   assert.equal(fs.readFileSync(index, 'utf8'), source, 'repeat updates preserve generated HTML');
+  fs.writeFileSync(index,source.replace('state.masked.splice(hintIndex,1)','state.masked.shift()'));
+  upgrade();
+  assert.equal(fs.readFileSync(index,'utf8'),source,'updater repairs the hint handler even when mask rules already match');
 } finally {
   fs.rmSync(temp, {recursive: true, force: true});
 }
 
 console.log(`PASS: ${featured.length} featured fixtures, ${Object.keys(api.picks).length} unique XIs, ` +
-  `${league.length} league-nationality masks, ${underdogs.length} unchanged two-clue fixtures; hint order, exact legacy fallbacks and updater checks passed.`);
+  `${league.length} league-nationality masks, ${nations.length} national-team masks, ${underdogs.length} unchanged two-clue fixtures; protected domestic clues, hints, exact legacy fallbacks and updater checks passed.`);
