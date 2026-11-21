@@ -19,6 +19,10 @@ Hard mode and all other gameplay remain unchanged.
 
 Powerhouse and classic XIs now hide a reviewed attacking player, one midfielder, and one defender. The attacking selection favors an iconic player or a nationality/club clue that gives too much away, including attackers stored as AM/LM/RM. The two hints reveal the midfielder and defender in that order; the attacker remains hidden until the answer is revealed.
 
-This covers 79 distinct XIs (113 fixture entries including historical difficulty copies), including historical powerhouse clubs already in Hard. Underdog XIs, including their historical lineups, retain the original `[4,7]` mask and hint order. Fixture data, question pools, scoring, and Easy/Moderate gameplay are unchanged.
+This covers 79 distinct XIs (113 fixture entries including historical difficulty copies), including historical powerhouse clubs already in Hard. Except for the non-big-five league policy below, underdog XIs retain the original `[4,7]` mask and hint order. Fixture data, question pools, scoring, and Easy/Moderate gameplay are unchanged.
+
+For clubs outside Europe's big five leagues, including underdogs, Hard now prioritizes a forward of the league's nationality. If none starts, it hides a forward with an unusual nationality instead. The two other hidden clues must both share the league's nationality; this takes priority over hiding exactly one midfielder and one defender. Hints still leave the designated forward hidden. A second attacker or goalkeeper can be used for the other clues when the nationality requirement makes it necessary.
+
+This policy applies to 29 current XIs. Five XIs have too few domestic players: Fenerbahçe (2026-11-04), Benfica (2025-11-05), Salzburg (2024-11-06), Sturm Graz (2024-11-05), and Pafos (2025-11-05). They retain their complete previous mask and hint policy. National-team questions and big-five league clubs are unaffected.
 
 `scripts/upgrade_hard.py` owns these rules and refreshes the embedded HTML during gallery synchronization. Run `node scripts/test_hard_mode.cjs` to check every Hard fixture, hint behavior, and updater idempotence.

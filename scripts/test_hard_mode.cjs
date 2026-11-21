@@ -31,7 +31,8 @@ const context = vm.createContext({
 });
 vm.runInContext(rules + '\n' + hints + `
   globalThis.api = {buildHardMask, isImportedHardFixture, isFeaturedHardFixture,
-    selectHardForward, picks: HARD_FORWARD_PICKS, getHint, available};
+    selectHardForward, picks: HARD_FORWARD_PICKS, getHint, available,
+    usesLeagueHardMask, hardLeagueNation};
 `, context);
 const api = context.api;
 const midfield = new Set(['AM', 'CM', 'DM', 'LM', 'RM']);
@@ -39,7 +40,9 @@ const defense = new Set(['LB', 'CB', 'RB', 'LWB', 'RWB']);
 const attack = new Set(['ST', 'LS', 'RS', 'LW', 'RW', 'AM', 'LM', 'RM']);
 const hard = data.fixtures.filter(f => f.tier === 'hard' || api.isImportedHardFixture(f));
 const featured = hard.filter(api.isFeaturedHardFixture);
-const underdogs = hard.filter(f => !api.isFeaturedHardFixture(f));
+const league = hard.filter(api.usesLeagueHardMask);
+const threeClues = hard.filter(f => api.isFeaturedHardFixture(f) || api.usesLeagueHardMask(f));
+const underdogs = hard.filter(f => !api.isFeaturedHardFixture(f) && !api.usesLeagueHardMask(f));
 
 function reset(mask, difficulty = 'hard') {
   context.state = {difficulty, mode: fixture.mode, masked: [...mask], hints: 0,
@@ -49,22 +52,39 @@ function reset(mask, difficulty = 'hard') {
   feedback.textContent = '';
 }
 
-// Include extreme random values to catch the old random-forward selection and
-// cases where a second attacker or goalkeeper used to be hidden as clue three.
-for (const f of featured) {
+// Include extreme random values to cover every pair-selection tie. League
+// rules prioritize nationality; other featured XIs retain midfield/defense.
+for (const f of threeClues) {
   fixture = f;
   const preferred = api.picks[f.id.replace(/-medium$/, '')];
-  assert.ok(preferred, 'Review the attacking clue for new featured XI: ' + f.id);
+  if (api.isFeaturedHardFixture(f))assert.ok(preferred, 'Review the attacking clue for new featured XI: ' + f.id);
   for (let sample = 0; sample <= 20; sample++) {
     roll = sample / 20 * 0.999999;
     const mask = [...api.buildHardMask(f)];
     assert.equal(mask.length, 3, f.id);
     assert.equal(new Set(mask).size, 3, f.id);
-    assert.ok(midfield.has(f.players[mask[0]].role), f.id + ': first hint is midfield');
-    assert.ok(defense.has(f.players[mask[1]].role), f.id + ': second hint is defense');
     assert.ok(attack.has(f.players[mask[2]].role), f.id + ': protected attacking player');
-    assert.equal(f.players[mask[2]].name, preferred, f.id + ': curated forward');
-    assert.ok(mask.every(i => f.players[i].role !== 'GK'), f.id + ': goalkeeper stays visible');
+    if (preferred)assert.equal(f.players[mask[2]].name, preferred, f.id + ': curated forward');
+    if (api.usesLeagueHardMask(f)) {
+      const nation = api.hardLeagueNation(f);
+      assert.ok(mask.slice(0, 2).every(i => f.players[i].value === nation), f.id + ': two OTHER domestic clues');
+      const forwards = f.players.filter(p => ['ST','LS','RS','LW','RW'].includes(p.role));
+      if (forwards.some(p => p.value === nation)) {
+        assert.equal(f.players[mask[2]].value, nation, f.id + ': domestic forward first');
+      } else {
+        const count = value => f.players.filter(p => p.value === value).length;
+        assert.equal(count(f.players[mask[2]].value), Math.min(...forwards.map(p => count(p.value))), f.id + ': unusual nationality without domestic forward');
+      }
+      const domestic = f.players.filter((p,i) => i !== mask[2] && p.value === nation);
+      if (domestic.some(p => midfield.has(p.role)) && domestic.some(p => defense.has(p.role))) {
+        assert.ok(midfield.has(f.players[mask[0]].role), f.id + ': domestic midfield hint first when possible');
+        assert.ok(defense.has(f.players[mask[1]].role), f.id + ': domestic defense hint second when possible');
+      }
+    } else {
+      assert.ok(midfield.has(f.players[mask[0]].role), f.id + ': first hint is midfield');
+      assert.ok(defense.has(f.players[mask[1]].role), f.id + ': second hint is defense');
+      assert.ok(mask.every(i => f.players[i].role !== 'GK'), f.id + ': goalkeeper stays visible');
+    }
     reset(mask);
     api.getHint();
     assert.deepEqual(context.state.masked, mask.slice(1), f.id + ': first hint');
@@ -99,6 +119,11 @@ for (const f of underdogs) {
 // These players are deliberately protected even when their stored position is
 // LM/RM/AM rather than a conventional ST/LW/RW role.
 const regressions = {
+  'club-2026/27-3': 'Viktor Gyökeres',
+  'club-2026/27-23': 'Guus Til',
+  'club-2025/26-37': 'Wout Weghorst',
+  'club-2024/25-66': 'Nicolas Kühn',
+  'club-2024/25-70': 'Pedro Gonçalves',
   'historic-club-manunited-2008-05-21-3': 'Cristiano Ronaldo',
   'historic-club-bayern-2010-05-22-8': 'Arjen Robben',
   'historic-club-chelsea-2005-03-08-0': 'Eidur Gudjohnsen',
@@ -121,6 +146,32 @@ for (const [id, name] of Object.entries(regressions)) {
 for (const id of Object.keys(api.picks)) {
   assert.ok(featured.some(f => f.id === id), 'No stale curated entry: ' + id);
 }
+
+// Insufficient domestic players means the ENTIRE former mask is retained,
+// including its original forward, rather than a partially applied new policy.
+const insufficient = {
+  'club-2026/27-25': [[4, 9, 1]],
+  'club-2025/26-44': [[3, 7, 1], [4, 7, 1]],
+  'club-2024/25-124': [[4, 7]],
+  'club-2024/25-126': [[4, 7]],
+  'club-2025/26-127': [[4, 7]],
+};
+for (const [id, masks] of Object.entries(insufficient)) {
+  const f = data.fixtures.find(f => f.id === id);
+  assert.equal(api.usesLeagueHardMask(f), false, id + ': legacy fallback');
+  for (roll of [0, 0.5, 0.999999]) {
+    assert.ok(masks.some(mask => JSON.stringify(mask) === JSON.stringify([...api.buildHardMask(f)])), id + ': exact old mask');
+  }
+}
+// The new scope explicitly includes lesser-known clubs outside the big five.
+for (const id of ['club-2026/27-24', 'club-2026/27-34', 'club-2025/26-89', 'club-2025/26-128']) {
+  const f = data.fixtures.find(f => f.id === id);
+  assert.equal(api.isFeaturedHardFixture(f), false, id);
+  assert.equal(api.usesLeagueHardMask(f), true, id);
+  assert.equal(api.buildHardMask(f).length, 3, id);
+}
+assert.equal(api.hardLeagueNation(data.fixtures.find(f => f.team === 'arsenal')), undefined);
+for (const f of data.fixtures.filter(f => f.mode === 'nation'))assert.equal(api.usesLeagueHardMask(f), false, f.id);
 
 // Pool membership and the original per-tier pools remain unchanged.
 for (const mode of ['club', 'nation']) {
@@ -156,6 +207,20 @@ assert.equal(api.selectHardForward(future), 1);
 future.players[1].role = 'CB';
 assert.equal(api.selectHardForward(future), 2);
 
+const futureLeague = {id:'future-league-xi', mode:'club', team:'porto', players:[
+  {name:'Cristiano Ronaldo',role:'LW',value:'ENG'},
+  {name:'Visiting striker',role:'ST',value:'ENG'},
+  {name:'Unusual winger',role:'RW',value:'WAL'},
+  {name:'Domestic midfielder',role:'CM',value:'POR'},
+  {name:'Domestic defender',role:'CB',value:'POR'},
+]};
+assert.equal(api.usesLeagueHardMask(futureLeague), true);
+assert.equal(api.selectHardForward(futureLeague), 2, 'rare clue outranks a known foreign star when no domestic forward exists');
+futureLeague.players[1].value='POR';
+assert.equal(api.selectHardForward(futureLeague), 1, 'domestic forward outranks a famous foreign player');
+futureLeague.players[4].value='BRA';
+assert.equal(api.usesLeagueHardMask(futureLeague), false, 'domestic forward requires two ADDITIONAL domestic players');
+
 // The gallery updater must preserve the new rules and migrate an older mask
 // ordering; test in an isolated copy rather than rewriting the working tree.
 const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'xi-hard-test-'));
@@ -177,4 +242,4 @@ try {
 }
 
 console.log(`PASS: ${featured.length} featured fixtures, ${Object.keys(api.picks).length} unique XIs, ` +
-  `${underdogs.length} unchanged underdog fixtures; hint order, fallback and updater checks passed.`);
+  `${league.length} league-nationality masks, ${underdogs.length} unchanged two-clue fixtures; hint order, exact legacy fallbacks and updater checks passed.`);
