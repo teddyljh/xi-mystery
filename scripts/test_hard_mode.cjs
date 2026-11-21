@@ -118,8 +118,8 @@ for (const f of underdogs) {
   assert.deepEqual(context.state.masked, [], f.id + ': original hint two');
 }
 
-// Domestic-league crests/names remain protected through hints. Japan/Korea hide
-// only these clues and their identifying star; hints help with answer choices.
+// Other middle-band national teams keep protected clues through hints.
+// Japan/Korea restore one masked clue per hint, preferring overseas clubs.
 for (const f of nations) {
   fixture=f;
   const domestic=[...api.hardNationDomesticSlots(f)];
@@ -137,22 +137,34 @@ for (const f of nations) {
     assert.ok(locked.every(i=>mask.includes(i)),f.id);
     assert.deepEqual(mask.slice(protectedOnly?0:2),locked,f.id+': only intended clues are masked');
     reset(mask);
-    api.getHint();api.getHint();
-    assert.deepEqual(context.state.masked,locked,f.id+': domestic and key clues survive both hints');
     if(protectedOnly){
-      assert.equal(context.state.choicesShown,true,f.id+': first hint shows answer choices');
-      assert.deepEqual(context.state.removed,['wrong-a','wrong-b'],f.id+': second hint removes two wrong choices');
+      const expected=[...mask];
+      for(let h=0;h<2;h++){
+        const overseas=expected.findIndex(i=>!domestic.includes(i));
+        expected.splice(overseas===-1?0:overseas,1);
+        api.getHint();
+        assert.deepEqual(context.state.masked,expected,f.id+': overseas-first hint '+(h+1));
+        assert.equal(context.state.hints,h+1);
+        assert.equal(feedback.textContent,'uncovered');
+      }
+      assert.equal(context.state.choicesShown,false,f.id+': hints never show answer choices');
+      assert.deepEqual(context.state.removed,[],f.id+': hints never remove answer choices');
+    }else{
+      api.getHint();api.getHint();
+      assert.deepEqual(context.state.masked,locked,f.id+': domestic and key clues survive both hints');
     }
+    const afterHints=[...context.state.masked];
     api.getHint();
-    assert.deepEqual(context.state.masked,locked);
+    assert.deepEqual(context.state.masked,afterHints);
     assert.equal(context.state.hints,2);
   }
-  // The hint handler must skip protected positions, even if a queue is reordered.
+  // Selection remains correct even when a mask queue is reordered.
   roll=0;
   const mask=[...api.buildHardMask(f)];
   reset([...locked,...mask.filter(i=>!locked.includes(i))]);
   api.getHint();
-  assert.ok(locked.every(i=>context.state.masked.includes(i)),f.id+': no protected-clue leak');
+  if(protectedOnly)assert.ok(domestic.every(i=>context.state.masked.includes(i)),f.id+': overseas clue restored ahead of domestic clues');
+  else assert.ok(locked.every(i=>context.state.masked.includes(i)),f.id+': no protected-clue leak');
 }
 const japan=data.fixtures.find(f=>f.id==='historic-nation-JPN-2022-11-23-50');
 const korea=data.fixtures.find(f=>f.id==='historic-nation-KOR-2022-12-02-51');
@@ -170,15 +182,26 @@ assert.deepEqual([...api.mediumNations].sort(),[...new Set([...bands[1],...bands
 for(const f of data.fixtures.filter(f=>f.mode==='club'))assert.equal(api.usesNationHardMask(f),false);
 for(const key of ['FRA','ARG','KSA','CRC','ISL','GEO'])assert.equal(api.usesNationHardMask({mode:'nation',team:key}),false,key+': unchanged recognition group');
 
-// In a future heavily domestic XI, hints may offer choices rather than exposing
-// a protected home-club clue. Two visible foreign clues stay visible initially.
+// If no masked overseas clue remains, Japan/Korea hints may restore domestic
+// clues. They never fall back to answer choices, even with an empty mask.
 fixture={...japan,id:'future-domestic-xi',players:japan.players.map((p,i)=>({...p,value:i<2?p.value:'fctokyo'}))};
 const domesticMask=[...api.buildHardMask(fixture)];
 assert.equal(domesticMask.length,9);
 reset(domesticMask);
 api.getHint();api.getHint();
-assert.deepEqual(context.state.masked,domesticMask);
-assert.equal(context.state.choicesShown,true);
+assert.deepEqual(context.state.masked,domesticMask.slice(2));
+assert.equal(context.state.choicesShown,false);
+fixture=japan;
+reset([6,1,9,2]);
+api.getHint();
+assert.deepEqual(context.state.masked,[6,9,2],'first overseas clue before earlier domestic slots');
+api.getHint();
+assert.deepEqual(context.state.masked,[6,9],'second overseas clue also precedes domestic slots');
+assert.equal(context.state.choicesShown,false);
+reset([]);
+api.getHint();
+assert.equal(context.state.choicesShown,false,'no answer-choice fallback');
+assert.equal(context.state.hints,0);
 
 // These players are deliberately protected even when their stored position is
 // LM/RM/AM rather than a conventional ST/LW/RW role.

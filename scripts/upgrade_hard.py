@@ -217,7 +217,7 @@ RULES = r"""
   function buildNationHardMask(f){
     const locked=hardNationProtectedSlots(f),hints=[];
     // Japan/Korea conceal only domestic-club clues and their identifying star.
-    // With no extra masked players, hints use the existing answer-choice help.
+    // Hints restore these clues, preferring overseas clubs before home clubs.
     if(f.team==='JPN'||f.team==='KOR')return locked;
     // Leave at least two visible clues if a future XI is almost all domestic.
     const hintCount=Math.min(2,Math.max(0,f.players.length-2-locked.length));
@@ -339,8 +339,11 @@ RULES = r"""
 HINT_HANDLER = r"""  function getHint(){
     if(state.revealed||state.hints>=2)return;
     const f=current();
-    const protectedSlots=state.difficulty==='hard'?hardNationProtectedSlots(f):[];
-    const hintIndex=state.masked.findIndex(i=>!protectedSlots.includes(i));
+    const restoreNationClues=state.difficulty==='hard'&&f.mode==='nation'&&(f.team==='JPN'||f.team==='KOR');
+    const protectedSlots=state.difficulty==='hard'&&!restoreNationClues?hardNationProtectedSlots(f):[];
+    const overseasIndex=restoreNationClues?state.masked.findIndex(i=>HARD_NATION_HOME_CLUB_COUNTRIES[f.players[i].value]!==f.team):-1;
+    const hintIndex=overseasIndex!==-1?overseasIndex:state.masked.findIndex(i=>!protectedSlots.includes(i));
+    if(restoreNationClues&&hintIndex===-1)return;
     if(hintIndex!==-1){state.masked.splice(hintIndex,1);state.hints++;$('feedback').textContent=tr('uncovered');}
     else if(!state.choicesShown){state.choicesShown=true;state.hints++;$('feedback').textContent=tr('showOptions');}
     else if(state.difficulty==='easy'&&state.hints===0){state.removed=state.choices.filter(x=>x!==f.team).slice(0,2);state.hints++;$('feedback').textContent=tr('easyHint');}
