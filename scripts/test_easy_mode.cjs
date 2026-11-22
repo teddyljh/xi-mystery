@@ -33,7 +33,7 @@ for(const mode of ['club','nation']){
   const former=unique([...data.fixtures.filter(f=>f.mode===mode&&f.tier==='easy'),...data.fixtures.filter(f=>f.mode===mode&&f.tier==='moderate'),...finals.filter(f=>f.mode===mode)]);
   const restored=f=>(f.mode==='club'?['villa','brugge','athletic']:['NOR','POL','SWE','GRE','TUR','CHE']).includes(f.team);
   const moved=former.filter(f=>!allowed(f)||restored(f));
-  const moderate=unique([...data.fixtures.filter(f=>f.mode===mode&&f.tier==='moderate'),...finals.filter(f=>f.mode===mode),...moved,...(data.mlsStars||[]).filter(f=>f.mode===mode)]);
+  const moderate=unique([...data.fixtures.filter(f=>f.mode===mode&&f.tier==='moderate'),...finals.filter(f=>f.mode===mode),...moved,...(data.mlsStars||[]).filter(f=>f.mode===mode),...(data.africanClassics||[]).map(f=>typeof f==='string'?data.fixtures.find(x=>x.id===f):f).filter(f=>f.mode===mode)]);
   const keys=new Set(easy.map(identity));
   assert.equal(easy.length,mode==='club'?98:69,mode+': expected curated pool');
   assert.equal(keys.size,easy.length,mode+': no duplicate XIs');

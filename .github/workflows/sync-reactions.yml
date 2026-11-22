@@ -27,6 +27,11 @@ on:
       - 'data/mls_stars.json'
       - 'data/easy_mls_baseline_2026_11_22.json'
       - 'data/flags/**'
+      - 'scripts/sync_african_classics.py'
+      - 'scripts/report_african_classics.cjs'
+      - 'scripts/test_african_classics.cjs'
+      - 'data/african_classics.json'
+      - 'data/african_classics_baseline_2026_11_22.json'
       - '.github/workflows/sync-reactions.yml'
   workflow_dispatch:
 permissions:
@@ -47,6 +52,8 @@ jobs:
         run: python3 scripts/sync_national_finals.py
       - name: Synchronize reviewed MLS star XIs
         run: python3 scripts/sync_mls_stars.py
+      - name: Synchronize reviewed African classic XIs
+        run: python3 scripts/sync_african_classics.py
       - name: Add historic and powerhouse XIs to Hard mode
         run: python3 scripts/upgrade_hard.py
       - name: Refresh Easy and Moderate choices
@@ -75,17 +82,20 @@ jobs:
         run: node scripts/test_difficulty_update.cjs
       - name: Check Easy restorations, MLS star XIs and existing Hard variants
         run: node scripts/test_easy_mls_update.cjs
+      - name: Check African classics, reuse and existing Hard variants
+        run: node scripts/test_african_classics.cjs
       - name: Refresh national-team Hard review
         run: |
           mkdir -p docs
           node scripts/report_hard_nations.cjs > docs/hard-national-team-masks.md
           node scripts/report_difficulty_update.cjs > docs/difficulty-update-2026-11-22.md
           node scripts/report_easy_mls_update.cjs > docs/easy-mls-update-2026-11-22.md
+          node scripts/report_african_classics.cjs > docs/african-classics.md
       - name: Commit generated index when changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html docs/hard-national-team-masks.md docs/ucl-finals-2002-2026.md docs/national-finals-2002-2026.md docs/difficulty-update-2026-11-22.md docs/easy-mls-update-2026-11-22.md
+          git add index.html docs/hard-national-team-masks.md docs/ucl-finals-2002-2026.md docs/national-finals-2002-2026.md docs/difficulty-update-2026-11-22.md docs/easy-mls-update-2026-11-22.md docs/african-classics.md
           if ! git diff --cached --quiet; then
             git commit -m "Embed new score-tier reaction images in game [skip ci]"
             git push origin HEAD:main

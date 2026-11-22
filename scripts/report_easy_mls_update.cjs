@@ -27,4 +27,11 @@ for(const record of catalog.fixtures){
   console.log(`| ${slot(0)} | ${slot(1)} | ${slot(2)} |\n`);
   console.log('三列合起来为开局隐藏名单；“／”为随机选一人。\n');
 }
-console.log('## 当前实际题库中的非洲国家队\n\n| 难度 | 非洲国家队 | 首发日期 |\n|---|---|---|\n| Easy | 无 | — |\n| Medium | 无 | — |\n| Hard | 摩洛哥 | 2022-12-10，对葡萄牙 |\n\n作为错误选项出现、但没有可抽取首发的国家队不计入此表。');
+console.log('## 当前实际题库中的非洲国家队\n\n| 难度 | 非洲国家队 | 首发日期 |\n|---|---|---|');
+const africa=new Set('MAR SEN NGA CIV EGY CMR DZA GHA TUN ZAF RSA MLI GAB COD COG CPV BFA BUR'.split(' '));
+for(const difficulty of ['easy','moderate','hard']){
+  const rows=pool('nation',difficulty).filter(f=>africa.has(f.team));
+  if(!rows.length)console.log(`| ${difficulty==='easy'?'Easy':'Medium'} | 无 | — |`);
+  for(const f of rows)console.log(`| ${difficulty==='hard'?'Hard':'Medium'} | ${data.nations[f.team].zh} | ${f.date} |`);
+}
+console.log('\n作为错误选项出现、但没有可抽取首发的国家队不计入此表。');

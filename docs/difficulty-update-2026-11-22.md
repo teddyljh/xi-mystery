@@ -1,6 +1,6 @@
 # 2026-11-22 题库调整与 Hard 新增隐藏清单
 
-相对版本 fc20d03：Easy 移除31套首发，Hard 新增82套不同首发。Easy 为98套俱乐部、69套国家队；Medium 为92、73套；Hard 为125、109套。
+相对版本 fc20d03：Easy 移除31套首发，Hard 新增87套不同首发。Easy 为98套俱乐部、69套国家队；Medium 为92、79套；Hard 为125、114套。
 
 ## Easy 移除的球队
 
@@ -82,11 +82,14 @@
 | 国家队／波黑 | 2026-11-14 | Ermedin Demirović（斯图加特） | Amar Dedić（纽卡斯尔联） | — |
 | 国家队／瑞士 | 2024-09-08 | Manuel Akanji（曼城） | Remo Freuler（博洛尼亚） | — |
 | 国家队／瑞士 | 2025-11-15 | Granit Xhaka（桑德兰） | Manuel Akanji（国际米兰） | — |
+| 国家队／科特迪瓦 | 2024-02-11 | Sébastien Haller（多特蒙德） | Franck Kessié（吉达国民） | — |
+| 国家队／喀麦隆 | 2002-06-06 | Geremi（皇家马德里） | Rigobert Song（科隆） | Samuel Eto'o（马略卡） |
 | 国家队／捷克 | 2024-09-07 | Patrik Schick（勒沃库森） | Lukáš Provod（布拉格斯拉维亚） | Matěj Ryneš（布拉格斯巴达）、David Zima（布拉格斯拉维亚） |
 | 国家队／捷克 | 2026-11-15 | Christophe Kabongo（比尔森胜利） | Michal Sadílek（布拉格斯拉维亚） | Idris Hopi（特普利采）、Lukáš Červ（比尔森胜利）、Jiří Sláma（亚布洛内茨）、Tomáš Vlček（布拉格斯拉维亚）、David Zima（布拉格斯拉维亚） |
 | 国家队／丹麦 | 2024-09-08 | Christian Eriksen（曼联） | Pierre-Emile Højbjerg（马赛） | — |
 | 国家队／丹麦 | 2025-11-18 | Rasmus Højlund（那不勒斯） | Mikkel Damsgaard（布伦特福德） | — |
 | 国家队／丹麦 | 2026-11-14 | Rasmus Højlund（那不勒斯） | Mikkel Damsgaard（布伦特福德） | — |
+| 国家队／埃及 | 2022-02-06 | Mohamed Elneny（阿森纳） | Mohamed Abdelmonem（开罗国民） | Mohamed Salah（利物浦） |
 | 国家队／英格兰 | 2021-07-11 | Declan Rice（西汉姆联） | John Stones（曼城） | Harry Kane（托特纳姆热刺） |
 | 国家队／西班牙 | 2008-06-29 | Andrés Iniesta（巴塞罗那） | Sergio Ramos（皇家马德里） | Fernando Torres（利物浦） |
 | 国家队／西班牙 | 2026-07-19 | Dani Olmo（巴塞罗那） | Pau Cubarsí（巴塞罗那） | Lamine Yamal（巴塞罗那） |
@@ -97,6 +100,7 @@
 | 国家队／冰岛 | 2026-11-13 | Ísak Bergmann Jóhannesson（科隆） | Stefán Teitur Thórdarson（普雷斯顿） | — |
 | 国家队／意大利 | 2012-07-01 | Andrea Pirlo（尤文图斯） | Leonardo Bonucci（尤文图斯） | Mario Balotelli（曼城） |
 | 国家队／意大利 | 2021-07-11 | Nicolò Barella（国际米兰） | Leonardo Bonucci（尤文图斯） | Ciro Immobile（拉齐奥） |
+| 国家队／尼日利亚 | 2024-02-11 | Victor Osimhen（那不勒斯） | Ademola Lookman（亚特兰大） | — |
 | 国家队／挪威 | 2024-09-06 | Erling Haaland（曼城） | Felix Horn Myhre（布兰） | Patrick Berg（博德闪耀） |
 | 国家队／挪威 | 2025-11-16 | Erling Haaland（曼城） | Patrick Berg（博德闪耀） | — |
 | 国家队／挪威 | 2026-11-14 | Erling Haaland（曼城） | Martin Ødegaard（阿森纳） | — |
@@ -104,6 +108,7 @@
 | 国家队／波兰 | 2026-11-14 | Robert Lewandowski（芝加哥火焰） | Karol Świderski（罗兹维泽夫） | Marcel Reguła（卢宾扎格勒比）、Bartłomiej Drągowski（罗兹维泽夫） |
 | 国家队／葡萄牙 | 2004-07-04 | Deco（波尔图） | Ricardo Carvalho（波尔图） | Cristiano Ronaldo（曼联） |
 | 国家队／苏格兰 | 2025-11-18 | Scott McTominay（那不勒斯） | Grant Hanley（希伯尼安） | Craig Gordon（哈茨） |
+| 国家队／塞内加尔 | 2022-02-06 | Sadio Mané（利物浦） | Kalidou Koulibaly（那不勒斯） | — |
 | 国家队／塞尔维亚 | 2025-11-13 | Dušan Vlahović（尤文图斯） | Nikola Milenković（诺丁汉森林） | — |
 | 国家队／塞尔维亚 | 2026-11-13 | Sergej Milinković-Savić（利雅得新月） | Petar Sukačev（伏伊伏丁那） | — |
 | 国家队／斯洛文尼亚 | 2024-10-10 | Benjamin Šeško（RB莱比锡） | Jan Oblak（马德里竞技） | — |

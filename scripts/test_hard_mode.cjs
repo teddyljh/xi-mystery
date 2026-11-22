@@ -343,7 +343,7 @@ for (const mode of ['club', 'nation']) {
     const keep=f=>(mode==='club'?new Set('realmadrid barcelona bayern city liverpool manunited arsenal chelsea psg inter milan juventus atletico dortmund spurs napoli benfica porto sporting ajax psv galatasaray fenerbahce celtic villa brugge athletic'.split(' ')):new Set('ENG FRA GER ESP POR BRA ARG ITA NED BEL CRO URU NOR POL SWE GRE TUR CHE'.split(' '))).has(f.team);
     const restored=f=>(mode==='club'?['villa','brugge','athletic']:['NOR','POL','SWE','GRE','TUR','CHE']).includes(f.team);
     const moved=[...union.values()].filter(f=>!keep(f)||restored(f));
-    const mls=(data.mlsStars||[]).filter(f=>f.mode===mode);
+    const mls=[...(data.mlsStars||[]),...(data.africanClassics||[]).map(f=>typeof f==='string'?data.fixtures.find(x=>x.id===f):f)].filter(f=>f.mode===mode);
     for(const f of [...moved,...mls])if(!moderate.has(key(f)))moderate.set(key(f),f);
     const hardPool=new Map();
     for(const f of [...data.fixtures.filter(f=>f.mode===mode&&(f.tier==='hard'||api.isImportedHardFixture(f))),...finals,...moved,...mls])if(!hardPool.has(key(f)))hardPool.set(key(f),f);

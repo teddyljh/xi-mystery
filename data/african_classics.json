@@ -1,0 +1,591 @@
+{
+  "clubs": {
+    "al-fayha": {
+      "en": "Al Fayha",
+      "zh": "费哈",
+      "es": "Al Fayha",
+      "aliases": [],
+      "crestPath": "saudi-arabia/Al_Fayha.svg"
+    },
+    "al-ettifaq": {
+      "en": "Al Ettifaq",
+      "zh": "达曼协作",
+      "es": "Al Ettifaq",
+      "aliases": [],
+      "crestPath": "saudi-arabia/Al_Ettifaq.svg"
+    },
+    "gaziantep": {
+      "en": "Gaziantep FK",
+      "zh": "加济安泰普",
+      "es": "Gaziantep FK",
+      "aliases": [],
+      "crestPath": "turkey/Gaziantep.svg"
+    },
+    "chippa-united": {
+      "en": "Chippa United",
+      "zh": "茨普帕联",
+      "es": "Chippa United",
+      "aliases": [],
+      "crestPath": "south-africa/Chippa_United.svg"
+    },
+    "al-ahly-cairo": {
+      "en": "Al Ahly SC",
+      "zh": "开罗国民",
+      "es": "Al Ahly",
+      "aliases": [
+        "Al Ahly Cairo",
+        "开罗阿赫利"
+      ],
+      "crestPath": "egypt/Al_Ahly_SC.svg"
+    },
+    "zamalek": {
+      "en": "Zamalek SC",
+      "zh": "扎马雷克",
+      "es": "Zamalek",
+      "aliases": [],
+      "crestPath": "egypt/Zamalek_SC.svg"
+    },
+    "nancy": {
+      "en": "AS Nancy Lorraine",
+      "zh": "南锡",
+      "es": "Nancy",
+      "aliases": [],
+      "crestPath": "france/Nancy_Lorraine.svg"
+    },
+    "extremadura": {
+      "en": "CF Extremadura",
+      "zh": "埃斯特雷马杜拉",
+      "es": "Extremadura",
+      "aliases": [],
+      "crestPath": "https://upload.wikimedia.org/wikipedia/de/3/30/CF_Extremadura.svg"
+    },
+    "numancia": {
+      "en": "CD Numancia",
+      "zh": "努曼西亚",
+      "es": "Numancia",
+      "aliases": [],
+      "crestPath": "spain/Numancia.svg"
+    }
+  },
+  "fixtures": [
+    {
+      "id": "historic-nation-MAR-2022-12-10-49",
+      "mode": "nation",
+      "season": "2022/23",
+      "tier": "hard",
+      "team": "MAR",
+      "date": "2022-12-10",
+      "versus": "Portugal",
+      "formation": "4-3-3",
+      "competition": "FIFA World Cup",
+      "source": "https://www.fifa.com/en/articles/morocco-portugal",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Sofiane Boufal",
+          "value": "anger"
+        },
+        {
+          "role": "ST",
+          "name": "Youssef En-Nesyri",
+          "value": "seville"
+        },
+        {
+          "role": "RW",
+          "name": "Hakim Ziyech",
+          "value": "chelsea"
+        },
+        {
+          "role": "CM",
+          "name": "Azzedine Ounahi",
+          "value": "anger"
+        },
+        {
+          "role": "DM",
+          "name": "Sofyan Amrabat",
+          "value": "fiorentina"
+        },
+        {
+          "role": "CM",
+          "name": "Selim Amallah",
+          "value": "standardliege"
+        },
+        {
+          "role": "LB",
+          "name": "Yahia Attiyat Allah",
+          "value": "wydad"
+        },
+        {
+          "role": "CB",
+          "name": "Romain Saiss",
+          "value": "besiktas"
+        },
+        {
+          "role": "CB",
+          "name": "Jawad El Yamiq",
+          "value": "valladolid"
+        },
+        {
+          "role": "RB",
+          "name": "Achraf Hakimi",
+          "value": "psg"
+        },
+        {
+          "role": "GK",
+          "name": "Yassine Bounou",
+          "value": "seville"
+        }
+      ],
+      "reuseId": "historic-nation-MAR-2022-12-10-49",
+      "note": "已有 Hard 首发原样复用，仅补进 Medium；隐藏和两次提示保持原样。"
+    },
+    {
+      "id": "classic-africa-2022-02-06-SEN",
+      "mode": "nation",
+      "season": "2022",
+      "tier": "moderate",
+      "team": "SEN",
+      "date": "2022-02-06",
+      "versus": "Egypt",
+      "formation": "4-3-3",
+      "competition": "Africa Cup of Nations",
+      "source": "https://www.cafonline.com/caf-africa-cup-of-nations/news/senegal-champion-of-africa",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Sadio Mané",
+          "value": "liverpool",
+          "jersey": 10
+        },
+        {
+          "role": "ST",
+          "name": "Famara Diédhiou",
+          "value": "alanyaspor",
+          "jersey": 19
+        },
+        {
+          "role": "RW",
+          "name": "Ismaïla Sarr",
+          "value": "watford",
+          "jersey": 18
+        },
+        {
+          "role": "CM",
+          "name": "Cheikhou Kouyaté",
+          "value": "crystalpalace",
+          "jersey": 8
+        },
+        {
+          "role": "DM",
+          "name": "Nampalys Mendy",
+          "value": "leicester",
+          "jersey": 6
+        },
+        {
+          "role": "CM",
+          "name": "Idrissa Gueye",
+          "value": "psg",
+          "jersey": 5
+        },
+        {
+          "role": "LB",
+          "name": "Saliou Ciss",
+          "value": "nancy",
+          "jersey": 2
+        },
+        {
+          "role": "CB",
+          "name": "Abdou Diallo",
+          "value": "psg",
+          "jersey": 22
+        },
+        {
+          "role": "CB",
+          "name": "Kalidou Koulibaly",
+          "value": "napoli",
+          "jersey": 3
+        },
+        {
+          "role": "RB",
+          "name": "Bouna Sarr",
+          "value": "bayern",
+          "jersey": 20
+        },
+        {
+          "role": "GK",
+          "name": "Édouard Mendy",
+          "value": "chelsea",
+          "jersey": 16
+        }
+      ],
+      "lineupSources": [
+        "https://supersport.com/football/news/91836266-86f6-494e-bbc2-98015b886c0c/sarr_starts_as_mane_and_salah_face_off_in_senegal-egypt_afcon_final",
+        "https://www.skysports.com/football/senegal-vs-egypt/teams/457245"
+      ],
+      "clubSources": [
+        "https://www.myjoyonline.com/afcon-2021-which-countries-have-announced-squad-lists/"
+      ],
+      "eventYear": 2021,
+      "note": "2021届非洲杯实际决赛日期为2022-02-06。"
+    },
+    {
+      "id": "classic-africa-2024-02-11-NGA",
+      "mode": "nation",
+      "season": "2024",
+      "tier": "moderate",
+      "team": "NGA",
+      "date": "2024-02-11",
+      "versus": "Côte d'Ivoire",
+      "formation": "3-4-3",
+      "competition": "Africa Cup of Nations",
+      "source": "https://www.cafonline.com/en/caf-africa-cup-of-nations/news/sebastian-haller-inspires-elephants-to-glorious-afcon-triumph/",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Ademola Lookman",
+          "value": "atalanta",
+          "jersey": 18
+        },
+        {
+          "role": "ST",
+          "name": "Victor Osimhen",
+          "value": "napoli",
+          "jersey": 9
+        },
+        {
+          "role": "RW",
+          "name": "Samuel Chukwueze",
+          "value": "milan",
+          "jersey": 11
+        },
+        {
+          "role": "LM",
+          "name": "Zaidu Sanusi",
+          "value": "porto",
+          "jersey": 3
+        },
+        {
+          "role": "CM",
+          "name": "Alex Iwobi",
+          "value": "fulham",
+          "jersey": 17
+        },
+        {
+          "role": "CM",
+          "name": "Frank Onyeka",
+          "value": "brentford",
+          "jersey": 8
+        },
+        {
+          "role": "RM",
+          "name": "Ola Aina",
+          "value": "forest",
+          "jersey": 2
+        },
+        {
+          "role": "CB",
+          "name": "Calvin Bassey",
+          "value": "fulham",
+          "jersey": 21
+        },
+        {
+          "role": "CB",
+          "name": "William Troost-Ekong",
+          "value": "paok",
+          "jersey": 5
+        },
+        {
+          "role": "CB",
+          "name": "Semi Ajayi",
+          "value": "westbrom",
+          "jersey": 6
+        },
+        {
+          "role": "GK",
+          "name": "Stanley Nwabali",
+          "value": "chippa-united",
+          "jersey": 23
+        }
+      ],
+      "lineupSources": [
+        "https://www.skysports.com/football/nigeria-vs-ivory-coast/teams/500698"
+      ],
+      "clubSources": [
+        "https://www.cafonline.com/media/4diducuu/nigeria.pdf"
+      ],
+      "eventYear": 2023,
+      "note": "2023届非洲杯实际决赛日期为2024-02-11；Nwabali 效力南非联赛，不是尼日利亚本国联赛。"
+    },
+    {
+      "id": "classic-africa-2024-02-11-CIV",
+      "mode": "nation",
+      "season": "2024",
+      "tier": "moderate",
+      "team": "CIV",
+      "date": "2024-02-11",
+      "versus": "Nigeria",
+      "formation": "4-3-3",
+      "competition": "Africa Cup of Nations",
+      "source": "https://www.cafonline.com/en/caf-africa-cup-of-nations/news/sebastian-haller-inspires-elephants-to-glorious-afcon-triumph/",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Simon Adingra",
+          "value": "brighton",
+          "jersey": 24
+        },
+        {
+          "role": "ST",
+          "name": "Sébastien Haller",
+          "value": "dortmund",
+          "jersey": 22
+        },
+        {
+          "role": "RW",
+          "name": "Max Gradel",
+          "value": "gaziantep",
+          "jersey": 15
+        },
+        {
+          "role": "CM",
+          "name": "Seko Fofana",
+          "value": "al-ettifaq",
+          "jersey": 6
+        },
+        {
+          "role": "DM",
+          "name": "Jean Michaël Seri",
+          "value": "hull",
+          "jersey": 4
+        },
+        {
+          "role": "CM",
+          "name": "Franck Kessié",
+          "value": "al-ahli",
+          "jersey": 8
+        },
+        {
+          "role": "LB",
+          "name": "Ghislain Konan",
+          "value": "al-fayha",
+          "jersey": 3
+        },
+        {
+          "role": "CB",
+          "name": "Evan Ndicka",
+          "value": "roma",
+          "jersey": 21
+        },
+        {
+          "role": "CB",
+          "name": "Odilon Kossounou",
+          "value": "leverkusen",
+          "jersey": 7
+        },
+        {
+          "role": "RB",
+          "name": "Serge Aurier",
+          "value": "galatasaray",
+          "jersey": 17
+        },
+        {
+          "role": "GK",
+          "name": "Yahia Fofana",
+          "value": "anger",
+          "jersey": 1
+        }
+      ],
+      "lineupSources": [
+        "https://www.skysports.com/football/nigeria-vs-ivory-coast/teams/500698"
+      ],
+      "clubSources": [
+        "https://www.cafonline.com/media/ow2obxrw/c%C3%B4te-divoire.pdf",
+        "https://www.galatasaray.org/haber/gs-sportif-a-s/serge-aurier-galatasarayda/54890",
+        "https://www.abola.pt/noticias/mercado-oficial-colega-de-cristiano-ronaldo-mudou-de-clube-na-arabia-saudita-2024013019045457860"
+      ],
+      "eventYear": 2023,
+      "note": "Aurier 2024-02-02加盟加拉塔萨雷；Seko Fofana 2024-01-30租借达曼协作，均采用决赛时的俱乐部，区别于赛前报名名单。"
+    },
+    {
+      "id": "classic-africa-2022-02-06-EGY",
+      "mode": "nation",
+      "season": "2022",
+      "tier": "moderate",
+      "team": "EGY",
+      "date": "2022-02-06",
+      "versus": "Senegal",
+      "formation": "4-3-3",
+      "competition": "Africa Cup of Nations",
+      "source": "https://www.cafonline.com/caf-africa-cup-of-nations/news/senegal-champion-of-africa",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Omar Marmoush",
+          "value": "stuttgart",
+          "jersey": 22
+        },
+        {
+          "role": "ST",
+          "name": "Mostafa Mohamed",
+          "value": "galatasaray",
+          "jersey": 14
+        },
+        {
+          "role": "RW",
+          "name": "Mohamed Salah",
+          "value": "liverpool",
+          "jersey": 10
+        },
+        {
+          "role": "CM",
+          "name": "Amr El Solia",
+          "value": "al-ahly-cairo",
+          "jersey": 4
+        },
+        {
+          "role": "DM",
+          "name": "Hamdi Fathi",
+          "value": "al-ahly-cairo",
+          "jersey": 5
+        },
+        {
+          "role": "CM",
+          "name": "Mohamed Elneny",
+          "value": "arsenal",
+          "jersey": 17
+        },
+        {
+          "role": "LB",
+          "name": "Ahmed Fatouh",
+          "value": "zamalek",
+          "jersey": 13
+        },
+        {
+          "role": "CB",
+          "name": "Mahmoud Hamdy",
+          "value": "zamalek",
+          "jersey": 15
+        },
+        {
+          "role": "CB",
+          "name": "Mohamed Abdelmonem",
+          "value": "al-ahly-cairo",
+          "jersey": 2
+        },
+        {
+          "role": "RB",
+          "name": "Emam Ashour",
+          "value": "zamalek",
+          "jersey": 8
+        },
+        {
+          "role": "GK",
+          "name": "Mohamed Abou Gabal",
+          "value": "zamalek",
+          "jersey": 16
+        }
+      ],
+      "lineupSources": [
+        "https://supersport.com/football/news/91836266-86f6-494e-bbc2-98015b886c0c/sarr_starts_as_mane_and_salah_face_off_in_senegal-egypt_afcon_final",
+        "https://www.skysports.com/football/senegal-vs-egypt/teams/457245"
+      ],
+      "clubSources": [
+        "https://www.myjoyonline.com/afcon-2021-which-countries-have-announced-squad-lists/",
+        "https://www.alahlyegypt.com/en/news/article/al-ahly-recall-abdelmonem-from-future"
+      ],
+      "eventYear": 2021,
+      "note": "2021届非洲杯实际在2022年举行；Abdelmonem 已于2022-01-31被开罗国民召回，采用决赛时的俱乐部。"
+    },
+    {
+      "id": "classic-africa-2002-06-06-CMR",
+      "mode": "nation",
+      "season": "2002",
+      "tier": "moderate",
+      "team": "CMR",
+      "date": "2002-06-06",
+      "versus": "Saudi Arabia",
+      "formation": "3-5-2",
+      "competition": "FIFA World Cup",
+      "source": "https://www.plus.fifa.com/en/content/cameroon-v-saudi-arabia-group-e-2002-fifa-world-cup-korea-japan-full-match-replay/affde0fa-b734-4d9f-b83b-282c7869999c",
+      "players": [
+        {
+          "role": "LS",
+          "name": "Samuel Eto'o",
+          "value": "mallorca",
+          "jersey": 9
+        },
+        {
+          "role": "RS",
+          "name": "Patrick M'Boma",
+          "value": "sunderland",
+          "jersey": 10
+        },
+        {
+          "role": "LM",
+          "name": "Pierre Womé",
+          "value": "bologna",
+          "jersey": 3
+        },
+        {
+          "role": "CM",
+          "name": "Lauren",
+          "value": "arsenal",
+          "jersey": 12
+        },
+        {
+          "role": "DM",
+          "name": "Marc-Vivien Foé",
+          "value": "lyon",
+          "jersey": 17
+        },
+        {
+          "role": "CM",
+          "name": "Daniel N'Gom Kome",
+          "value": "numancia",
+          "jersey": 23
+        },
+        {
+          "role": "RM",
+          "name": "Geremi",
+          "value": "realmadrid",
+          "jersey": 8
+        },
+        {
+          "role": "CB",
+          "name": "Bill Tchato",
+          "value": "montpellier",
+          "jersey": 2
+        },
+        {
+          "role": "CB",
+          "name": "Rigobert Song",
+          "value": "koln",
+          "jersey": 4
+        },
+        {
+          "role": "CB",
+          "name": "Raymond Kalla",
+          "value": "extremadura",
+          "jersey": 5
+        },
+        {
+          "role": "GK",
+          "name": "Alioum Boukar",
+          "value": "samsunspor",
+          "jersey": 1
+        }
+      ],
+      "lineupSources": [
+        "https://www.ussoccerhistory.org/wp-content/uploads/2025/01/bw96axitsmtrojpaeugz-compressed.pdf",
+        "https://www.11v11.com/matches/cameroon-v-saudi-arabia-06-june-2002-248999/"
+      ],
+      "clubSources": [
+        "https://www.planetworldcup.com/CUPS/2002/squad_cmr02.html",
+        "https://www.news24.com/mboma-to-lead-cameroon-20020509",
+        "https://de.wikipedia.org/wiki/Datei:CF_Extremadura.svg"
+      ],
+      "eventYear": 2002,
+      "note": "俱乐部线索采用2002世界杯名单，Geremi 为皇马，Eto’o 为马略卡，Song 为科隆；CF Extremadura 使用历史队徽，与后来的 Extremadura UD、CD Extremadura 区分。"
+    }
+  ]
+}

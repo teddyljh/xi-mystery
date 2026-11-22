@@ -157,7 +157,9 @@ FORWARD_PICKS = {
     "classic-world-cup-final-2026-ESP": "Lamine Yamal",
     "mls-stars-2023-08-19-inter-miami": "Lionel Messi",
     "mls-stars-2025-11-02-lac": "Son Heung-Min",
-    "mls-stars-2012-12-01-lagalaxy": "Landon Donovan"
+    "mls-stars-2012-12-01-lagalaxy": "Landon Donovan",
+    "classic-africa-2022-02-06-EGY": "Mohamed Salah",
+    "classic-africa-2002-06-06-CMR": "Samuel Eto'o"
 }
 
 # User-approved Easy recognition boundary. Applies to every era of a team.
@@ -198,6 +200,7 @@ RULES = r"""
   const NATIONAL_FINAL_FIXTURES=resolveFinalFixtures(DATA.nationalFinals);
   const CLASSIC_FINAL_FIXTURES=[...UCL_FINAL_FIXTURES,...NATIONAL_FINAL_FIXTURES];
   const MLS_STAR_FIXTURES=resolveFinalFixtures(DATA.mlsStars);
+  const AFRICAN_CLASSIC_FIXTURES=resolveFinalFixtures(DATA.africanClassics);
   function uniqueFixtures(fixtures){
     const seen=new Set();
     return fixtures.filter(f=>{const key=fixtureIdentity(f);if(seen.has(key))return false;seen.add(key);return true;});
@@ -208,9 +211,9 @@ RULES = r"""
   // Restoring Easy eligibility must not remove previously promoted XIs from
   // Medium/Hard. MLS additions are exclusive to these two higher difficulties.
   const HIGHER_DIFFICULTY_FIXTURES=FORMER_EASY_FIXTURES.filter(f=>!easyFixtureAllowed(f)||isRestoredEasyTeam(f));
-  const MODERATE_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='moderate'),...CLASSIC_FINAL_FIXTURES,...HIGHER_DIFFICULTY_FIXTURES,...MLS_STAR_FIXTURES]);
-  const HARD_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='hard'||isImportedHardFixture(f)),...CLASSIC_FINAL_FIXTURES,...HIGHER_DIFFICULTY_FIXTURES,...MLS_STAR_FIXTURES]);
-  const quizFixtureCount=()=>new Set([...DATA.fixtures,...CLASSIC_FINAL_FIXTURES,...MLS_STAR_FIXTURES].map(f=>f.id)).size;
+  const MODERATE_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='moderate'),...CLASSIC_FINAL_FIXTURES,...HIGHER_DIFFICULTY_FIXTURES,...MLS_STAR_FIXTURES,...AFRICAN_CLASSIC_FIXTURES]);
+  const HARD_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='hard'||isImportedHardFixture(f)),...CLASSIC_FINAL_FIXTURES,...HIGHER_DIFFICULTY_FIXTURES,...MLS_STAR_FIXTURES,...AFRICAN_CLASSIC_FIXTURES]);
+  const quizFixtureCount=()=>new Set([...DATA.fixtures,...CLASSIC_FINAL_FIXTURES,...MLS_STAR_FIXTURES,...AFRICAN_CLASSIC_FIXTURES].map(f=>f.id)).size;
   function available(){
     if(state.difficulty==='easy')return EASY_FIXTURES.filter(f=>f.mode===state.mode);
     if(state.difficulty==='moderate')return MODERATE_FIXTURES.filter(f=>f.mode===state.mode);
@@ -240,6 +243,8 @@ RULES = r"""
   // Curated match-specific masks. Their order also specifies the hint order
   // for top-tier nations; middle-band nations still prefer overseas clues.
   const HARD_NATION_MASK_OVERRIDES=Object.freeze({
+    'classic-africa-2022-02-06-EGY':['Mohamed Elneny','Mohamed Abdelmonem','Mohamed Salah'],
+    'classic-africa-2002-06-06-CMR':['Geremi','Rigobert Song',"Samuel Eto'o"],
     'classic-world-cup-final-2026-ESP':['Dani Olmo','Pau Cubarsí','Lamine Yamal'],
     'historic-nation-ESP-2024-07-14-30':['Nico Williams','Robin Le Normand','Lamine Yamal'],
     'nation-2026/27-10':['Pau Cubarsí','Aymeric Laporte','Lamine Yamal'],
@@ -269,7 +274,8 @@ RULES = r"""
     jeonbuk:'KOR',ulsan:'KOR',gwangju:'KOR',wydad:'MAR',
     panathinaikos:'GRE',ofi:'GRE',brann:'NOR',lask:'AUT',aik:'SWE',malmo:'SWE',
     celje:'SVN',maribor:'SVN',plzen:'CZE',jablonec:'CZE',teplice:'CZE',
-    widzew:'POL',zaglebielubin:'POL',hibernian:'SCO',hearts:'SCO',voyvodina:'SRB'
+    widzew:'POL',zaglebielubin:'POL',hibernian:'SCO',hearts:'SCO',voyvodina:'SRB',
+    'al-ahly-cairo':'EGY',zamalek:'EGY'
   });
   const HARD_NATION_KEY_PLAYERS=Object.freeze({
     BEL:'Kevin De Bruyne|Romelu Lukaku|Jérémy Doku|Youri Tielemans',
@@ -286,6 +292,9 @@ RULES = r"""
     SVK:'Stanislav Lobotka|Milan Skriniar|David Hancko',
     ROU:'Ianis Hagi|Radu Dragusin|Dennis Man',
     MAR:'Achraf Hakimi|Hakim Ziyech|Youssef En-Nesyri',
+    SEN:'Sadio Mané|Kalidou Koulibaly|Idrissa Gueye|Édouard Mendy',
+    NGA:'Victor Osimhen|Ademola Lookman|Alex Iwobi|Samuel Chukwueze',
+    CIV:'Sébastien Haller|Franck Kessié|Serge Aurier|Simon Adingra',
     JPN:'Takefusa Kubo|Kaoru Mitoma|Wataru Endo|Daichi Kamada',
     KOR:'Son Heung-min|Kim Min-jae|Lee Kang-in',
     NOR:'Erling Haaland|Martin Ødegaard|Alexander Sørloth|Antonio Nusa',

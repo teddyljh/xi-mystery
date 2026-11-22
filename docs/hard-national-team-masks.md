@@ -1,6 +1,6 @@
 # 国家队 Hard 隐藏与提示清单
 
-共47支国家队、109套不同首发（109条题库记录）。同一首发的难度副本合并列出。
+共52支国家队、114套不同首发（114条题库记录）。同一首发的难度副本合并列出。
 
 以下内容由当前游戏实际代码生成，列出了全部随机分支。括号为题库中该球员的俱乐部；“／”表示随机选其中一人，其余均为固定名单。两次提示各恢复一人的俱乐部信息，不切换为选择答案。
 
@@ -24,6 +24,8 @@
 | 瑞士 | 2024-09-08 | Manuel Akanji（曼城）；Remo Freuler（博洛尼亚） | Manuel Akanji（曼城） | Remo Freuler（博洛尼亚） |
 | 瑞士 | 2025-11-15 | Granit Xhaka（桑德兰）；Manuel Akanji（国际米兰） | Granit Xhaka（桑德兰） | Manuel Akanji（国际米兰） |
 | 瑞士 | 2026-11-16 | Winsley Boteli（锡永）；Alvyn Sanches（伯尔尼年轻人）；Isaac Schmidt（伯尔尼年轻人）；Ardon Jashari（AC米兰） | Ardon Jashari（AC米兰） | Winsley Boteli（锡永） |
+| 科特迪瓦 | 2024-02-11 | Sébastien Haller（多特蒙德）；Franck Kessié（吉达国民） | Sébastien Haller（多特蒙德） | Franck Kessié（吉达国民） |
+| 喀麦隆 | 2002-06-06 | Geremi（皇家马德里）；Rigobert Song（科隆）；Samuel Eto'o（马略卡） | Geremi（皇家马德里） | Rigobert Song（科隆） |
 | 哥斯达黎加 | 2014-06-14 | Bryan Ruiz（富勒姆）；Michael Umana（萨普里萨） | Bryan Ruiz（富勒姆） | Michael Umana（萨普里萨） |
 | 克罗地亚 | 2018-07-15 | Mario Mandzukic（尤文图斯）；Luka Modric（皇家马德里） | Mario Mandzukic（尤文图斯） | Luka Modric（皇家马德里） |
 | 克罗地亚 | 2026-11-12 | Josip Mišić（萨格勒布迪纳摩）；Joško Gvardiol（曼城） | Joško Gvardiol（曼城） | Josip Mišić（萨格勒布迪纳摩） |
@@ -32,6 +34,7 @@
 | 丹麦 | 2024-09-08 | Christian Eriksen（曼联）；Pierre-Emile Højbjerg（马赛） | Christian Eriksen（曼联） | Pierre-Emile Højbjerg（马赛） |
 | 丹麦 | 2025-11-18 | Rasmus Højlund（那不勒斯）；Mikkel Damsgaard（布伦特福德） | Rasmus Højlund（那不勒斯） | Mikkel Damsgaard（布伦特福德） |
 | 丹麦 | 2026-11-14 | Rasmus Højlund（那不勒斯）；Mikkel Damsgaard（布伦特福德） | Rasmus Højlund（那不勒斯） | Mikkel Damsgaard（布伦特福德） |
+| 埃及 | 2022-02-06 | Mohamed Elneny（阿森纳）；Mohamed Abdelmonem（开罗国民）；Mohamed Salah（利物浦） | Mohamed Elneny（阿森纳） | Mohamed Abdelmonem（开罗国民） |
 | 英格兰 | 2021-07-11 | Declan Rice（西汉姆联）；John Stones（曼城）；Harry Kane（托特纳姆热刺） | Declan Rice（西汉姆联） | John Stones（曼城） |
 | 英格兰 | 2024-07-14 | Declan Rice（阿森纳）；John Stones（曼城）；Harry Kane（拜仁慕尼黑） | Declan Rice（阿森纳） | John Stones（曼城） |
 | 英格兰 | 2026-11-12 | Declan Rice（阿森纳）；Trent Alexander-Arnold（皇家马德里）；Harry Kane（拜仁慕尼黑） | Declan Rice（阿森纳） | Trent Alexander-Arnold（皇家马德里） |
@@ -80,6 +83,7 @@
 | 荷兰 | 2010-07-11 | Wesley Sneijder（国际米兰）；Giovanni van Bronckhorst（费耶诺德）；Arjen Robben（拜仁慕尼黑） | Wesley Sneijder（国际米兰） | Giovanni van Bronckhorst（费耶诺德） |
 | 荷兰 | 2014-06-13 | Robin van Persie（曼联）；Wesley Sneijder（加拉塔萨雷）；Daley Blind（阿贾克斯）；Bruno Martins Indi（费耶诺德）；Stefan de Vrij（费耶诺德） | Robin van Persie（曼联） | Wesley Sneijder（加拉塔萨雷） |
 | 荷兰 | 2025-11-14 | Frenkie de Jong（巴塞罗那）；Virgil van Dijk（利物浦）；Memphis Depay（科林蒂安） | Frenkie de Jong（巴塞罗那） | Virgil van Dijk（利物浦） |
+| 尼日利亚 | 2024-02-11 | Victor Osimhen（那不勒斯）；Ademola Lookman（亚特兰大） | Victor Osimhen（那不勒斯） | Ademola Lookman（亚特兰大） |
 | 北爱尔兰 | 2026-11-14 | Ethan Galbraith（斯托克城）；Tom Atcheson（布莱克本） | Ethan Galbraith（斯托克城） | Tom Atcheson（布莱克本） |
 | 挪威 | 2024-09-06 | Felix Horn Myhre（布兰）；Patrick Berg（博德闪耀）；Erling Haaland（曼城） | Erling Haaland（曼城） | Felix Horn Myhre（布兰） |
 | 挪威 | 2025-11-16 | Patrick Berg（博德闪耀）；Erling Haaland（曼城） | Erling Haaland（曼城） | Patrick Berg（博德闪耀） |
@@ -96,6 +100,7 @@
 | 苏格兰 | 2024-09-08 | Anthony Ralston（凯尔特人）；Scott McTominay（那不勒斯） | Scott McTominay（那不勒斯） | Anthony Ralston（凯尔特人） |
 | 苏格兰 | 2025-11-18 | Grant Hanley（希伯尼安）；Craig Gordon（哈茨）；Scott McTominay（那不勒斯） | Scott McTominay（那不勒斯） | Grant Hanley（希伯尼安） |
 | 苏格兰 | 2026-11-16 | Kieran Tierney（凯尔特人）；Scott McTominay（那不勒斯） | Scott McTominay（那不勒斯） | Kieran Tierney（凯尔特人） |
+| 塞内加尔 | 2022-02-06 | Sadio Mané（利物浦）；Kalidou Koulibaly（那不勒斯） | Sadio Mané（利物浦） | Kalidou Koulibaly（那不勒斯） |
 | 塞尔维亚 | 2024-09-08 | Luka Jović（AC米兰）；Nikola Milenković（诺丁汉森林） | Luka Jović（AC米兰） | Nikola Milenković（诺丁汉森林） |
 | 塞尔维亚 | 2025-11-13 | Dušan Vlahović（尤文图斯）；Nikola Milenković（诺丁汉森林） | Dušan Vlahović（尤文图斯） | Nikola Milenković（诺丁汉森林） |
 | 塞尔维亚 | 2026-11-13 | Petar Sukačev（伏伊伏丁那）；Sergej Milinković-Savić（利雅得新月） | Sergej Milinković-Savić（利雅得新月） | Petar Sukačev（伏伊伏丁那） |
