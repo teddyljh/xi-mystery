@@ -14,6 +14,9 @@ on:
       - 'scripts/sync_ucl_finals.py'
       - 'scripts/test_ucl_finals.cjs'
       - 'data/ucl_finals.json'
+      - 'scripts/sync_national_finals.py'
+      - 'scripts/test_national_finals.cjs'
+      - 'data/national_finals.json'
       - '.github/workflows/sync-reactions.yml'
   workflow_dispatch:
 permissions:
@@ -30,6 +33,8 @@ jobs:
         run: python3 scripts/sync_reactions.py
       - name: Synchronize verified Champions League finals
         run: python3 scripts/sync_ucl_finals.py
+      - name: Synchronize World Cup and EURO finals
+        run: python3 scripts/sync_national_finals.py
       - name: Add historic and powerhouse XIs to Hard mode
         run: python3 scripts/upgrade_hard.py
       - name: Refresh Easy and Moderate choices
@@ -52,6 +57,8 @@ jobs:
         run: node scripts/test_easy_mode.cjs
       - name: Check final catalog and difficulty coverage
         run: node scripts/test_ucl_finals.cjs
+      - name: Check national final catalog and date-only prompts
+        run: node scripts/test_national_finals.cjs
       - name: Refresh national-team Hard review
         run: |
           mkdir -p docs
@@ -60,7 +67,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html docs/hard-national-team-masks.md docs/ucl-finals-2002-2026.md
+          git add index.html docs/hard-national-team-masks.md docs/ucl-finals-2002-2026.md docs/national-finals-2002-2026.md
           if ! git diff --cached --quiet; then
             git commit -m "Embed new score-tier reaction images in game [skip ci]"
             git push origin HEAD:main

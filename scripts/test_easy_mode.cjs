@@ -10,7 +10,7 @@ const {execFileSync}=require('node:child_process');
 const root=path.resolve(__dirname,'..');
 const source=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const data=JSON.parse(source.split('window.LINEUP_DATA = ')[1].split(';\n')[0]);
-const finals=(data.uclFinals||[]).map(entry=>typeof entry==='string'?data.fixtures.find(f=>f.id===entry):entry);
+const finals=[...(data.uclFinals||[]),...(data.nationalFinals||[])].map(entry=>typeof entry==='string'?data.fixtures.find(f=>f.id===entry):entry);
 const rules=source.slice(source.indexOf('  // Hard includes every historical XI'),source.indexOf('  // Shuffle-bag rotation'));
 const choices=source.slice(source.indexOf('  // Easy multiple choice'),source.indexOf('  function renderGame(){'));
 const math=Object.create(Math);
@@ -31,7 +31,7 @@ for(const mode of ['club','nation']){
   const original=data.fixtures.filter(f=>f.mode===mode&&f.tier==='easy');
   const moderate=unique([...data.fixtures.filter(f=>f.mode===mode&&f.tier==='moderate'),...finals.filter(f=>f.mode===mode)]);
   const keys=new Set(easy.map(identity));
-  assert.equal(easy.length,mode==='club'?109:80,mode+': expected expanded pool');
+  assert.equal(easy.length,mode==='club'?109:89,mode+': expected expanded pool');
   assert.equal(keys.size,easy.length,mode+': no duplicate XIs');
   for(const f of [...original,...moderate])assert.ok(keys.has(identity(f)),f.id+': included in Easy');
   for(const f of original)assert.ok(easy.includes(f),f.id+': prefer original Easy copy');
@@ -94,4 +94,4 @@ try{
   fs.writeFileSync(index,source.replace("const first=randomPick(foreign);","const first=randomPick(options);"));
   update();assert.equal(fs.readFileSync(index,'utf8'),source,'Easy updater repairs stale rules');
 }finally{fs.rmSync(temp,{recursive:true,force:true});}
-console.log(`PASS: ${added} Easy XIs added to original tiers, 189 unique Easy fixtures; ${checked} four-option sets satisfy league/era rules; expected Moderate pools and unchanged Hard choices; updater checks passed.`);
+console.log(`PASS: ${added} Easy XIs added to original tiers, 198 unique Easy fixtures; ${checked} four-option sets satisfy league/era rules; expected Moderate pools and unchanged Hard choice algorithm; updater checks passed.`);

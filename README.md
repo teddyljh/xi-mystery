@@ -5,6 +5,14 @@ This repository contains the public XI Mystery football lineup quiz, v3.9.
 
 Public URL: https://teddyljh.github.io/xi-mystery/
 
+## World Cup and EURO final catalog 2026-11-21
+
+Easy and Moderate now cover both starting XIs from every men's World Cup and EURO final in 2002–2026: seven World Cups and six EUROs, 26 XIs altogether. Seventeen reuse existing archive entries; nine are new: Portugal/Greece 2004, Germany/Spain 2008, Italy 2012, Italy/England at EURO 2020 (played on 2021-07-11), and Spain/Argentina 2026. Each difficulty includes each team/date once. The national pools now contain 89 Easy and 64 Moderate XIs; club pools remain at 109 and 88.
+
+`data/national_finals.json` owns the reviewed national catalog and source URLs. New player/club clues use contemporary official squad/club records, including tournament registration clubs for historic EUROs. Deportivo La Coruña and River Plate are registered with exact crest paths; Inter Miami's crest mapping is supplied as well. `python3 scripts/sync_national_finals.py` embeds the new XIs and generates the [full national-final review](docs/national-finals-2002-2026.md). New finals stay outside the base archive, preserving Hard eligibility, hidden players and hint order. Moderate and Hard prompts show only the date, including every World Cup question, in Chinese, English and Spanish.
+
+Run `node scripts/test_national_finals.cjs` with the existing Easy/Hard/UCL checks. The gallery workflow synchronizes both final catalogs, then regenerates the rules and verifies deduplication, historical clues and updater idempotence.
+
 ## Champions League final catalog 2026-11-21
 
 Every men's Champions League final from 2002 through 2026 now has both starting XIs available in Easy and Moderate: 25 matches and 50 distinct team/date questions. Twenty-eight XIs reuse existing archive entries; 22 are new. Each difficulty gains 29 questions, including seven finals previously available only in Hard. Easy now has 109 club and 80 national-team questions; Moderate has 88 club and 55 national-team questions. The three difficulty pools deduplicate XIs within Easy/Moderate while retaining the existing Hard membership.

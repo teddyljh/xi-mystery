@@ -337,7 +337,7 @@ for (const mode of ['club', 'nation']) {
     for(const tier of ['easy','moderate'])for(const f of data.fixtures){
       if(f.mode===mode&&f.tier===tier&&!union.has(key(f)))union.set(key(f),f);
     }
-    const finals=(data.uclFinals||[]).map(entry=>typeof entry==='string'?data.fixtures.find(f=>f.id===entry):entry).filter(f=>f.mode===mode);
+    const finals=[...(data.uclFinals||[]),...(data.nationalFinals||[])].map(entry=>typeof entry==='string'?data.fixtures.find(f=>f.id===entry):entry).filter(f=>f.mode===mode);
     for(const f of finals)if(!union.has(key(f)))union.set(key(f),f);
     const moderate=new Map();
     for(const f of [...data.fixtures.filter(f=>f.mode===mode&&f.tier==='moderate'),...finals])if(!moderate.has(key(f)))moderate.set(key(f),f);

@@ -15,7 +15,7 @@ assert.equal(new Set(catalog.map(f=>f.team+'|'+f.date)).size,50);
 assert.equal(data.fixtures.length,274,'no duplicated base records');
 assert.equal(data.uclFinals.filter(f=>typeof f==='string').length,28,'reuse all existing finals');
 assert.equal(data.uclFinals.filter(f=>typeof f!=='string').length,22,'only missing final XIs are new');
-assert.equal(context.api.quizFixtureCount(),296);
+assert.equal(context.api.quizFixtureCount(),305);
 for(let year=2002;year<=2026;year++){
   const pair=catalog.filter(f=>f.date.startsWith(String(year)));
   assert.equal(pair.length,2);assert.equal(pair[0].date,pair[1].date);

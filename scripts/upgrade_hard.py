@@ -139,19 +139,22 @@ RULES = r"""
   }
   // Finals reuse existing source XIs by ID. New finals are kept out of the
   // base archive so they do not expand Hard or bias its player frequencies.
-  const UCL_FINAL_FIXTURES=(DATA.uclFinals||[]).map(entry=>{
+  function resolveFinalFixtures(entries){return (entries||[]).map(entry=>{
     if(typeof entry!=='string')return entry;
     const fixture=DATA.fixtures.find(f=>f.id===entry);
-    if(!fixture)throw Error('Missing UEFA final fixture: '+entry);
+    if(!fixture)throw Error('Missing final fixture: '+entry);
     return fixture;
-  });
+  });}
+  const UCL_FINAL_FIXTURES=resolveFinalFixtures(DATA.uclFinals);
+  const NATIONAL_FINAL_FIXTURES=resolveFinalFixtures(DATA.nationalFinals);
+  const CLASSIC_FINAL_FIXTURES=[...UCL_FINAL_FIXTURES,...NATIONAL_FINAL_FIXTURES];
   function uniqueFixtures(fixtures){
     const seen=new Set();
     return fixtures.filter(f=>{const key=fixtureIdentity(f);if(seen.has(key))return false;seen.add(key);return true;});
   }
-  const EASY_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='easy'),...DATA.fixtures.filter(f=>f.tier==='moderate'),...UCL_FINAL_FIXTURES]);
-  const MODERATE_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='moderate'),...UCL_FINAL_FIXTURES]);
-  const quizFixtureCount=()=>new Set([...DATA.fixtures,...UCL_FINAL_FIXTURES].map(f=>f.id)).size;
+  const EASY_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='easy'),...DATA.fixtures.filter(f=>f.tier==='moderate'),...CLASSIC_FINAL_FIXTURES]);
+  const MODERATE_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='moderate'),...CLASSIC_FINAL_FIXTURES]);
+  const quizFixtureCount=()=>new Set([...DATA.fixtures,...CLASSIC_FINAL_FIXTURES].map(f=>f.id)).size;
   function available(){
     if(state.difficulty==='easy')return EASY_FIXTURES.filter(f=>f.mode===state.mode);
     if(state.difficulty==='moderate')return MODERATE_FIXTURES.filter(f=>f.mode===state.mode);

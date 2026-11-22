@@ -1,0 +1,2086 @@
+{
+  "clubs": {
+    "deportivo": {
+      "en": "Deportivo La Coruña",
+      "zh": "拉科鲁尼亚",
+      "es": "Deportivo de La Coruña",
+      "aliases": [
+        "Deportivo",
+        "Deportivo La Coruna",
+        "RC Deportivo La Coruña",
+        "拉科"
+      ],
+      "crestPath": "spain/Deportivo_La_Coruña.svg"
+    },
+    "riverplate": {
+      "en": "River Plate",
+      "zh": "河床",
+      "es": "River Plate",
+      "aliases": [
+        "Club Atlético River Plate",
+        "River",
+        "河床竞技"
+      ],
+      "crestPath": "argentina/River_Plate.svg"
+    }
+  },
+  "crestPaths": {
+    "inter-miami": "usa/Inter_Miami_CF.svg"
+  },
+  "fixtures": [
+    {
+      "id": "historic-nation-BRA-2002-06-30-44",
+      "mode": "nation",
+      "season": "2001/02",
+      "tier": "easy",
+      "team": "BRA",
+      "date": "2002-06-30",
+      "versus": "Germany",
+      "formation": "3-4-1-2",
+      "competition": "FIFA World Cup",
+      "source": "https://www.rsssf.org/tables/2002full.html",
+      "players": [
+        {
+          "role": "LS",
+          "name": "Ronaldo",
+          "value": "inter"
+        },
+        {
+          "role": "RS",
+          "name": "Rivaldo",
+          "value": "barcelona"
+        },
+        {
+          "role": "AM",
+          "name": "Ronaldinho",
+          "value": "psg"
+        },
+        {
+          "role": "LWB",
+          "name": "Roberto Carlos",
+          "value": "realmadrid"
+        },
+        {
+          "role": "CM",
+          "name": "Gilberto Silva",
+          "value": "atletico-mineiro"
+        },
+        {
+          "role": "CM",
+          "name": "Kleberson",
+          "value": "athletico-pr"
+        },
+        {
+          "role": "RWB",
+          "name": "Cafu",
+          "value": "roma"
+        },
+        {
+          "role": "CB",
+          "name": "Roque Junior",
+          "value": "milan"
+        },
+        {
+          "role": "CB",
+          "name": "Edmilson",
+          "value": "lyon"
+        },
+        {
+          "role": "CB",
+          "name": "Lucio",
+          "value": "leverkusen"
+        },
+        {
+          "role": "GK",
+          "name": "Marcos",
+          "value": "palmeiras"
+        }
+      ],
+      "event": "WORLD_CUP",
+      "eventYear": 2002
+    },
+    {
+      "id": "historic-nation-GER-2002-06-30-45",
+      "mode": "nation",
+      "season": "2001/02",
+      "tier": "moderate",
+      "team": "GER",
+      "date": "2002-06-30",
+      "versus": "Brazil",
+      "formation": "3-5-2",
+      "competition": "FIFA World Cup",
+      "source": "https://www.rsssf.org/tables/2002full.html",
+      "players": [
+        {
+          "role": "LS",
+          "name": "Oliver Neuville",
+          "value": "leverkusen"
+        },
+        {
+          "role": "RS",
+          "name": "Miroslav Klose",
+          "value": "kaiserslautern"
+        },
+        {
+          "role": "LWB",
+          "name": "Marco Bode",
+          "value": "werder"
+        },
+        {
+          "role": "CM",
+          "name": "Bernd Schneider",
+          "value": "leverkusen"
+        },
+        {
+          "role": "DM",
+          "name": "Dietmar Hamann",
+          "value": "liverpool"
+        },
+        {
+          "role": "CM",
+          "name": "Jens Jeremies",
+          "value": "bayern"
+        },
+        {
+          "role": "RWB",
+          "name": "Torsten Frings",
+          "value": "werder"
+        },
+        {
+          "role": "CB",
+          "name": "Christoph Metzelder",
+          "value": "dortmund"
+        },
+        {
+          "role": "CB",
+          "name": "Carsten Ramelow",
+          "value": "leverkusen"
+        },
+        {
+          "role": "CB",
+          "name": "Thomas Linke",
+          "value": "bayern"
+        },
+        {
+          "role": "GK",
+          "name": "Oliver Kahn",
+          "value": "bayern"
+        }
+      ],
+      "event": "WORLD_CUP",
+      "eventYear": 2002
+    },
+    {
+      "id": "classic-euro-final-2004-GRE",
+      "mode": "nation",
+      "season": "2004",
+      "tier": "moderate",
+      "team": "GRE",
+      "date": "2004-07-04",
+      "versus": "Portugal",
+      "formation": "4-3-3",
+      "competition": "UEFA EURO",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Stelios Giannakopoulos",
+          "value": "bolton",
+          "number": 8,
+          "uefaPlayerId": "27230"
+        },
+        {
+          "role": "ST",
+          "name": "Zisis Vryzas",
+          "value": "fiorentina",
+          "number": 15,
+          "uefaPlayerId": "13915"
+        },
+        {
+          "role": "RW",
+          "name": "Angelos Charisteas",
+          "value": "werder",
+          "number": 9,
+          "uefaPlayerId": "47672"
+        },
+        {
+          "role": "CM",
+          "name": "Angelos Basinas",
+          "value": "panathinaikos",
+          "number": 6,
+          "uefaPlayerId": "30965"
+        },
+        {
+          "role": "DM",
+          "name": "Kostas Katsouranis",
+          "value": "aek",
+          "number": 21,
+          "uefaPlayerId": "39217"
+        },
+        {
+          "role": "CM",
+          "name": "Theodoros Zagorakis",
+          "value": "aek",
+          "number": 7,
+          "uefaPlayerId": "13929"
+        },
+        {
+          "role": "LB",
+          "name": "Takis Fyssas",
+          "value": "benfica",
+          "number": 14,
+          "uefaPlayerId": "29451"
+        },
+        {
+          "role": "CB",
+          "name": "Traianos Dellas",
+          "value": "roma",
+          "number": 5,
+          "uefaPlayerId": "21542"
+        },
+        {
+          "role": "CB",
+          "name": "Michalis Kapsis",
+          "value": "aek",
+          "number": 19,
+          "uefaPlayerId": "12827"
+        },
+        {
+          "role": "RB",
+          "name": "Giourkas Seitaridis",
+          "value": "panathinaikos",
+          "number": 2,
+          "uefaPlayerId": "55908"
+        },
+        {
+          "role": "GK",
+          "name": "Antonis Nikopolidis",
+          "value": "panathinaikos",
+          "number": 1,
+          "uefaPlayerId": "150013632"
+        }
+      ],
+      "source": "https://www.uefa.com/uefaeuro/match/79185/",
+      "officialLineupSource": "https://match.uefa.com/v5/matches/79185/lineups?language=EN",
+      "uefaMatchId": "79185",
+      "event": "EURO",
+      "eventYear": 2004,
+      "clubSources": [
+        "https://www.uefa.com/european-qualifiers/news/0254-0d7b4a5f5446-fb3fc3634548-1000--rehhagel-keeps-the-faith/"
+      ]
+    },
+    {
+      "id": "classic-euro-final-2004-POR",
+      "mode": "nation",
+      "season": "2004",
+      "tier": "moderate",
+      "team": "POR",
+      "date": "2004-07-04",
+      "versus": "Greece",
+      "formation": "4-3-3",
+      "competition": "UEFA EURO",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Cristiano Ronaldo",
+          "value": "manunited",
+          "number": 17,
+          "uefaPlayerId": "63706"
+        },
+        {
+          "role": "ST",
+          "name": "Pauleta",
+          "value": "psg",
+          "number": 9,
+          "uefaPlayerId": "48839"
+        },
+        {
+          "role": "RW",
+          "name": "Luís Figo",
+          "value": "realmadrid",
+          "number": 7,
+          "uefaPlayerId": "4065"
+        },
+        {
+          "role": "CM",
+          "name": "Maniche",
+          "value": "porto",
+          "number": 18,
+          "uefaPlayerId": "29561"
+        },
+        {
+          "role": "DM",
+          "name": "Costinha",
+          "value": "porto",
+          "number": 6,
+          "uefaPlayerId": "40746"
+        },
+        {
+          "role": "CM",
+          "name": "Deco",
+          "value": "porto",
+          "number": 20,
+          "uefaPlayerId": "51643"
+        },
+        {
+          "role": "LB",
+          "name": "Nuno Valente",
+          "value": "porto",
+          "number": 14,
+          "uefaPlayerId": "21802"
+        },
+        {
+          "role": "CB",
+          "name": "Ricardo Carvalho",
+          "value": "porto",
+          "number": 16,
+          "uefaPlayerId": "31429"
+        },
+        {
+          "role": "CB",
+          "name": "Jorge Andrade",
+          "value": "deportivo",
+          "number": 4,
+          "uefaPlayerId": "44209"
+        },
+        {
+          "role": "RB",
+          "name": "Miguel",
+          "value": "benfica",
+          "number": 13,
+          "uefaPlayerId": "48929"
+        },
+        {
+          "role": "GK",
+          "name": "Ricardo",
+          "value": "sporting",
+          "number": 1,
+          "uefaPlayerId": "33797"
+        }
+      ],
+      "source": "https://www.uefa.com/uefaeuro/match/79185/",
+      "officialLineupSource": "https://match.uefa.com/v5/matches/79185/lineups?language=EN",
+      "uefaMatchId": "79185",
+      "event": "EURO",
+      "eventYear": 2004,
+      "clubSources": [
+        "https://www.uefa.com/uefaeuro/history/news/0254-0d7b4aaabcd7-a9a8c17743d6-1000--scolari-shows-his-hand/"
+      ]
+    },
+    {
+      "id": "historic-nation-FRA-2006-07-09-41",
+      "mode": "nation",
+      "season": "2005/06",
+      "tier": "easy",
+      "team": "FRA",
+      "date": "2006-07-09",
+      "versus": "Italy",
+      "formation": "4-2-3-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.skysports.com/football/italy-vs-france/teams/73218",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Thierry Henry",
+          "value": "arsenal"
+        },
+        {
+          "role": "LW",
+          "name": "Florent Malouda",
+          "value": "lyon"
+        },
+        {
+          "role": "AM",
+          "name": "Zinedine Zidane",
+          "value": "realmadrid"
+        },
+        {
+          "role": "RW",
+          "name": "Franck Ribery",
+          "value": "marseille"
+        },
+        {
+          "role": "DM",
+          "name": "Patrick Vieira",
+          "value": "juventus"
+        },
+        {
+          "role": "DM",
+          "name": "Claude Makelele",
+          "value": "chelsea"
+        },
+        {
+          "role": "LB",
+          "name": "Eric Abidal",
+          "value": "lyon"
+        },
+        {
+          "role": "CB",
+          "name": "William Gallas",
+          "value": "chelsea"
+        },
+        {
+          "role": "CB",
+          "name": "Lilian Thuram",
+          "value": "juventus"
+        },
+        {
+          "role": "RB",
+          "name": "Willy Sagnol",
+          "value": "bayern"
+        },
+        {
+          "role": "GK",
+          "name": "Fabien Barthez",
+          "value": "marseille"
+        }
+      ],
+      "event": "WORLD_CUP",
+      "eventYear": 2006
+    },
+    {
+      "id": "historic-nation-ITA-2006-07-09-40",
+      "mode": "nation",
+      "season": "2005/06",
+      "tier": "easy",
+      "team": "ITA",
+      "date": "2006-07-09",
+      "versus": "France",
+      "formation": "4-4-1-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.skysports.com/football/italy-vs-france/teams/73218",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Luca Toni",
+          "value": "fiorentina"
+        },
+        {
+          "role": "AM",
+          "name": "Francesco Totti",
+          "value": "roma"
+        },
+        {
+          "role": "LM",
+          "name": "Simone Perrotta",
+          "value": "roma"
+        },
+        {
+          "role": "CM",
+          "name": "Gennaro Gattuso",
+          "value": "milan"
+        },
+        {
+          "role": "CM",
+          "name": "Andrea Pirlo",
+          "value": "milan"
+        },
+        {
+          "role": "RM",
+          "name": "Mauro Camoranesi",
+          "value": "juventus"
+        },
+        {
+          "role": "LB",
+          "name": "Fabio Grosso",
+          "value": "palermo"
+        },
+        {
+          "role": "CB",
+          "name": "Marco Materazzi",
+          "value": "inter"
+        },
+        {
+          "role": "CB",
+          "name": "Fabio Cannavaro",
+          "value": "juventus"
+        },
+        {
+          "role": "RB",
+          "name": "Gianluca Zambrotta",
+          "value": "juventus"
+        },
+        {
+          "role": "GK",
+          "name": "Gianluigi Buffon",
+          "value": "juventus"
+        }
+      ],
+      "event": "WORLD_CUP",
+      "eventYear": 2006
+    },
+    {
+      "id": "classic-euro-final-2008-ESP",
+      "mode": "nation",
+      "season": "2008",
+      "tier": "moderate",
+      "team": "ESP",
+      "date": "2008-06-29",
+      "versus": "Germany",
+      "formation": "4-1-4-1",
+      "competition": "UEFA EURO",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Fernando Torres",
+          "value": "liverpool",
+          "number": 9,
+          "uefaPlayerId": "58686"
+        },
+        {
+          "role": "LM",
+          "name": "David Silva",
+          "value": "valencia",
+          "number": 21,
+          "uefaPlayerId": "64257"
+        },
+        {
+          "role": "CM",
+          "name": "Cesc Fàbregas",
+          "value": "arsenal",
+          "number": 10,
+          "uefaPlayerId": "70072"
+        },
+        {
+          "role": "CM",
+          "name": "Xavi Hernández",
+          "value": "barcelona",
+          "number": 8,
+          "uefaPlayerId": "35018"
+        },
+        {
+          "role": "RM",
+          "name": "Andrés Iniesta",
+          "value": "barcelona",
+          "number": 6,
+          "uefaPlayerId": "58031"
+        },
+        {
+          "role": "DM",
+          "name": "Marcos Senna",
+          "value": "villarreal",
+          "number": 19,
+          "uefaPlayerId": "70795"
+        },
+        {
+          "role": "LB",
+          "name": "Joan Capdevila",
+          "value": "villarreal",
+          "number": 11,
+          "uefaPlayerId": "44862"
+        },
+        {
+          "role": "CB",
+          "name": "Carles Puyol",
+          "value": "barcelona",
+          "number": 5,
+          "uefaPlayerId": "42872"
+        },
+        {
+          "role": "CB",
+          "name": "Carlos Marchena",
+          "value": "valencia",
+          "number": 4,
+          "uefaPlayerId": "51820"
+        },
+        {
+          "role": "RB",
+          "name": "Sergio Ramos",
+          "value": "realmadrid",
+          "number": 15,
+          "uefaPlayerId": "93649"
+        },
+        {
+          "role": "GK",
+          "name": "Iker Casillas",
+          "value": "realmadrid",
+          "number": 1,
+          "uefaPlayerId": "34694"
+        }
+      ],
+      "source": "https://www.uefa.com/uefaeuro/match/301696/",
+      "officialLineupSource": "https://match.uefa.com/v5/matches/301696/lineups?language=EN",
+      "uefaMatchId": "301696",
+      "event": "EURO",
+      "eventYear": 2008,
+      "clubSources": [
+        "https://www.uefa.com/MultimediaFiles/Download/Publications/uefa/UEFAMedia/75/74/69/757469_DOWNLOAD.pdf"
+      ]
+    },
+    {
+      "id": "classic-euro-final-2008-GER",
+      "mode": "nation",
+      "season": "2008",
+      "tier": "moderate",
+      "team": "GER",
+      "date": "2008-06-29",
+      "versus": "Spain",
+      "formation": "4-2-3-1",
+      "competition": "UEFA EURO",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Miroslav Klose",
+          "value": "bayern",
+          "number": 11,
+          "uefaPlayerId": "56589"
+        },
+        {
+          "role": "LW",
+          "name": "Lukas Podolski",
+          "value": "bayern",
+          "number": 20,
+          "uefaPlayerId": "62594"
+        },
+        {
+          "role": "AM",
+          "name": "Michael Ballack",
+          "value": "chelsea",
+          "number": 13,
+          "uefaPlayerId": "34908"
+        },
+        {
+          "role": "RW",
+          "name": "Bastian Schweinsteiger",
+          "value": "bayern",
+          "number": 7,
+          "uefaPlayerId": "67496"
+        },
+        {
+          "role": "DM",
+          "name": "Torsten Frings",
+          "value": "werder",
+          "number": 8,
+          "uefaPlayerId": "38946"
+        },
+        {
+          "role": "DM",
+          "name": "Thomas Hitzlsperger",
+          "value": "stuttgart",
+          "number": 15,
+          "uefaPlayerId": "47330"
+        },
+        {
+          "role": "LB",
+          "name": "Philipp Lahm",
+          "value": "bayern",
+          "number": 16,
+          "uefaPlayerId": "63033"
+        },
+        {
+          "role": "CB",
+          "name": "Christoph Metzelder",
+          "value": "realmadrid",
+          "number": 21,
+          "uefaPlayerId": "49391"
+        },
+        {
+          "role": "CB",
+          "name": "Per Mertesacker",
+          "value": "werder",
+          "number": 17,
+          "uefaPlayerId": "97575"
+        },
+        {
+          "role": "RB",
+          "name": "Arne Friedrich",
+          "value": "hertha",
+          "number": 3,
+          "uefaPlayerId": "55819"
+        },
+        {
+          "role": "GK",
+          "name": "Jens Lehmann",
+          "value": "arsenal",
+          "number": 1,
+          "uefaPlayerId": "4291"
+        }
+      ],
+      "source": "https://www.uefa.com/uefaeuro/match/301696/",
+      "officialLineupSource": "https://match.uefa.com/v5/matches/301696/lineups?language=EN",
+      "uefaMatchId": "301696",
+      "event": "EURO",
+      "eventYear": 2008,
+      "clubSources": [
+        "https://www.uefa.com/MultimediaFiles/Download/Publications/uefa/UEFAMedia/75/74/69/757469_DOWNLOAD.pdf"
+      ]
+    },
+    {
+      "id": "historic-nation-ESP-2010-07-11-38",
+      "mode": "nation",
+      "season": "2009/10",
+      "tier": "easy",
+      "team": "ESP",
+      "date": "2010-07-11",
+      "versus": "Netherlands",
+      "formation": "4-2-3-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.skysports.com/football/niederlande-vs-spain/teams/221760",
+      "players": [
+        {
+          "role": "ST",
+          "name": "David Villa",
+          "value": "barcelona"
+        },
+        {
+          "role": "LW",
+          "name": "Pedro Rodriguez",
+          "value": "barcelona"
+        },
+        {
+          "role": "AM",
+          "name": "Xavi Hernandez",
+          "value": "barcelona"
+        },
+        {
+          "role": "RW",
+          "name": "Andres Iniesta",
+          "value": "barcelona"
+        },
+        {
+          "role": "DM",
+          "name": "Sergio Busquets",
+          "value": "barcelona"
+        },
+        {
+          "role": "DM",
+          "name": "Xabi Alonso",
+          "value": "realmadrid"
+        },
+        {
+          "role": "LB",
+          "name": "Joan Capdevila",
+          "value": "villarreal"
+        },
+        {
+          "role": "CB",
+          "name": "Carles Puyol",
+          "value": "barcelona"
+        },
+        {
+          "role": "CB",
+          "name": "Gerard Pique",
+          "value": "barcelona"
+        },
+        {
+          "role": "RB",
+          "name": "Sergio Ramos",
+          "value": "realmadrid"
+        },
+        {
+          "role": "GK",
+          "name": "Iker Casillas",
+          "value": "realmadrid"
+        }
+      ],
+      "event": "WORLD_CUP",
+      "eventYear": 2010
+    },
+    {
+      "id": "historic-nation-NED-2010-07-11-39",
+      "mode": "nation",
+      "season": "2009/10",
+      "tier": "easy",
+      "team": "NED",
+      "date": "2010-07-11",
+      "versus": "Spain",
+      "formation": "4-2-3-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.skysports.com/football/niederlande-vs-spain/teams/221760",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Robin van Persie",
+          "value": "arsenal"
+        },
+        {
+          "role": "LW",
+          "name": "Dirk Kuyt",
+          "value": "liverpool"
+        },
+        {
+          "role": "AM",
+          "name": "Wesley Sneijder",
+          "value": "inter"
+        },
+        {
+          "role": "RW",
+          "name": "Arjen Robben",
+          "value": "bayern"
+        },
+        {
+          "role": "DM",
+          "name": "Mark van Bommel",
+          "value": "bayern"
+        },
+        {
+          "role": "DM",
+          "name": "Nigel de Jong",
+          "value": "city"
+        },
+        {
+          "role": "LB",
+          "name": "Giovanni van Bronckhorst",
+          "value": "feyenoord"
+        },
+        {
+          "role": "CB",
+          "name": "Joris Mathijsen",
+          "value": "hamburg"
+        },
+        {
+          "role": "CB",
+          "name": "John Heitinga",
+          "value": "everton"
+        },
+        {
+          "role": "RB",
+          "name": "Gregory van der Wiel",
+          "value": "ajax"
+        },
+        {
+          "role": "GK",
+          "name": "Maarten Stekelenburg",
+          "value": "ajax"
+        }
+      ],
+      "event": "WORLD_CUP",
+      "eventYear": 2010
+    },
+    {
+      "id": "historic-nation-ESP-2012-07-01-46",
+      "mode": "nation",
+      "season": "2011/12",
+      "tier": "moderate",
+      "team": "ESP",
+      "date": "2012-07-01",
+      "versus": "Italy",
+      "formation": "4-3-3",
+      "competition": "UEFA EURO",
+      "source": "https://www.uefa.com/uefaeuro/match/2003351/",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Andres Iniesta",
+          "value": "barcelona"
+        },
+        {
+          "role": "ST",
+          "name": "Cesc Fabregas",
+          "value": "barcelona"
+        },
+        {
+          "role": "RW",
+          "name": "David Silva",
+          "value": "city"
+        },
+        {
+          "role": "CM",
+          "name": "Xabi Alonso",
+          "value": "realmadrid"
+        },
+        {
+          "role": "DM",
+          "name": "Sergio Busquets",
+          "value": "barcelona"
+        },
+        {
+          "role": "CM",
+          "name": "Xavi Hernandez",
+          "value": "barcelona"
+        },
+        {
+          "role": "LB",
+          "name": "Jordi Alba",
+          "value": "barcelona"
+        },
+        {
+          "role": "CB",
+          "name": "Gerard Pique",
+          "value": "barcelona"
+        },
+        {
+          "role": "CB",
+          "name": "Sergio Ramos",
+          "value": "realmadrid"
+        },
+        {
+          "role": "RB",
+          "name": "Alvaro Arbeloa",
+          "value": "realmadrid"
+        },
+        {
+          "role": "GK",
+          "name": "Iker Casillas",
+          "value": "realmadrid"
+        }
+      ],
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2003351/lineups?language=EN",
+      "uefaMatchId": "2003351",
+      "event": "EURO",
+      "eventYear": 2012
+    },
+    {
+      "id": "classic-euro-final-2012-ITA",
+      "mode": "nation",
+      "season": "2012",
+      "tier": "moderate",
+      "team": "ITA",
+      "date": "2012-07-01",
+      "versus": "Spain",
+      "formation": "4-3-1-2",
+      "competition": "UEFA EURO",
+      "players": [
+        {
+          "role": "LS",
+          "name": "Antonio Cassano",
+          "value": "milan",
+          "number": 10,
+          "uefaPlayerId": "43818"
+        },
+        {
+          "role": "RS",
+          "name": "Mario Balotelli",
+          "value": "city",
+          "number": 9,
+          "uefaPlayerId": "250003335"
+        },
+        {
+          "role": "AM",
+          "name": "Riccardo Montolivo",
+          "value": "fiorentina",
+          "number": 18,
+          "uefaPlayerId": "73253"
+        },
+        {
+          "role": "CM",
+          "name": "Daniele De Rossi",
+          "value": "roma",
+          "number": 16,
+          "uefaPlayerId": "58656"
+        },
+        {
+          "role": "DM",
+          "name": "Andrea Pirlo",
+          "value": "juventus",
+          "number": 21,
+          "uefaPlayerId": "26917"
+        },
+        {
+          "role": "CM",
+          "name": "Claudio Marchisio",
+          "value": "juventus",
+          "number": 8,
+          "uefaPlayerId": "1902468"
+        },
+        {
+          "role": "LB",
+          "name": "Giorgio Chiellini",
+          "value": "juventus",
+          "number": 3,
+          "uefaPlayerId": "59142"
+        },
+        {
+          "role": "CB",
+          "name": "Leonardo Bonucci",
+          "value": "juventus",
+          "number": 19,
+          "uefaPlayerId": "250017925"
+        },
+        {
+          "role": "CB",
+          "name": "Andrea Barzagli",
+          "value": "juventus",
+          "number": 15,
+          "uefaPlayerId": "74055"
+        },
+        {
+          "role": "RB",
+          "name": "Ignazio Abate",
+          "value": "milan",
+          "number": 7,
+          "uefaPlayerId": "74968"
+        },
+        {
+          "role": "GK",
+          "name": "Gianluigi Buffon",
+          "value": "juventus",
+          "number": 1,
+          "uefaPlayerId": "21307"
+        }
+      ],
+      "source": "https://www.uefa.com/uefaeuro/match/2003351/",
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2003351/lineups?language=EN",
+      "uefaMatchId": "2003351",
+      "event": "EURO",
+      "eventYear": 2012,
+      "clubSources": [
+        "https://www.uefa.com/MultimediaFiles/Download/TechnicalReport/competitions/EURO/01/86/72/05/1867205_DOWNLOAD.pdf"
+      ]
+    },
+    {
+      "id": "historic-nation-ARG-2014-07-13-37",
+      "mode": "nation",
+      "season": "2013/14",
+      "tier": "easy",
+      "team": "ARG",
+      "date": "2014-07-13",
+      "versus": "Germany",
+      "formation": "4-4-2",
+      "competition": "FIFA World Cup",
+      "source": "https://www.skysports.com/football/germany-vs-argentina/teams/319572",
+      "players": [
+        {
+          "role": "LS",
+          "name": "Gonzalo Higuain",
+          "value": "napoli"
+        },
+        {
+          "role": "RS",
+          "name": "Lionel Messi",
+          "value": "barcelona"
+        },
+        {
+          "role": "LM",
+          "name": "Ezequiel Lavezzi",
+          "value": "psg"
+        },
+        {
+          "role": "CM",
+          "name": "Enzo Perez",
+          "value": "benfica"
+        },
+        {
+          "role": "CM",
+          "name": "Javier Mascherano",
+          "value": "barcelona"
+        },
+        {
+          "role": "RM",
+          "name": "Lucas Biglia",
+          "value": "lazio"
+        },
+        {
+          "role": "LB",
+          "name": "Marcos Rojo",
+          "value": "sporting"
+        },
+        {
+          "role": "CB",
+          "name": "Ezequiel Garay",
+          "value": "zenit"
+        },
+        {
+          "role": "CB",
+          "name": "Martin Demichelis",
+          "value": "city"
+        },
+        {
+          "role": "RB",
+          "name": "Pablo Zabaleta",
+          "value": "city"
+        },
+        {
+          "role": "GK",
+          "name": "Sergio Romero",
+          "value": "monaco"
+        }
+      ],
+      "event": "WORLD_CUP",
+      "eventYear": 2014
+    },
+    {
+      "id": "historic-nation-GER-2014-07-13-36",
+      "mode": "nation",
+      "season": "2013/14",
+      "tier": "easy",
+      "team": "GER",
+      "date": "2014-07-13",
+      "versus": "Argentina",
+      "formation": "4-2-3-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.skysports.com/football/germany-vs-argentina/teams/319572",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Miroslav Klose",
+          "value": "lazio"
+        },
+        {
+          "role": "LW",
+          "name": "Mesut Ozil",
+          "value": "arsenal"
+        },
+        {
+          "role": "AM",
+          "name": "Toni Kroos",
+          "value": "bayern"
+        },
+        {
+          "role": "RW",
+          "name": "Thomas Muller",
+          "value": "bayern"
+        },
+        {
+          "role": "DM",
+          "name": "Bastian Schweinsteiger",
+          "value": "bayern"
+        },
+        {
+          "role": "DM",
+          "name": "Christoph Kramer",
+          "value": "gladbach"
+        },
+        {
+          "role": "LB",
+          "name": "Benedikt Howedes",
+          "value": "schalke"
+        },
+        {
+          "role": "CB",
+          "name": "Mats Hummels",
+          "value": "dortmund"
+        },
+        {
+          "role": "CB",
+          "name": "Jerome Boateng",
+          "value": "bayern"
+        },
+        {
+          "role": "RB",
+          "name": "Philipp Lahm",
+          "value": "bayern"
+        },
+        {
+          "role": "GK",
+          "name": "Manuel Neuer",
+          "value": "bayern"
+        }
+      ],
+      "event": "WORLD_CUP",
+      "eventYear": 2014
+    },
+    {
+      "id": "historic-nation-FRA-2016-07-10-43",
+      "mode": "nation",
+      "season": "2015/16",
+      "tier": "easy",
+      "team": "FRA",
+      "date": "2016-07-10",
+      "versus": "Portugal",
+      "formation": "4-2-3-1",
+      "competition": "UEFA EURO",
+      "source": "https://www.uefa.com/uefaeuro/match/2017907/",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Olivier Giroud",
+          "value": "arsenal"
+        },
+        {
+          "role": "LW",
+          "name": "Dimitri Payet",
+          "value": "westham"
+        },
+        {
+          "role": "AM",
+          "name": "Antoine Griezmann",
+          "value": "atletico"
+        },
+        {
+          "role": "RW",
+          "name": "Moussa Sissoko",
+          "value": "newcastle"
+        },
+        {
+          "role": "DM",
+          "name": "Blaise Matuidi",
+          "value": "psg"
+        },
+        {
+          "role": "DM",
+          "name": "Paul Pogba",
+          "value": "juventus"
+        },
+        {
+          "role": "LB",
+          "name": "Patrice Evra",
+          "value": "juventus"
+        },
+        {
+          "role": "CB",
+          "name": "Samuel Umtiti",
+          "value": "lyon"
+        },
+        {
+          "role": "CB",
+          "name": "Laurent Koscielny",
+          "value": "arsenal"
+        },
+        {
+          "role": "RB",
+          "name": "Bacary Sagna",
+          "value": "city"
+        },
+        {
+          "role": "GK",
+          "name": "Hugo Lloris",
+          "value": "spurs"
+        }
+      ],
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2017907/lineups?language=EN",
+      "uefaMatchId": "2017907",
+      "event": "EURO",
+      "eventYear": 2016
+    },
+    {
+      "id": "historic-nation-POR-2016-07-10-42",
+      "mode": "nation",
+      "season": "2015/16",
+      "tier": "easy",
+      "team": "POR",
+      "date": "2016-07-10",
+      "versus": "France",
+      "formation": "4-1-3-2",
+      "competition": "UEFA EURO",
+      "source": "https://www.uefa.com/uefaeuro/match/2017907/",
+      "players": [
+        {
+          "role": "LS",
+          "name": "Cristiano Ronaldo",
+          "value": "realmadrid"
+        },
+        {
+          "role": "RS",
+          "name": "Nani",
+          "value": "valencia"
+        },
+        {
+          "role": "LM",
+          "name": "Joao Mario",
+          "value": "sporting"
+        },
+        {
+          "role": "CM",
+          "name": "Adrien Silva",
+          "value": "sporting"
+        },
+        {
+          "role": "RM",
+          "name": "Renato Sanches",
+          "value": "bayern"
+        },
+        {
+          "role": "DM",
+          "name": "William Carvalho",
+          "value": "sporting"
+        },
+        {
+          "role": "LB",
+          "name": "Raphael Guerreiro",
+          "value": "dortmund"
+        },
+        {
+          "role": "CB",
+          "name": "Jose Fonte",
+          "value": "southampton"
+        },
+        {
+          "role": "CB",
+          "name": "Pepe",
+          "value": "realmadrid"
+        },
+        {
+          "role": "RB",
+          "name": "Cedric Soares",
+          "value": "southampton"
+        },
+        {
+          "role": "GK",
+          "name": "Rui Patricio",
+          "value": "sporting"
+        }
+      ],
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2017907/lineups?language=EN",
+      "uefaMatchId": "2017907",
+      "event": "EURO",
+      "eventYear": 2016
+    },
+    {
+      "id": "historic-nation-CRO-2018-07-15-35",
+      "mode": "nation",
+      "season": "2017/18",
+      "tier": "easy",
+      "team": "CRO",
+      "date": "2018-07-15",
+      "versus": "France",
+      "formation": "4-2-3-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.skysports.com/football/france-vs-kroatien/teams/385232",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Mario Mandzukic",
+          "value": "juventus"
+        },
+        {
+          "role": "LW",
+          "name": "Ivan Perisic",
+          "value": "inter"
+        },
+        {
+          "role": "AM",
+          "name": "Luka Modric",
+          "value": "realmadrid"
+        },
+        {
+          "role": "RW",
+          "name": "Ante Rebic",
+          "value": "frankfurt"
+        },
+        {
+          "role": "DM",
+          "name": "Marcelo Brozovic",
+          "value": "inter"
+        },
+        {
+          "role": "DM",
+          "name": "Ivan Rakitic",
+          "value": "barcelona"
+        },
+        {
+          "role": "LB",
+          "name": "Ivan Strinic",
+          "value": "milan"
+        },
+        {
+          "role": "CB",
+          "name": "Domagoj Vida",
+          "value": "besiktas"
+        },
+        {
+          "role": "CB",
+          "name": "Dejan Lovren",
+          "value": "liverpool"
+        },
+        {
+          "role": "RB",
+          "name": "Sime Vrsaljko",
+          "value": "atletico"
+        },
+        {
+          "role": "GK",
+          "name": "Danijel Subasic",
+          "value": "monaco"
+        }
+      ],
+      "event": "WORLD_CUP",
+      "eventYear": 2018
+    },
+    {
+      "id": "historic-nation-FRA-2018-07-15-34",
+      "mode": "nation",
+      "season": "2017/18",
+      "tier": "easy",
+      "team": "FRA",
+      "date": "2018-07-15",
+      "versus": "Croatia",
+      "formation": "4-2-3-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/2018russia/news/worldcupathome-france-croatia-russia-2018-3072767",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Olivier Giroud",
+          "value": "chelsea"
+        },
+        {
+          "role": "LW",
+          "name": "Blaise Matuidi",
+          "value": "juventus"
+        },
+        {
+          "role": "AM",
+          "name": "Antoine Griezmann",
+          "value": "atletico"
+        },
+        {
+          "role": "RW",
+          "name": "Kylian Mbappe",
+          "value": "psg"
+        },
+        {
+          "role": "DM",
+          "name": "N’Golo Kante",
+          "value": "chelsea"
+        },
+        {
+          "role": "DM",
+          "name": "Paul Pogba",
+          "value": "manunited"
+        },
+        {
+          "role": "LB",
+          "name": "Lucas Hernandez",
+          "value": "atletico"
+        },
+        {
+          "role": "CB",
+          "name": "Samuel Umtiti",
+          "value": "barcelona"
+        },
+        {
+          "role": "CB",
+          "name": "Raphael Varane",
+          "value": "realmadrid"
+        },
+        {
+          "role": "RB",
+          "name": "Benjamin Pavard",
+          "value": "stuttgart"
+        },
+        {
+          "role": "GK",
+          "name": "Hugo Lloris",
+          "value": "spurs"
+        }
+      ],
+      "event": "WORLD_CUP",
+      "eventYear": 2018
+    },
+    {
+      "id": "classic-euro-final-2021-ENG",
+      "mode": "nation",
+      "season": "2020",
+      "tier": "moderate",
+      "team": "ENG",
+      "date": "2021-07-11",
+      "versus": "Italy",
+      "formation": "3-4-2-1",
+      "competition": "UEFA EURO",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Harry Kane",
+          "value": "spurs",
+          "number": 9,
+          "uefaPlayerId": "250016833"
+        },
+        {
+          "role": "AM",
+          "name": "Raheem Sterling",
+          "value": "city",
+          "number": 10,
+          "uefaPlayerId": "250024795"
+        },
+        {
+          "role": "AM",
+          "name": "Mason Mount",
+          "value": "chelsea",
+          "number": 19,
+          "uefaPlayerId": "250076240"
+        },
+        {
+          "role": "LWB",
+          "name": "Luke Shaw",
+          "value": "manunited",
+          "number": 3,
+          "uefaPlayerId": "250042705"
+        },
+        {
+          "role": "CM",
+          "name": "Declan Rice",
+          "value": "westham",
+          "number": 4,
+          "uefaPlayerId": "250083732"
+        },
+        {
+          "role": "CM",
+          "name": "Kalvin Phillips",
+          "value": "leeds",
+          "number": 14,
+          "uefaPlayerId": "250143242"
+        },
+        {
+          "role": "RWB",
+          "name": "Kieran Trippier",
+          "value": "atletico",
+          "number": 12,
+          "uefaPlayerId": "250000919"
+        },
+        {
+          "role": "CB",
+          "name": "Harry Maguire",
+          "value": "manunited",
+          "number": 6,
+          "uefaPlayerId": "250075007"
+        },
+        {
+          "role": "CB",
+          "name": "John Stones",
+          "value": "city",
+          "number": 5,
+          "uefaPlayerId": "250064233"
+        },
+        {
+          "role": "CB",
+          "name": "Kyle Walker",
+          "value": "city",
+          "number": 2,
+          "uefaPlayerId": "250010259"
+        },
+        {
+          "role": "GK",
+          "name": "Jordan Pickford",
+          "value": "everton",
+          "number": 1,
+          "uefaPlayerId": "250024791"
+        }
+      ],
+      "source": "https://www.uefa.com/uefaeuro/match/2024491/",
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2024491/lineups?language=EN",
+      "uefaMatchId": "2024491",
+      "event": "EURO",
+      "eventYear": 2020,
+      "clubSources": [
+        "https://www.uefa.com/uefaeuro/match/2024491/"
+      ]
+    },
+    {
+      "id": "classic-euro-final-2021-ITA",
+      "mode": "nation",
+      "season": "2020",
+      "tier": "moderate",
+      "team": "ITA",
+      "date": "2021-07-11",
+      "versus": "England",
+      "formation": "4-3-3",
+      "competition": "UEFA EURO",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Lorenzo Insigne",
+          "value": "napoli",
+          "number": 10,
+          "uefaPlayerId": "250026037"
+        },
+        {
+          "role": "ST",
+          "name": "Ciro Immobile",
+          "value": "lazio",
+          "number": 17,
+          "uefaPlayerId": "250005254"
+        },
+        {
+          "role": "RW",
+          "name": "Federico Chiesa",
+          "value": "juventus",
+          "number": 14,
+          "uefaPlayerId": "250090398"
+        },
+        {
+          "role": "CM",
+          "name": "Marco Verratti",
+          "value": "psg",
+          "number": 6,
+          "uefaPlayerId": "250006200"
+        },
+        {
+          "role": "DM",
+          "name": "Jorginho",
+          "value": "chelsea",
+          "number": 8,
+          "uefaPlayerId": "250067749"
+        },
+        {
+          "role": "CM",
+          "name": "Nicolò Barella",
+          "value": "inter",
+          "number": 18,
+          "uefaPlayerId": "250066739"
+        },
+        {
+          "role": "LB",
+          "name": "Emerson",
+          "value": "chelsea",
+          "number": 13,
+          "uefaPlayerId": "250100056"
+        },
+        {
+          "role": "CB",
+          "name": "Giorgio Chiellini",
+          "value": "juventus",
+          "number": 3,
+          "uefaPlayerId": "59142"
+        },
+        {
+          "role": "CB",
+          "name": "Leonardo Bonucci",
+          "value": "juventus",
+          "number": 19,
+          "uefaPlayerId": "250017925"
+        },
+        {
+          "role": "RB",
+          "name": "Giovanni Di Lorenzo",
+          "value": "napoli",
+          "number": 2,
+          "uefaPlayerId": "250064229"
+        },
+        {
+          "role": "GK",
+          "name": "Gianluigi Donnarumma",
+          "value": "milan",
+          "number": 21,
+          "uefaPlayerId": "250078922"
+        }
+      ],
+      "source": "https://www.uefa.com/uefaeuro/match/2024491/",
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2024491/lineups?language=EN",
+      "uefaMatchId": "2024491",
+      "event": "EURO",
+      "eventYear": 2020,
+      "clubSources": [
+        "https://www.uefa.com/uefaeuro/history/news/026b-12bba5b7b7a1-5519282c3d1a-1000/"
+      ]
+    },
+    {
+      "id": "historic-nation-ARG-2022-12-18-32",
+      "mode": "nation",
+      "season": "2022/23",
+      "tier": "easy",
+      "team": "ARG",
+      "date": "2022-12-18",
+      "versus": "France",
+      "formation": "4-3-3",
+      "competition": "FIFA World Cup",
+      "source": "https://www.sportingnews.com/uk/football/news/argentina-vs-france-lineup-starting-11-world-cup-2022/ish6hq2weaskigcvvgphhnf5",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Angel Di Maria",
+          "value": "juventus"
+        },
+        {
+          "role": "ST",
+          "name": "Julian Alvarez",
+          "value": "city"
+        },
+        {
+          "role": "RW",
+          "name": "Lionel Messi",
+          "value": "psg"
+        },
+        {
+          "role": "CM",
+          "name": "Rodrigo De Paul",
+          "value": "atletico"
+        },
+        {
+          "role": "DM",
+          "name": "Enzo Fernandez",
+          "value": "benfica"
+        },
+        {
+          "role": "CM",
+          "name": "Alexis Mac Allister",
+          "value": "brighton"
+        },
+        {
+          "role": "LB",
+          "name": "Nicolas Tagliafico",
+          "value": "lyon"
+        },
+        {
+          "role": "CB",
+          "name": "Nicolas Otamendi",
+          "value": "benfica"
+        },
+        {
+          "role": "CB",
+          "name": "Cristian Romero",
+          "value": "spurs"
+        },
+        {
+          "role": "RB",
+          "name": "Nahuel Molina",
+          "value": "atletico"
+        },
+        {
+          "role": "GK",
+          "name": "Emiliano Martinez",
+          "value": "villa"
+        }
+      ],
+      "event": "WORLD_CUP",
+      "eventYear": 2022
+    },
+    {
+      "id": "historic-nation-FRA-2022-12-18-33",
+      "mode": "nation",
+      "season": "2022/23",
+      "tier": "easy",
+      "team": "FRA",
+      "date": "2022-12-18",
+      "versus": "Argentina",
+      "formation": "4-3-3",
+      "competition": "FIFA World Cup",
+      "source": "https://www.sportingnews.com/uk/football/news/argentina-vs-france-lineup-starting-11-world-cup-2022/ish6hq2weaskigcvvgphhnf5",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Kylian Mbappe",
+          "value": "psg"
+        },
+        {
+          "role": "ST",
+          "name": "Olivier Giroud",
+          "value": "milan"
+        },
+        {
+          "role": "RW",
+          "name": "Ousmane Dembele",
+          "value": "barcelona"
+        },
+        {
+          "role": "CM",
+          "name": "Adrien Rabiot",
+          "value": "juventus"
+        },
+        {
+          "role": "DM",
+          "name": "Aurelien Tchouameni",
+          "value": "realmadrid"
+        },
+        {
+          "role": "CM",
+          "name": "Antoine Griezmann",
+          "value": "atletico"
+        },
+        {
+          "role": "LB",
+          "name": "Theo Hernandez",
+          "value": "milan"
+        },
+        {
+          "role": "CB",
+          "name": "Dayot Upamecano",
+          "value": "bayern"
+        },
+        {
+          "role": "CB",
+          "name": "Raphael Varane",
+          "value": "manunited"
+        },
+        {
+          "role": "RB",
+          "name": "Jules Kounde",
+          "value": "barcelona"
+        },
+        {
+          "role": "GK",
+          "name": "Hugo Lloris",
+          "value": "spurs"
+        }
+      ],
+      "event": "WORLD_CUP",
+      "eventYear": 2022
+    },
+    {
+      "id": "historic-nation-ENG-2024-07-14-31",
+      "mode": "nation",
+      "season": "2023/24",
+      "tier": "easy",
+      "team": "ENG",
+      "date": "2024-07-14",
+      "versus": "Spain",
+      "formation": "4-2-3-1",
+      "competition": "UEFA EURO",
+      "source": "https://www.uefa.com/uefaeuro/match/2036211/",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Harry Kane",
+          "value": "bayern"
+        },
+        {
+          "role": "LW",
+          "name": "Jude Bellingham",
+          "value": "realmadrid"
+        },
+        {
+          "role": "AM",
+          "name": "Phil Foden",
+          "value": "city"
+        },
+        {
+          "role": "RW",
+          "name": "Bukayo Saka",
+          "value": "arsenal"
+        },
+        {
+          "role": "DM",
+          "name": "Kobbie Mainoo",
+          "value": "manunited"
+        },
+        {
+          "role": "DM",
+          "name": "Declan Rice",
+          "value": "arsenal"
+        },
+        {
+          "role": "LB",
+          "name": "Luke Shaw",
+          "value": "manunited"
+        },
+        {
+          "role": "CB",
+          "name": "Marc Guehi",
+          "value": "palace"
+        },
+        {
+          "role": "CB",
+          "name": "John Stones",
+          "value": "city"
+        },
+        {
+          "role": "RB",
+          "name": "Kyle Walker",
+          "value": "city"
+        },
+        {
+          "role": "GK",
+          "name": "Jordan Pickford",
+          "value": "everton"
+        }
+      ],
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2036211/lineups?language=EN",
+      "uefaMatchId": "2036211",
+      "event": "EURO",
+      "eventYear": 2024
+    },
+    {
+      "id": "historic-nation-ESP-2024-07-14-30",
+      "mode": "nation",
+      "season": "2023/24",
+      "tier": "easy",
+      "team": "ESP",
+      "date": "2024-07-14",
+      "versus": "England",
+      "formation": "4-2-3-1",
+      "competition": "UEFA EURO",
+      "source": "https://www.uefa.com/uefaeuro/match/2036211/",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Alvaro Morata",
+          "value": "atletico"
+        },
+        {
+          "role": "LW",
+          "name": "Nico Williams",
+          "value": "athletic"
+        },
+        {
+          "role": "AM",
+          "name": "Dani Olmo",
+          "value": "leipzig"
+        },
+        {
+          "role": "RW",
+          "name": "Lamine Yamal",
+          "value": "barcelona"
+        },
+        {
+          "role": "DM",
+          "name": "Rodri",
+          "value": "city"
+        },
+        {
+          "role": "DM",
+          "name": "Fabian Ruiz",
+          "value": "psg"
+        },
+        {
+          "role": "LB",
+          "name": "Marc Cucurella",
+          "value": "chelsea"
+        },
+        {
+          "role": "CB",
+          "name": "Aymeric Laporte",
+          "value": "alnassr"
+        },
+        {
+          "role": "CB",
+          "name": "Robin Le Normand",
+          "value": "sociedad"
+        },
+        {
+          "role": "RB",
+          "name": "Dani Carvajal",
+          "value": "realmadrid"
+        },
+        {
+          "role": "GK",
+          "name": "Unai Simon",
+          "value": "athletic"
+        }
+      ],
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2036211/lineups?language=EN",
+      "uefaMatchId": "2036211",
+      "event": "EURO",
+      "eventYear": 2024
+    },
+    {
+      "id": "classic-world-cup-final-2026-ARG",
+      "mode": "nation",
+      "season": "2026",
+      "tier": "moderate",
+      "team": "ARG",
+      "date": "2026-07-19",
+      "versus": "Spain",
+      "formation": "4-4-2",
+      "competition": "FIFA World Cup",
+      "source": "https://rfef.es/es/noticias/espana-vuelve-a-dominar-el-mundo",
+      "officialLineupSource": "https://rfef.es/es/noticias/espana-vuelve-a-dominar-el-mundo",
+      "event": "WORLD_CUP",
+      "eventYear": 2026,
+      "clubSources": [
+        "https://www.afa.com.ar/6604/posts/seleccion-mayor-prelista-de-convocados"
+      ],
+      "players": [
+        {
+          "role": "LS",
+          "name": "Julián Álvarez",
+          "value": "atletico"
+        },
+        {
+          "role": "RS",
+          "name": "Lionel Messi",
+          "value": "inter-miami"
+        },
+        {
+          "role": "LM",
+          "name": "Nicolás González",
+          "value": "atletico"
+        },
+        {
+          "role": "CM",
+          "name": "Alexis Mac Allister",
+          "value": "liverpool"
+        },
+        {
+          "role": "CM",
+          "name": "Enzo Fernández",
+          "value": "chelsea"
+        },
+        {
+          "role": "RM",
+          "name": "Rodrigo De Paul",
+          "value": "inter-miami"
+        },
+        {
+          "role": "LB",
+          "name": "Nicolás Tagliafico",
+          "value": "lyon"
+        },
+        {
+          "role": "CB",
+          "name": "Lisandro Martínez",
+          "value": "manunited"
+        },
+        {
+          "role": "CB",
+          "name": "Cristian Romero",
+          "value": "spurs"
+        },
+        {
+          "role": "RB",
+          "name": "Gonzalo Montiel",
+          "value": "riverplate"
+        },
+        {
+          "role": "GK",
+          "name": "Emiliano Martínez",
+          "value": "villa"
+        }
+      ]
+    },
+    {
+      "id": "classic-world-cup-final-2026-ESP",
+      "mode": "nation",
+      "season": "2026",
+      "tier": "moderate",
+      "team": "ESP",
+      "date": "2026-07-19",
+      "versus": "Argentina",
+      "formation": "4-2-3-1",
+      "competition": "FIFA World Cup",
+      "source": "https://rfef.es/es/noticias/espana-vuelve-a-dominar-el-mundo",
+      "officialLineupSource": "https://rfef.es/es/noticias/espana-vuelve-a-dominar-el-mundo",
+      "event": "WORLD_CUP",
+      "eventYear": 2026,
+      "clubSources": [
+        "https://rfef.es/es/noticias/lista-de-convocados-para-los-partidos-contra-serbia-y-egipto",
+        "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/man-city-clubs-most-players-2026-north-america"
+      ],
+      "players": [
+        {
+          "role": "ST",
+          "name": "Mikel Oyarzabal",
+          "value": "sociedad"
+        },
+        {
+          "role": "LW",
+          "name": "Álex Baena",
+          "value": "atletico"
+        },
+        {
+          "role": "AM",
+          "name": "Dani Olmo",
+          "value": "barcelona"
+        },
+        {
+          "role": "RW",
+          "name": "Lamine Yamal",
+          "value": "barcelona"
+        },
+        {
+          "role": "DM",
+          "name": "Rodri",
+          "value": "city"
+        },
+        {
+          "role": "DM",
+          "name": "Fabián Ruiz",
+          "value": "psg"
+        },
+        {
+          "role": "LB",
+          "name": "Marc Cucurella",
+          "value": "chelsea"
+        },
+        {
+          "role": "CB",
+          "name": "Aymeric Laporte",
+          "value": "athletic"
+        },
+        {
+          "role": "CB",
+          "name": "Pau Cubarsí",
+          "value": "barcelona"
+        },
+        {
+          "role": "RB",
+          "name": "Pedro Porro",
+          "value": "spurs"
+        },
+        {
+          "role": "GK",
+          "name": "Unai Simón",
+          "value": "athletic"
+        }
+      ]
+    }
+  ]
+}
