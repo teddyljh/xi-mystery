@@ -17,6 +17,10 @@ on:
       - 'scripts/sync_national_finals.py'
       - 'scripts/test_national_finals.cjs'
       - 'data/national_finals.json'
+      - 'scripts/hard_review.cjs'
+      - 'scripts/report_difficulty_update.cjs'
+      - 'scripts/test_difficulty_update.cjs'
+      - 'data/difficulty_baseline_2026_11_22.json'
       - '.github/workflows/sync-reactions.yml'
   workflow_dispatch:
 permissions:
@@ -59,15 +63,18 @@ jobs:
         run: node scripts/test_ucl_finals.cjs
       - name: Check national final catalog and competition-free prompts
         run: node scripts/test_national_finals.cjs
+      - name: Check curated pools and every original Hard mask variant
+        run: node scripts/test_difficulty_update.cjs
       - name: Refresh national-team Hard review
         run: |
           mkdir -p docs
           node scripts/report_hard_nations.cjs > docs/hard-national-team-masks.md
+          node scripts/report_difficulty_update.cjs > docs/difficulty-update-2026-11-22.md
       - name: Commit generated index when changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html docs/hard-national-team-masks.md docs/ucl-finals-2002-2026.md docs/national-finals-2002-2026.md
+          git add index.html docs/hard-national-team-masks.md docs/ucl-finals-2002-2026.md docs/national-finals-2002-2026.md docs/difficulty-update-2026-11-22.md
           if ! git diff --cached --quiet; then
             git commit -m "Embed new score-tier reaction images in game [skip ci]"
             git push origin HEAD:main

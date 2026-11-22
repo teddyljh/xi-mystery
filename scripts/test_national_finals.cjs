@@ -25,12 +25,14 @@ for(const [event,years] of [['WORLD_CUP',[2002,2006,2010,2014,2018,2022,2026]],[
     if(year===2020)assert.equal(pair[0].date,'2021-07-11','use actual match date');
   }
 }
-for(const difficulty of ['easy','moderate']){
+for(const difficulty of ['easy','moderate','hard']){
   context.state={mode:'nation',difficulty};const pool=[...context.api.available()];
-  assert.equal(pool.length,difficulty==='easy'?89:64);
+  assert.equal(pool.length,{easy:54,moderate:73,hard:109}[difficulty]);
   assert.equal(new Set(pool.map(f=>f.team+'|'+f.date)).size,pool.length,'one question per team/date');
   for(const f of records){
-    const matches=pool.filter(x=>x.team===f.team&&x.date===f.date);assert.equal(matches.length,1,f.id);
+    const matches=pool.filter(x=>x.team===f.team&&x.date===f.date);
+    if(difficulty==='easy'&&f.team==='GRE'){assert.equal(matches.length,0,f.id+': Greece retained in higher difficulties');continue;}
+    assert.equal(matches.length,1,f.id);
     assert.equal(matches[0].formation,f.formation);
     assert.deepEqual(JSON.parse(JSON.stringify(matches[0].players)),f.players.map(({role,name,value})=>({role,name,value})));
     assert.equal(f.players.length,11);assert.equal(new Set(f.players.map(p=>p.name)).size,11);
@@ -40,8 +42,7 @@ for(const difficulty of ['easy','moderate']){
   }
 }
 context.state={mode:'nation',difficulty:'hard'};
-assert.equal(context.api.available().length,81,'Hard national pool stays unchanged');
-assert.ok([...context.api.available()].every(f=>data.fixtures.some(x=>x.id===f.id)));
+assert.equal(context.api.available().length,109,'Hard covers finals and moved nations');
 const fixture=(team,date)=>records.find(f=>f.team===team&&f.date===date);
 const club=(f,part)=>f.players.find(p=>p.name.includes(part)).value;
 assert.equal(club(fixture('GRE','2004-07-04'),'Nikopolidis'),'panathinaikos');
@@ -68,4 +69,4 @@ try{
   update();assert.equal(fs.readFileSync(index,'utf8'),source,'updater removes competition clues while preserving full sentences');
   update();assert.equal(fs.readFileSync(index,'utf8'),source,'repeated updates do not duplicate XIs');
 }finally{fs.rmSync(temp,{recursive:true,force:true});}
-console.log('PASS: 26 national final XIs in both Easy/Moderate exactly once; 9 new, 17 reused; correct event dates and historical club clues; complete crests; Hard membership unchanged; all updater checks passed.');
+console.log('PASS: all 26 national finals in Moderate/Hard once; 25 famous-country finals in Easy; historical club clues, crests and all updater checks passed.');

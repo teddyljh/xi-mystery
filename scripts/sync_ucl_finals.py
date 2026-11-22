@@ -3,10 +3,11 @@
 
 The data file stores official player IDs, jersey numbers and sources. Runtime
 fixtures omit audit-only fields; existing matches are referenced by ID. New
-Easy/Moderate finals stay separate from the base archive used by Hard.
+Finals stay separate from the base archive used by the frequency heuristic.
 """
 from pathlib import Path
 import json
+from upgrade_hard import EASY_FAMOUS_CLUBS
 
 ROOT = Path(__file__).resolve().parents[1]
 CORRECTED = {("porto", "2004-05-26"), ("monaco", "2004-05-26"), ("atletico", "2016-05-28")}
@@ -30,8 +31,9 @@ def runtime_fixture(fixture: dict) -> dict:
 
 
 def write_review(finals: list, data: dict) -> None:
+    easy_count = sum(f["team"] in EASY_FAMOUS_CLUBS for f in finals)
     lines = ["# 2002—2026年欧冠决赛首发", "",
-             "25场决赛、50套首发均已加入 Easy 和 Medium。已有首发按球队和比赛日期复用，不重复添加；新增22套原先没有记录的首发，并将原来仅在 Hard 的7套首发补入这两个难度。", "",
+             f"25场决赛、50套首发均保留在 Medium 和 Hard；Easy 按豪门范围保留{easy_count}套。既有28套首发按球队和比赛日期复用，22套补充首发单独保存，不重复添加。", "",
              "首发名单、球员编号和国籍已核对欧足联官方比赛及首发接口；位置按战术图整理，阵型为游戏使用的排列。2004年波尔图、摩纳哥和2016年马竞的旧题已按实际首发更正。", ""]
     for year in range(2002, 2027):
         pair = [f for f in finals if f["date"].startswith(str(year))]
@@ -40,7 +42,8 @@ def write_review(finals: list, data: dict) -> None:
                   f"[欧足联比赛记录]({pair[0]['source']}) · [官方首发数据]({pair[0]['officialLineupSource']})", ""]
         for f in pair:
             existing = [x for x in data["fixtures"] if x["mode"] == "club" and (x["team"], x["date"]) == (f["team"], f["date"])]
-            status = "全新首发" if not existing else "原仅 Hard，现补入 Easy/Medium" if all(x["tier"] == "hard" for x in existing) else "已有，复用"
+            status = "补充首发" if not existing else "已有，复用"
+            status += "；Easy/Medium/Hard" if f["team"] in EASY_FAMOUS_CLUBS else "；仅 Medium/Hard"
             lines += [f"**{data['teams'][f['team']]['zh']} · {f['formation']} · {status}**", "",
                       "；".join(f"{p['name']}（{data['nations'][p['value']]['zh']}，{p['role']}）" for p in f["players"]), ""]
     output = ROOT / "docs/ucl-finals-2002-2026.md"

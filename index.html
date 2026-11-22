@@ -1536,7 +1536,12 @@ function displayFinishReaction(reaction){
   // teams from Moderate. The original fixture tiers remain unchanged.
   const HARD_FAMOUS_CLUBS=new Set('realmadrid barcelona bayern city liverpool manunited arsenal chelsea psg inter milan juventus atletico dortmund napoli benfica porto sporting ajax psv galatasaray fenerbahce celtic'.split(' '));
   const HARD_FAMOUS_NATIONS=new Set('ENG FRA GER ESP POR BRA ARG ITA NED'.split(' '));
+  const EASY_FAMOUS_CLUBS=new Set([...HARD_FAMOUS_CLUBS,'spurs']);
+  const EASY_FAMOUS_NATIONS=new Set([...HARD_FAMOUS_NATIONS,'BEL','CRO','URU']);
+  const easyFixtureAllowed=f=>(f.mode==='club'?EASY_FAMOUS_CLUBS:EASY_FAMOUS_NATIONS).has(f.team);
   function isImportedHardFixture(f){
+    // New underdog classics retain the legacy two-clue policy.
+    if(f.id.startsWith('classic-ucl-final-')&&!EASY_FAMOUS_CLUBS.has(f.team))return false;
     const historical=f.id.startsWith('historic-')||f.date<'2024-01-01';
     if(historical && (f.tier==='easy'||f.tier==='moderate'))return true;
     return f.tier==='moderate'&&(f.mode==='club'?HARD_FAMOUS_CLUBS.has(f.team):HARD_FAMOUS_NATIONS.has(f.team));
@@ -1544,8 +1549,8 @@ function displayFinishReaction(reaction){
   function fixtureIdentity(f){
     return JSON.stringify([f.mode,f.team,f.date,f.formation,f.players.map(p=>[p.name,p.role,p.value])]);
   }
-  // Finals reuse existing source XIs by ID. New finals are kept out of the
-  // base archive so they do not expand Hard or bias its player frequencies.
+  // Finals reuse existing source XIs by ID. The base archive still owns the
+  // frequency heuristic, preserving previously reviewed hidden selections.
   function resolveFinalFixtures(entries){return (entries||[]).map(entry=>{
     if(typeof entry!=='string')return entry;
     const fixture=DATA.fixtures.find(f=>f.id===entry);
@@ -1559,14 +1564,16 @@ function displayFinishReaction(reaction){
     const seen=new Set();
     return fixtures.filter(f=>{const key=fixtureIdentity(f);if(seen.has(key))return false;seen.add(key);return true;});
   }
-  const EASY_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='easy'),...DATA.fixtures.filter(f=>f.tier==='moderate'),...CLASSIC_FINAL_FIXTURES]);
-  const MODERATE_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='moderate'),...CLASSIC_FINAL_FIXTURES]);
+  const FORMER_EASY_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='easy'),...DATA.fixtures.filter(f=>f.tier==='moderate'),...CLASSIC_FINAL_FIXTURES]);
+  const EASY_REMOVED_FIXTURES=FORMER_EASY_FIXTURES.filter(f=>!easyFixtureAllowed(f));
+  const EASY_FIXTURES=FORMER_EASY_FIXTURES.filter(easyFixtureAllowed);
+  const MODERATE_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='moderate'),...CLASSIC_FINAL_FIXTURES,...EASY_REMOVED_FIXTURES]);
+  const HARD_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='hard'||isImportedHardFixture(f)),...CLASSIC_FINAL_FIXTURES,...EASY_REMOVED_FIXTURES]);
   const quizFixtureCount=()=>new Set([...DATA.fixtures,...CLASSIC_FINAL_FIXTURES].map(f=>f.id)).size;
   function available(){
     if(state.difficulty==='easy')return EASY_FIXTURES.filter(f=>f.mode===state.mode);
     if(state.difficulty==='moderate')return MODERATE_FIXTURES.filter(f=>f.mode===state.mode);
-    return DATA.fixtures.filter(f=>f.mode===state.mode&&
-      (f.tier===state.difficulty||(state.difficulty==='hard'&&isImportedHardFixture(f))));
+    return HARD_FIXTURES.filter(f=>f.mode===state.mode);
   }
 
   // Imported classics/powerhouses and historical powerhouse clubs use three
@@ -1609,7 +1616,8 @@ function displayFinishReaction(reaction){
     "pafos": "CYP",
     "kairat": "KAZ",
     "union-sg": "BEL",
-    "viking": "NOR"
+    "viking": "NOR",
+    "dinamo": "CRO"
 });
   const hardLeagueNation=f=>f.mode==='club'?HARD_NON_BIG_FIVE_NATIONS[f.team]:undefined;
   const hardName=n=>n.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
@@ -1694,12 +1702,42 @@ function displayFinishReaction(reaction){
     "historic-club-juventus-2017-06-03-26": "Mario Mandzukic",
     "historic-club-atletico-2016-05-28-27": "Antoine Griezmann",
     "historic-club-barcelona-2005-03-08-28": "Ronaldinho",
-    "historic-club-bayern-2013-05-25-29": "Franck Ribery"
+    "historic-club-bayern-2013-05-25-29": "Franck Ribery",
+    "classic-ucl-final-2002-realmadrid": "Luís Figo",
+    "classic-ucl-final-2003-juventus": "David Trezeguet",
+    "classic-ucl-final-2003-milan": "Andriy Shevchenko",
+    "classic-ucl-final-2006-barcelona": "Samuel Eto'o",
+    "classic-ucl-final-2006-arsenal": "Aleksandr Hleb",
+    "classic-ucl-final-2009-barcelona": "Lionel Messi",
+    "classic-ucl-final-2009-manunited": "Park Ji-Sung",
+    "classic-ucl-final-2016-realmadrid": "Gareth Bale",
+    "classic-ucl-final-2017-realmadrid": "Cristiano Ronaldo",
+    "classic-ucl-final-2018-realmadrid": "Cristiano Ronaldo",
+    "classic-ucl-final-2018-liverpool": "Mohamed Salah",
+    "classic-ucl-final-2021-city": "Riyad Mahrez",
+    "classic-ucl-final-2021-chelsea": "Kai Havertz",
+    "classic-ucl-final-2022-liverpool": "Mohamed Salah",
+    "classic-ucl-final-2022-realmadrid": "Federico Valverde",
+    "classic-ucl-final-2024-dortmund": "Jadon Sancho",
+    "classic-ucl-final-2024-realmadrid": "Jude Bellingham",
+    "classic-ucl-final-2025-psg": "Khvicha Kvaratskhelia",
+    "classic-ucl-final-2025-inter": "Lautaro Martínez",
+    "classic-ucl-final-2026-psg": "Khvicha Kvaratskhelia",
+    "classic-ucl-final-2026-arsenal": "Martin Ødegaard",
+    "classic-euro-final-2004-POR": "Cristiano Ronaldo",
+    "classic-euro-final-2008-ESP": "Fernando Torres",
+    "classic-euro-final-2008-GER": "Michael Ballack",
+    "classic-euro-final-2012-ITA": "Mario Balotelli",
+    "classic-euro-final-2021-ENG": "Harry Kane",
+    "classic-euro-final-2021-ITA": "Ciro Immobile",
+    "classic-world-cup-final-2026-ARG": "Lionel Messi",
+    "classic-world-cup-final-2026-ESP": "Lamine Yamal"
 });
   const HARD_KNOWN_FORWARDS=new Set(Object.values(HARD_FORWARD_PICKS).map(hardName));
   // Curated match-specific masks. Their order also specifies the hint order
   // for top-tier nations; middle-band nations still prefer overseas clues.
   const HARD_NATION_MASK_OVERRIDES=Object.freeze({
+    'classic-world-cup-final-2026-ESP':['Dani Olmo','Pau Cubarsí','Lamine Yamal'],
     'historic-nation-ESP-2024-07-14-30':['Nico Williams','Robin Le Normand','Lamine Yamal'],
     'nation-2026/27-10':['Pau Cubarsí','Aymeric Laporte','Lamine Yamal'],
     'historic-nation-NED-2014-06-13-47':['Robin van Persie','Wesley Sneijder','Daley Blind','Bruno Martins Indi','Stefan de Vrij'],
@@ -1725,7 +1763,10 @@ function displayFinishReaction(reaction){
     aberdeen:'SCO',rosenborg:'NOR',ferencvaros:'HUN',
     polissya:'UKR',dynamokyiv:'UKR',craiova:'ROU',dinamobucharest:'ROU',
     fctokyo:'JPN',urawa:'JPN',shimizu:'JPN',gamba:'JPN',
-    jeonbuk:'KOR',ulsan:'KOR',gwangju:'KOR',wydad:'MAR'
+    jeonbuk:'KOR',ulsan:'KOR',gwangju:'KOR',wydad:'MAR',
+    panathinaikos:'GRE',ofi:'GRE',brann:'NOR',lask:'AUT',aik:'SWE',malmo:'SWE',
+    celje:'SVN',maribor:'SVN',plzen:'CZE',jablonec:'CZE',teplice:'CZE',
+    widzew:'POL',zaglebielubin:'POL',hibernian:'SCO',hearts:'SCO',voyvodina:'SRB'
   });
   const HARD_NATION_KEY_PLAYERS=Object.freeze({
     BEL:'Kevin De Bruyne|Romelu Lukaku|Jérémy Doku|Youri Tielemans',
@@ -1743,7 +1784,15 @@ function displayFinishReaction(reaction){
     ROU:'Ianis Hagi|Radu Dragusin|Dennis Man',
     MAR:'Achraf Hakimi|Hakim Ziyech|Youssef En-Nesyri',
     JPN:'Takefusa Kubo|Kaoru Mitoma|Wataru Endo|Daichi Kamada',
-    KOR:'Son Heung-min|Kim Min-jae|Lee Kang-in'
+    KOR:'Son Heung-min|Kim Min-jae|Lee Kang-in',
+    NOR:'Erling Haaland|Martin Ødegaard|Alexander Sørloth|Antonio Nusa',
+    AUT:'David Alaba|Marcel Sabitzer|Marko Arnautović|Konrad Laimer|Christoph Baumgartner',
+    SWE:'Alexander Isak|Viktor Gyökeres|Dejan Kulusevski|Emil Forsberg',
+    DEN:'Christian Eriksen|Rasmus Højlund|Mikkel Damsgaard|Pierre-Emile Højbjerg|Morten Hjulmand',
+    SVN:'Benjamin Šeško|Jan Oblak|Jaka Bijol|Sandi Lovrić',
+    CZE:'Patrik Schick|Tomáš Souček|Vladimír Coufal|Antonín Kinský|Adam Hložek',
+    TUR:'Arda Güler|Hakan Çalhanoğlu|Kenan Yıldız|Kerem Aktürkoğlu',
+    GRE:'Angelos Charisteas|Theodoros Zagorakis|Giorgos Karagounis|Vangelis Pavlidis|Fotis Ioannidis|Kostas Tsimikas|Konstantinos Mavropanos'
   });
   const usesNationHardMask=f=>f.mode==='nation'&&HARD_MEDIUM_NATIONS.has(f.team);
   function hardNationDomesticSlots(f){

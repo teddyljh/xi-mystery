@@ -40,7 +40,7 @@ const api = context.api;
 const midfield = new Set(['AM', 'CM', 'DM', 'LM', 'RM']);
 const defense = new Set(['LB', 'CB', 'RB', 'LWB', 'RWB']);
 const attack = new Set(['ST', 'LS', 'RS', 'LW', 'RW', 'AM', 'LM', 'RM']);
-const hard = data.fixtures.filter(f => f.tier === 'hard' || api.isImportedHardFixture(f));
+const hard = ['club','nation'].flatMap(mode=>{context.state={mode,difficulty:'hard'};return [...api.available()];});
 const featured = hard.filter(api.isFeaturedHardFixture);
 const league = hard.filter(api.usesLeagueHardMask);
 const nations = hard.filter(api.usesNationHardMask);
@@ -94,7 +94,7 @@ for(const [id,names,clubs] of [
   ['nation-2025/26-106',['Gianluigi Donnarumma','Francesco Pio Esposito','Federico Dimarco','Nicolò Barella'],['city','inter','inter','inter']],
   ['nation-2026/27-75',['Gianluigi Donnarumma','Francesco Pio Esposito','Nicolò Fagioli','Alessandro Bastoni'],['city','inter','fiorentina','inter']]
 ]){
-  const f=hard.find(f=>f.id===id);
+  const f=data.fixtures.find(f=>f.id===id);
   assert.ok(f,id);
   fixture=f;
   for(roll of [0,0.5,0.999999]){
@@ -187,7 +187,6 @@ for (const f of underdogs) {
 
 // Every middle-band national team masks only domestic-club/key-player clues.
 // Each hint restores one masked player, preferring overseas clubs every time.
-const nationMaskCounts={BEL:3,SCO:2,POL:2,HUN:2,BIH:2,IRL:2,UKR:6,WAL:2,CRO:2,SRB:2,SVK:2,ROU:3,MAR:2,JPN:4,KOR:5};
 for (const f of nations) {
   fixture=f;
   const domestic=[...api.hardNationDomesticSlots(f)];
@@ -199,7 +198,7 @@ for (const f of nations) {
   for(let sample=0;sample<=20;sample++){
     roll=sample/20*0.999999;
     const mask=[...api.buildHardMask(f)];
-    const expectedCount=f.team==='CHE'?(f.date==='2026-11-16'?4:2):nationMaskCounts[f.team];
+    const expectedCount=api.hardNationMaskOverride(f)?.length??Math.max(2,domestic.length+(domestic.length<5?1:0));
     assert.equal(mask.length,expectedCount,f.id+': no extra players masked for hints');
     assert.equal(new Set(mask).size,mask.length);
     assert.deepEqual(mask,locked,f.id+': only domestic-club/key-player clues masked');
@@ -328,7 +327,7 @@ for (const id of ['club-2026/27-24', 'club-2026/27-34', 'club-2025/26-89', 'club
 assert.equal(api.hardLeagueNation(data.fixtures.find(f => f.team === 'arsenal')), undefined);
 for (const f of data.fixtures.filter(f => f.mode === 'nation'))assert.equal(api.usesLeagueHardMask(f), false, f.id);
 
-// Easy/Moderate share the final catalog; Hard retains its base membership.
+// All finals enter Hard; Easy follows the approved recognition boundary.
 for (const mode of ['club', 'nation']) {
   for (const difficulty of ['easy', 'moderate', 'hard']) {
     context.state = {mode, difficulty};
@@ -341,8 +340,12 @@ for (const mode of ['club', 'nation']) {
     for(const f of finals)if(!union.has(key(f)))union.set(key(f),f);
     const moderate=new Map();
     for(const f of [...data.fixtures.filter(f=>f.mode===mode&&f.tier==='moderate'),...finals])if(!moderate.has(key(f)))moderate.set(key(f),f);
-    const expected = difficulty==='easy'?[...union.values()]:difficulty==='moderate'?[...moderate.values()]:data.fixtures.filter(f => f.mode === mode &&
-      (f.tier === difficulty || (difficulty === 'hard' && api.isImportedHardFixture(f))));
+    const keep=f=>(mode==='club'?new Set('realmadrid barcelona bayern city liverpool manunited arsenal chelsea psg inter milan juventus atletico dortmund spurs napoli benfica porto sporting ajax psv galatasaray fenerbahce celtic'.split(' ')):new Set('ENG FRA GER ESP POR BRA ARG ITA NED BEL CRO URU'.split(' '))).has(f.team);
+    const moved=[...union.values()].filter(f=>!keep(f));
+    for(const f of moved)if(!moderate.has(key(f)))moderate.set(key(f),f);
+    const hardPool=new Map();
+    for(const f of [...data.fixtures.filter(f=>f.mode===mode&&(f.tier==='hard'||api.isImportedHardFixture(f))),...finals,...moved])if(!hardPool.has(key(f)))hardPool.set(key(f),f);
+    const expected = difficulty==='easy'?[...union.values()].filter(keep):difficulty==='moderate'?[...moderate.values()]:[...hardPool.values()];
     assert.deepEqual([...api.available()].map(f => f.id), expected.map(f => f.id));
   }
 }

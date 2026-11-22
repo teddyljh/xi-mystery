@@ -22,12 +22,14 @@ for(let year=2002;year<=2026;year++){
   assert.equal(pair[0].uefaMatchId,pair[1].uefaMatchId);
   assert.notEqual(pair[0].team,pair[1].team);
 }
-for(const difficulty of ['easy','moderate']){
+for(const difficulty of ['easy','moderate','hard']){
   context.state={mode:'club',difficulty};const pool=[...context.api.available()];
-  assert.equal(pool.length,difficulty==='easy'?109:88);
+  assert.equal(pool.length,{easy:93,moderate:89,hard:122}[difficulty]);
   assert.equal(new Set(pool.map(f=>f.team+'|'+f.date)).size,pool.length,'no duplicate match/team questions');
   for(const f of catalog){
-    const matches=pool.filter(x=>x.team===f.team&&x.date===f.date);assert.equal(matches.length,1,f.id+': included exactly once');
+    const matches=pool.filter(x=>x.team===f.team&&x.date===f.date);
+    if(difficulty==='easy'&&['leverkusen','monaco'].includes(f.team)){assert.equal(matches.length,0,f.id+': underdog excluded from Easy');continue;}
+    assert.equal(matches.length,1,f.id+': included exactly once');
     const actual=JSON.parse(JSON.stringify(matches[0]));
     assert.equal(actual.formation,f.formation);
     assert.deepEqual(actual.players,f.players.map(({role,name,value})=>({role,name,value})));
@@ -39,8 +41,7 @@ for(const difficulty of ['easy','moderate']){
 }
 context.state={mode:'club',difficulty:'hard'};
 const hard=[...context.api.available()];
-assert.equal(hard.length,105,'Hard club pool does not grow');
-assert.ok(hard.every(f=>data.fixtures.some(x=>x.id===f.id)));
+assert.equal(hard.length,122,'Hard includes new finals and moved clubs');
 for(const [team,date,expected,absent] of [
   ['porto','2004-05-26',['Deco'],['Benni McCarthy']],
   ['monaco','2004-05-26',['Édouard Cissé','Julien Rodriguez'],['Dado Prso','Sebastien Squillaci']],
@@ -62,4 +63,4 @@ try{
   const stale=source.replace("subtitle.replaceChildren(document.createTextNode(prefix),dateEl,document.createTextNode(suffix));","subtitle.replaceChildren(dateEl);");
   assert.notEqual(stale,source);fs.writeFileSync(index,stale);update();assert.equal(fs.readFileSync(index,'utf8'),source,'updater restores the full sentence around the highlighted date');
 }finally{fs.rmSync(temp,{recursive:true,force:true});}
-console.log('PASS: all 50 verified finals appear exactly once in Easy/Moderate; 22 new source XIs, 28 reused; 3 legacy corrections; Hard pool unchanged; prompt updater and catalog idempotence passed.');
+console.log('PASS: all 50 UCL final XIs appear once in Moderate/Hard; 48 famous-club XIs in Easy; catalog reuse, prompt updater and idempotence passed.');

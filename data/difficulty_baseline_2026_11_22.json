@@ -1,0 +1,3125 @@
+{
+  "revision": "fc20d03",
+  "easyIds": [
+    "club-2026/27-1",
+    "club-2026/27-2",
+    "club-2026/27-7",
+    "club-2025/26-13",
+    "club-2024/25-15",
+    "club-2026/27-19",
+    "club-2026/27-29",
+    "club-2026/27-31",
+    "club-2025/26-38",
+    "club-2025/26-40",
+    "club-2025/26-41",
+    "club-2025/26-47",
+    "club-2025/26-49",
+    "club-2025/26-50",
+    "club-2024/25-56",
+    "club-2024/25-57",
+    "club-2024/25-58",
+    "club-2024/25-59",
+    "club-2024/25-65",
+    "club-2024/25-67",
+    "club-2024/25-68",
+    "historic-club-chelsea-2005-03-08-0",
+    "historic-club-milan-2005-05-25-1",
+    "historic-club-liverpool-2005-05-25-2",
+    "historic-club-manunited-2008-05-21-3",
+    "historic-club-chelsea-2008-05-21-4",
+    "historic-club-barcelona-2011-05-28-5",
+    "historic-club-manunited-2011-05-28-6",
+    "historic-club-inter-2010-05-22-7",
+    "historic-club-bayern-2010-05-22-8",
+    "historic-club-barcelona-2015-06-06-9",
+    "historic-club-juventus-2015-06-06-10",
+    "historic-club-realmadrid-2014-05-24-11",
+    "historic-club-atletico-2014-05-24-12",
+    "historic-club-psg-2020-08-23-13",
+    "historic-club-bayern-2020-08-23-14",
+    "historic-club-city-2023-06-10-15",
+    "historic-club-inter-2023-06-10-16",
+    "historic-club-liverpool-2019-06-01-17",
+    "historic-club-spurs-2019-06-01-18",
+    "club-2026/27-3",
+    "club-2026/27-4",
+    "club-2026/27-5",
+    "club-2025/26-14",
+    "club-2024/25-16",
+    "club-2026/27-20",
+    "club-2026/27-21",
+    "club-2026/27-22",
+    "club-2026/27-23",
+    "club-2026/27-25",
+    "club-2026/27-27",
+    "club-2026/27-30",
+    "club-2026/27-33",
+    "club-2025/26-36",
+    "club-2025/26-37",
+    "club-2025/26-39",
+    "club-2025/26-42",
+    "club-2025/26-43",
+    "club-2025/26-44",
+    "club-2025/26-45",
+    "club-2025/26-46",
+    "club-2025/26-48",
+    "club-2025/26-53",
+    "club-2024/25-54",
+    "club-2024/25-55",
+    "club-2024/25-60",
+    "club-2024/25-61",
+    "club-2024/25-62",
+    "club-2024/25-64",
+    "club-2024/25-66",
+    "club-2024/25-69",
+    "club-2024/25-70",
+    "club-2024/25-71",
+    "club-2024/25-123",
+    "club-2025/26-129",
+    "club-2025/26-130",
+    "club-2025/26-131",
+    "historic-club-milan-2007-05-23-19",
+    "historic-club-chelsea-2012-05-19-20",
+    "historic-club-dortmund-2013-05-25-21",
+    "classic-ucl-final-2002-leverkusen",
+    "classic-ucl-final-2002-realmadrid",
+    "classic-ucl-final-2003-juventus",
+    "classic-ucl-final-2003-milan",
+    "historic-club-monaco-2004-05-26-25",
+    "historic-club-porto-2004-05-26-24",
+    "classic-ucl-final-2006-barcelona",
+    "classic-ucl-final-2006-arsenal",
+    "historic-club-liverpool-2007-05-23-23",
+    "classic-ucl-final-2009-barcelona",
+    "classic-ucl-final-2009-manunited",
+    "historic-club-bayern-2012-05-19-22",
+    "historic-club-bayern-2013-05-25-29",
+    "classic-ucl-final-2016-realmadrid",
+    "historic-club-atletico-2016-05-28-27",
+    "historic-club-juventus-2017-06-03-26",
+    "classic-ucl-final-2017-realmadrid",
+    "classic-ucl-final-2018-realmadrid",
+    "classic-ucl-final-2018-liverpool",
+    "classic-ucl-final-2021-city",
+    "classic-ucl-final-2021-chelsea",
+    "classic-ucl-final-2022-liverpool",
+    "classic-ucl-final-2022-realmadrid",
+    "classic-ucl-final-2024-dortmund",
+    "classic-ucl-final-2024-realmadrid",
+    "classic-ucl-final-2025-psg",
+    "classic-ucl-final-2025-inter",
+    "classic-ucl-final-2026-psg",
+    "classic-ucl-final-2026-arsenal",
+    "nation-2026/27-9",
+    "nation-2025/26-17",
+    "nation-2024/25-18",
+    "nation-2026/27-72",
+    "nation-2025/26-76",
+    "nation-2025/26-77",
+    "nation-2025/26-79",
+    "nation-2025/26-80",
+    "nation-2024/25-81",
+    "nation-2024/25-82",
+    "nation-2024/25-97",
+    "nation-2024/25-98",
+    "nation-2026/27-114",
+    "nation-2026/27-115",
+    "nation-2026/27-116",
+    "nation-2024/25-136",
+    "nation-2024/25-137",
+    "nation-2024/25-143",
+    "nation-2024/25-145",
+    "nation-2025/26-158",
+    "nation-2025/26-159",
+    "nation-2026/27-166",
+    "nation-2026/27-170",
+    "nation-2026/27-176",
+    "nation-2026/27-182",
+    "historic-nation-ESP-2024-07-14-30",
+    "historic-nation-ENG-2024-07-14-31",
+    "historic-nation-ARG-2022-12-18-32",
+    "historic-nation-FRA-2022-12-18-33",
+    "historic-nation-FRA-2018-07-15-34",
+    "historic-nation-CRO-2018-07-15-35",
+    "historic-nation-GER-2014-07-13-36",
+    "historic-nation-ARG-2014-07-13-37",
+    "historic-nation-ESP-2010-07-11-38",
+    "historic-nation-NED-2010-07-11-39",
+    "historic-nation-ITA-2006-07-09-40",
+    "historic-nation-FRA-2006-07-09-41",
+    "historic-nation-POR-2016-07-10-42",
+    "historic-nation-FRA-2016-07-10-43",
+    "historic-nation-BRA-2002-06-30-44",
+    "nation-2026/27-10",
+    "nation-2026/27-11",
+    "nation-2026/27-73",
+    "nation-2026/27-74",
+    "nation-2026/27-75",
+    "nation-2025/26-78",
+    "nation-2024/25-83",
+    "nation-2024/25-99",
+    "nation-2024/25-100",
+    "nation-2024/25-101",
+    "nation-2024/25-102",
+    "nation-2025/26-106",
+    "nation-2025/26-107",
+    "nation-2025/26-108",
+    "nation-2025/26-109",
+    "nation-2024/25-139",
+    "nation-2024/25-140",
+    "nation-2024/25-141",
+    "nation-2024/25-142",
+    "nation-2024/25-144",
+    "nation-2024/25-146",
+    "nation-2025/26-156",
+    "nation-2025/26-157",
+    "nation-2025/26-160",
+    "nation-2025/26-161",
+    "nation-2025/26-162",
+    "nation-2025/26-164",
+    "nation-2025/26-165",
+    "nation-2026/27-167",
+    "nation-2026/27-169",
+    "nation-2026/27-171",
+    "nation-2026/27-175",
+    "nation-2026/27-177",
+    "nation-2026/27-179",
+    "nation-2026/27-180",
+    "nation-2026/27-181",
+    "historic-nation-GER-2002-06-30-45",
+    "historic-nation-ESP-2012-07-01-46",
+    "historic-nation-NED-2014-06-13-47",
+    "historic-nation-POR-2024-06-26-48",
+    "classic-euro-final-2004-GRE",
+    "classic-euro-final-2004-POR",
+    "classic-euro-final-2008-ESP",
+    "classic-euro-final-2008-GER",
+    "classic-euro-final-2012-ITA",
+    "classic-euro-final-2021-ENG",
+    "classic-euro-final-2021-ITA",
+    "classic-world-cup-final-2026-ARG",
+    "classic-world-cup-final-2026-ESP"
+  ],
+  "hardIds": [
+    "club-2026/27-3",
+    "club-2026/27-4",
+    "club-2026/27-5",
+    "club-2026/27-6",
+    "club-2026/27-8",
+    "club-2025/26-14",
+    "club-2024/25-16",
+    "club-2026/27-20",
+    "club-2026/27-21",
+    "club-2026/27-22",
+    "club-2026/27-23",
+    "club-2026/27-24",
+    "club-2026/27-25",
+    "club-2026/27-26",
+    "club-2026/27-27",
+    "club-2026/27-28",
+    "club-2026/27-32",
+    "club-2026/27-33",
+    "club-2026/27-34",
+    "club-2026/27-35",
+    "club-2025/26-36",
+    "club-2025/26-37",
+    "club-2025/26-44",
+    "club-2025/26-46",
+    "club-2025/26-48",
+    "club-2025/26-51",
+    "club-2025/26-52",
+    "club-2025/26-53",
+    "club-2024/25-60",
+    "club-2024/25-62",
+    "club-2024/25-63",
+    "club-2024/25-66",
+    "club-2024/25-69",
+    "club-2024/25-70",
+    "club-2024/25-71",
+    "club-2024/25-85",
+    "club-2024/25-86",
+    "club-2024/25-87",
+    "club-2025/26-88",
+    "club-2025/26-89",
+    "club-2025/26-90",
+    "club-2026/27-93",
+    "club-2026/27-94",
+    "club-2025/26-95",
+    "club-2024/25-96",
+    "club-2024/25-121",
+    "club-2024/25-122",
+    "club-2024/25-124",
+    "club-2024/25-125",
+    "club-2024/25-126",
+    "club-2025/26-127",
+    "club-2025/26-128",
+    "club-2025/26-132",
+    "club-2026/27-133",
+    "club-2026/27-134",
+    "club-2026/27-135",
+    "historic-club-chelsea-2005-03-08-0",
+    "historic-club-milan-2005-05-25-1",
+    "historic-club-liverpool-2005-05-25-2",
+    "historic-club-manunited-2008-05-21-3",
+    "historic-club-chelsea-2008-05-21-4",
+    "historic-club-barcelona-2011-05-28-5",
+    "historic-club-manunited-2011-05-28-6",
+    "historic-club-inter-2010-05-22-7",
+    "historic-club-bayern-2010-05-22-8",
+    "historic-club-barcelona-2015-06-06-9",
+    "historic-club-juventus-2015-06-06-10",
+    "historic-club-realmadrid-2014-05-24-11",
+    "historic-club-atletico-2014-05-24-12",
+    "historic-club-psg-2020-08-23-13",
+    "historic-club-bayern-2020-08-23-14",
+    "historic-club-city-2023-06-10-15",
+    "historic-club-inter-2023-06-10-16",
+    "historic-club-liverpool-2019-06-01-17",
+    "historic-club-spurs-2019-06-01-18",
+    "historic-club-milan-2007-05-23-19",
+    "historic-club-chelsea-2012-05-19-20",
+    "historic-club-dortmund-2013-05-25-21",
+    "historic-club-bayern-2012-05-19-22",
+    "historic-club-liverpool-2007-05-23-23",
+    "historic-club-porto-2004-05-26-24",
+    "historic-club-monaco-2004-05-26-25",
+    "historic-club-juventus-2017-06-03-26",
+    "historic-club-atletico-2016-05-28-27",
+    "historic-club-barcelona-2005-03-08-28",
+    "historic-club-bayern-2013-05-25-29",
+    "historic-club-chelsea-2005-03-08-0-medium",
+    "historic-club-milan-2005-05-25-1-medium",
+    "historic-club-liverpool-2005-05-25-2-medium",
+    "historic-club-manunited-2008-05-21-3-medium",
+    "historic-club-chelsea-2008-05-21-4-medium",
+    "historic-club-barcelona-2011-05-28-5-medium",
+    "historic-club-manunited-2011-05-28-6-medium",
+    "historic-club-inter-2010-05-22-7-medium",
+    "historic-club-bayern-2010-05-22-8-medium",
+    "historic-club-barcelona-2015-06-06-9-medium",
+    "historic-club-juventus-2015-06-06-10-medium",
+    "historic-club-realmadrid-2014-05-24-11-medium",
+    "historic-club-atletico-2014-05-24-12-medium",
+    "historic-club-psg-2020-08-23-13-medium",
+    "historic-club-bayern-2020-08-23-14-medium",
+    "historic-club-city-2023-06-10-15-medium",
+    "historic-club-inter-2023-06-10-16-medium",
+    "historic-club-liverpool-2019-06-01-17-medium",
+    "historic-club-spurs-2019-06-01-18-medium",
+    "nation-2026/27-10",
+    "nation-2026/27-11",
+    "nation-2026/27-12",
+    "nation-2026/27-75",
+    "nation-2025/26-78",
+    "nation-2024/25-83",
+    "nation-2024/25-84",
+    "nation-2025/26-91",
+    "nation-2024/25-92",
+    "nation-2024/25-99",
+    "nation-2024/25-103",
+    "nation-2024/25-104",
+    "nation-2024/25-105",
+    "nation-2025/26-106",
+    "nation-2025/26-110",
+    "nation-2025/26-111",
+    "nation-2025/26-112",
+    "nation-2025/26-113",
+    "nation-2026/27-117",
+    "nation-2026/27-118",
+    "nation-2026/27-119",
+    "nation-2026/27-120",
+    "nation-2024/25-138",
+    "nation-2024/25-147",
+    "nation-2024/25-148",
+    "nation-2024/25-149",
+    "nation-2024/25-150",
+    "nation-2025/26-151",
+    "nation-2025/26-152",
+    "nation-2025/26-153",
+    "nation-2025/26-154",
+    "nation-2025/26-155",
+    "nation-2025/26-163",
+    "nation-2026/27-168",
+    "nation-2026/27-172",
+    "nation-2026/27-173",
+    "nation-2026/27-174",
+    "nation-2026/27-178",
+    "historic-nation-ESP-2024-07-14-30",
+    "historic-nation-ENG-2024-07-14-31",
+    "historic-nation-ARG-2022-12-18-32",
+    "historic-nation-FRA-2022-12-18-33",
+    "historic-nation-FRA-2018-07-15-34",
+    "historic-nation-CRO-2018-07-15-35",
+    "historic-nation-GER-2014-07-13-36",
+    "historic-nation-ARG-2014-07-13-37",
+    "historic-nation-ESP-2010-07-11-38",
+    "historic-nation-NED-2010-07-11-39",
+    "historic-nation-ITA-2006-07-09-40",
+    "historic-nation-FRA-2006-07-09-41",
+    "historic-nation-POR-2016-07-10-42",
+    "historic-nation-FRA-2016-07-10-43",
+    "historic-nation-BRA-2002-06-30-44",
+    "historic-nation-GER-2002-06-30-45",
+    "historic-nation-ESP-2012-07-01-46",
+    "historic-nation-NED-2014-06-13-47",
+    "historic-nation-POR-2024-06-26-48",
+    "historic-nation-MAR-2022-12-10-49",
+    "historic-nation-JPN-2022-11-23-50",
+    "historic-nation-KOR-2022-12-02-51",
+    "historic-nation-KSA-2022-11-22-52",
+    "historic-nation-CRC-2014-06-14-53",
+    "historic-nation-WAL-2016-07-01-54",
+    "historic-nation-ISL-2016-06-27-55",
+    "historic-nation-GEO-2024-06-26-56",
+    "historic-nation-CHE-2024-06-29-57",
+    "historic-nation-ESP-2024-07-14-30-medium",
+    "historic-nation-ENG-2024-07-14-31-medium",
+    "historic-nation-ARG-2022-12-18-32-medium",
+    "historic-nation-FRA-2022-12-18-33-medium",
+    "historic-nation-FRA-2018-07-15-34-medium",
+    "historic-nation-CRO-2018-07-15-35-medium",
+    "historic-nation-GER-2014-07-13-36-medium",
+    "historic-nation-ARG-2014-07-13-37-medium",
+    "historic-nation-ESP-2010-07-11-38-medium",
+    "historic-nation-NED-2010-07-11-39-medium",
+    "historic-nation-ITA-2006-07-09-40-medium",
+    "historic-nation-FRA-2006-07-09-41-medium",
+    "historic-nation-POR-2016-07-10-42-medium",
+    "historic-nation-FRA-2016-07-10-43-medium",
+    "historic-nation-BRA-2002-06-30-44-medium"
+  ],
+  "hardMasks": {
+    "club-2026/27-3": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            6,
+            0
+          ],
+          "hints": [
+            4,
+            6
+          ]
+        },
+        {
+          "hidden": [
+            4,
+            7,
+            0
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2026/27-4": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            9,
+            0
+          ],
+          "hints": [
+            5,
+            9
+          ]
+        }
+      ]
+    },
+    "club-2026/27-5": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            8,
+            1
+          ],
+          "hints": [
+            4,
+            8
+          ]
+        }
+      ]
+    },
+    "club-2026/27-6": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2026/27-8": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2025/26-14": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7,
+            0
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        },
+        {
+          "hidden": [
+            4,
+            8,
+            0
+          ],
+          "hints": [
+            4,
+            8
+          ]
+        },
+        {
+          "hidden": [
+            4,
+            9,
+            0
+          ],
+          "hints": [
+            4,
+            9
+          ]
+        }
+      ]
+    },
+    "club-2024/25-16": {
+      "variants": [
+        {
+          "hidden": [
+            2,
+            9,
+            0
+          ],
+          "hints": [
+            2,
+            9
+          ]
+        },
+        {
+          "hidden": [
+            4,
+            9,
+            0
+          ],
+          "hints": [
+            4,
+            9
+          ]
+        }
+      ]
+    },
+    "club-2026/27-20": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            8,
+            0
+          ],
+          "hints": [
+            4,
+            8
+          ]
+        }
+      ]
+    },
+    "club-2026/27-21": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            9,
+            1
+          ],
+          "hints": [
+            4,
+            9
+          ]
+        }
+      ]
+    },
+    "club-2026/27-22": {
+      "variants": [
+        {
+          "hidden": [
+            6,
+            9,
+            1
+          ],
+          "hints": [
+            6,
+            9
+          ]
+        }
+      ]
+    },
+    "club-2026/27-23": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7,
+            1
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2026/27-24": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            8,
+            0
+          ],
+          "hints": [
+            3,
+            8
+          ]
+        }
+      ]
+    },
+    "club-2026/27-25": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            9,
+            1
+          ],
+          "hints": [
+            4,
+            9
+          ]
+        }
+      ]
+    },
+    "club-2026/27-26": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2026/27-27": {
+      "variants": [
+        {
+          "hidden": [
+            8,
+            10,
+            0
+          ],
+          "hints": [
+            8,
+            10
+          ]
+        }
+      ]
+    },
+    "club-2026/27-28": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2026/27-32": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2026/27-33": {
+      "variants": [
+        {
+          "hidden": [
+            7,
+            8,
+            2
+          ],
+          "hints": [
+            7,
+            8
+          ]
+        },
+        {
+          "hidden": [
+            8,
+            9,
+            2
+          ],
+          "hints": [
+            8,
+            9
+          ]
+        }
+      ]
+    },
+    "club-2026/27-34": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            6,
+            0
+          ],
+          "hints": [
+            4,
+            6
+          ]
+        },
+        {
+          "hidden": [
+            4,
+            7,
+            0
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        },
+        {
+          "hidden": [
+            4,
+            9,
+            0
+          ],
+          "hints": [
+            4,
+            9
+          ]
+        }
+      ]
+    },
+    "club-2026/27-35": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            7,
+            0
+          ],
+          "hints": [
+            3,
+            7
+          ]
+        },
+        {
+          "hidden": [
+            3,
+            9,
+            0
+          ],
+          "hints": [
+            3,
+            9
+          ]
+        }
+      ]
+    },
+    "club-2025/26-36": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            6,
+            3
+          ],
+          "hints": [
+            4,
+            6
+          ]
+        }
+      ]
+    },
+    "club-2025/26-37": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            6,
+            1
+          ],
+          "hints": [
+            5,
+            6
+          ]
+        },
+        {
+          "hidden": [
+            5,
+            8,
+            1
+          ],
+          "hints": [
+            5,
+            8
+          ]
+        }
+      ]
+    },
+    "club-2025/26-44": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            7,
+            1
+          ],
+          "hints": [
+            3,
+            7
+          ]
+        },
+        {
+          "hidden": [
+            4,
+            7,
+            1
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2025/26-46": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            9,
+            1
+          ],
+          "hints": [
+            5,
+            9
+          ]
+        }
+      ]
+    },
+    "club-2025/26-48": {
+      "variants": [
+        {
+          "hidden": [
+            2,
+            8,
+            1
+          ],
+          "hints": [
+            2,
+            8
+          ]
+        }
+      ]
+    },
+    "club-2025/26-51": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            4,
+            1
+          ],
+          "hints": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    "club-2025/26-52": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7,
+            0
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2025/26-53": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            7,
+            1
+          ],
+          "hints": [
+            5,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2024/25-60": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            6,
+            1
+          ],
+          "hints": [
+            3,
+            6
+          ]
+        }
+      ]
+    },
+    "club-2024/25-62": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            7,
+            1
+          ],
+          "hints": [
+            3,
+            7
+          ]
+        },
+        {
+          "hidden": [
+            3,
+            9,
+            1
+          ],
+          "hints": [
+            3,
+            9
+          ]
+        }
+      ]
+    },
+    "club-2024/25-63": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2024/25-66": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            6,
+            2
+          ],
+          "hints": [
+            4,
+            6
+          ]
+        }
+      ]
+    },
+    "club-2024/25-69": {
+      "variants": [
+        {
+          "hidden": [
+            2,
+            6,
+            1
+          ],
+          "hints": [
+            2,
+            6
+          ]
+        }
+      ]
+    },
+    "club-2024/25-70": {
+      "variants": [
+        {
+          "hidden": [
+            6,
+            2,
+            0
+          ],
+          "hints": [
+            6,
+            2
+          ]
+        }
+      ]
+    },
+    "club-2024/25-71": {
+      "variants": [
+        {
+          "hidden": [
+            2,
+            7,
+            0
+          ],
+          "hints": [
+            2,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2024/25-85": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            8,
+            2
+          ],
+          "hints": [
+            5,
+            8
+          ]
+        }
+      ]
+    },
+    "club-2024/25-86": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2024/25-87": {
+      "variants": [
+        {
+          "hidden": [
+            6,
+            8,
+            2
+          ],
+          "hints": [
+            6,
+            8
+          ]
+        }
+      ]
+    },
+    "club-2025/26-88": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            6,
+            0
+          ],
+          "hints": [
+            4,
+            6
+          ]
+        },
+        {
+          "hidden": [
+            4,
+            7,
+            0
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        },
+        {
+          "hidden": [
+            4,
+            9,
+            0
+          ],
+          "hints": [
+            4,
+            9
+          ]
+        }
+      ]
+    },
+    "club-2025/26-89": {
+      "variants": [
+        {
+          "hidden": [
+            6,
+            7,
+            1
+          ],
+          "hints": [
+            6,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2025/26-90": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            9,
+            2
+          ],
+          "hints": [
+            5,
+            9
+          ]
+        }
+      ]
+    },
+    "club-2026/27-93": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2026/27-94": {
+      "variants": [
+        {
+          "hidden": [
+            6,
+            9,
+            0
+          ],
+          "hints": [
+            6,
+            9
+          ]
+        }
+      ]
+    },
+    "club-2025/26-95": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2024/25-96": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2024/25-121": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            9,
+            1
+          ],
+          "hints": [
+            3,
+            9
+          ]
+        },
+        {
+          "hidden": [
+            5,
+            9,
+            1
+          ],
+          "hints": [
+            5,
+            9
+          ]
+        }
+      ]
+    },
+    "club-2024/25-122": {
+      "variants": [
+        {
+          "hidden": [
+            10,
+            1,
+            0
+          ],
+          "hints": [
+            10,
+            1
+          ]
+        }
+      ]
+    },
+    "club-2024/25-124": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2024/25-125": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            6,
+            2
+          ],
+          "hints": [
+            3,
+            6
+          ]
+        },
+        {
+          "hidden": [
+            3,
+            7,
+            2
+          ],
+          "hints": [
+            3,
+            7
+          ]
+        },
+        {
+          "hidden": [
+            3,
+            8,
+            2
+          ],
+          "hints": [
+            3,
+            8
+          ]
+        }
+      ]
+    },
+    "club-2024/25-126": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2025/26-127": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2025/26-128": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7,
+            1
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        },
+        {
+          "hidden": [
+            4,
+            9,
+            1
+          ],
+          "hints": [
+            4,
+            9
+          ]
+        }
+      ]
+    },
+    "club-2025/26-132": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            5,
+            0
+          ],
+          "hints": [
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    "club-2026/27-133": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "club-2026/27-134": {
+      "variants": [
+        {
+          "hidden": [
+            2,
+            8,
+            1
+          ],
+          "hints": [
+            2,
+            8
+          ]
+        }
+      ]
+    },
+    "club-2026/27-135": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            6,
+            0
+          ],
+          "hints": [
+            4,
+            6
+          ]
+        },
+        {
+          "hidden": [
+            4,
+            7,
+            0
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        },
+        {
+          "hidden": [
+            4,
+            8,
+            0
+          ],
+          "hints": [
+            4,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-club-chelsea-2005-03-08-0": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7,
+            2
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "historic-club-milan-2005-05-25-1": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            9,
+            0
+          ],
+          "hints": [
+            4,
+            9
+          ]
+        }
+      ]
+    },
+    "historic-club-liverpool-2005-05-25-2": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            8,
+            0
+          ],
+          "hints": [
+            4,
+            8
+          ]
+        },
+        {
+          "hidden": [
+            4,
+            9,
+            0
+          ],
+          "hints": [
+            4,
+            9
+          ]
+        }
+      ]
+    },
+    "historic-club-manunited-2008-05-21-3": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            6,
+            2
+          ],
+          "hints": [
+            4,
+            6
+          ]
+        }
+      ]
+    },
+    "historic-club-chelsea-2008-05-21-4": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            8,
+            0
+          ],
+          "hints": [
+            5,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-club-barcelona-2011-05-28-5": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            7,
+            1
+          ],
+          "hints": [
+            3,
+            7
+          ]
+        },
+        {
+          "hidden": [
+            3,
+            8,
+            1
+          ],
+          "hints": [
+            3,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-club-manunited-2011-05-28-6": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            6,
+            0
+          ],
+          "hints": [
+            4,
+            6
+          ]
+        }
+      ]
+    },
+    "historic-club-inter-2010-05-22-7": {
+      "variants": [
+        {
+          "hidden": [
+            2,
+            8,
+            3
+          ],
+          "hints": [
+            2,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-club-bayern-2010-05-22-8": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            9,
+            5
+          ],
+          "hints": [
+            3,
+            9
+          ]
+        }
+      ]
+    },
+    "historic-club-barcelona-2015-06-06-9": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            7,
+            2
+          ],
+          "hints": [
+            3,
+            7
+          ]
+        },
+        {
+          "hidden": [
+            3,
+            8,
+            2
+          ],
+          "hints": [
+            3,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-club-juventus-2015-06-06-10": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7,
+            1
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "historic-club-realmadrid-2014-05-24-11": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            8,
+            2
+          ],
+          "hints": [
+            5,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-club-atletico-2014-05-24-12": {
+      "variants": [
+        {
+          "hidden": [
+            2,
+            6,
+            0
+          ],
+          "hints": [
+            2,
+            6
+          ]
+        },
+        {
+          "hidden": [
+            2,
+            7,
+            0
+          ],
+          "hints": [
+            2,
+            7
+          ]
+        },
+        {
+          "hidden": [
+            2,
+            9,
+            0
+          ],
+          "hints": [
+            2,
+            9
+          ]
+        }
+      ]
+    },
+    "historic-club-psg-2020-08-23-13": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            9,
+            0
+          ],
+          "hints": [
+            4,
+            9
+          ]
+        }
+      ]
+    },
+    "historic-club-bayern-2020-08-23-14": {
+      "variants": [
+        {
+          "hidden": [
+            2,
+            9,
+            0
+          ],
+          "hints": [
+            2,
+            9
+          ]
+        }
+      ]
+    },
+    "historic-club-city-2023-06-10-15": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            9,
+            0
+          ],
+          "hints": [
+            3,
+            9
+          ]
+        },
+        {
+          "hidden": [
+            5,
+            9,
+            0
+          ],
+          "hints": [
+            5,
+            9
+          ]
+        },
+        {
+          "hidden": [
+            6,
+            9,
+            0
+          ],
+          "hints": [
+            6,
+            9
+          ]
+        }
+      ]
+    },
+    "historic-club-inter-2023-06-10-16": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            6,
+            0
+          ],
+          "hints": [
+            3,
+            6
+          ]
+        }
+      ]
+    },
+    "historic-club-liverpool-2019-06-01-17": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            7,
+            2
+          ],
+          "hints": [
+            3,
+            7
+          ]
+        }
+      ]
+    },
+    "historic-club-spurs-2019-06-01-18": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            7,
+            1
+          ],
+          "hints": [
+            5,
+            7
+          ]
+        },
+        {
+          "hidden": [
+            5,
+            8,
+            1
+          ],
+          "hints": [
+            5,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-club-milan-2007-05-23-19": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7,
+            1
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "historic-club-chelsea-2012-05-19-20": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            6,
+            0
+          ],
+          "hints": [
+            5,
+            6
+          ]
+        }
+      ]
+    },
+    "historic-club-dortmund-2013-05-25-21": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            7,
+            0
+          ],
+          "hints": [
+            5,
+            7
+          ]
+        }
+      ]
+    },
+    "historic-club-bayern-2012-05-19-22": {
+      "variants": [
+        {
+          "hidden": [
+            2,
+            9,
+            3
+          ],
+          "hints": [
+            2,
+            9
+          ]
+        }
+      ]
+    },
+    "historic-club-liverpool-2007-05-23-23": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            6,
+            0
+          ],
+          "hints": [
+            3,
+            6
+          ]
+        },
+        {
+          "hidden": [
+            3,
+            8,
+            0
+          ],
+          "hints": [
+            3,
+            8
+          ]
+        },
+        {
+          "hidden": [
+            3,
+            9,
+            0
+          ],
+          "hints": [
+            3,
+            9
+          ]
+        }
+      ]
+    },
+    "historic-club-porto-2004-05-26-24": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            7,
+            2
+          ],
+          "hints": [
+            3,
+            7
+          ]
+        },
+        {
+          "hidden": [
+            4,
+            7,
+            2
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        },
+        {
+          "hidden": [
+            5,
+            7,
+            2
+          ],
+          "hints": [
+            5,
+            7
+          ]
+        }
+      ]
+    },
+    "historic-club-monaco-2004-05-26-25": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "historic-club-juventus-2017-06-03-26": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            8,
+            1
+          ],
+          "hints": [
+            5,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-club-atletico-2016-05-28-27": {
+      "variants": [
+        {
+          "hidden": [
+            2,
+            6,
+            0
+          ],
+          "hints": [
+            2,
+            6
+          ]
+        },
+        {
+          "hidden": [
+            2,
+            7,
+            0
+          ],
+          "hints": [
+            2,
+            7
+          ]
+        },
+        {
+          "hidden": [
+            2,
+            9,
+            0
+          ],
+          "hints": [
+            2,
+            9
+          ]
+        }
+      ]
+    },
+    "historic-club-barcelona-2005-03-08-28": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            8,
+            2
+          ],
+          "hints": [
+            5,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-club-bayern-2013-05-25-29": {
+      "variants": [
+        {
+          "hidden": [
+            2,
+            9,
+            1
+          ],
+          "hints": [
+            2,
+            9
+          ]
+        }
+      ]
+    },
+    "nation-2026/27-10": {
+      "variants": [
+        {
+          "hidden": [
+            8,
+            7,
+            3
+          ],
+          "hints": [
+            8,
+            7
+          ]
+        }
+      ]
+    },
+    "nation-2026/27-11": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            9,
+            0
+          ],
+          "hints": [
+            4,
+            9
+          ]
+        }
+      ]
+    },
+    "nation-2026/27-12": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            0,
+            7
+          ],
+          "hints": [
+            3,
+            0
+          ]
+        }
+      ]
+    },
+    "nation-2026/27-75": {
+      "variants": [
+        {
+          "hidden": [
+            10,
+            1,
+            4,
+            8
+          ],
+          "hints": [
+            10,
+            1
+          ]
+        }
+      ]
+    },
+    "nation-2025/26-78": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            8,
+            0
+          ],
+          "hints": [
+            5,
+            8
+          ]
+        }
+      ]
+    },
+    "nation-2024/25-83": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            8,
+            0
+          ],
+          "hints": [
+            3,
+            8
+          ]
+        }
+      ]
+    },
+    "nation-2024/25-84": {
+      "variants": [
+        {
+          "hidden": [
+            9,
+            2
+          ],
+          "hints": [
+            2,
+            9
+          ]
+        }
+      ]
+    },
+    "nation-2025/26-91": {
+      "variants": [
+        {
+          "hidden": [
+            0,
+            5
+          ],
+          "hints": [
+            0,
+            5
+          ]
+        }
+      ]
+    },
+    "nation-2024/25-92": {
+      "variants": [
+        {
+          "hidden": [
+            0,
+            2
+          ],
+          "hints": [
+            2,
+            0
+          ]
+        }
+      ]
+    },
+    "nation-2024/25-99": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            2,
+            0
+          ],
+          "hints": [
+            5,
+            2
+          ]
+        }
+      ]
+    },
+    "nation-2024/25-103": {
+      "variants": [
+        {
+          "hidden": [
+            0,
+            1
+          ],
+          "hints": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    "nation-2024/25-104": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "nation-2024/25-105": {
+      "variants": [
+        {
+          "hidden": [
+            10,
+            7
+          ],
+          "hints": [
+            10,
+            7
+          ]
+        }
+      ]
+    },
+    "nation-2025/26-106": {
+      "variants": [
+        {
+          "hidden": [
+            10,
+            0,
+            2,
+            5
+          ],
+          "hints": [
+            10,
+            0
+          ]
+        }
+      ]
+    },
+    "nation-2025/26-110": {
+      "variants": [
+        {
+          "hidden": [
+            1,
+            3,
+            4,
+            5,
+            8,
+            9
+          ],
+          "hints": [
+            1,
+            3
+          ]
+        }
+      ]
+    },
+    "nation-2025/26-111": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "nation-2025/26-112": {
+      "variants": [
+        {
+          "hidden": [
+            0,
+            1
+          ],
+          "hints": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    "nation-2025/26-113": {
+      "variants": [
+        {
+          "hidden": [
+            10,
+            8
+          ],
+          "hints": [
+            10,
+            8
+          ]
+        }
+      ]
+    },
+    "nation-2026/27-117": {
+      "variants": [
+        {
+          "hidden": [
+            9,
+            0
+          ],
+          "hints": [
+            0,
+            9
+          ]
+        }
+      ]
+    },
+    "nation-2026/27-118": {
+      "variants": [
+        {
+          "hidden": [
+            0,
+            5
+          ],
+          "hints": [
+            0,
+            5
+          ]
+        }
+      ]
+    },
+    "nation-2026/27-119": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            6
+          ],
+          "hints": [
+            6,
+            4
+          ]
+        }
+      ]
+    },
+    "nation-2026/27-120": {
+      "variants": [
+        {
+          "hidden": [
+            1,
+            2,
+            5,
+            4
+          ],
+          "hints": [
+            4,
+            1
+          ]
+        }
+      ]
+    },
+    "nation-2024/25-138": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "nation-2024/25-147": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "nation-2024/25-148": {
+      "variants": [
+        {
+          "hidden": [
+            0,
+            8
+          ],
+          "hints": [
+            0,
+            8
+          ]
+        }
+      ]
+    },
+    "nation-2024/25-149": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "nation-2024/25-150": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            6
+          ],
+          "hints": [
+            4,
+            6
+          ]
+        }
+      ]
+    },
+    "nation-2025/26-151": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "nation-2025/26-152": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "nation-2025/26-153": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "nation-2025/26-154": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "nation-2025/26-155": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "nation-2025/26-163": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "nation-2026/27-168": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "nation-2026/27-172": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "nation-2026/27-173": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "nation-2026/27-174": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "nation-2026/27-178": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            5,
+            2
+          ],
+          "hints": [
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    "historic-nation-ESP-2024-07-14-30": {
+      "variants": [
+        {
+          "hidden": [
+            1,
+            8,
+            3
+          ],
+          "hints": [
+            1,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-nation-ENG-2024-07-14-31": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            8,
+            0
+          ],
+          "hints": [
+            5,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-nation-ARG-2022-12-18-32": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            7,
+            2
+          ],
+          "hints": [
+            5,
+            7
+          ]
+        },
+        {
+          "hidden": [
+            5,
+            8,
+            2
+          ],
+          "hints": [
+            5,
+            8
+          ]
+        },
+        {
+          "hidden": [
+            5,
+            9,
+            2
+          ],
+          "hints": [
+            5,
+            9
+          ]
+        }
+      ]
+    },
+    "historic-nation-FRA-2022-12-18-33": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            8,
+            0
+          ],
+          "hints": [
+            5,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-nation-FRA-2018-07-15-34": {
+      "variants": [
+        {
+          "hidden": [
+            2,
+            8,
+            3
+          ],
+          "hints": [
+            2,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-nation-CRO-2018-07-15-35": {
+      "variants": [
+        {
+          "hidden": [
+            0,
+            2
+          ],
+          "hints": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    "historic-nation-GER-2014-07-13-36": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            9,
+            0
+          ],
+          "hints": [
+            4,
+            9
+          ]
+        }
+      ]
+    },
+    "historic-nation-ARG-2014-07-13-37": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            8,
+            1
+          ],
+          "hints": [
+            4,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-nation-ESP-2010-07-11-38": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            8,
+            0
+          ],
+          "hints": [
+            4,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-nation-NED-2010-07-11-39": {
+      "variants": [
+        {
+          "hidden": [
+            2,
+            6,
+            3
+          ],
+          "hints": [
+            2,
+            6
+          ]
+        }
+      ]
+    },
+    "historic-nation-ITA-2006-07-09-40": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            8,
+            0
+          ],
+          "hints": [
+            4,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-nation-FRA-2006-07-09-41": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            8,
+            1
+          ],
+          "hints": [
+            5,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-nation-POR-2016-07-10-42": {
+      "variants": [
+        {
+          "hidden": [
+            2,
+            8,
+            0
+          ],
+          "hints": [
+            2,
+            8
+          ]
+        },
+        {
+          "hidden": [
+            3,
+            8,
+            0
+          ],
+          "hints": [
+            3,
+            8
+          ]
+        },
+        {
+          "hidden": [
+            4,
+            8,
+            0
+          ],
+          "hints": [
+            4,
+            8
+          ]
+        },
+        {
+          "hidden": [
+            5,
+            8,
+            0
+          ],
+          "hints": [
+            5,
+            8
+          ]
+        }
+      ]
+    },
+    "historic-nation-FRA-2016-07-10-43": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            6,
+            2
+          ],
+          "hints": [
+            5,
+            6
+          ]
+        }
+      ]
+    },
+    "historic-nation-BRA-2002-06-30-44": {
+      "variants": [
+        {
+          "hidden": [
+            2,
+            6,
+            0
+          ],
+          "hints": [
+            2,
+            6
+          ]
+        }
+      ]
+    },
+    "historic-nation-GER-2002-06-30-45": {
+      "variants": [
+        {
+          "hidden": [
+            3,
+            6,
+            1
+          ],
+          "hints": [
+            3,
+            6
+          ]
+        },
+        {
+          "hidden": [
+            4,
+            6,
+            1
+          ],
+          "hints": [
+            4,
+            6
+          ]
+        }
+      ]
+    },
+    "historic-nation-ESP-2012-07-01-46": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7,
+            0
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "historic-nation-NED-2014-06-13-47": {
+      "variants": [
+        {
+          "hidden": [
+            0,
+            2,
+            5,
+            6,
+            8
+          ],
+          "hints": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    "historic-nation-POR-2024-06-26-48": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            3,
+            0
+          ],
+          "hints": [
+            5,
+            3
+          ]
+        },
+        {
+          "hidden": [
+            5,
+            6,
+            0
+          ],
+          "hints": [
+            5,
+            6
+          ]
+        },
+        {
+          "hidden": [
+            5,
+            7,
+            0
+          ],
+          "hints": [
+            5,
+            7
+          ]
+        }
+      ]
+    },
+    "historic-nation-MAR-2022-12-10-49": {
+      "variants": [
+        {
+          "hidden": [
+            6,
+            9
+          ],
+          "hints": [
+            9,
+            6
+          ]
+        }
+      ]
+    },
+    "historic-nation-JPN-2022-11-23-50": {
+      "variants": [
+        {
+          "hidden": [
+            6,
+            9,
+            10,
+            1
+          ],
+          "hints": [
+            1,
+            6
+          ]
+        }
+      ]
+    },
+    "historic-nation-KOR-2022-12-02-51": {
+      "variants": [
+        {
+          "hidden": [
+            0,
+            6,
+            7,
+            9,
+            1
+          ],
+          "hints": [
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    "historic-nation-KSA-2022-11-22-52": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "historic-nation-CRC-2014-06-14-53": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "historic-nation-WAL-2016-07-01-54": {
+      "variants": [
+        {
+          "hidden": [
+            0,
+            3
+          ],
+          "hints": [
+            0,
+            3
+          ]
+        }
+      ]
+    },
+    "historic-nation-ISL-2016-06-27-55": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "historic-nation-GEO-2024-06-26-56": {
+      "variants": [
+        {
+          "hidden": [
+            4,
+            7
+          ],
+          "hints": [
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "historic-nation-CHE-2024-06-29-57": {
+      "variants": [
+        {
+          "hidden": [
+            5,
+            8
+          ],
+          "hints": [
+            5,
+            8
+          ]
+        }
+      ]
+    }
+  },
+  "easyClubs": [
+    "realmadrid",
+    "barcelona",
+    "bayern",
+    "city",
+    "liverpool",
+    "manunited",
+    "arsenal",
+    "chelsea",
+    "psg",
+    "inter",
+    "milan",
+    "juventus",
+    "atletico",
+    "dortmund",
+    "spurs",
+    "napoli",
+    "benfica",
+    "porto",
+    "sporting",
+    "ajax",
+    "psv",
+    "galatasaray",
+    "fenerbahce",
+    "celtic"
+  ],
+  "easyNations": [
+    "ENG",
+    "FRA",
+    "GER",
+    "ESP",
+    "POR",
+    "BRA",
+    "ARG",
+    "ITA",
+    "NED",
+    "BEL",
+    "CRO",
+    "URU"
+  ]
+}
