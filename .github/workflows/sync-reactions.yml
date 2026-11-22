@@ -7,6 +7,10 @@ on:
       - 'scripts/sync_reactions.py'
       - 'scripts/upgrade_hard.py'
       - 'scripts/test_hard_mode.cjs'
+      - 'scripts/upgrade_easy.py'
+      - 'scripts/easy_choices.js'
+      - 'scripts/test_easy_mode.cjs'
+      - 'scripts/report_hard_nations.cjs'
       - '.github/workflows/sync-reactions.yml'
   workflow_dispatch:
 permissions:
@@ -23,6 +27,8 @@ jobs:
         run: python3 scripts/sync_reactions.py
       - name: Add historic and powerhouse XIs to Hard mode
         run: python3 scripts/upgrade_hard.py
+      - name: Refresh Easy and Moderate choices
+        run: python3 scripts/upgrade_easy.py
       - name: Check generated quiz JavaScript
         run: |
           python3 - <<'PY'
@@ -37,11 +43,17 @@ jobs:
           node --check /tmp/xi-quiz-engine.js
       - name: Check Hard masks and hint behavior
         run: node scripts/test_hard_mode.cjs
+      - name: Check Easy pool and distractor constraints
+        run: node scripts/test_easy_mode.cjs
+      - name: Refresh national-team Hard review
+        run: |
+          mkdir -p docs
+          node scripts/report_hard_nations.cjs > docs/hard-national-team-masks.md
       - name: Commit generated index when changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html
+          git add index.html docs/hard-national-team-masks.md
           if ! git diff --cached --quiet; then
             git commit -m "Embed new score-tier reaction images in game [skip ci]"
             git push origin HEAD:main

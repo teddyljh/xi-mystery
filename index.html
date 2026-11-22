@@ -286,9 +286,9 @@ window.XI_SEARCH_INDEX={"teams":{"city":["mancheng","manchesitecheng","mc","mcst
   const DATA = window.LINEUP_DATA;
   if (!DATA || !Array.isArray(DATA.fixtures)) throw new Error('Question data unavailable');
   const I = {
-    zh:{eyebrow:'换个角度，读懂足球',hero:'11 条线索。<br><span>1 支球队。</span>',heroDesc:'从真实比赛首发阵容中寻找蛛丝马迹。你有多懂足球？',chooseMode:'选择游戏模式',clubMode:'猜俱乐部',clubModeDesc:'看球员国籍 → 猜俱乐部',nationMode:'猜国家队',nationModeDesc:'看效力俱乐部 → 猜国家队',era:'经典与现代',difficulty:'选择难度',easy:'简单',moderate:'进阶',hard:'困难',easyExplain:'豪门与国家队典型阵容，以及极著名历史首发 · 四选一',moderateExplain:'豪门轮换、知名中坚球队、较古早的经典阵容 · 输入联想',hardExplain:'豪门、经典与冷门阵容 · 隐藏更有辨识度的线索',start:'开始挑战',fixtureNote:'2024 年至今为主 · 穿插经典历史首发',back:'返回设置',gameTitle:'这支球队是谁？',round:'题目',points:'得分',giveUp:'放弃本题 · 0 分',forfeitResult:'已放弃本题，本题 0 分。',submit:'提交答案',attempts:'剩余次数',hint:'获得提示',howto:'每一个位置都是线索。答错可以重试，提示会扣分。答题后揭晓真实首发名单。',source:'查看比赛来源',next:'下一题',complete:'本轮挑战结束',doneTitle:'挑战完成！',doneDesc:'你已经完成本轮比赛阵容挑战。',totalPoints:'总积分',playAgain:'再玩一轮 ↗',changeSettings:'更改设置',share:'复制成绩',footer:'独立球迷游戏 · 非官方产品',poolInfo:(count,rounds)=>`本组合共 ${count} 场首发 · 每轮 ${rounds} 道不同球队题`,subtitle:(season,comp,date)=>[`${season} 赛季`,comp,date].filter(Boolean).join(' · '),pitchTitle:'首发 11 人',pitchLeft:'从进攻端到门将',questionClub:'这是哪支俱乐部？',questionNation:'这是哪个国家队？',answerClub:'根据 11 名首发球员的国籍猜俱乐部。',answerNation:'根据 11 名国家队首发球员的当时俱乐部猜国家队。',placeholderClub:'输入俱乐部名称，例如：阿森纳',placeholderNation:'输入国家队名称，例如：西班牙',feedbackEmpty:'先输入答案，或者选择一个选项。',feedbackWrong:(n)=>`还不对！你还可以再猜 ${n} 次。`,feedbackCorrect:(points)=>`漂亮！本题 +${points} 分。`,feedbackEnd:'次数用完，这一题没有得分。',revealCorrect:'✓  回答正确',revealWrong:'✕  答案揭晓',nextLast:'查看成绩',revealMatch:(opp,date,formation)=>`${date} · 对阵 ${opp} · ${formation}`,summary:(correct,total)=>`答对 ${correct} / ${total} 题`,shared:'成绩已复制！',showOptions:'候选答案已出现。',uncovered:'解锁了一条新线索。',easyHint:'已排除两个错误选项。',totalCount:(n)=>`题库共 ${n} 套真实比赛首发`,quizLabel:'／ 阵容挑战',matchDay:'比赛日',formationLabel:'阵型',loveFootball:'为热爱足球而制作',none:'当前组合暂无该难度题目',openSource:'比赛来源',unused:'?',nameLabel:'球员',autocompleteHint:'支持中文、英文、西语、拼音、首字母和简称，可输入名字的任意片段。',autocompleteNone:'没有找到匹配的球队',autocompleteSelect:'请选择下拉列表中的球队，或输入完整准确的名称。',autocompleteChoose:'选择球队'},
-    en:{eyebrow:'THE BEAUTIFUL GAME, REIMAGINED',hero:'11 CLUES.<br><span>ONE TEAM.</span>',heroDesc:'Read between the lines of real starting XIs. How well do you know football?',chooseMode:'CHOOSE YOUR GAME',clubMode:'Guess the club',clubModeDesc:'Player nationalities → Club',nationMode:'Guess the nation',nationModeDesc:'Player clubs → National team',era:'ALL ERAS',difficulty:'DIFFICULTY',easy:'Easy',moderate:'Moderate',hard:'Hard',easyExplain:'Iconic modern and legendary historic XIs · Four choices',moderateExplain:'Rotated XIs, mid-tier teams, older classics · Smart autocomplete',hardExplain:'Powerhouse, classic and underdog XIs · More identifying clues hidden',start:'Start the challenge',fixtureNote:'Mostly 2024+ · With historic legendary XIs',back:'Back to setup',gameTitle:'WHO IS THIS TEAM?',round:'ROUND',points:'POINTS',giveUp:'Give up · 0 points',forfeitResult:'You gave up this question. 0 points.',submit:'Submit answer',attempts:'Attempts left',hint:'Get a hint',howto:'Each position is a clue. You can retry wrong answers; hints reduce your points. The actual XI is revealed afterward.',source:'Match source',next:'Next round',complete:'SESSION COMPLETE',doneTitle:'FULL TIME.',doneDesc:'You’ve completed this round of lineup mysteries.',totalPoints:'TOTAL POINTS',playAgain:'Play again ↗',changeSettings:'Change settings',share:'Copy score',footer:'Independent fan project · Unofficial',poolInfo:(count,rounds)=>`${count} archived XIs · ${rounds} unique teams per run`,subtitle:(season,comp,date)=>[`${season} season`,comp,date].filter(Boolean).join(' · '),pitchTitle:'THE STARTING XI',pitchLeft:'Attack → Goalkeeper',questionClub:'WHICH CLUB IS THIS?',questionNation:'WHICH NATIONAL TEAM?',answerClub:'Identify the club from the nationalities of its starting XI.',answerNation:'Identify the national team from its players’ match-day clubs.',placeholderClub:'Type a club, e.g. Arsenal',placeholderNation:'Type a nation, e.g. Spain',feedbackEmpty:'Enter an answer or select an option first.',feedbackWrong:(n)=>`Not quite. ${n} attempt${n!==1?'s':''} remaining.`,feedbackCorrect:(points)=>`Great finish! +${points} points.`,feedbackEnd:'Out of attempts. No points this round.',revealCorrect:'✓  CORRECT ANSWER',revealWrong:'✕  ANSWER REVEALED',nextLast:'View results',revealMatch:(opp,date,formation)=>`${date} · vs ${opp} · ${formation}`,summary:(correct,total)=>`${correct} / ${total} correct`,shared:'Score copied!',showOptions:'Answer choices unlocked.',uncovered:'One more clue unlocked.',easyHint:'Two incorrect answers removed.',totalCount:(n)=>`${n} archived starting XIs`,quizLabel:'/ THE QUIZ',matchDay:'MATCH DAY',formationLabel:'FORMATION',loveFootball:'MADE FOR THE LOVE OF FOOTBALL',none:'No lineups at this difficulty for these settings',openSource:'Original match report',unused:'?',nameLabel:'Player',autocompleteHint:'Search any fragment in Chinese, English, Spanish, Pinyin, initials or abbreviations.',autocompleteNone:'No matching teams',autocompleteSelect:'Choose a suggestion or type an exact team name.',autocompleteChoose:'Choose team'},
-    es:{eyebrow:'EL FÚTBOL COMO NUNCA',hero:'11 PISTAS.<br><span>UN EQUIPO.</span>',heroDesc:'Descifra onces titulares reales. ¿Cuánto sabes de fútbol?',chooseMode:'ELIGE EL MODO',clubMode:'Adivina el club',clubModeDesc:'Nacionalidades → Club',nationMode:'Adivina la selección',nationModeDesc:'Clubes de los jugadores → Selección',era:'TODAS LAS ÉPOCAS',difficulty:'DIFICULTAD',easy:'Fácil',moderate:'Intermedio',hard:'Difícil',easyExplain:'Onces icónicos, actuales e históricos · Cuatro opciones',moderateExplain:'Rotaciones, equipos intermedios y clásicos antiguos · Autocompletar',hardExplain:'Onces clásicos, grandes y modestos · Más pistas reveladoras ocultas',start:'Empezar el reto',fixtureNote:'Principalmente desde 2024 · Con onces históricos',back:'Volver',gameTitle:'¿QUÉ EQUIPO ES?',round:'RONDA',points:'PUNTOS',giveUp:'Rendirse · 0 puntos',forfeitResult:'Has abandonado esta pregunta. 0 puntos.',submit:'Enviar respuesta',attempts:'Intentos restantes',hint:'Pedir pista',howto:'Cada posición es una pista. Puedes volver a intentarlo; las pistas reducen tus puntos. Después verás el once real.',source:'Fuente del partido',next:'Siguiente ronda',complete:'PARTIDA TERMINADA',doneTitle:'¡FINAL DEL PARTIDO!',doneDesc:'Has completado este desafío de alineaciones.',totalPoints:'PUNTOS TOTALES',playAgain:'Jugar otra vez ↗',changeSettings:'Cambiar ajustes',share:'Copiar resultado',footer:'Proyecto independiente de aficionados · No oficial',poolInfo:(count,rounds)=>`${count} onces archivados · ${rounds} equipos distintos por ronda`,subtitle:(season,comp,date)=>[`Temporada ${season}`,comp,date].filter(Boolean).join(' · '),pitchTitle:'ONCE TITULAR',pitchLeft:'Ataque → Portería',questionClub:'¿QUÉ CLUB ES?',questionNation:'¿QUÉ SELECCIÓN ES?',answerClub:'Adivina el club por las nacionalidades de sus titulares.',answerNation:'Adivina la selección por los clubes de sus jugadores en aquella fecha.',placeholderClub:'Escribe un club, p. ej., Arsenal',placeholderNation:'Escribe una selección, p. ej., España',feedbackEmpty:'Introduce una respuesta o elige una opción.',feedbackWrong:(n)=>`No es correcto. Te quedan ${n} intento(s).`,feedbackCorrect:(points)=>`¡Muy bien! +${points} puntos.`,feedbackEnd:'Sin intentos. Cero puntos en esta ronda.',revealCorrect:'✓  RESPUESTA CORRECTA',revealWrong:'✕  RESPUESTA REVELADA',nextLast:'Ver resultados',revealMatch:(opp,date,formation)=>`${date} · contra ${opp} · ${formation}`,summary:(correct,total)=>`${correct} / ${total} aciertos`,shared:'¡Resultado copiado!',showOptions:'Opciones desbloqueadas.',uncovered:'Una pista más descubierta.',easyHint:'Se eliminaron dos opciones incorrectas.',totalCount:(n)=>`${n} onces titulares archivados`,quizLabel:'/ EL RETO',matchDay:'DÍA DE PARTIDO',formationLabel:'FORMACIÓN',loveFootball:'HECHO POR AMOR AL FÚTBOL',none:'No hay alineaciones de esta dificultad con estos ajustes',openSource:'Fuente del partido',unused:'?',nameLabel:'Jugador',autocompleteHint:'Busca cualquier parte del nombre, pinyin, iniciales o abreviatura.',autocompleteNone:'No se encontraron equipos',autocompleteSelect:'Elige una sugerencia o escribe el nombre completo.',autocompleteChoose:'Elegir equipo'}
+    zh:{eyebrow:'换个角度，读懂足球',hero:'11 条线索。<br><span>1 支球队。</span>',heroDesc:'从真实比赛首发阵容中寻找蛛丝马迹。你有多懂足球？',chooseMode:'选择游戏模式',clubMode:'猜俱乐部',clubModeDesc:'看球员国籍 → 猜俱乐部',nationMode:'猜国家队',nationModeDesc:'看效力俱乐部 → 猜国家队',era:'经典与现代',difficulty:'选择难度',easy:'简单',moderate:'进阶',hard:'困难',easyExplain:'现代与经典首发，覆盖更多球队 · 四选一',moderateExplain:'豪门轮换、知名中坚球队、较古早的经典阵容 · 输入联想',hardExplain:'豪门、经典与冷门阵容 · 隐藏更有辨识度的线索',start:'开始挑战',fixtureNote:'2024 年至今为主 · 穿插经典历史首发',back:'返回设置',gameTitle:'这支球队是谁？',round:'题目',points:'得分',giveUp:'放弃本题 · 0 分',forfeitResult:'已放弃本题，本题 0 分。',submit:'提交答案',attempts:'剩余次数',hint:'获得提示',howto:'每一个位置都是线索。答错可以重试，提示会扣分。答题后揭晓真实首发名单。',source:'查看比赛来源',next:'下一题',complete:'本轮挑战结束',doneTitle:'挑战完成！',doneDesc:'你已经完成本轮比赛阵容挑战。',totalPoints:'总积分',playAgain:'再玩一轮 ↗',changeSettings:'更改设置',share:'复制成绩',footer:'独立球迷游戏 · 非官方产品',poolInfo:(count,rounds)=>`本组合共 ${count} 场首发 · 每轮 ${rounds} 道不同球队题`,subtitle:(season,comp,date)=>[`${season} 赛季`,comp,date].filter(Boolean).join(' · '),pitchTitle:'首发 11 人',pitchLeft:'从进攻端到门将',questionClub:'这是哪支俱乐部？',questionNation:'这是哪个国家队？',answerClub:'根据 11 名首发球员的国籍猜俱乐部。',answerNation:'根据 11 名国家队首发球员的当时俱乐部猜国家队。',placeholderClub:'输入俱乐部名称，例如：阿森纳',placeholderNation:'输入国家队名称，例如：西班牙',feedbackEmpty:'先输入答案，或者选择一个选项。',feedbackWrong:(n)=>`还不对！你还可以再猜 ${n} 次。`,feedbackCorrect:(points)=>`漂亮！本题 +${points} 分。`,feedbackEnd:'次数用完，这一题没有得分。',revealCorrect:'✓  回答正确',revealWrong:'✕  答案揭晓',nextLast:'查看成绩',revealMatch:(opp,date,formation)=>`${date} · 对阵 ${opp} · ${formation}`,summary:(correct,total)=>`答对 ${correct} / ${total} 题`,shared:'成绩已复制！',showOptions:'候选答案已出现。',uncovered:'解锁了一条新线索。',easyHint:'已排除两个错误选项。',totalCount:(n)=>`题库共 ${n} 套真实比赛首发`,quizLabel:'／ 阵容挑战',matchDay:'比赛日',formationLabel:'阵型',loveFootball:'为热爱足球而制作',none:'当前组合暂无该难度题目',openSource:'比赛来源',unused:'?',nameLabel:'球员',autocompleteHint:'支持中文、英文、西语、拼音、首字母和简称，可输入名字的任意片段。',autocompleteNone:'没有找到匹配的球队',autocompleteSelect:'请选择下拉列表中的球队，或输入完整准确的名称。',autocompleteChoose:'选择球队'},
+    en:{eyebrow:'THE BEAUTIFUL GAME, REIMAGINED',hero:'11 CLUES.<br><span>ONE TEAM.</span>',heroDesc:'Read between the lines of real starting XIs. How well do you know football?',chooseMode:'CHOOSE YOUR GAME',clubMode:'Guess the club',clubModeDesc:'Player nationalities → Club',nationMode:'Guess the nation',nationModeDesc:'Player clubs → National team',era:'ALL ERAS',difficulty:'DIFFICULTY',easy:'Easy',moderate:'Moderate',hard:'Hard',easyExplain:'Modern and classic XIs across more teams · Four choices',moderateExplain:'Rotated XIs, mid-tier teams, older classics · Smart autocomplete',hardExplain:'Powerhouse, classic and underdog XIs · More identifying clues hidden',start:'Start the challenge',fixtureNote:'Mostly 2024+ · With historic legendary XIs',back:'Back to setup',gameTitle:'WHO IS THIS TEAM?',round:'ROUND',points:'POINTS',giveUp:'Give up · 0 points',forfeitResult:'You gave up this question. 0 points.',submit:'Submit answer',attempts:'Attempts left',hint:'Get a hint',howto:'Each position is a clue. You can retry wrong answers; hints reduce your points. The actual XI is revealed afterward.',source:'Match source',next:'Next round',complete:'SESSION COMPLETE',doneTitle:'FULL TIME.',doneDesc:'You’ve completed this round of lineup mysteries.',totalPoints:'TOTAL POINTS',playAgain:'Play again ↗',changeSettings:'Change settings',share:'Copy score',footer:'Independent fan project · Unofficial',poolInfo:(count,rounds)=>`${count} archived XIs · ${rounds} unique teams per run`,subtitle:(season,comp,date)=>[`${season} season`,comp,date].filter(Boolean).join(' · '),pitchTitle:'THE STARTING XI',pitchLeft:'Attack → Goalkeeper',questionClub:'WHICH CLUB IS THIS?',questionNation:'WHICH NATIONAL TEAM?',answerClub:'Identify the club from the nationalities of its starting XI.',answerNation:'Identify the national team from its players’ match-day clubs.',placeholderClub:'Type a club, e.g. Arsenal',placeholderNation:'Type a nation, e.g. Spain',feedbackEmpty:'Enter an answer or select an option first.',feedbackWrong:(n)=>`Not quite. ${n} attempt${n!==1?'s':''} remaining.`,feedbackCorrect:(points)=>`Great finish! +${points} points.`,feedbackEnd:'Out of attempts. No points this round.',revealCorrect:'✓  CORRECT ANSWER',revealWrong:'✕  ANSWER REVEALED',nextLast:'View results',revealMatch:(opp,date,formation)=>`${date} · vs ${opp} · ${formation}`,summary:(correct,total)=>`${correct} / ${total} correct`,shared:'Score copied!',showOptions:'Answer choices unlocked.',uncovered:'One more clue unlocked.',easyHint:'Two incorrect answers removed.',totalCount:(n)=>`${n} archived starting XIs`,quizLabel:'/ THE QUIZ',matchDay:'MATCH DAY',formationLabel:'FORMATION',loveFootball:'MADE FOR THE LOVE OF FOOTBALL',none:'No lineups at this difficulty for these settings',openSource:'Original match report',unused:'?',nameLabel:'Player',autocompleteHint:'Search any fragment in Chinese, English, Spanish, Pinyin, initials or abbreviations.',autocompleteNone:'No matching teams',autocompleteSelect:'Choose a suggestion or type an exact team name.',autocompleteChoose:'Choose team'},
+    es:{eyebrow:'EL FÚTBOL COMO NUNCA',hero:'11 PISTAS.<br><span>UN EQUIPO.</span>',heroDesc:'Descifra onces titulares reales. ¿Cuánto sabes de fútbol?',chooseMode:'ELIGE EL MODO',clubMode:'Adivina el club',clubModeDesc:'Nacionalidades → Club',nationMode:'Adivina la selección',nationModeDesc:'Clubes de los jugadores → Selección',era:'TODAS LAS ÉPOCAS',difficulty:'DIFICULTAD',easy:'Fácil',moderate:'Intermedio',hard:'Difícil',easyExplain:'Onces modernos y clásicos de más equipos · Cuatro opciones',moderateExplain:'Rotaciones, equipos intermedios y clásicos antiguos · Autocompletar',hardExplain:'Onces clásicos, grandes y modestos · Más pistas reveladoras ocultas',start:'Empezar el reto',fixtureNote:'Principalmente desde 2024 · Con onces históricos',back:'Volver',gameTitle:'¿QUÉ EQUIPO ES?',round:'RONDA',points:'PUNTOS',giveUp:'Rendirse · 0 puntos',forfeitResult:'Has abandonado esta pregunta. 0 puntos.',submit:'Enviar respuesta',attempts:'Intentos restantes',hint:'Pedir pista',howto:'Cada posición es una pista. Puedes volver a intentarlo; las pistas reducen tus puntos. Después verás el once real.',source:'Fuente del partido',next:'Siguiente ronda',complete:'PARTIDA TERMINADA',doneTitle:'¡FINAL DEL PARTIDO!',doneDesc:'Has completado este desafío de alineaciones.',totalPoints:'PUNTOS TOTALES',playAgain:'Jugar otra vez ↗',changeSettings:'Cambiar ajustes',share:'Copiar resultado',footer:'Proyecto independiente de aficionados · No oficial',poolInfo:(count,rounds)=>`${count} onces archivados · ${rounds} equipos distintos por ronda`,subtitle:(season,comp,date)=>[`Temporada ${season}`,comp,date].filter(Boolean).join(' · '),pitchTitle:'ONCE TITULAR',pitchLeft:'Ataque → Portería',questionClub:'¿QUÉ CLUB ES?',questionNation:'¿QUÉ SELECCIÓN ES?',answerClub:'Adivina el club por las nacionalidades de sus titulares.',answerNation:'Adivina la selección por los clubes de sus jugadores en aquella fecha.',placeholderClub:'Escribe un club, p. ej., Arsenal',placeholderNation:'Escribe una selección, p. ej., España',feedbackEmpty:'Introduce una respuesta o elige una opción.',feedbackWrong:(n)=>`No es correcto. Te quedan ${n} intento(s).`,feedbackCorrect:(points)=>`¡Muy bien! +${points} puntos.`,feedbackEnd:'Sin intentos. Cero puntos en esta ronda.',revealCorrect:'✓  RESPUESTA CORRECTA',revealWrong:'✕  RESPUESTA REVELADA',nextLast:'Ver resultados',revealMatch:(opp,date,formation)=>`${date} · contra ${opp} · ${formation}`,summary:(correct,total)=>`${correct} / ${total} aciertos`,shared:'¡Resultado copiado!',showOptions:'Opciones desbloqueadas.',uncovered:'Una pista más descubierta.',easyHint:'Se eliminaron dos opciones incorrectas.',totalCount:(n)=>`${n} onces titulares archivados`,quizLabel:'/ EL RETO',matchDay:'DÍA DE PARTIDO',formationLabel:'FORMACIÓN',loveFootball:'HECHO POR AMOR AL FÚTBOL',none:'No hay alineaciones de esta dificultad con estos ajustes',openSource:'Fuente del partido',unused:'?',nameLabel:'Jugador',autocompleteHint:'Busca cualquier parte del nombre, pinyin, iniciales o abreviatura.',autocompleteNone:'No se encontraron equipos',autocompleteSelect:'Elige una sugerencia o escribe el nombre completo.',autocompleteChoose:'Elegir equipo'}
   };
   // Only explicitly allowed tournaments are shown before the answer.
   // All other competition names can reveal a continent/country and are hidden.
@@ -1541,7 +1541,20 @@ function displayFinishReaction(reaction){
     if(historical && (f.tier==='easy'||f.tier==='moderate'))return true;
     return f.tier==='moderate'&&(f.mode==='club'?HARD_FAMOUS_CLUBS.has(f.team):HARD_FAMOUS_NATIONS.has(f.team));
   }
+  function fixtureIdentity(f){
+    return JSON.stringify([f.mode,f.team,f.date,f.formation,f.players.map(p=>[p.name,p.role,p.value])]);
+  }
+  // Share source fixtures instead of cloning them: adding Easy questions must
+  // not change archive frequencies, Hard selections or the Moderate pool.
+  const EASY_FIXTURES=[];
+  const easyFixtureKeys=new Set();
+  for(const tier of ['easy','moderate'])for(const f of DATA.fixtures){
+    if(f.tier!==tier)continue;
+    const key=fixtureIdentity(f);
+    if(!easyFixtureKeys.has(key)){easyFixtureKeys.add(key);EASY_FIXTURES.push(f);}
+  }
   function available(){
+    if(state.difficulty==='easy')return EASY_FIXTURES.filter(f=>f.mode===state.mode);
     return DATA.fixtures.filter(f=>f.mode===state.mode&&
       (f.tier===state.difficulty||(state.difficulty==='hard'&&isImportedHardFixture(f))));
   }
@@ -1919,9 +1932,8 @@ function displayFinishReaction(reaction){
   function start(){state.rounds=pickRounds();if(!state.rounds.length)return;finishSelected=null;state.index=0;state.score=0;state.correct=0;screen('game');newRound();}
   function current(){return state.rounds[state.index];}
   function newRound(){closeAutocomplete();autocompleteKey=null;state.attempts=0;state.hints=0;state.forfeited=false;lastPoints=0;state.selectedChoice=null;state.removed=[];state.revealed=false;state.choicesShown=state.difficulty==='easy';state.masked=state.difficulty==='hard'?buildHardMask(current()):[];state.choices=buildChoices(current());lastEntered='';$('answer-input').value='';$('feedback').textContent='';$('feedback').classList.remove('good','error');renderGame();}
-  // Easy multiple choice — 1 same-league opponent + 2 from other leagues.
-  // The league mapping is intentionally explicit: it is not guessed from the
-  // teams' nationalities, and the answer never leaks via a league-only set.
+  // Easy multiple choice: one same-league club plus two comparable foreign clubs.
+  // These explicit country-league maps also serve Moderate hint choices.
   const EASY_CLUB_LEAGUES={
     england:'city arsenal liverpool chelsea manunited spurs newcastle villa westham brighton',
     spain:'realmadrid barcelona atletico athletic sevilla villarreal realbetis valencia girona',
@@ -1933,10 +1945,11 @@ function displayFinishReaction(reaction){
     netherlands:'ajax psv feyenoord alkmaar',
     scotland:'celtic rangers',
     belgium:'brugge anderlecht union-sg',
-    austria:'salzburg',
-    greece:'olympiacos',
+    austria:'salzburg sturm',
+    greece:'olympiacos aek paok',
     switzerland:'basel youngboys',
-    ukraine:'shakhtar'
+    ukraine:'shakhtar dynamokyiv',
+    croatia:'dinamo hajduk rijeka'
   };
   const EASY_CLUB_LEAGUE_BY_KEY={};
   for(const [league,keys] of Object.entries(EASY_CLUB_LEAGUES)){
@@ -1944,19 +1957,19 @@ function displayFinishReaction(reaction){
       if(DATA.teams[key])EASY_CLUB_LEAGUE_BY_KEY[key]=league;
     }
   }
-  // Broad recognition/club-strength groups for selecting foreign opponents;
-  // these are design heuristics, not precise or season-specific rankings.
+  // Broad game-design strength bands, rather than exact rankings. Both foreign
+  // distractors must share the answer's band and come from distinct countries.
   const EASY_CLUB_LEVELS=[
-    'realmadrid barcelona bayern city liverpool manunited arsenal chelsea psg inter milan juventus',
-    'atletico dortmund leverkusen spurs newcastle napoli roma atalanta marseille lyon monaco leipzig galatasaray fenerbahce benfica porto sporting ajax psv',
-    'athletic sevilla villarreal realbetis valencia stuttgart frankfurt westham brighton lille nice lens fiorentina lazio bologna girona wolfsburg feyenoord braga celtic rangers brugge anderlecht salzburg',
-    'besiktas como reims alkmaar youngboys basel olympiacos shakhtar union-sg'
+    'realmadrid barcelona bayern city liverpool arsenal chelsea psg inter',
+    'manunited milan juventus atletico dortmund leverkusen spurs newcastle villa napoli roma atalanta marseille lyon monaco leipzig galatasaray fenerbahce benfica porto sporting ajax psv',
+    'athletic sevilla villarreal realbetis valencia stuttgart frankfurt westham brighton lille nice lens fiorentina lazio bologna girona wolfsburg feyenoord braga celtic rangers brugge anderlecht salzburg olympiacos dinamo',
+    'besiktas como reims alkmaar youngboys basel shakhtar union-sg sturm aek paok dynamokyiv hajduk rijeka'
   ].map(keys=>keys.split(' '));
   const EASY_CLUB_LEVEL_BY_KEY={};
   EASY_CLUB_LEVELS.forEach((group,i)=>group.forEach(key=>EASY_CLUB_LEVEL_BY_KEY[key]=i));
 
-  // National-team recognition groups are disjoint: exactly one same-level
-  // distractor, with two others drawn from different recognition bands.
+  // Keep the original recognition bands available to existing Hard policies.
+  // Easy choices use the era profiles below, independently of Hard masking.
   const EASY_NATION_LEVELS=[
     'ENG FRA GER ESP POR BRA ARG ITA NED',
     'BEL CRO URU DEN CHE COL MAR SEN JPN KOR USA MEX TUR',
@@ -1966,71 +1979,58 @@ function displayFinishReaction(reaction){
   const EASY_NATION_LEVEL_BY_KEY={};
   EASY_NATION_LEVELS.forEach((group,i)=>group.forEach(key=>EASY_NATION_LEVEL_BY_KEY[key]=i));
 
-  function randomPick(arr){return arr[Math.floor(Math.random()*arr.length)];}
-  function weightedClubPick(keys,reference){
-    if(!keys.length)return null;
-    const target=EASY_CLUB_LEVEL_BY_KEY[reference]??2;
-    // Do not introduce vastly weaker/stronger foreign alternatives when
-    // recognizable opponents within one broad strength band are available.
-    const close=keys.filter(key=>Math.abs((EASY_CLUB_LEVEL_BY_KEY[key]??2)-target)<=1);
-    const pool=close.length?close:keys;
-    const weights=pool.map(key=>(EASY_CLUB_LEVEL_BY_KEY[key]??2)===target?3:1);
-    let roll=Math.random()*weights.reduce((a,b)=>a+b,0);
-    for(let i=0;i<pool.length;i++){
-      roll-=weights[i];
-      if(roll<0)return pool[i];
-    }
-    return pool[pool.length-1];
+  // Reviewed broad strength profiles for the question's era, informed by the
+  // contemporary World Cup/Euro results. They are gameplay judgments, not FIFA
+  // ranking claims. Unlisted teams retain a middle/lower recognition band.
+  const EASY_NATION_ERAS=[
+    [2004,'BRA FRA ESP GER ARG NED ENG ITA','POR MEX TUR USA DEN IRL CZE CMR BEL SEN KOR SWE CRO'],
+    [2008,'BRA ARG ITA FRA GER ESP ENG NED POR','CZE CRO SWE MEX USA DEN CHE UKR RUS TUR GHA CIV'],
+    [2012,'ESP NED GER BRA ARG URU ITA POR ENG','FRA CRO RUS CZE CHE DEN MEX USA CHI GHA CIV JPN KOR GRE'],
+    [2014,'GER ARG NED BRA ESP COL BEL FRA POR URU','ITA ENG CRO CHE MEX USA CHI CRC GRE ECU CIV NGA'],
+    [2018,'FRA BEL CRO BRA ENG POR ESP ARG GER','NED ITA URU COL CHE DEN MEX SWE RUS WAL POL SEN JPN KOR'],
+    [2022,'ARG FRA BRA ENG ESP POR NED BEL CRO','GER ITA URU COL CHE DEN MAR SEN JPN KOR USA MEX IRN ECU'],
+    [Infinity,'ARG FRA ESP ENG BRA POR NED GER ITA','BEL CRO MAR COL URU MEX USA JPN CHE SEN DEN KOR AUT ECU TUR IRN']
+  ].map(([through,top,next])=>({through,levels:[top.split(' '),next.split(' ')]}));
+  const EASY_NATION_CHOICE_KEYS=new Set([...EASY_NATION_LEVELS.flat(),...EASY_NATION_ERAS.flatMap(era=>era.levels.flat())]);
+  function easyNationLevel(f,key){
+    const year=Number((f.date||'').slice(0,4));
+    const era=EASY_NATION_ERAS.find(era=>year<=era.through)||EASY_NATION_ERAS[EASY_NATION_ERAS.length-1];
+    for(let i=0;i<era.levels.length;i++)if(era.levels[i].includes(key))return i;
+    return Math.max(2,EASY_NATION_LEVEL_BY_KEY[key]??3);
   }
+
+  function randomPick(arr){return arr[Math.floor(Math.random()*arr.length)];}
   function buildChoices(f){
     const group=f.mode==='club'?DATA.teams:DATA.nations;
     const options=Object.keys(group).filter(key=>key!==f.team);
-    // Easy choices and Moderate hint choices use the same league/recognition-based distractors.
-    // Hard retains its original random fallback when options become available.
+    // Preserve Hard's original random, unused-until-needed choice generation.
     if(state.difficulty==='hard')return shuffle([f.team,...shuffle(options).slice(0,3)]);
 
     if(f.mode==='club'){
-      const league=EASY_CLUB_LEAGUE_BY_KEY[f.team];
-      const teammates=options.filter(key=>league&&EASY_CLUB_LEAGUE_BY_KEY[key]===league);
-      // Exactly one from the answer's league.
-      const same=weightedClubPick(teammates,f.team);
-      const foreign=options.filter(key=>EASY_CLUB_LEAGUE_BY_KEY[key]&&EASY_CLUB_LEAGUE_BY_KEY[key]!==league);
-      const others=[];
-      if(same)others.push(same);
-      // The other two are from outside the correct league, ideally from two
-      // different leagues, and weighted towards similar-strength clubs.
-      while(others.length<3){
-        const alreadyUsedLeagues=new Set(others.filter(k=>k!==same).map(k=>EASY_CLUB_LEAGUE_BY_KEY[k]));
-        let pool=foreign.filter(k=>!others.includes(k)&&!alreadyUsedLeagues.has(EASY_CLUB_LEAGUE_BY_KEY[k]));
-        if(!pool.length)pool=foreign.filter(k=>!others.includes(k));
-        if(!pool.length)break;
-        others.push(weightedClubPick(pool,f.team));
-      }
-      // Defensive fallback for future new teams not yet in our league map.
-      for(const key of shuffle(options.filter(k=>!others.includes(k)))){
-        if(others.length===3)break;
-        others.push(key);
-      }
-      return shuffle([f.team,...others]);
+      const league=EASY_CLUB_LEAGUE_BY_KEY[f.team],level=EASY_CLUB_LEVEL_BY_KEY[f.team];
+      if(!league||level===undefined)throw Error('Missing Easy club classification: '+f.team);
+      const domestic=options.filter(key=>EASY_CLUB_LEAGUE_BY_KEY[key]===league&&EASY_CLUB_LEVEL_BY_KEY[key]!==undefined);
+      if(!domestic.length)throw Error('Missing same-league distractor: '+f.team);
+      const distance=Math.min(...domestic.map(key=>Math.abs(EASY_CLUB_LEVEL_BY_KEY[key]-level)));
+      const same=randomPick(domestic.filter(key=>Math.abs(EASY_CLUB_LEVEL_BY_KEY[key]-level)===distance));
+      const foreign=options.filter(key=>EASY_CLUB_LEAGUE_BY_KEY[key]&&EASY_CLUB_LEAGUE_BY_KEY[key]!==league&&EASY_CLUB_LEVEL_BY_KEY[key]===level);
+      const first=randomPick(foreign);
+      const second=randomPick(foreign.filter(key=>EASY_CLUB_LEAGUE_BY_KEY[key]!==EASY_CLUB_LEAGUE_BY_KEY[first]));
+      if(!first||!second)throw Error('Missing comparable foreign-league distractors: '+f.team);
+      return shuffle([f.team,same,first,second]);
     }
 
-    const level=EASY_NATION_LEVEL_BY_KEY[f.team]??3;
-    const peers=options.filter(key=>(EASY_NATION_LEVEL_BY_KEY[key]??3)===level);
-    const others=[];
-    if(peers.length)others.push(randomPick(peers));
-    // Take remaining distractors from distinct *other* recognition levels.
-    const availableLevels=shuffle([0,1,2].filter(i=>i!==level));
-    availableLevels.sort((a,b)=>Math.abs(a-level)-Math.abs(b-level));
-    for(const otherLevel of availableLevels){
-      const pool=options.filter(key=>!others.includes(key)&&(EASY_NATION_LEVEL_BY_KEY[key]??3)===otherLevel);
-      if(pool.length)others.push(randomPick(pool));
-      if(others.length===3)break;
-    }
-    for(const key of shuffle(options.filter(k=>!others.includes(k)))){
-      if(others.length===3)break;
-      others.push(key);
-    }
-    return shuffle([f.team,...others]);
+    const level=easyNationLevel(f,f.team);
+    const nationalOptions=options.filter(key=>EASY_NATION_CHOICE_KEYS.has(key));
+    const peers=nationalOptions.filter(key=>easyNationLevel(f,key)===level);
+    if(peers.length<2)throw Error('Missing contemporary national-team peers: '+f.team);
+    const first=randomPick(peers),second=randomPick(peers.filter(key=>key!==first));
+    const otherLevels=[0,1,2,3].filter(other=>other!==level&&nationalOptions.some(key=>easyNationLevel(f,key)===other));
+    const distance=Math.min(...otherLevels.map(other=>Math.abs(other-level)));
+    const otherLevel=randomPick(otherLevels.filter(other=>Math.abs(other-level)===distance));
+    const different=randomPick(nationalOptions.filter(key=>easyNationLevel(f,key)===otherLevel));
+    if(!different)throw Error('Missing different-level national-team distractor: '+f.team);
+    return shuffle([f.team,first,second,different]);
   }
   function renderGame(){const f=current();if(!f)return;
     const subtitle=$('game-subtitle');

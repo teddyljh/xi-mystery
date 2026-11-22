@@ -15,6 +15,14 @@ Moderate hint options now use the exact same distractor generation as Easy choic
 Club questions draw one same-league choice and two from other leagues when possible; national-team questions use recognition-level bands.
 Hard mode and all other gameplay remain unchanged.
 
+## Easy expansion 2026-11-21
+
+Easy now includes the deduplicated union of all original Easy and Moderate XIs: 80 club and 80 national-team questions, adding 40 of each. Existing Easy copies take precedence over identical Moderate copies. Source fixture tiers and archive frequencies are unchanged, so the Moderate and Hard pools and Hard clue selections are preserved.
+
+Every Easy club question and Moderate club hint offers one same-country-league opponent and two opponents in the answer's strength band from two other country leagues. League and strength mappings include Dinamo Zagreb and Aston Villa; there is no unconstrained random fallback. National-team options use the question's era and provide two same-band opponents plus one in an adjacent different band. The era bands are game-design judgments, informed by historical results rather than exact FIFA ranks; examples include [Korea/Japan 2002](https://www.fifa.com/pt/articles/copa-do-mundo-de-2002-videos), [European World Cup records](https://www.fifa.com/en/articles/european-nations-record), [Morocco 2022](https://www.fifa.com/fr/tournaments/mens/worldcup/articles/parcours-maroc-coupe-du-monde-qatar-2022-un-an-jour-pour-jour), and the [FA's recent FIFA ranking summary](https://www.thefa.com/-/media/thefacom-new/files/rules-and-regulations/2025-26/fifa-rankings/mens-fifa-rankings-december-2025-12-months.ashx?la=en).
+
+`scripts/easy_choices.js` owns the option rules; `python3 scripts/upgrade_easy.py` embeds them. Run `node scripts/test_easy_mode.cjs` to check the complete Easy/Moderate pools. The generated [national-team Hard review](docs/hard-national-team-masks.md) lists every distinct XI, all random hidden-player alternatives and both hints. Regenerate it with `node scripts/report_hard_nations.cjs > docs/hard-national-team-masks.md`.
+
 ## Hard-mode clue update
 
 Powerhouse and classic XIs now hide a reviewed attacking player, one midfielder, and one defender. The attacking selection favors an iconic player or a nationality/club clue that gives too much away, including attackers stored as AM/LM/RM. The two hints reveal the midfielder and defender in that order; the attacker remains hidden until the answer is revealed.

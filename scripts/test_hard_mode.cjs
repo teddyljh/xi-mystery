@@ -318,11 +318,16 @@ for (const id of ['club-2026/27-24', 'club-2026/27-34', 'club-2025/26-89', 'club
 assert.equal(api.hardLeagueNation(data.fixtures.find(f => f.team === 'arsenal')), undefined);
 for (const f of data.fixtures.filter(f => f.mode === 'nation'))assert.equal(api.usesLeagueHardMask(f), false, f.id);
 
-// Pool membership and the original per-tier pools remain unchanged.
+// Moderate and Hard membership stay unchanged; Easy is the deduplicated union.
 for (const mode of ['club', 'nation']) {
   for (const difficulty of ['easy', 'moderate', 'hard']) {
     context.state = {mode, difficulty};
-    const expected = data.fixtures.filter(f => f.mode === mode &&
+    const key=f=>JSON.stringify([f.mode,f.team,f.date,f.formation,f.players.map(p=>[p.name,p.role,p.value])]);
+    const union=new Map();
+    for(const tier of ['easy','moderate'])for(const f of data.fixtures){
+      if(f.mode===mode&&f.tier===tier&&!union.has(key(f)))union.set(key(f),f);
+    }
+    const expected = difficulty==='easy'?[...union.values()]:data.fixtures.filter(f => f.mode === mode &&
       (f.tier === difficulty || (difficulty === 'hard' && api.isImportedHardFixture(f))));
     assert.deepEqual([...api.available()].map(f => f.id), expected.map(f => f.id));
   }

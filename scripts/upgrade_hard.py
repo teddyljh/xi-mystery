@@ -134,7 +134,20 @@ RULES = r"""
     if(historical && (f.tier==='easy'||f.tier==='moderate'))return true;
     return f.tier==='moderate'&&(f.mode==='club'?HARD_FAMOUS_CLUBS.has(f.team):HARD_FAMOUS_NATIONS.has(f.team));
   }
+  function fixtureIdentity(f){
+    return JSON.stringify([f.mode,f.team,f.date,f.formation,f.players.map(p=>[p.name,p.role,p.value])]);
+  }
+  // Share source fixtures instead of cloning them: adding Easy questions must
+  // not change archive frequencies, Hard selections or the Moderate pool.
+  const EASY_FIXTURES=[];
+  const easyFixtureKeys=new Set();
+  for(const tier of ['easy','moderate'])for(const f of DATA.fixtures){
+    if(f.tier!==tier)continue;
+    const key=fixtureIdentity(f);
+    if(!easyFixtureKeys.has(key)){easyFixtureKeys.add(key);EASY_FIXTURES.push(f);}
+  }
   function available(){
+    if(state.difficulty==='easy')return EASY_FIXTURES.filter(f=>f.mode===state.mode);
     return DATA.fixtures.filter(f=>f.mode===state.mode&&
       (f.tier===state.difficulty||(state.difficulty==='hard'&&isImportedHardFixture(f))));
   }
