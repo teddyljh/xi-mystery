@@ -24,8 +24,8 @@
 | 英格兰 | 2026-11-12 | Declan Rice（阿森纳）；Trent Alexander-Arnold（皇家马德里）；Harry Kane（拜仁慕尼黑） | Declan Rice（阿森纳） | Trent Alexander-Arnold（皇家马德里） |
 | 西班牙 | 2010-07-11 | Sergio Busquets（巴塞罗那）；Gerard Pique（巴塞罗那）；David Villa（巴塞罗那） | Sergio Busquets（巴塞罗那） | Gerard Pique（巴塞罗那） |
 | 西班牙 | 2012-07-01 | Sergio Busquets（巴塞罗那）；Gerard Pique（巴塞罗那）；Andres Iniesta（巴塞罗那） | Sergio Busquets（巴塞罗那） | Gerard Pique（巴塞罗那） |
-| 西班牙 | 2024-07-14 | Fabian Ruiz（巴黎圣日耳曼）；Marc Cucurella（切尔西）；Lamine Yamal（巴塞罗那） | Fabian Ruiz（巴黎圣日耳曼） | Marc Cucurella（切尔西） |
-| 西班牙 | 2026-11-15 | Fabián Ruiz（巴黎圣日耳曼）；Marc Cucurella（皇家马德里）；Lamine Yamal（巴塞罗那） | Fabián Ruiz（巴黎圣日耳曼） | Marc Cucurella（皇家马德里） |
+| 西班牙 | 2024-07-14 | Nico Williams（毕尔巴鄂竞技）；Robin Le Normand（皇家社会）；Lamine Yamal（巴塞罗那） | Nico Williams（毕尔巴鄂竞技） | Robin Le Normand（皇家社会） |
+| 西班牙 | 2026-11-15 | Pau Cubarsí（巴塞罗那）；Aymeric Laporte（毕尔巴鄂竞技）；Lamine Yamal（巴塞罗那） | Pau Cubarsí（巴塞罗那） | Aymeric Laporte（毕尔巴鄂竞技） |
 | 爱沙尼亚 | 2025-11-13 | Markus Soomets（斯达）；Märten Kuusk（卡托维兹） | Markus Soomets（斯达） | Märten Kuusk（卡托维兹） |
 | 芬兰 | 2024-09-10 | Fredrik Jensen（奥格斯堡）；Robert Ivanov（赫尔辛基） | Fredrik Jensen（奥格斯堡） | Robert Ivanov（赫尔辛基） |
 | 芬兰 | 2025-09-04 | Topi Keskinen（阿伯丁）；Ville Koski（伊斯特拉1961） | Topi Keskinen（阿伯丁） | Ville Koski（伊斯特拉1961） |

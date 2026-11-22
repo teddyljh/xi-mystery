@@ -84,9 +84,12 @@ for(const f of netherlands2014){
   }
 }
 
-// Belgium adds Doku to the two existing clues. Italy hides the City goalkeeper
-// and three Serie A players, with City restored before the Inter forward.
+// Match-specific masks retain their exact player and hint order. Both Spain
+// copies keep Ruiz/Cucurella visible and Yamal hidden after the two hints.
 for(const [id,names,clubs] of [
+  ['historic-nation-ESP-2024-07-14-30',['Nico Williams','Robin Le Normand','Lamine Yamal'],['athletic','sociedad','barcelona']],
+  ['historic-nation-ESP-2024-07-14-30-medium',['Nico Williams','Robin Le Normand','Lamine Yamal'],['athletic','sociedad','barcelona']],
+  ['nation-2026/27-10',['Pau Cubarsí','Aymeric Laporte','Lamine Yamal'],['barcelona','athletic','barcelona']],
   ['nation-2026/27-12',['Kevin De Bruyne','Jérémy Doku','Brandon Mechele'],['napoli','city','brugge']],
   ['nation-2025/26-106',['Gianluigi Donnarumma','Francesco Pio Esposito','Federico Dimarco','Nicolò Barella'],['city','inter','inter','inter']],
   ['nation-2026/27-75',['Gianluigi Donnarumma','Francesco Pio Esposito','Nicolò Fagioli','Alessandro Bastoni'],['city','inter','fiorentina','inter']]
@@ -98,6 +101,12 @@ for(const [id,names,clubs] of [
     const mask=[...api.buildHardMask(f)];
     assert.deepEqual(mask.map(i=>f.players[i].name),names,id+': exact requested players');
     assert.deepEqual(mask.map(i=>f.players[i].value),clubs,id+': exact club clues');
+    if(f.team==='ESP'){
+      for(const surname of ['Ruiz','Cucurella']){
+        const i=f.players.findIndex(p=>p.name.includes(surname));
+        assert.ok(i!==-1&&!mask.includes(i),id+': '+surname+' visible from the start');
+      }
+    }
     reset(mask);
     api.getHint();
     assert.deepEqual(context.state.masked,mask.slice(1),id+': first requested hint');

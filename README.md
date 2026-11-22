@@ -41,4 +41,6 @@ Belgium 2026-11-12 hides Kevin De Bruyne (Napoli), Jérémy Doku (Manchester Cit
 
 France 2006-07-09 shows Thierry Henry's Arsenal clue from the start in Hard and hides Florent Malouda's Lyon clue instead. Makelele and Thuram remain hidden, and the two hints still restore them in that order. Abidal's separate Lyon clue remains visible. Both historical fixture copies use this Hard rule; Easy/Moderate gameplay is unchanged.
 
+Spain 2024-07-14 and 2026-11-15 show Fabián Ruiz and Marc Cucurella from the start in Hard, while Lamine Yamal stays hidden through both hints. The 2024 XI hides Nico Williams (Athletic Club), Robin Le Normand (Real Sociedad), and Yamal (Barcelona); hints restore Williams and then Le Normand. The 2026 XI hides Pau Cubarsí (Barcelona), Aymeric Laporte (Athletic Club), and Yamal; hints restore Cubarsí and then Laporte. These rules cover both historical copies of the 2024 XI. Club clues remain those stored for the match; Easy/Moderate gameplay is unchanged.
+
 `scripts/upgrade_hard.py` owns these rules and refreshes the embedded HTML during gallery synchronization. Run `node scripts/test_hard_mode.cjs` to check every Hard fixture, hint behavior, and updater idempotence.
