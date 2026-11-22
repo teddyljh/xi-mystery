@@ -2,7 +2,7 @@
 
 所有难度在“本题 + 分数”下方显示赛事及对手；与得分使用相同字体和字号，关键内容加粗。只在答案揭晓后显示，答对、用尽次数和放弃均适用。中英西三种语言同步，换题清空旧说明。
 
-为56场决赛或经典比赛补充简短重点，涵盖题库全部欧冠、世界杯、欧洲杯决赛。其他比赛仅显示简洁的赛事及对手说明。原有239套 Hard 首发的全部隐藏与两次提示方案保持一致。
+为58场决赛或经典比赛补充简短重点，涵盖题库全部欧冠、世界杯、欧洲杯决赛。其他比赛仅显示简洁的赛事及对手说明。原有题目的隐藏与提示方案保持一致；保留卡卡和施魏因施泰格的历史首发，另加入格里兹曼、莱万多夫斯基的2026年首发。
 
 ## 新增首发 · 仅 Hard
 
@@ -13,26 +13,42 @@
 | 温哥华白浪 | 2025-09-13 | 费城联合 | Sebastian Berhalter（美国） | Thomas Müller（德国） |
 | 奥兰多城 | 2015-03-08 | 纽约城 | Brek Shea（美国） | Kaká（巴西） |
 | 芝加哥火焰 | 2017-04-01 | 蒙特利尔冲击 | Dax McCarty（美国） | Bastian Schweinsteiger（德国） |
+| 奥兰多城 | 2026-07-22 | 圣何塞地震 | Griffin Dorsey（美国） | Antoine Griezmann（法国） |
+| 芝加哥火焰 | 2026-07-22 | 迈阿密国际 | Andrew Gutman（美国） | Robert Lewandowski（波兰） |
 
 ### 温哥华白浪 · 2025-09-13
 
-[球队官方首发及战报](https://www.whitecapsfc.com/news/statement-made)
+[官方战报](https://www.whitecapsfc.com/news/statement-made)
 
 Daniel Ríos（墨西哥，ST）；Ali Ahmed（加拿大，LW）；Thomas Müller（德国，AM）；Emmanuel Sabbi（美国，RW）；Sebastian Berhalter（美国，DM）；Andrés Cubas（巴拉圭，DM）；Mathías Laborda（乌拉圭，LB）；Tristan Blackmon（美国，CB）；Belal Halbouni（叙利亚，CB）；Édier Ocampo（哥伦比亚，RB）；Yohei Takaoka（日本，GK）
 
 
 ### 奥兰多城 · 2015-03-08
 
-[球队官方首发及战报](https://www.orlandocitysc.com/news/orlando-city-nycfc-battle-1-1-draw-front-62k)
+[官方战报](https://www.orlandocitysc.com/news/orlando-city-nycfc-battle-1-1-draw-front-62k)
 
 Carlos Rivas（哥伦比亚，ST）；Lewis Neal（英格兰，LW）；Kaká（巴西，AM）；Kevin Molino（特立尼达和多巴哥，RW）；Amobi Okugo（美国，DM）；Cristian Higuita（哥伦比亚，DM）；Brek Shea（美国，LB）；Seb Hines（英格兰，CB）；Aurélien Collin（法国，CB）；Rafael Ramos（葡萄牙，RB）；Donovan Ricketts（牙买加，GK）
 
 
 ### 芝加哥火焰 · 2017-04-01
 
-[球队官方首发及战报](https://www.chicagofirefc.com/news/schweinsteiger-scores-chicago-fire-rally-2-2-draw-against-montreal-impact)
+[官方战报](https://www.chicagofirefc.com/news/schweinsteiger-scores-chicago-fire-rally-2-2-draw-against-montreal-impact)
 
 Nemanja Nikolić（匈牙利，ST）；David Accam（加纳，LW）；Bastian Schweinsteiger（德国，AM）；Arturo Álvarez（萨尔瓦多，RW）；Juninho（巴西，DM）；Dax McCarty（美国，DM）；Brandon Vincent（美国，LB）；João Meira（葡萄牙，CB）；Jonathan Campbell（美国，CB）；Michael Harrington（美国，RB）；Jorge Bava（乌拉圭，GK）
+
+
+### 奥兰多城 · 2026-07-22
+
+[官方战报](https://www.orlandocitysc.com/news/match-report-orlando-city-sc-routs-san-jose-earthquakes-4-0-on-the-road) · [官方首发](https://www.sjearthquakes.com/news/match-recap-earthquakes-0-orlando-city-sc-4)
+
+Justin Ellis（美国，LS）；Antoine Griezmann（法国，RS）；Tiago Souza（巴西，LM）；Braian Ojeda（巴拉圭，CM）；Eduard Atuesta（哥伦比亚，CM）；Iván Angulo（哥伦比亚，RM）；Adrián Marín（西班牙，LB）；Robin Jansson（瑞典，CB）；David Brekalo（斯洛文尼亚，CB）；Griffin Dorsey（美国，RB）；Maxime Crépeau（加拿大，GK）
+
+
+### 芝加哥火焰 · 2026-07-22
+
+[官方战报](https://www.mlssoccer.com/news/robert-lewandowski-era-kicks-off-in-chicago) · [官方首发](https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-kicks-off-second-half-of-2026-with-visit-to-inter-miami-cf-s-nu-stadium)
+
+Jonathan Bamba（科特迪瓦，LW）；Robert Lewandowski（波兰，ST）；Philip Zinckernagel（丹麦，RW）；Maren Haile-Selassie（瑞士，CM）；Dje D’Avilla（科特迪瓦，DM）；Anton Salétros（瑞典，CM）；Andrew Gutman（美国，LB）；Jack Elliott（英格兰，CB）；Joel Waterman（加拿大，CB）；Jonathan Dean（美国，RB）；Chris Brady（美国，GK）
 
 ## 揭晓后的经典比赛重点
 
@@ -96,6 +112,8 @@ Nemanja Nikolić（匈牙利，ST）；David Accam（加纳，LW）；Bastian Sc
 | 2025-09-13 | 温哥华白浪 | 穆勒在36岁生日上演**帽子戏法**，温哥华白浪7–0大胜。 | [官方记录](https://www.whitecapsfc.com/news/statement-made) |
 | 2015-03-08 | 奥兰多城 | 这是奥兰多城的**美职联首秀**，卡卡补时任意球扳平，双方1–1战平。 | [官方记录](https://www.orlandocitysc.com/news/orlando-city-nycfc-battle-1-1-draw-front-62k) |
 | 2017-04-01 | 芝加哥火焰 | **施魏因施泰格首秀即进球**，芝加哥火焰补时扳平，双方2–2战平。 | [官方记录](https://www.chicagofirefc.com/news/schweinsteiger-scores-chicago-fire-rally-2-2-draw-against-montreal-impact) |
+| 2026-07-22 | 奥兰多城 | **格里兹曼美职联首秀即进球**，奥兰多城4–0击败圣何塞地震。 | [官方记录](https://www.orlandocitysc.com/news/match-report-orlando-city-sc-routs-san-jose-earthquakes-4-0-on-the-road) |
+| 2026-07-22 | 芝加哥火焰 | 这是**莱万多夫斯基的美职联首秀**，芝加哥火焰2–3惜败迈阿密国际。 | [官方记录](https://www.mlssoccer.com/news/robert-lewandowski-era-kicks-off-in-chicago) |
 
 ## 当前题库
 
@@ -103,4 +121,4 @@ Nemanja Nikolić（匈牙利，ST）；David Accam（加纳，LW）；Bastian Sc
 |---|---|---|
 | Easy | 98 | 69 |
 | Medium | 92 | 79 |
-| Hard | 128 | 114 |
+| Hard | 130 | 114 |

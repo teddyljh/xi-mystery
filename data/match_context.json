@@ -101,6 +101,16 @@
       "zh": "蒙特利尔冲击",
       "en": "Montreal Impact",
       "es": "Montreal Impact"
+    },
+    "San Jose Earthquakes": {
+      "zh": "圣何塞地震",
+      "en": "San Jose Earthquakes",
+      "es": "San Jose Earthquakes"
+    },
+    "Inter Miami CF": {
+      "zh": "迈阿密国际",
+      "en": "Inter Miami CF",
+      "es": "Inter Miami CF"
     }
   },
   "matches": [
@@ -1254,6 +1264,38 @@
       },
       "sources": [
         "https://www.chicagofirefc.com/news/schweinsteiger-scores-chicago-fire-rally-2-2-draw-against-montreal-impact"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2026-07-22",
+      "teams": [
+        "orlando"
+      ],
+      "note": {
+        "zh": "**格里兹曼美职联首秀即进球**，奥兰多城4–0击败圣何塞地震。",
+        "en": "**Griezmann scored on his MLS debut** as Orlando City beat San Jose Earthquakes 4–0.",
+        "es": "**Griezmann marcó en su debut en la MLS** en la victoria de Orlando City por 4–0 ante San Jose Earthquakes."
+      },
+      "sources": [
+        "https://www.orlandocitysc.com/news/match-report-orlando-city-sc-routs-san-jose-earthquakes-4-0-on-the-road",
+        "https://www.sjearthquakes.com/news/match-recap-earthquakes-0-orlando-city-sc-4"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2026-07-22",
+      "teams": [
+        "chicago"
+      ],
+      "note": {
+        "zh": "这是**莱万多夫斯基的美职联首秀**，芝加哥火焰2–3惜败迈阿密国际。",
+        "en": "In **Lewandowski’s MLS debut**, Chicago Fire lost 3–2 to Inter Miami.",
+        "es": "En el **debut de Lewandowski en la MLS**, Chicago Fire cayó 3–2 ante el Inter Miami."
+      },
+      "sources": [
+        "https://www.mlssoccer.com/news/robert-lewandowski-era-kicks-off-in-chicago",
+        "https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-kicks-off-second-half-of-2026-with-visit-to-inter-miami-cf-s-nu-stadium"
       ]
     }
   ]

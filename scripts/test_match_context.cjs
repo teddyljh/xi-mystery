@@ -13,18 +13,24 @@ assert.equal(hash(data.fixtures),baseline.baseFixturesHash);
 const combined=d=>['club','nation'].flatMap(m=>pool(m,d));
 for(const d of ['easy','moderate'])assert.deepEqual(combined(d).map(f=>f.id),baseline.pools[d],d+': membership unchanged');
 const hard=combined('hard');
-assert.equal(hard.length,baseline.pools.hard.length+3);
+assert.equal(hard.length,baseline.pools.hard.length+5);
 assert.deepEqual(hard.filter(f=>!data.hardMlsStars.some(x=>x.id===f.id)).map(f=>f.id),baseline.pools.hard);
 assert.equal(new Set(hard.map(key)).size,hard.length);
 assert.equal(Object.keys(baseline.hardMasks).length,239);
 for(const [id,expected] of Object.entries(baseline.hardMasks))assert.equal(hash(review(registry.get(id)).variants.map(v=>JSON.stringify(v)).sort()),expected,id+': every prior hidden/hint branch preserved');
-assert.equal(catalog.fixtures.length,3);
-assert.equal(data.hardMlsStars.length,3);
+assert.equal(catalog.fixtures.length,5);
+assert.equal(data.hardMlsStars.length,5);
+const previousMls={
+  'hard-mls-stars-2025-09-13-vancouver':'9a0854e1f6d3c32d00ba256772de061f96dde21999944cc6855ad1adeccc2b02',
+  'hard-mls-stars-2015-03-08-orlando':'0939692091f7ba8115d80cbc9d3579d556d57bda92cb9378dde88a5006c29e62',
+  'hard-mls-stars-2017-04-01-chicago':'35500b1beda39fe58a2da1466e055594315192eaff4a9923e964a42199dc3f33'
+};
+for(const [id,expected] of Object.entries(previousMls))assert.equal(hash(registry.get(id)),expected,id+': previously published XI and hint order retained');
 for(const record of catalog.fixtures){
   const f=registry.get(record.id);assert.ok(f);
   assert.equal(hard.filter(x=>key(x)===key(f)).length,1);
   for(const d of ['easy','moderate'])assert.ok(!combined(d).some(x=>key(x)===key(f)));
-  assert.deepEqual(f.players,record.players);
+  assert.deepEqual(f.players,record.players.map(({role,name,value})=>({role,name,value})));
   assert.equal(f.players.length,11);assert.equal(new Set(f.players.map(p=>p.name)).size,11);
   assert.ok(f.players.every(p=>data.nations[p.value]));
   const {variants}=review(f);assert.equal(variants.length,1);
@@ -32,6 +38,22 @@ for(const record of catalog.fixtures){
   assert.deepEqual(variants[0].hidden.map(i=>f.players[i].name),record.hardHintOrder);
   assert.deepEqual(variants[0].hints.map(i=>f.players[i].name),record.hardHintOrder);
   assert.equal(record.hardHintOrder[1],record.star);
+}
+const currentSeason={
+  orlando:{star:'Antoine Griezmann',nation:'FRA',other:'Griffin Dorsey',opponent:'San Jose Earthquakes',matchId:'MLS-MAT-0009HR'},
+  chicago:{star:'Robert Lewandowski',nation:'POL',other:'Andrew Gutman',opponent:'Inter Miami CF',matchId:'MLS-MAT-0009HM'}
+};
+const additions=catalog.fixtures.filter(f=>f.season==='2026');
+assert.equal(additions.length,2);
+for(const record of additions){
+  const expected=currentSeason[record.team];assert.ok(expected);
+  assert.equal(record.date,'2026-07-22');assert.equal(record.versus,expected.opponent);
+  assert.equal(record.matchSportecId,expected.matchId);
+  assert.equal(record.officialLineupSource,'https://stats-api.mlssoccer.com/matches/'+expected.matchId);
+  assert.equal(new Set(record.players.map(p=>p.mlsPlayerId)).size,11,'eleven distinct official starters');
+  assert.ok(record.players.every(p=>/^MLS-OBJ-/.test(p.mlsPlayerId)));
+  assert.equal(record.players.find(p=>p.name===expected.star).value,expected.nation);
+  assert.deepEqual(record.hardHintOrder,[expected.other,expected.star]);
 }
 const assets=JSON.parse(source.split('window.XI_UI_ASSETS = ')[1].split(';\n')[0]);
 for(const [code,asset] of Object.entries(catalog.flags))assert.equal(assets.flags[code],'data:image/png;base64,'+fs.readFileSync(path.join(root,asset.path)).toString('base64'));
@@ -76,7 +98,7 @@ for(const lang of ['zh','en','es']){
     explained.add(f.id);
   }
 }
-assert.equal(contextCatalog.matches.length,56);
+assert.equal(contextCatalog.matches.length,58);
 const contextKeys=new Set();
 for(const m of contextCatalog.matches){
   assert.ok(m.sources.length&&m.sources.every(url=>url.startsWith('https://')));
@@ -103,4 +125,4 @@ try{
 }finally{fs.rmSync(temp,{recursive:true,force:true});}
 assert.equal(fs.readFileSync(path.join(root,'docs/match-context-and-hard-mls.md'),'utf8'),execFileSync(process.execPath,[path.join(root,'scripts/report_match_context.cjs')],{encoding:'utf8'}));
 assert.equal(hash(fs.readFileSync(path.join(root,'README.md'),'utf8')),baseline.originalReadmeHash,'README retains only the original explanation');
-console.log(`PASS: all ${explained.size} question descriptions in 3 languages; 56 verified classic/final stories; 3 Hard-only MLS XIs with exact two-player hints; all 239 previous masks unchanged; offline flags, README and full generation.`);
+console.log(`PASS: all ${explained.size} question descriptions in 3 languages; 58 classic/final stories; 5 Hard-only MLS XIs including Griezmann/Lewandowski debuts with exact hints; all 242 prior XIs and masks unchanged; offline flags, README and full generation.`);

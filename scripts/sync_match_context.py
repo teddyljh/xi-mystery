@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Embed post-answer stories and three Hard-only MLS XIs, without editing the archive."""
+"""Embed post-answer stories and Hard-only MLS XIs, without editing the archive."""
 import base64
 import json
 from pathlib import Path
@@ -38,7 +38,9 @@ def main():
         assert all(sum(p['name'] == name for p in record['players']) == 1 for name in record['hardHintOrder'])
         assert record['hardHintOrder'][-1] == record['star']
         fields = ('id', 'mode', 'season', 'tier', 'team', 'date', 'versus', 'formation', 'competition', 'source', 'players', 'hardHintOrder')
-        fixtures.append({k: record[k] for k in fields})
+        fixture = {k: record[k] for k in fields}
+        fixture['players'] = [{k: p[k] for k in ('role', 'name', 'value')} for p in record['players']]
+        fixtures.append(fixture)
     assert len({(f['team'], f['date']) for f in fixtures}) == len(fixtures)
     data['hardMlsStars'] = fixtures
     context = json.loads((ROOT / 'data/match_context.json').read_text(encoding='utf-8'))

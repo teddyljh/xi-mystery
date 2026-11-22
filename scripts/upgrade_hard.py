@@ -426,7 +426,7 @@ RULES = r"""
     return [...pair,striker];
   }
   function buildHardMask(f){
-    // These three MLS XIs explicitly restore the other player, then the star.
+    // Curated MLS XIs explicitly restore the other player, then the star.
     const mls=HARD_MLS_STAR_FIXTURES.find(x=>fixtureIdentity(x)===fixtureIdentity(f));
     if(mls)return mls.hardHintOrder.map(name=>f.players.findIndex(p=>p.name===name));
     const override=hardNationMaskOverride(f);

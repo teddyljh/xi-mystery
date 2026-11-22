@@ -16,7 +16,7 @@ assert.equal(new Set(records.map(f=>f.team+'|'+f.date)).size,26);
 assert.equal(data.fixtures.length,274,'base archive receives no clones');
 assert.equal(data.nationalFinals.filter(f=>typeof f==='string').length,17);
 assert.equal(data.nationalFinals.filter(f=>typeof f!=='string').length,9);
-assert.equal(context.api.quizFixtureCount(),316);
+assert.equal(context.api.quizFixtureCount(),318);
 for(const [event,years] of [['WORLD_CUP',[2002,2006,2010,2014,2018,2022,2026]],['EURO',[2004,2008,2012,2016,2020,2024]]]){
   for(const year of years){
     const pair=records.filter(f=>f.event===event&&f.eventYear===year);

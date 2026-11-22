@@ -15,7 +15,7 @@ assert.equal(new Set(catalog.map(f=>f.team+'|'+f.date)).size,50);
 assert.equal(data.fixtures.length,274,'no duplicated base records');
 assert.equal(data.uclFinals.filter(f=>typeof f==='string').length,28,'reuse all existing finals');
 assert.equal(data.uclFinals.filter(f=>typeof f!=='string').length,22,'only missing final XIs are new');
-assert.equal(context.api.quizFixtureCount(),316);
+assert.equal(context.api.quizFixtureCount(),318);
 for(let year=2002;year<=2026;year++){
   const pair=catalog.filter(f=>f.date.startsWith(String(year)));
   assert.equal(pair.length,2);assert.equal(pair[0].date,pair[1].date);
@@ -24,7 +24,7 @@ for(let year=2002;year<=2026;year++){
 }
 for(const difficulty of ['easy','moderate','hard']){
   context.state={mode:'club',difficulty};const pool=[...context.api.available()];
-  assert.equal(pool.length,{easy:98,moderate:92,hard:128}[difficulty]);
+  assert.equal(pool.length,{easy:98,moderate:92,hard:130}[difficulty]);
   assert.equal(new Set(pool.map(f=>f.team+'|'+f.date)).size,pool.length,'no duplicate match/team questions');
   for(const f of catalog){
     const matches=pool.filter(x=>x.team===f.team&&x.date===f.date);
@@ -41,7 +41,7 @@ for(const difficulty of ['easy','moderate','hard']){
 }
 context.state={mode:'club',difficulty:'hard'};
 const hard=[...context.api.available()];
-assert.equal(hard.length,128,'Hard includes new finals and moved clubs');
+assert.equal(hard.length,130,'Hard includes new finals and moved clubs');
 for(const [team,date,expected,absent] of [
   ['porto','2004-05-26',['Deco'],['Benni McCarthy']],
   ['monaco','2004-05-26',['Édouard Cissé','Julien Rodriguez'],['Dado Prso','Sebastien Squillaci']],

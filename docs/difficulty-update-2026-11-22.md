@@ -1,6 +1,6 @@
 # 2026-11-22 题库调整与 Hard 新增隐藏清单
 
-相对版本 fc20d03：Easy 移除31套首发，Hard 新增90套不同首发。Easy 为98套俱乐部、69套国家队；Medium 为92、79套；Hard 为128、114套。
+相对版本 fc20d03：Easy 移除31套首发，Hard 新增92套不同首发。Easy 为98套俱乐部、69套国家队；Medium 为92、79套；Hard 为130、114套。
 
 ## Easy 移除的球队
 
@@ -46,6 +46,7 @@
 | 俱乐部／布鲁日 | 2025-11-05 | Hans Vanaken（比利时） | Brandon Mechele（比利时） | Christos Tzolis（希腊） |
 | 俱乐部／切尔西 | 2021-05-29 | N'Golo Kanté（法国） | Reece James（英格兰） | Kai Havertz（德国） |
 | 俱乐部／芝加哥火焰 | 2017-04-01 | Dax McCarty（美国） | Bastian Schweinsteiger（德国） | — |
+| 俱乐部／芝加哥火焰 | 2026-07-22 | Andrew Gutman（美国） | Robert Lewandowski（波兰） | — |
 | 俱乐部／曼城 | 2021-05-29 | Bernardo Silva（葡萄牙） | John Stones（英格兰） | Riyad Mahrez（阿尔及利亚） |
 | 俱乐部／萨格勒布迪纳摩（随机方案1） | 2024-11-05 | Martin Baturina（克罗地亚） | Petar Sučić（克罗地亚） | Marko Pjaca（克罗地亚） |
 | 俱乐部／萨格勒布迪纳摩（随机方案2） | 2024-11-05 | Petar Sučić（克罗地亚） | Josip Mišić（克罗地亚） | Marko Pjaca（克罗地亚） |
@@ -66,6 +67,7 @@
 | 俱乐部／摩纳哥 | 2024-11-05 | Lamine Camara（塞内加尔） | Wilfried Singo（科特迪瓦） | — |
 | 俱乐部／纽卡斯尔联 | 2025-11-05 | Sandro Tonali（意大利） | Malick Thiaw（德国） | — |
 | 俱乐部／奥兰多城 | 2015-03-08 | Brek Shea（美国） | Kaká（巴西） | — |
+| 俱乐部／奥兰多城 | 2026-07-22 | Griffin Dorsey（美国） | Antoine Griezmann（法国） | — |
 | 俱乐部／巴黎圣日耳曼 | 2025-05-31 | Fabián Ruiz（西班牙） | Marquinhos（巴西）／Achraf Hakimi（摩洛哥） | Khvicha Kvaratskhelia（格鲁吉亚） |
 | 俱乐部／巴黎圣日耳曼 | 2026-05-30 | Fabián Ruiz（西班牙） | Marquinhos（巴西）／Achraf Hakimi（摩洛哥） | Khvicha Kvaratskhelia（格鲁吉亚） |
 | 俱乐部／皇家马德里 | 2002-05-15 | Claude Makelele（法国） | Roberto Carlos（巴西） | Luís Figo（葡萄牙） |

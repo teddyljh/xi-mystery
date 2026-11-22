@@ -295,6 +295,194 @@
       "nationalitySources": [
         "https://www.chicagofirefc.com/players/arturo-alvarez/"
       ]
+    },
+    {
+      "id": "hard-mls-stars-2026-07-22-orlando",
+      "mode": "club",
+      "season": "2026",
+      "tier": "hard",
+      "team": "orlando",
+      "date": "2026-07-22",
+      "versus": "San Jose Earthquakes",
+      "formation": "4-4-2",
+      "competition": "MLS Regular Season",
+      "source": "https://www.orlandocitysc.com/news/match-report-orlando-city-sc-routs-san-jose-earthquakes-4-0-on-the-road",
+      "star": "Antoine Griezmann",
+      "hardHintOrder": [
+        "Griffin Dorsey",
+        "Antoine Griezmann"
+      ],
+      "players": [
+        {
+          "role": "LS",
+          "name": "Justin Ellis",
+          "value": "USA",
+          "mlsPlayerId": "MLS-OBJ-0005LE"
+        },
+        {
+          "role": "RS",
+          "name": "Antoine Griezmann",
+          "value": "FRA",
+          "mlsPlayerId": "MLS-OBJ-000AZL"
+        },
+        {
+          "role": "LM",
+          "name": "Tiago Souza",
+          "value": "BRA",
+          "mlsPlayerId": "MLS-OBJ-000CGT"
+        },
+        {
+          "role": "CM",
+          "name": "Braian Ojeda",
+          "value": "PAR",
+          "mlsPlayerId": "MLS-OBJ-0000KR"
+        },
+        {
+          "role": "CM",
+          "name": "Eduard Atuesta",
+          "value": "COL",
+          "mlsPlayerId": "MLS-OBJ-0000W7"
+        },
+        {
+          "role": "RM",
+          "name": "Iván Angulo",
+          "value": "COL",
+          "mlsPlayerId": "MLS-OBJ-0000HU"
+        },
+        {
+          "role": "LB",
+          "name": "Adrián Marín",
+          "value": "ESP",
+          "mlsPlayerId": "MLS-OBJ-000C60"
+        },
+        {
+          "role": "CB",
+          "name": "Robin Jansson",
+          "value": "SWE",
+          "mlsPlayerId": "MLS-OBJ-0000HM"
+        },
+        {
+          "role": "CB",
+          "name": "David Brekalo",
+          "value": "SVN",
+          "mlsPlayerId": "MLS-OBJ-00057W"
+        },
+        {
+          "role": "RB",
+          "name": "Griffin Dorsey",
+          "value": "USA",
+          "mlsPlayerId": "MLS-OBJ-00009U"
+        },
+        {
+          "role": "GK",
+          "name": "Maxime Crépeau",
+          "value": "CAN",
+          "mlsPlayerId": "MLS-OBJ-0000C5"
+        }
+      ],
+      "matchSportecId": "MLS-MAT-0009HR",
+      "officialLineupSource": "https://stats-api.mlssoccer.com/matches/MLS-MAT-0009HR",
+      "officialLineupPage": "https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/sjvsorl-07-22-2026/lineups",
+      "officialLineupArticle": "https://www.sjearthquakes.com/news/match-recap-earthquakes-0-orlando-city-sc-4",
+      "nationalitySources": [
+        "https://www.orlandocitysc.com/roster/",
+        "https://www.orlandocitysc.com/players/justin-ellis/"
+      ]
+    },
+    {
+      "id": "hard-mls-stars-2026-07-22-chicago",
+      "mode": "club",
+      "season": "2026",
+      "tier": "hard",
+      "team": "chicago",
+      "date": "2026-07-22",
+      "versus": "Inter Miami CF",
+      "formation": "4-3-3",
+      "competition": "MLS Regular Season",
+      "source": "https://www.mlssoccer.com/news/robert-lewandowski-era-kicks-off-in-chicago",
+      "star": "Robert Lewandowski",
+      "hardHintOrder": [
+        "Andrew Gutman",
+        "Robert Lewandowski"
+      ],
+      "players": [
+        {
+          "role": "LW",
+          "name": "Jonathan Bamba",
+          "value": "CIV",
+          "mlsPlayerId": "MLS-OBJ-0007XK"
+        },
+        {
+          "role": "ST",
+          "name": "Robert Lewandowski",
+          "value": "POL",
+          "mlsPlayerId": "MLS-OBJ-000F34"
+        },
+        {
+          "role": "RW",
+          "name": "Philip Zinckernagel",
+          "value": "DEN",
+          "mlsPlayerId": "MLS-OBJ-0007XO"
+        },
+        {
+          "role": "CM",
+          "name": "Maren Haile-Selassie",
+          "value": "CHE",
+          "mlsPlayerId": "MLS-OBJ-0001IU"
+        },
+        {
+          "role": "DM",
+          "name": "Dje D’Avilla",
+          "value": "CIV",
+          "mlsPlayerId": "MLS-OBJ-000901"
+        },
+        {
+          "role": "CM",
+          "name": "Anton Salétros",
+          "value": "SWE",
+          "mlsPlayerId": "MLS-OBJ-000CEG"
+        },
+        {
+          "role": "LB",
+          "name": "Andrew Gutman",
+          "value": "USA",
+          "mlsPlayerId": "MLS-OBJ-00000D"
+        },
+        {
+          "role": "CB",
+          "name": "Jack Elliott",
+          "value": "ENG",
+          "mlsPlayerId": "MLS-OBJ-0000II"
+        },
+        {
+          "role": "CB",
+          "name": "Joel Waterman",
+          "value": "CAN",
+          "mlsPlayerId": "MLS-OBJ-000026"
+        },
+        {
+          "role": "RB",
+          "name": "Jonathan Dean",
+          "value": "USA",
+          "mlsPlayerId": "MLS-OBJ-0001IG"
+        },
+        {
+          "role": "GK",
+          "name": "Chris Brady",
+          "value": "USA",
+          "mlsPlayerId": "MLS-OBJ-00003W"
+        }
+      ],
+      "matchSportecId": "MLS-MAT-0009HM",
+      "officialLineupSource": "https://stats-api.mlssoccer.com/matches/MLS-MAT-0009HM",
+      "officialLineupPage": "https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavschi-07-22-2026/lineups",
+      "officialLineupArticle": "https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-kicks-off-second-half-of-2026-with-visit-to-inter-miami-cf-s-nu-stadium",
+      "nationalitySources": [
+        "https://www.chicagofirefc.com/news/chicago-fire-fc-acquires-winger-jonathan-bamba-as-designated-player",
+        "https://www.chicagofirefc.com/players/jack-elliott/",
+        "https://www.chicagofirefc.com/players/maren-haile-selassie/",
+        "https://www.chicagofirefc.com/players/dje-d-avilla/"
+      ]
     }
   ]
 }
