@@ -59,7 +59,7 @@ try{
   const update=()=>{for(const script of ['sync_ucl_finals.py','upgrade_hard.py','upgrade_easy.py'])execFileSync('python3',[path.join(temp,'scripts',script)]);};
   update();assert.equal(fs.readFileSync(index,'utf8'),source,'all updaters are idempotent together');
   assert.equal(fs.readFileSync(path.join(temp,'docs/ucl-finals-2002-2026.md'),'utf8'),fs.readFileSync(path.join(root,'docs/ucl-finals-2002-2026.md'),'utf8'));
-  const stale=source.replace("subtitle.replaceChildren(dateEl);","subtitle.textContent=competitionName(f.competition);");
-  assert.notEqual(stale,source);fs.writeFileSync(index,stale);update();assert.equal(fs.readFileSync(index,'utf8'),source,'updater repairs date-only prompts');
+  const stale=source.replace("subtitle.replaceChildren(document.createTextNode(prefix),dateEl,document.createTextNode(suffix));","subtitle.replaceChildren(dateEl);");
+  assert.notEqual(stale,source);fs.writeFileSync(index,stale);update();assert.equal(fs.readFileSync(index,'utf8'),source,'updater restores the full sentence around the highlighted date');
 }finally{fs.rmSync(temp,{recursive:true,force:true});}
 console.log('PASS: all 50 verified finals appear exactly once in Easy/Moderate; 22 new source XIs, 28 reused; 3 legacy corrections; Hard pool unchanged; prompt updater and catalog idempotence passed.');

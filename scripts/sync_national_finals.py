@@ -16,7 +16,7 @@ def runtime_fixture(record: dict) -> dict:
 def write_review(records: list, data: dict) -> None:
     lines = ["# 2002—2026年世界杯、欧洲杯决赛首发", "",
              "世界杯7届、欧洲杯6届，共13场决赛、26套首发。17套原样复用已有题目，新增9套，全部在 Easy 和 Medium 中各出现一次。欧洲杯2020届的实际决赛日期为2021-07-11。", "",
-             "新增首发按欧足联、FIFA及足协官方资料核对，历史俱乐部线索采用赛事报名/当时官方名单，未使用球员现在的俱乐部。游戏阵型用于位置排列。Hard题干只显示日期，不显示世界杯、欧洲杯等赛事名称；Hard题库、隐藏名单与提示顺序不变。", ""]
+             "新增首发按欧足联、FIFA及足协官方资料核对，历史俱乐部线索采用赛事报名/当时官方名单，未使用球员现在的俱乐部。游戏阵型用于位置排列。Medium、Hard题干保留完整的首发说明句和日期高亮，不显示世界杯、欧洲杯等赛事名称；Hard题库、隐藏名单与提示顺序不变。", ""]
     for record in records:
         existing = next((f for f in data["fixtures"] if f["mode"] == "nation" and (f["team"], f["date"]) == (record["team"], record["date"])), None)
         fixture = existing or runtime_fixture(record)

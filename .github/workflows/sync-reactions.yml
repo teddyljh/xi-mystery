@@ -57,7 +57,7 @@ jobs:
         run: node scripts/test_easy_mode.cjs
       - name: Check final catalog and difficulty coverage
         run: node scripts/test_ucl_finals.cjs
-      - name: Check national final catalog and date-only prompts
+      - name: Check national final catalog and competition-free prompts
         run: node scripts/test_national_finals.cjs
       - name: Refresh national-team Hard review
         run: |

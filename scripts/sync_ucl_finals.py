@@ -16,14 +16,10 @@ SUBTITLE = r"""    const subtitle=$('game-subtitle');
     const dateEl=document.createElement('strong');
     dateEl.className='match-date-highlight';
     dateEl.textContent=prettyDate;
-    if(state.difficulty==='easy'){
-      const competition=competitionName(f.competition);
-      const prefix=state.lang==='zh'?'这是这只球队在':state.lang==='es'?'Esta es la alineación titular del equipo del ':'This is the team’s starting XI from ';
-      const suffix=state.lang==='zh'?(competition?`（${competition}）的首发阵容。`:'的首发阵容。'):state.lang==='es'?(competition?` (${competition}).`:'.'):(competition?` (${competition}).`:'.');
-      subtitle.replaceChildren(document.createTextNode(prefix),dateEl,document.createTextNode(suffix));
-    }else{
-      subtitle.replaceChildren(dateEl);
-    }
+    const competition=state.difficulty==='easy'?competitionName(f.competition):'';
+    const prefix=state.lang==='zh'?'这是这只球队在':state.lang==='es'?'Esta es la alineación titular del equipo del ':'This is the team’s starting XI from ';
+    const suffix=state.lang==='zh'?(competition?`（${competition}）的首发阵容。`:'的首发阵容。'):state.lang==='es'?(competition?` (${competition}).`:'.'):(competition?` (${competition}).`:'.');
+    subtitle.replaceChildren(document.createTextNode(prefix),dateEl,document.createTextNode(suffix));
 """
 
 
@@ -90,7 +86,7 @@ def main() -> None:
     source = source.replace("tr('totalCount')(DATA.fixtures.length)", "tr('totalCount')(quizFixtureCount())")
     if source != original:
         index.write_text(source, encoding="utf-8")
-    print(f"UEFA finals synchronized: 50 XIs, {new_count} new records; existing XIs reused; Medium/Hard subtitles show only the date")
+    print(f"UEFA finals synchronized: 50 XIs, {new_count} new records; existing XIs reused; full subtitles retain highlighted dates without Medium/Hard competition clues")
 
 
 if __name__ == "__main__":

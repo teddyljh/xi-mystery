@@ -2051,14 +2051,10 @@ function displayFinishReaction(reaction){
     const dateEl=document.createElement('strong');
     dateEl.className='match-date-highlight';
     dateEl.textContent=prettyDate;
-    if(state.difficulty==='easy'){
-      const competition=competitionName(f.competition);
-      const prefix=state.lang==='zh'?'这是这只球队在':state.lang==='es'?'Esta es la alineación titular del equipo del ':'This is the team’s starting XI from ';
-      const suffix=state.lang==='zh'?(competition?`（${competition}）的首发阵容。`:'的首发阵容。'):state.lang==='es'?(competition?` (${competition}).`:'.'):(competition?` (${competition}).`:'.');
-      subtitle.replaceChildren(document.createTextNode(prefix),dateEl,document.createTextNode(suffix));
-    }else{
-      subtitle.replaceChildren(dateEl);
-    }
+    const competition=state.difficulty==='easy'?competitionName(f.competition):'';
+    const prefix=state.lang==='zh'?'这是这只球队在':state.lang==='es'?'Esta es la alineación titular del equipo del ':'This is the team’s starting XI from ';
+    const suffix=state.lang==='zh'?(competition?`（${competition}）的首发阵容。`:'的首发阵容。'):state.lang==='es'?(competition?` (${competition}).`:'.'):(competition?` (${competition}).`:'.');
+    subtitle.replaceChildren(document.createTextNode(prefix),dateEl,document.createTextNode(suffix));
     $('round-value').textContent=`${String(state.index+1).padStart(2,'0')} / ${String(state.rounds.length).padStart(2,'0')}`;
     $('points-value').textContent=String(state.score).padStart(3,'0');
     $('progress-fill').style.width=`${(state.index+(state.revealed?1:0))/state.rounds.length*100}%`;

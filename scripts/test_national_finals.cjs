@@ -63,8 +63,9 @@ try{
   const update=()=>{for(const file of ['sync_ucl_finals.py','sync_national_finals.py','upgrade_hard.py','upgrade_easy.py'])execFileSync('python3',[path.join(temp,'scripts',file)]);};
   update();assert.equal(fs.readFileSync(index,'utf8'),source,'all generators remain idempotent together');
   assert.equal(fs.readFileSync(path.join(temp,'docs/national-finals-2002-2026.md'),'utf8'),fs.readFileSync(path.join(root,'docs/national-finals-2002-2026.md'),'utf8'));
-  fs.writeFileSync(index,source.replace('subtitle.replaceChildren(dateEl);',"subtitle.textContent=competitionName(f.competition);"));
-  update();assert.equal(fs.readFileSync(index,'utf8'),source,'date-only World Cup prompts are restored by the updater');
+  const stale=source.replace("const competition=state.difficulty==='easy'?competitionName(f.competition):'';","const competition=competitionName(f.competition);");
+  assert.notEqual(stale,source);fs.writeFileSync(index,stale);
+  update();assert.equal(fs.readFileSync(index,'utf8'),source,'updater removes competition clues while preserving full sentences');
   update();assert.equal(fs.readFileSync(index,'utf8'),source,'repeated updates do not duplicate XIs');
 }finally{fs.rmSync(temp,{recursive:true,force:true});}
 console.log('PASS: 26 national final XIs in both Easy/Moderate exactly once; 9 new, 17 reused; correct event dates and historical club clues; complete crests; Hard membership unchanged; all updater checks passed.');
