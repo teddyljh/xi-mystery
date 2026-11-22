@@ -25,17 +25,20 @@ const api=context.api;
 const identity=f=>JSON.stringify([f.mode,f.team,f.date,f.formation,f.players.map(p=>[p.name,p.role,p.value])]);
 const unique=fixtures=>fixtures.filter((f,i)=>fixtures.findIndex(other=>identity(other)===identity(f))===i);
 let checked=0;
-const allowed=f=>(f.mode==='club'?new Set('realmadrid barcelona bayern city liverpool manunited arsenal chelsea psg inter milan juventus atletico dortmund spurs napoli benfica porto sporting ajax psv galatasaray fenerbahce celtic villa brugge athletic'.split(' ')):new Set('ENG FRA GER ESP POR BRA ARG ITA NED BEL CRO URU NOR POL SWE GRE TUR CHE'.split(' '))).has(f.team);
+const expansion=d=>(data.lineupExpansion||[]).filter(e=>e.difficulties.includes(d)).map(e=>typeof e.fixture==='string'?data.fixtures.find(f=>f.id===e.fixture):e.fixture);
+const extraEasyIds=new Set(expansion('easy').map(f=>f.id));
+
+const allowed=f=>(f.mode==='club'?new Set('realmadrid barcelona bayern city liverpool manunited arsenal chelsea psg inter milan juventus atletico dortmund spurs napoli benfica porto sporting ajax psv galatasaray fenerbahce celtic villa brugge athletic'.split(' ')):new Set('ENG FRA GER ESP POR BRA ARG ITA NED BEL CRO URU NOR POL SWE GRE TUR CHE'.split(' '))).has(f.team)||extraEasyIds.has(f.id);
 for(const mode of ['club','nation']){
   context.state={mode,difficulty:'easy'};
   const easy=[...api.available()];
   const original=data.fixtures.filter(f=>f.mode===mode&&f.tier==='easy'&&allowed(f));
-  const former=unique([...data.fixtures.filter(f=>f.mode===mode&&f.tier==='easy'),...data.fixtures.filter(f=>f.mode===mode&&f.tier==='moderate'),...finals.filter(f=>f.mode===mode)]);
+  const former=unique([...data.fixtures.filter(f=>f.mode===mode&&f.tier==='easy'),...data.fixtures.filter(f=>f.mode===mode&&f.tier==='moderate'),...finals.filter(f=>f.mode===mode),...expansion('easy').filter(f=>f.mode===mode)]);
   const restored=f=>(f.mode==='club'?['villa','brugge','athletic']:['NOR','POL','SWE','GRE','TUR','CHE']).includes(f.team);
   const moved=former.filter(f=>!allowed(f)||restored(f));
-  const moderate=unique([...data.fixtures.filter(f=>f.mode===mode&&f.tier==='moderate'),...finals.filter(f=>f.mode===mode),...moved,...(data.mlsStars||[]).filter(f=>f.mode===mode),...(data.africanClassics||[]).map(f=>typeof f==='string'?data.fixtures.find(x=>x.id===f):f).filter(f=>f.mode===mode)]);
+  const moderate=unique([...data.fixtures.filter(f=>f.mode===mode&&f.tier==='moderate'),...finals.filter(f=>f.mode===mode),...moved,...(data.mlsStars||[]).filter(f=>f.mode===mode),...(data.africanClassics||[]).map(f=>typeof f==='string'?data.fixtures.find(x=>x.id===f):f).filter(f=>f.mode===mode),...expansion('moderate').filter(f=>f.mode===mode)]).filter(f=>f.mode!=='club'||!(data.mediumExcludedClubs||[]).includes(f.team));
   const keys=new Set(easy.map(identity));
-  assert.equal(easy.length,mode==='club'?98:69,mode+': expected curated pool');
+  assert.equal(easy.length,mode==='club'?100:87,mode+': expected curated pool');
   assert.equal(keys.size,easy.length,mode+': no duplicate XIs');
   for(const f of former.filter(allowed))assert.ok(keys.has(identity(f)),f.id+': included in Easy');
   assert.ok(easy.every(allowed));
@@ -98,4 +101,4 @@ try{
   fs.writeFileSync(index,source.replace("const first=randomPick(foreign);","const first=randomPick(options);"));
   update();assert.equal(fs.readFileSync(index,'utf8'),source,'Easy updater repairs stale rules');
 }finally{fs.rmSync(temp,{recursive:true,force:true});}
-console.log(`PASS: 167 curated Easy fixtures; ${checked} four-option sets satisfy league/era rules; all removed XIs remain in Moderate; unchanged Hard choice algorithm; updater checks passed.`);
+console.log(`PASS: 187 curated Easy fixtures; ${checked} four-option sets satisfy league/era rules; requested Medium exclusions applied; unchanged Hard choice algorithm; updater checks passed.`);

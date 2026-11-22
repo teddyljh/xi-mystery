@@ -1,6 +1,6 @@
 # 国家队 Hard 隐藏与提示清单
 
-共52支国家队、114套不同首发（114条题库记录）。同一首发的难度副本合并列出。
+共52支国家队、132套不同首发（132条题库记录）。同一首发的难度副本合并列出。
 
 以下内容由当前游戏实际代码生成，列出了全部随机分支。括号为题库中该球员的俱乐部；“／”表示随机选其中一人，其余均为固定名单。两次提示各恢复一人的俱乐部信息，不切换为选择答案。
 
@@ -9,11 +9,15 @@
 | 阿尔巴尼亚 | 2024-09-07 | Ylber Ramadani（莱切）；Ardian Ismajli（恩波利） | Ylber Ramadani（莱切） | Ardian Ismajli（恩波利） |
 | 阿尔巴尼亚 | 2025-11-16 | Ylber Ramadani（莱切）；Ardian Ismajli（都灵） | Ylber Ramadani（莱切） | Ardian Ismajli（都灵） |
 | 阿根廷 | 2014-07-13 | Javier Mascherano（巴塞罗那）；Martin Demichelis（曼城）；Lionel Messi（巴塞罗那） | Javier Mascherano（巴塞罗那） | Martin Demichelis（曼城） |
+| 阿根廷 | 2022-12-13 | Alexis Mac Allister（布莱顿）；Nicolás Otamendi（本菲卡）／Cristian Romero（托特纳姆热刺）／Nahuel Molina（马德里竞技）（随机选1）；Lionel Messi（巴黎圣日耳曼） | Alexis Mac Allister（布莱顿） | Nicolás Otamendi（本菲卡）／Cristian Romero（托特纳姆热刺）／Nahuel Molina（马德里竞技） |
 | 阿根廷 | 2022-12-18 | Alexis Mac Allister（布莱顿）；Nicolas Otamendi（本菲卡）／Cristian Romero（托特纳姆热刺）／Nahuel Molina（马德里竞技）（随机选1）；Lionel Messi（巴黎圣日耳曼） | Alexis Mac Allister（布莱顿） | Nicolas Otamendi（本菲卡）／Cristian Romero（托特纳姆热刺）／Nahuel Molina（马德里竞技） |
+| 阿根廷 | 2026-07-15 | Alexis Mac Allister（利物浦）；Cristian Romero（托特纳姆热刺）／Nahuel Molina（马德里竞技）（随机选1）；Lionel Messi（迈阿密国际） | Alexis Mac Allister（利物浦） | Cristian Romero（托特纳姆热刺）／Nahuel Molina（马德里竞技） |
 | 阿根廷 | 2026-07-19 | Alexis Mac Allister（利物浦）；Cristian Romero（托特纳姆热刺）；Lionel Messi（迈阿密国际） | Alexis Mac Allister（利物浦） | Cristian Romero（托特纳姆热刺） |
 | 奥地利 | 2024-10-13 | Marcel Sabitzer（多特蒙德）；Marko Arnautović（国际米兰） | Marcel Sabitzer（多特蒙德） | Marko Arnautović（国际米兰） |
 | 奥地利 | 2025-11-18 | Alexander Schlager（萨尔茨堡红牛）；Marcel Sabitzer（多特蒙德） | Marcel Sabitzer（多特蒙德） | Alexander Schlager（萨尔茨堡红牛） |
 | 奥地利 | 2026-11-14 | Christoph Lang（林茨竞技）；Konrad Laimer（拜仁慕尼黑） | Konrad Laimer（拜仁慕尼黑） | Christoph Lang（林茨竞技） |
+| 比利时 | 2018-07-10 | Eden Hazard（切尔西）；Kevin De Bruyne（曼城） | Eden Hazard（切尔西） | Kevin De Bruyne（曼城） |
+| 比利时 | 2018-07-14 | Eden Hazard（切尔西）；Kevin De Bruyne（曼城） | Eden Hazard（切尔西） | Kevin De Bruyne（曼城） |
 | 比利时 | 2026-11-12 | Kevin De Bruyne（那不勒斯）；Jérémy Doku（曼城）；Brandon Mechele（布鲁日） | Kevin De Bruyne（那不勒斯） | Jérémy Doku（曼城） |
 | 波黑 | 2024-09-07 | Edin Džeko（费内巴切）；Ermedin Demirović（斯图加特） | Edin Džeko（费内巴切） | Ermedin Demirović（斯图加特） |
 | 波黑 | 2025-11-18 | Edin Džeko（佛罗伦萨）；Haris Tabaković（门兴格拉德巴赫） | Edin Džeko（佛罗伦萨） | Haris Tabaković（门兴格拉德巴赫） |
@@ -27,7 +31,10 @@
 | 科特迪瓦 | 2024-02-11 | Sébastien Haller（多特蒙德）；Franck Kessié（吉达国民） | Sébastien Haller（多特蒙德） | Franck Kessié（吉达国民） |
 | 喀麦隆 | 2002-06-06 | Geremi（皇家马德里）；Rigobert Song（科隆）；Samuel Eto'o（马略卡） | Geremi（皇家马德里） | Rigobert Song（科隆） |
 | 哥斯达黎加 | 2014-06-14 | Bryan Ruiz（富勒姆）；Michael Umana（萨普里萨） | Bryan Ruiz（富勒姆） | Michael Umana（萨普里萨） |
+| 克罗地亚 | 2018-07-11 | Mario Mandzukic（尤文图斯）；Luka Modric（皇家马德里） | Mario Mandzukic（尤文图斯） | Luka Modric（皇家马德里） |
 | 克罗地亚 | 2018-07-15 | Mario Mandzukic（尤文图斯）；Luka Modric（皇家马德里） | Mario Mandzukic（尤文图斯） | Luka Modric（皇家马德里） |
+| 克罗地亚 | 2022-12-13 | Dominik Livakovic（萨格勒布迪纳摩）；Ivan Perisic（托特纳姆热刺） | Ivan Perisic（托特纳姆热刺） | Dominik Livakovic（萨格勒布迪纳摩） |
+| 克罗地亚 | 2022-12-17 | Mislav Orsic（萨格勒布迪纳摩）；Josip Sutalo（萨格勒布迪纳摩）；Dominik Livakovic（萨格勒布迪纳摩）；Ivan Perisic（托特纳姆热刺） | Ivan Perisic（托特纳姆热刺） | Mislav Orsic（萨格勒布迪纳摩） |
 | 克罗地亚 | 2026-11-12 | Josip Mišić（萨格勒布迪纳摩）；Joško Gvardiol（曼城） | Joško Gvardiol（曼城） | Josip Mišić（萨格勒布迪纳摩） |
 | 捷克 | 2024-09-07 | Lukáš Provod（布拉格斯拉维亚）；Matěj Ryneš（布拉格斯巴达）；David Zima（布拉格斯拉维亚）；Patrik Schick（勒沃库森） | Patrik Schick（勒沃库森） | Lukáš Provod（布拉格斯拉维亚） |
 | 捷克 | 2026-11-15 | Christophe Kabongo（比尔森胜利）；Michal Sadílek（布拉格斯拉维亚）；Idris Hopi（特普利采）；Lukáš Červ（比尔森胜利）；Jiří Sláma（亚布洛内茨）；Tomáš Vlček（布拉格斯拉维亚）；David Zima（布拉格斯拉维亚） | Christophe Kabongo（比尔森胜利） | Michal Sadílek（布拉格斯拉维亚） |
@@ -35,13 +42,18 @@
 | 丹麦 | 2025-11-18 | Rasmus Højlund（那不勒斯）；Mikkel Damsgaard（布伦特福德） | Rasmus Højlund（那不勒斯） | Mikkel Damsgaard（布伦特福德） |
 | 丹麦 | 2026-11-14 | Rasmus Højlund（那不勒斯）；Mikkel Damsgaard（布伦特福德） | Rasmus Højlund（那不勒斯） | Mikkel Damsgaard（布伦特福德） |
 | 埃及 | 2022-02-06 | Mohamed Elneny（阿森纳）；Mohamed Abdelmonem（开罗国民）；Mohamed Salah（利物浦） | Mohamed Elneny（阿森纳） | Mohamed Abdelmonem（开罗国民） |
+| 英格兰 | 2018-07-11 | Dele Alli（托特纳姆热刺）／Jordan Henderson（利物浦）（随机选1）；John Stones（曼城）；Harry Kane（托特纳姆热刺） | Dele Alli（托特纳姆热刺）／Jordan Henderson（利物浦） | John Stones（曼城） |
+| 英格兰 | 2018-07-14 | Fabian Delph（曼城）／Eric Dier（托特纳姆热刺）／Ruben Loftus-Cheek（切尔西）（随机选1）；John Stones（曼城）；Harry Kane（托特纳姆热刺） | Fabian Delph（曼城）／Eric Dier（托特纳姆热刺）／Ruben Loftus-Cheek（切尔西） | John Stones（曼城） |
 | 英格兰 | 2021-07-11 | Declan Rice（西汉姆联）；John Stones（曼城）；Harry Kane（托特纳姆热刺） | Declan Rice（西汉姆联） | John Stones（曼城） |
 | 英格兰 | 2024-07-14 | Declan Rice（阿森纳）；John Stones（曼城）；Harry Kane（拜仁慕尼黑） | Declan Rice（阿森纳） | John Stones（曼城） |
+| 英格兰 | 2026-07-15 | Declan Rice（阿森纳）；John Stones（曼城）；Harry Kane（拜仁慕尼黑） | Declan Rice（阿森纳） | John Stones（曼城） |
+| 英格兰 | 2026-07-18 | Declan Rice（阿森纳）；Marc Guéhi（曼城）／Ezri Konsa（阿斯顿维拉）（随机选1）；Bukayo Saka（阿森纳） | Declan Rice（阿森纳） | Marc Guéhi（曼城）／Ezri Konsa（阿斯顿维拉） |
 | 英格兰 | 2026-11-12 | Declan Rice（阿森纳）；Trent Alexander-Arnold（皇家马德里）；Harry Kane（拜仁慕尼黑） | Declan Rice（阿森纳） | Trent Alexander-Arnold（皇家马德里） |
 | 西班牙 | 2008-06-29 | Andrés Iniesta（巴塞罗那）；Sergio Ramos（皇家马德里）；Fernando Torres（利物浦） | Andrés Iniesta（巴塞罗那） | Sergio Ramos（皇家马德里） |
 | 西班牙 | 2010-07-11 | Sergio Busquets（巴塞罗那）；Gerard Pique（巴塞罗那）；David Villa（巴塞罗那） | Sergio Busquets（巴塞罗那） | Gerard Pique（巴塞罗那） |
 | 西班牙 | 2012-07-01 | Sergio Busquets（巴塞罗那）；Gerard Pique（巴塞罗那）；Andres Iniesta（巴塞罗那） | Sergio Busquets（巴塞罗那） | Gerard Pique（巴塞罗那） |
 | 西班牙 | 2024-07-14 | Nico Williams（毕尔巴鄂竞技）；Robin Le Normand（皇家社会）；Lamine Yamal（巴塞罗那） | Nico Williams（毕尔巴鄂竞技） | Robin Le Normand（皇家社会） |
+| 西班牙 | 2026-07-14 | Dani Olmo（巴塞罗那）；Pau Cubarsí（巴塞罗那）；Lamine Yamal（巴塞罗那） | Dani Olmo（巴塞罗那） | Pau Cubarsí（巴塞罗那） |
 | 西班牙 | 2026-07-19 | Dani Olmo（巴塞罗那）；Pau Cubarsí（巴塞罗那）；Lamine Yamal（巴塞罗那） | Dani Olmo（巴塞罗那） | Pau Cubarsí（巴塞罗那） |
 | 西班牙 | 2026-11-15 | Pau Cubarsí（巴塞罗那）；Aymeric Laporte（毕尔巴鄂竞技）；Lamine Yamal（巴塞罗那） | Pau Cubarsí（巴塞罗那） | Aymeric Laporte（毕尔巴鄂竞技） |
 | 爱沙尼亚 | 2025-11-13 | Markus Soomets（斯达）；Märten Kuusk（卡托维兹） | Markus Soomets（斯达） | Märten Kuusk（卡托维兹） |
@@ -49,8 +61,12 @@
 | 芬兰 | 2025-09-04 | Topi Keskinen（阿伯丁）；Ville Koski（伊斯特拉1961） | Topi Keskinen（阿伯丁） | Ville Koski（伊斯特拉1961） |
 | 法国 | 2006-07-09 | Claude Makelele（切尔西）；Lilian Thuram（尤文图斯）；Florent Malouda（里昂） | Claude Makelele（切尔西） | Lilian Thuram（尤文图斯） |
 | 法国 | 2016-07-10 | Paul Pogba（尤文图斯）；Patrice Evra（尤文图斯）；Antoine Griezmann（马德里竞技） | Paul Pogba（尤文图斯） | Patrice Evra（尤文图斯） |
+| 法国 | 2018-07-10 | Antoine Griezmann（马德里竞技）；Raphaël Varane（皇家马德里）；Kylian Mbappé（巴黎圣日耳曼） | Antoine Griezmann（马德里竞技） | Raphaël Varane（皇家马德里） |
 | 法国 | 2018-07-15 | Antoine Griezmann（马德里竞技）；Raphael Varane（皇家马德里）；Kylian Mbappe（巴黎圣日耳曼） | Antoine Griezmann（马德里竞技） | Raphael Varane（皇家马德里） |
+| 法国 | 2022-12-14 | Antoine Griezmann（马德里竞技）；Raphaël Varane（曼联）；Kylian Mbappé（巴黎圣日耳曼） | Antoine Griezmann（马德里竞技） | Raphaël Varane（曼联） |
 | 法国 | 2022-12-18 | Antoine Griezmann（马德里竞技）；Raphael Varane（曼联）；Kylian Mbappe（巴黎圣日耳曼） | Antoine Griezmann（马德里竞技） | Raphael Varane（曼联） |
+| 法国 | 2026-07-14 | Michael Olise（拜仁慕尼黑）；Jules Koundé（巴塞罗那）；Kylian Mbappé（皇家马德里） | Michael Olise（拜仁慕尼黑） | Jules Koundé（巴塞罗那） |
+| 法国 | 2026-07-18 | Rayan Cherki（曼城）／Adrien Rabiot（AC米兰）（随机选1）；Theo Hernández（利雅得新月）；Kylian Mbappé（皇家马德里） | Rayan Cherki（曼城）／Adrien Rabiot（AC米兰） | Theo Hernández（利雅得新月） |
 | 格鲁吉亚 | 2024-06-26 | Otar Kiteishvili（格拉茨风暴）；Guram Kashia（布拉迪斯拉发斯洛万） | Otar Kiteishvili（格拉茨风暴） | Guram Kashia（布拉迪斯拉发斯洛万） |
 | 格鲁吉亚 | 2024-09-07 | Giorgi Kochorashvili（莱万特）；Giorgi Gvelesiani（波斯波利斯） | Giorgi Kochorashvili（莱万特） | Giorgi Gvelesiani（波斯波利斯） |
 | 格鲁吉亚 | 2025-11-15 | Anzor Mekvabishvili（克拉约瓦大学）；Saba Goglichidze（乌迪内斯） | Anzor Mekvabishvili（克拉约瓦大学） | Saba Goglichidze（乌迪内斯） |
@@ -79,6 +95,8 @@
 | 科索沃 | 2026-11-14 | Edon Zhegrova（尤文图斯）；Kreshnik Hajrizi（锡永） | Edon Zhegrova（尤文图斯） | Kreshnik Hajrizi（锡永） |
 | 沙特阿拉伯 | 2022-11-22 | Abdulelah Al-Malki（利雅得新月）；Ali Al-Bulaihi（利雅得新月） | Abdulelah Al-Malki（利雅得新月） | Ali Al-Bulaihi（利雅得新月） |
 | 摩洛哥 | 2022-12-10 | Yahia Attiyat Allah（卡萨布兰卡维达德）；Achraf Hakimi（巴黎圣日耳曼） | Achraf Hakimi（巴黎圣日耳曼） | Yahia Attiyat Allah（卡萨布兰卡维达德） |
+| 摩洛哥 | 2022-12-14 | Youssef En-Nesyri（塞维利亚）；Achraf Hakimi（巴黎圣日耳曼） | Youssef En-Nesyri（塞维利亚） | Achraf Hakimi（巴黎圣日耳曼） |
+| 摩洛哥 | 2022-12-17 | Yahia Attiyat Allah（卡萨布兰卡维达德）；Youssef En-Nesyri（塞维利亚） | Youssef En-Nesyri（塞维利亚） | Yahia Attiyat Allah（卡萨布兰卡维达德） |
 | 摩尔多瓦 | 2025-09-09 | Artur Ioniță（莱科）；Vladislav Baboglo（利沃夫喀尔巴阡） | Artur Ioniță（莱科） | Vladislav Baboglo（利沃夫喀尔巴阡） |
 | 荷兰 | 2010-07-11 | Wesley Sneijder（国际米兰）；Giovanni van Bronckhorst（费耶诺德）；Arjen Robben（拜仁慕尼黑） | Wesley Sneijder（国际米兰） | Giovanni van Bronckhorst（费耶诺德） |
 | 荷兰 | 2014-06-13 | Robin van Persie（曼联）；Wesley Sneijder（加拉塔萨雷）；Daley Blind（阿贾克斯）；Bruno Martins Indi（费耶诺德）；Stefan de Vrij（费耶诺德） | Robin van Persie（曼联） | Wesley Sneijder（加拉塔萨雷） |

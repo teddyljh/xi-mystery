@@ -11,10 +11,10 @@ const contextCatalog=JSON.parse(fs.readFileSync(path.join(root,'data/match_conte
 const hash=x=>crypto.createHash('sha256').update(JSON.stringify(x)).digest('hex');
 assert.equal(hash(data.fixtures),baseline.baseFixturesHash);
 const combined=d=>['club','nation'].flatMap(m=>pool(m,d));
-for(const d of ['easy','moderate'])assert.deepEqual(combined(d).map(f=>f.id),baseline.pools[d],d+': membership unchanged');
+for(const d of ['easy','moderate']){const oldIds=new Set(baseline.pools[d]);assert.deepEqual(combined(d).filter(f=>oldIds.has(f.id)).map(f=>f.id),baseline.pools[d].filter(id=>d!=='moderate'||registry.get(id).team!=='frankfurt'),d+': previous membership retained except requested Frankfurt exclusion');}
 const hard=combined('hard');
-assert.equal(hard.length,baseline.pools.hard.length+5);
-assert.deepEqual(hard.filter(f=>!data.hardMlsStars.some(x=>x.id===f.id)).map(f=>f.id),baseline.pools.hard);
+assert.equal(hard.length,baseline.pools.hard.length+5+33);
+assert.deepEqual(hard.filter(f=>!data.hardMlsStars.some(x=>x.id===f.id)&&!f.id.startsWith('expansion-')).map(f=>f.id),baseline.pools.hard);
 assert.equal(new Set(hard.map(key)).size,hard.length);
 assert.equal(Object.keys(baseline.hardMasks).length,239);
 for(const [id,expected] of Object.entries(baseline.hardMasks))assert.equal(hash(review(registry.get(id)).variants.map(v=>JSON.stringify(v)).sort()),expected,id+': every prior hidden/hint branch preserved');
@@ -98,7 +98,7 @@ for(const lang of ['zh','en','es']){
     explained.add(f.id);
   }
 }
-assert.equal(contextCatalog.matches.length,58);
+assert.equal(contextCatalog.matches.length,76);
 const contextKeys=new Set();
 for(const m of contextCatalog.matches){
   assert.ok(m.sources.length&&m.sources.every(url=>url.startsWith('https://')));
@@ -121,8 +121,11 @@ try{
   update();assert.equal(fs.readFileSync(index,'utf8'),source,'complete CI generation is idempotent');
   const stale=structuredClone(data);delete stale.hardMlsStars;delete stale.matchContext;
   fs.writeFileSync(index,source.replace('window.LINEUP_DATA = '+JSON.stringify(data)+';\n','window.LINEUP_DATA = '+JSON.stringify(stale)+';\n'));
-  update();assert.equal(fs.readFileSync(index,'utf8'),source,'catalog regeneration restores all descriptions and Hard XIs');
+  update();
+  const regenerated=fs.readFileSync(index,'utf8'),payload=regenerated.split('window.LINEUP_DATA = ')[1].split(';\n')[0];
+  assert.deepEqual(JSON.parse(payload),data,'catalog regeneration restores all descriptions and Hard XIs');
+  assert.equal(regenerated.replace('window.LINEUP_DATA = '+payload+';\n','window.LINEUP_DATA = RESTORED;\n'),source.replace('window.LINEUP_DATA = '+JSON.stringify(data)+';\n','window.LINEUP_DATA = RESTORED;\n'),'regeneration preserves the surrounding engine and UI');
 }finally{fs.rmSync(temp,{recursive:true,force:true});}
 assert.equal(fs.readFileSync(path.join(root,'docs/match-context-and-hard-mls.md'),'utf8'),execFileSync(process.execPath,[path.join(root,'scripts/report_match_context.cjs')],{encoding:'utf8'}));
 assert.equal(hash(fs.readFileSync(path.join(root,'README.md'),'utf8')),baseline.originalReadmeHash,'README retains only the original explanation');
-console.log(`PASS: all ${explained.size} question descriptions in 3 languages; 58 classic/final stories; 5 Hard-only MLS XIs including Griezmann/Lewandowski debuts with exact hints; all 242 prior XIs and masks unchanged; offline flags, README and full generation.`);
+console.log(`PASS: all ${explained.size} question descriptions in 3 languages; 76 classic/final stories; 5 Hard-only MLS XIs including Griezmann/Lewandowski debuts with exact hints; all 242 prior XIs and masks unchanged; offline flags, README and full generation.`);

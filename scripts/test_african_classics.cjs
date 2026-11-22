@@ -15,14 +15,14 @@ assert.equal(data.africanClassics.filter(f=>typeof f==='string').length,1,'reuse
 assert.deepEqual([...new Set(catalog.fixtures.map(f=>f.team))].sort(),['CIV','CMR','EGY','MAR','NGA','SEN']);
 const combined=d=>['club','nation'].flatMap(m=>pool(m,d));
 const easy=combined('easy'),medium=combined('moderate'),hard=combined('hard');
-assert.deepEqual(easy.map(f=>f.id),baseline.pools.easy,'Easy pool unchanged');
-assert.equal(medium.length,baseline.pools.moderate.length+6);
-assert.equal(hard.length,baseline.pools.hard.length+5+data.hardMlsStars.length);
+assert.deepEqual(easy.filter(f=>!f.id.startsWith('expansion-')).map(f=>f.id),baseline.pools.easy,'all previous Easy fixtures retained');
+assert.equal(medium.length,baseline.pools.moderate.length+6+35);
+assert.equal(hard.length,baseline.pools.hard.length+5+data.hardMlsStars.length+33);
 for(const difficulty of ['moderate','hard']){
   const current=combined(difficulty),keys=new Set(current.map(key));
   assert.equal(keys.size,current.length,'deduplicate every XI in '+difficulty);
   assert.equal(new Set(current.map(f=>f.mode+'|'+f.team+'|'+f.date)).size,current.length,'one question per team/date');
-  for(const id of baseline.pools[difficulty])assert.ok(keys.has(key(registry.get(id))),id+': previous membership retained');
+  for(const id of baseline.pools[difficulty].filter(id=>difficulty!=='moderate'||registry.get(id).team!=='frankfurt'))assert.ok(keys.has(key(registry.get(id))),id+': previous membership retained');
 }
 assert.equal(Object.keys(baseline.hardMasks).length,234);
 for(const [id,expected] of Object.entries(baseline.hardMasks))assert.equal(hash(review(registry.get(id)).variants.map(v=>JSON.stringify(v)).sort()),expected,id+': every prior mask/hint branch unchanged');

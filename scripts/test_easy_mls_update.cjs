@@ -14,17 +14,18 @@ const easy=combined('easy'),medium=combined('moderate'),hard=combined('hard');
 const restored={club:new Set(['villa','brugge','athletic']),nation:new Set(['NOR','POL','SWE','GRE','TUR','CHE'])};
 const previousEasy=new Set(old.pools.easy.map(id=>key(registry.get(id))));
 for(const id of old.pools.easy)assert.ok(easy.some(f=>key(f)===key(registry.get(id))),id+': existing Easy question retained');
-const added=easy.filter(f=>!previousEasy.has(key(f)));
+const extraIds=new Set((data.lineupExpansion||[]).filter(e=>e.difficulties.includes('easy')&&typeof e.fixture!=='string').map(e=>e.fixture.id));
+const added=easy.filter(f=>!previousEasy.has(key(f))&&!extraIds.has(f.id));
 assert.equal(added.length,20);
 for(const f of added)assert.ok(restored[f.mode].has(f.team),f.id+': only requested teams restored');
 for(const [mode,keys] of Object.entries(restored))for(const team of keys)assert.ok(added.some(f=>f.mode===mode&&f.team===team),team);
 for(const f of data.fixtures.filter(f=>['shakhtar','dinamo','crvenazvezda','slavia','sparta','slovan','qarabag','kairat'].includes(f.team)))assert.ok(!easy.some(x=>key(x)===key(f)),f.id+': obscure eastern-league clubs excluded from Easy');
 for(const [difficulty,current] of [['moderate',medium],['hard',hard]]){
   const currentKeys=new Set(current.map(key));
-  for(const id of old.pools[difficulty])assert.ok(currentKeys.has(key(registry.get(id))),id+': restoring Easy never drops higher difficulty membership');
+  for(const id of old.pools[difficulty].filter(id=>difficulty!=='moderate'||registry.get(id).team!=='frankfurt'))assert.ok(currentKeys.has(key(registry.get(id))),id+': restoring Easy never drops higher difficulty membership');
   const previousKeys=new Set(old.pools[difficulty].map(id=>key(registry.get(id))));
   const africanAdded=(data.africanClassics||[]).map(f=>typeof f==='string'?registry.get(f):f).filter(f=>!previousKeys.has(key(f)));
-  assert.equal(current.length,old.pools[difficulty].length+3+africanAdded.length+(difficulty==='hard'?data.hardMlsStars.length:0),'three MLS XIs plus the later African catalog in '+difficulty);
+  assert.equal(current.length,old.pools[difficulty].length+3+africanAdded.length+(difficulty==='hard'?data.hardMlsStars.length:0)+(difficulty==='hard'?33:35),'three MLS XIs plus the later African catalog in '+difficulty);
 }
 assert.equal(Object.keys(old.hardMasks).length,231);
 for(const [id,expected] of Object.entries(old.hardMasks)){
@@ -57,7 +58,7 @@ const assets=JSON.parse(source.split('window.XI_UI_ASSETS = ')[1].split(';\n')[0
 for(const [code,asset] of Object.entries(catalog.flags))assert.equal(assets.flags[code],'data:image/png;base64,'+fs.readFileSync(path.join(root,asset.path)).toString('base64'),code+': correct bundled flag, no fallback');
 const africa=new Set('ALG DZA ANG BEN BOT BFA BUR BDI CMR CPV CTA CAF CHA TCD COM COG COD CIV DJI EGY EQG ERI ETH GAB GAM GMB GHA GUI GIN GNB KEN LES LBR LBY MAD MDG MWI MLI MTN MRT MRI MUS MAR MOZ NAM NIG NER NGA RWA STP SEN SEY SLE SOM RSA ZAF SSD SDN SUD SWZ TAN TZA TOG TGO TUN UGA ZAM ZMB ZIM ZWE'.split(' '));
 const africanExpected=['CIV|2024-02-11','CMR|2002-06-06','EGY|2022-02-06','MAR|2022-12-10','NGA|2024-02-11','SEN|2022-02-06'];
-for(const difficulty of ['easy','moderate','hard'])assert.deepEqual(pool('nation',difficulty).filter(f=>africa.has(f.team)).map(f=>f.team+'|'+f.date).sort(),difficulty==='easy'?[]:africanExpected,'exact African national-team questions in '+difficulty);
+for(const difficulty of ['easy','moderate','hard'])assert.deepEqual(pool('nation',difficulty).filter(f=>africa.has(f.team)).map(f=>f.team+'|'+f.date).sort(),difficulty==='easy'?['MAR|2022-12-14','MAR|2022-12-17']:[...africanExpected,'MAR|2022-12-14','MAR|2022-12-17'].sort(),'exact African national-team questions in '+difficulty);
 const temp=fs.mkdtempSync(path.join(os.tmpdir(),'xi-mls-test-'));
 try{
   for(const folder of ['scripts','data/flags'])fs.mkdirSync(path.join(temp,folder),{recursive:true});

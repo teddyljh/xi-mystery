@@ -16,7 +16,7 @@ assert.equal(new Set(records.map(f=>f.team+'|'+f.date)).size,26);
 assert.equal(data.fixtures.length,274,'base archive receives no clones');
 assert.equal(data.nationalFinals.filter(f=>typeof f==='string').length,17);
 assert.equal(data.nationalFinals.filter(f=>typeof f!=='string').length,9);
-assert.equal(context.api.quizFixtureCount(),318);
+assert.equal(context.api.quizFixtureCount(),351);
 for(const [event,years] of [['WORLD_CUP',[2002,2006,2010,2014,2018,2022,2026]],['EURO',[2004,2008,2012,2016,2020,2024]]]){
   for(const year of years){
     const pair=records.filter(f=>f.event===event&&f.eventYear===year);
@@ -27,7 +27,7 @@ for(const [event,years] of [['WORLD_CUP',[2002,2006,2010,2014,2018,2022,2026]],[
 }
 for(const difficulty of ['easy','moderate','hard']){
   context.state={mode:'nation',difficulty};const pool=[...context.api.available()];
-  assert.equal(pool.length,{easy:69,moderate:79,hard:114}[difficulty]);
+  assert.equal(pool.length,{easy:87,moderate:97,hard:132}[difficulty]);
   assert.equal(new Set(pool.map(f=>f.team+'|'+f.date)).size,pool.length,'one question per team/date');
   for(const f of records){
     const matches=pool.filter(x=>x.team===f.team&&x.date===f.date);
@@ -41,7 +41,7 @@ for(const difficulty of ['easy','moderate','hard']){
   }
 }
 context.state={mode:'nation',difficulty:'hard'};
-assert.equal(context.api.available().length,114,'Hard covers finals and moved nations');
+assert.equal(context.api.available().length,132,'Hard covers finals, semifinals, third-place matches and moved nations');
 const fixture=(team,date)=>records.find(f=>f.team===team&&f.date===date);
 const club=(f,part)=>f.players.find(p=>p.name.includes(part)).value;
 assert.equal(club(fixture('GRE','2004-07-04'),'Nikopolidis'),'panathinaikos');

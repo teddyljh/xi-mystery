@@ -1,0 +1,3313 @@
+{
+  "clubs": {
+    "boca": {
+      "zh": "博卡青年",
+      "en": "Boca Juniors",
+      "es": "Boca Juniors",
+      "aliases": [
+        "Boca",
+        "CABJ"
+      ],
+      "crestPath": "argentina/Boca_Juniors.svg"
+    },
+    "tianjinquanjian": {
+      "zh": "天津权健",
+      "en": "Tianjin Quanjian",
+      "es": "Tianjin Quanjian",
+      "aliases": [
+        "Tianjin Quanjian FC",
+        "天津权健足球俱乐部"
+      ],
+      "crestPath": "https://images.seeklogo.com/logo-png/61/1/tianjin-quanjian-fc-logo-png_seeklogo-614097.png"
+    }
+  },
+  "mediumExcludedClubs": [
+    "frankfurt"
+  ],
+  "fixtures": [
+    {
+      "id": "expansion-classic-2001-06-17-roma",
+      "mode": "club",
+      "season": "2001",
+      "tier": "moderate",
+      "team": "roma",
+      "date": "2001-06-17",
+      "versus": "Parma",
+      "formation": "3-4-1-2",
+      "competition": "Serie A",
+      "source": "https://www.asroma.com/en/news/58627/matchday-revisited-scudetto-celebrations-in-2001",
+      "players": [
+        {
+          "role": "LS",
+          "name": "Gabriel Batistuta",
+          "value": "ARG"
+        },
+        {
+          "role": "RS",
+          "name": "Vincenzo Montella",
+          "value": "ITA"
+        },
+        {
+          "role": "AM",
+          "name": "Francesco Totti",
+          "value": "ITA"
+        },
+        {
+          "role": "LWB",
+          "name": "Vincent Candela",
+          "value": "FRA"
+        },
+        {
+          "role": "CM",
+          "name": "Emerson",
+          "value": "BRA"
+        },
+        {
+          "role": "CM",
+          "name": "Damiano Tommasi",
+          "value": "ITA"
+        },
+        {
+          "role": "RWB",
+          "name": "Cafu",
+          "value": "BRA"
+        },
+        {
+          "role": "CB",
+          "name": "Antônio Carlos Zago",
+          "value": "BRA"
+        },
+        {
+          "role": "CB",
+          "name": "Walter Samuel",
+          "value": "ARG"
+        },
+        {
+          "role": "CB",
+          "name": "Jonathan Zebina",
+          "value": "FRA"
+        },
+        {
+          "role": "GK",
+          "name": "Francesco Antonioli",
+          "value": "ITA"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "classic",
+      "hardFeatured": true,
+      "hardForward": "Gabriel Batistuta"
+    },
+    {
+      "id": "expansion-classic-1987-05-10-napoli",
+      "mode": "club",
+      "season": "1987",
+      "tier": "moderate",
+      "team": "napoli",
+      "date": "1987-05-10",
+      "versus": "Fiorentina",
+      "formation": "4-3-1-2",
+      "competition": "Serie A",
+      "source": "https://archivio.unita.news/assets/derived/1987/05/11/issue_full.pdf",
+      "players": [
+        {
+          "role": "LS",
+          "name": "Bruno Giordano",
+          "value": "ITA"
+        },
+        {
+          "role": "RS",
+          "name": "Andrea Carnevale",
+          "value": "ITA"
+        },
+        {
+          "role": "AM",
+          "name": "Diego Maradona",
+          "value": "ARG"
+        },
+        {
+          "role": "CM",
+          "name": "Fernando De Napoli",
+          "value": "ITA"
+        },
+        {
+          "role": "DM",
+          "name": "Salvatore Bagni",
+          "value": "ITA"
+        },
+        {
+          "role": "CM",
+          "name": "Francesco Romano",
+          "value": "ITA"
+        },
+        {
+          "role": "LB",
+          "name": "Giuseppe Volpecina",
+          "value": "ITA"
+        },
+        {
+          "role": "CB",
+          "name": "Alessandro Renica",
+          "value": "ITA"
+        },
+        {
+          "role": "CB",
+          "name": "Moreno Ferrario",
+          "value": "ITA"
+        },
+        {
+          "role": "RB",
+          "name": "Giuseppe Bruscolotti",
+          "value": "ITA"
+        },
+        {
+          "role": "GK",
+          "name": "Claudio Garella",
+          "value": "ITA"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "classic",
+      "hardFeatured": true,
+      "hardForward": "Diego Maradona"
+    },
+    {
+      "reuseId": "historic-club-manunited-2008-05-21-3",
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "classic-existing"
+    },
+    {
+      "reuseId": "club-2026/27-6",
+      "difficulties": [
+        "moderate",
+        "hard"
+      ],
+      "group": "current"
+    },
+    {
+      "reuseId": "club-2026/27-8",
+      "difficulties": [
+        "moderate",
+        "hard"
+      ],
+      "group": "current"
+    },
+    {
+      "reuseId": "club-2026/27-32",
+      "difficulties": [
+        "moderate",
+        "hard"
+      ],
+      "group": "current"
+    },
+    {
+      "id": "expansion-recent-2026-04-18-sociedad",
+      "mode": "club",
+      "season": "2026",
+      "tier": "moderate",
+      "team": "sociedad",
+      "date": "2026-04-18",
+      "versus": "Atlético de Madrid",
+      "formation": "4-3-3",
+      "competition": "Copa del Rey",
+      "source": "https://rfef.es/es/noticias/los-penaltis-coronan-la-real-sociedad-en-una-final-trepidante-2-2",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Gonçalo Guedes",
+          "value": "POR"
+        },
+        {
+          "role": "ST",
+          "name": "Mikel Oyarzabal",
+          "value": "ESP"
+        },
+        {
+          "role": "RW",
+          "name": "Ander Barrenetxea",
+          "value": "ESP"
+        },
+        {
+          "role": "CM",
+          "name": "Luka Sučić",
+          "value": "CRO"
+        },
+        {
+          "role": "DM",
+          "name": "Beñat Turrientes",
+          "value": "ESP"
+        },
+        {
+          "role": "CM",
+          "name": "Carlos Soler",
+          "value": "ESP"
+        },
+        {
+          "role": "LB",
+          "name": "Sergio Gómez",
+          "value": "ESP"
+        },
+        {
+          "role": "CB",
+          "name": "Jon Martín",
+          "value": "ESP"
+        },
+        {
+          "role": "CB",
+          "name": "Duje Ćaleta-Car",
+          "value": "CRO"
+        },
+        {
+          "role": "RB",
+          "name": "Jon Aramburu",
+          "value": "VEN"
+        },
+        {
+          "role": "GK",
+          "name": "Unai Marrero",
+          "value": "ESP"
+        }
+      ],
+      "difficulties": [
+        "moderate",
+        "hard"
+      ],
+      "group": "recent"
+    },
+    {
+      "id": "expansion-ucl-semi-2024-05-08-realmadrid",
+      "mode": "club",
+      "season": "2024",
+      "tier": "moderate",
+      "team": "realmadrid",
+      "date": "2024-05-08",
+      "versus": "Bayern Munich",
+      "formation": "4-3-1-2",
+      "competition": "UEFA Champions League",
+      "source": "https://www.uefa.com/uefachampionsleague/match/2040503/",
+      "players": [
+        {
+          "role": "LS",
+          "name": "Vinícius Júnior",
+          "value": "BRA",
+          "number": 7,
+          "uefaPlayerId": "250121533"
+        },
+        {
+          "role": "RS",
+          "name": "Rodrygo",
+          "value": "BRA",
+          "number": 11,
+          "uefaPlayerId": "250132829"
+        },
+        {
+          "role": "AM",
+          "name": "Jude Bellingham",
+          "value": "ENG",
+          "number": 5,
+          "uefaPlayerId": "250128377"
+        },
+        {
+          "role": "CM",
+          "name": "Aurélien Tchouaméni",
+          "value": "FRA",
+          "number": 18,
+          "uefaPlayerId": "250105244"
+        },
+        {
+          "role": "DM",
+          "name": "Toni Kroos",
+          "value": "GER",
+          "number": 8,
+          "uefaPlayerId": "103147"
+        },
+        {
+          "role": "CM",
+          "name": "Federico Valverde",
+          "value": "URU",
+          "number": 15,
+          "uefaPlayerId": "250101284"
+        },
+        {
+          "role": "LB",
+          "name": "Ferland Mendy",
+          "value": "FRA",
+          "number": 23,
+          "uefaPlayerId": "250112803"
+        },
+        {
+          "role": "CB",
+          "name": "Nacho",
+          "value": "ESP",
+          "number": 6,
+          "uefaPlayerId": "1900122"
+        },
+        {
+          "role": "CB",
+          "name": "Antonio Rüdiger",
+          "value": "GER",
+          "number": 22,
+          "uefaPlayerId": "250028211"
+        },
+        {
+          "role": "RB",
+          "name": "Dani Carvajal",
+          "value": "ESP",
+          "number": 2,
+          "uefaPlayerId": "250024448"
+        },
+        {
+          "role": "GK",
+          "name": "Andriy Lunin",
+          "value": "UKR",
+          "number": 13,
+          "uefaPlayerId": "250089824"
+        }
+      ],
+      "difficulties": [
+        "moderate",
+        "hard"
+      ],
+      "group": "ucl-semi",
+      "uefaMatchId": "2040503",
+      "leg": 2,
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2040503/lineups?language=EN",
+      "hardForward": "Jude Bellingham"
+    },
+    {
+      "id": "expansion-ucl-semi-2024-05-08-bayern",
+      "mode": "club",
+      "season": "2024",
+      "tier": "moderate",
+      "team": "bayern",
+      "date": "2024-05-08",
+      "versus": "Real Madrid",
+      "formation": "4-2-3-1",
+      "competition": "UEFA Champions League",
+      "source": "https://www.uefa.com/uefachampionsleague/match/2040503/",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Harry Kane",
+          "value": "ENG",
+          "number": 9,
+          "uefaPlayerId": "250016833"
+        },
+        {
+          "role": "LW",
+          "name": "Serge Gnabry",
+          "value": "GER",
+          "number": 7,
+          "uefaPlayerId": "250041770"
+        },
+        {
+          "role": "AM",
+          "name": "Jamal Musiala",
+          "value": "GER",
+          "number": 42,
+          "uefaPlayerId": "250124430"
+        },
+        {
+          "role": "RW",
+          "name": "Leroy Sané",
+          "value": "GER",
+          "number": 10,
+          "uefaPlayerId": "250063984"
+        },
+        {
+          "role": "DM",
+          "name": "Aleksandar Pavlović",
+          "value": "GER",
+          "number": 45,
+          "uefaPlayerId": "250163777"
+        },
+        {
+          "role": "DM",
+          "name": "Konrad Laimer",
+          "value": "AUT",
+          "number": 27,
+          "uefaPlayerId": "250065413"
+        },
+        {
+          "role": "LB",
+          "name": "Noussair Mazraoui",
+          "value": "MAR",
+          "number": 40,
+          "uefaPlayerId": "250075995"
+        },
+        {
+          "role": "CB",
+          "name": "Eric Dier",
+          "value": "ENG",
+          "number": 15,
+          "uefaPlayerId": "250050416"
+        },
+        {
+          "role": "CB",
+          "name": "Matthijs de Ligt",
+          "value": "NED",
+          "number": 4,
+          "uefaPlayerId": "50327424"
+        },
+        {
+          "role": "RB",
+          "name": "Joshua Kimmich",
+          "value": "GER",
+          "number": 6,
+          "uefaPlayerId": "250070417"
+        },
+        {
+          "role": "GK",
+          "name": "Manuel Neuer",
+          "value": "GER",
+          "number": 1,
+          "uefaPlayerId": "97923"
+        }
+      ],
+      "difficulties": [
+        "moderate",
+        "hard"
+      ],
+      "group": "ucl-semi",
+      "uefaMatchId": "2040503",
+      "leg": 2,
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2040503/lineups?language=EN",
+      "hardForward": "Harry Kane"
+    },
+    {
+      "id": "expansion-ucl-semi-2024-05-07-psg",
+      "mode": "club",
+      "season": "2024",
+      "tier": "moderate",
+      "team": "psg",
+      "date": "2024-05-07",
+      "versus": "Borussia Dortmund",
+      "formation": "4-3-3",
+      "competition": "UEFA Champions League",
+      "source": "https://www.uefa.com/uefachampionsleague/match/2040502/",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Kylian Mbappé",
+          "value": "FRA",
+          "number": 7,
+          "uefaPlayerId": "250076574"
+        },
+        {
+          "role": "ST",
+          "name": "Gonçalo Ramos",
+          "value": "POR",
+          "number": 9,
+          "uefaPlayerId": "250116654"
+        },
+        {
+          "role": "RW",
+          "name": "Ousmane Dembélé",
+          "value": "FRA",
+          "number": 10,
+          "uefaPlayerId": "250066886"
+        },
+        {
+          "role": "CM",
+          "name": "Fabián Ruiz",
+          "value": "ESP",
+          "number": 8,
+          "uefaPlayerId": "250115436"
+        },
+        {
+          "role": "DM",
+          "name": "Vitinha",
+          "value": "POR",
+          "number": 17,
+          "uefaPlayerId": "250101444"
+        },
+        {
+          "role": "CM",
+          "name": "Warren Zaïre-Emery",
+          "value": "FRA",
+          "number": 33,
+          "uefaPlayerId": "250153849"
+        },
+        {
+          "role": "LB",
+          "name": "Nuno Mendes",
+          "value": "POR",
+          "number": 25,
+          "uefaPlayerId": "250136465"
+        },
+        {
+          "role": "CB",
+          "name": "Lucas Beraldo",
+          "value": "BRA",
+          "number": 35,
+          "uefaPlayerId": "250193442"
+        },
+        {
+          "role": "CB",
+          "name": "Marquinhos",
+          "value": "BRA",
+          "number": 5,
+          "uefaPlayerId": "250064064"
+        },
+        {
+          "role": "RB",
+          "name": "Achraf Hakimi",
+          "value": "MAR",
+          "number": 2,
+          "uefaPlayerId": "250088061"
+        },
+        {
+          "role": "GK",
+          "name": "Gianluigi Donnarumma",
+          "value": "ITA",
+          "number": 99,
+          "uefaPlayerId": "250078922"
+        }
+      ],
+      "difficulties": [
+        "moderate",
+        "hard"
+      ],
+      "group": "ucl-semi",
+      "uefaMatchId": "2040502",
+      "leg": 2,
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2040502/lineups?language=EN",
+      "hardForward": "Kylian Mbappé"
+    },
+    {
+      "id": "expansion-ucl-semi-2024-05-07-dortmund",
+      "mode": "club",
+      "season": "2024",
+      "tier": "moderate",
+      "team": "dortmund",
+      "date": "2024-05-07",
+      "versus": "Paris Saint-Germain",
+      "formation": "4-2-3-1",
+      "competition": "UEFA Champions League",
+      "source": "https://www.uefa.com/uefachampionsleague/match/2040502/",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Niclas Füllkrug",
+          "value": "GER",
+          "number": 14,
+          "uefaPlayerId": "250041844"
+        },
+        {
+          "role": "LW",
+          "name": "Karim Adeyemi",
+          "value": "GER",
+          "number": 27,
+          "uefaPlayerId": "250127347"
+        },
+        {
+          "role": "AM",
+          "name": "Julian Brandt",
+          "value": "GER",
+          "number": 19,
+          "uefaPlayerId": "250046522"
+        },
+        {
+          "role": "RW",
+          "name": "Jadon Sancho",
+          "value": "ENG",
+          "number": 10,
+          "uefaPlayerId": "250102216"
+        },
+        {
+          "role": "DM",
+          "name": "Marcel Sabitzer",
+          "value": "AUT",
+          "number": 20,
+          "uefaPlayerId": "250024349"
+        },
+        {
+          "role": "DM",
+          "name": "Emre Can",
+          "value": "GER",
+          "number": 23,
+          "uefaPlayerId": "250017824"
+        },
+        {
+          "role": "LB",
+          "name": "Ian Maatsen",
+          "value": "NED",
+          "number": 22,
+          "uefaPlayerId": "250117581"
+        },
+        {
+          "role": "CB",
+          "name": "Nico Schlotterbeck",
+          "value": "GER",
+          "number": 4,
+          "uefaPlayerId": "250134856"
+        },
+        {
+          "role": "CB",
+          "name": "Mats Hummels",
+          "value": "GER",
+          "number": 15,
+          "uefaPlayerId": "106587"
+        },
+        {
+          "role": "RB",
+          "name": "Julian Ryerson",
+          "value": "NOR",
+          "number": 26,
+          "uefaPlayerId": "250092517"
+        },
+        {
+          "role": "GK",
+          "name": "Gregor Kobel",
+          "value": "CHE",
+          "number": 1,
+          "uefaPlayerId": "250069832"
+        }
+      ],
+      "difficulties": [
+        "moderate",
+        "hard"
+      ],
+      "group": "ucl-semi",
+      "uefaMatchId": "2040502",
+      "leg": 2,
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2040502/lineups?language=EN",
+      "hardForward": "Jadon Sancho"
+    },
+    {
+      "id": "expansion-ucl-semi-2025-05-07-psg",
+      "mode": "club",
+      "season": "2025",
+      "tier": "moderate",
+      "team": "psg",
+      "date": "2025-05-07",
+      "versus": "Arsenal",
+      "formation": "4-3-3",
+      "competition": "UEFA Champions League",
+      "source": "https://www.uefa.com/uefachampionsleague/match/2044858/",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Khvicha Kvaratskhelia",
+          "value": "GEO",
+          "number": 7,
+          "uefaPlayerId": "250101808"
+        },
+        {
+          "role": "ST",
+          "name": "Désiré Doué",
+          "value": "FRA",
+          "number": 14,
+          "uefaPlayerId": "250162177"
+        },
+        {
+          "role": "RW",
+          "name": "Bradley Barcola",
+          "value": "FRA",
+          "number": 29,
+          "uefaPlayerId": "250134138"
+        },
+        {
+          "role": "CM",
+          "name": "Fabián Ruiz",
+          "value": "ESP",
+          "number": 8,
+          "uefaPlayerId": "250115436"
+        },
+        {
+          "role": "DM",
+          "name": "Vitinha",
+          "value": "POR",
+          "number": 17,
+          "uefaPlayerId": "250101444"
+        },
+        {
+          "role": "CM",
+          "name": "João Neves",
+          "value": "POR",
+          "number": 87,
+          "uefaPlayerId": "250164991"
+        },
+        {
+          "role": "LB",
+          "name": "Nuno Mendes",
+          "value": "POR",
+          "number": 25,
+          "uefaPlayerId": "250136465"
+        },
+        {
+          "role": "CB",
+          "name": "Willian Pacho",
+          "value": "ECU",
+          "number": 51,
+          "uefaPlayerId": "250174126"
+        },
+        {
+          "role": "CB",
+          "name": "Marquinhos",
+          "value": "BRA",
+          "number": 5,
+          "uefaPlayerId": "250064064"
+        },
+        {
+          "role": "RB",
+          "name": "Achraf Hakimi",
+          "value": "MAR",
+          "number": 2,
+          "uefaPlayerId": "250088061"
+        },
+        {
+          "role": "GK",
+          "name": "Gianluigi Donnarumma",
+          "value": "ITA",
+          "number": 1,
+          "uefaPlayerId": "250078922"
+        }
+      ],
+      "difficulties": [
+        "moderate",
+        "hard"
+      ],
+      "group": "ucl-semi",
+      "uefaMatchId": "2044858",
+      "leg": 2,
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2044858/lineups?language=EN",
+      "hardForward": "Khvicha Kvaratskhelia"
+    },
+    {
+      "id": "expansion-ucl-semi-2025-05-07-arsenal",
+      "mode": "club",
+      "season": "2025",
+      "tier": "moderate",
+      "team": "arsenal",
+      "date": "2025-05-07",
+      "versus": "Paris Saint-Germain",
+      "formation": "4-3-3",
+      "competition": "UEFA Champions League",
+      "source": "https://www.uefa.com/uefachampionsleague/match/2044858/",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Gabriel Martinelli",
+          "value": "BRA",
+          "number": 11,
+          "uefaPlayerId": "250134304"
+        },
+        {
+          "role": "ST",
+          "name": "Mikel Merino",
+          "value": "ESP",
+          "number": 23,
+          "uefaPlayerId": "250080572"
+        },
+        {
+          "role": "RW",
+          "name": "Bukayo Saka",
+          "value": "ENG",
+          "number": 7,
+          "uefaPlayerId": "250106939"
+        },
+        {
+          "role": "CM",
+          "name": "Declan Rice",
+          "value": "ENG",
+          "number": 41,
+          "uefaPlayerId": "250083732"
+        },
+        {
+          "role": "DM",
+          "name": "Thomas Partey",
+          "value": "GHA",
+          "number": 5,
+          "uefaPlayerId": "250086316"
+        },
+        {
+          "role": "CM",
+          "name": "Martin Ødegaard",
+          "value": "NOR",
+          "number": 8,
+          "uefaPlayerId": "250081341"
+        },
+        {
+          "role": "LB",
+          "name": "Myles Lewis-Skelly",
+          "value": "ENG",
+          "number": 49,
+          "uefaPlayerId": "250181082"
+        },
+        {
+          "role": "CB",
+          "name": "Jakub Kiwior",
+          "value": "POL",
+          "number": 15,
+          "uefaPlayerId": "250105681"
+        },
+        {
+          "role": "CB",
+          "name": "William Saliba",
+          "value": "FRA",
+          "number": 2,
+          "uefaPlayerId": "250127439"
+        },
+        {
+          "role": "RB",
+          "name": "Jurriën Timber",
+          "value": "NED",
+          "number": 12,
+          "uefaPlayerId": "250101728"
+        },
+        {
+          "role": "GK",
+          "name": "David Raya",
+          "value": "ESP",
+          "number": 22,
+          "uefaPlayerId": "250171278"
+        }
+      ],
+      "difficulties": [
+        "moderate",
+        "hard"
+      ],
+      "group": "ucl-semi",
+      "uefaMatchId": "2044858",
+      "leg": 2,
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2044858/lineups?language=EN",
+      "hardForward": "Gabriel Martinelli"
+    },
+    {
+      "id": "expansion-ucl-semi-2025-05-06-inter",
+      "mode": "club",
+      "season": "2025",
+      "tier": "moderate",
+      "team": "inter",
+      "date": "2025-05-06",
+      "versus": "Barcelona",
+      "formation": "3-5-2",
+      "competition": "UEFA Champions League",
+      "source": "https://www.uefa.com/uefachampionsleague/match/2044859/",
+      "players": [
+        {
+          "role": "LS",
+          "name": "Marcus Thuram",
+          "value": "FRA",
+          "number": 9,
+          "uefaPlayerId": "250068805"
+        },
+        {
+          "role": "RS",
+          "name": "Lautaro Martínez",
+          "value": "ARG",
+          "number": 10,
+          "uefaPlayerId": "250118281"
+        },
+        {
+          "role": "LWB",
+          "name": "Federico Dimarco",
+          "value": "ITA",
+          "number": 32,
+          "uefaPlayerId": "250056189"
+        },
+        {
+          "role": "CM",
+          "name": "Henrikh Mkhitaryan",
+          "value": "ARM",
+          "number": 22,
+          "uefaPlayerId": "98023"
+        },
+        {
+          "role": "DM",
+          "name": "Hakan Çalhanoğlu",
+          "value": "TUR",
+          "number": 20,
+          "uefaPlayerId": "250022829"
+        },
+        {
+          "role": "CM",
+          "name": "Nicolò Barella",
+          "value": "ITA",
+          "number": 23,
+          "uefaPlayerId": "250066739"
+        },
+        {
+          "role": "RWB",
+          "name": "Denzel Dumfries",
+          "value": "NED",
+          "number": 2,
+          "uefaPlayerId": "250112690"
+        },
+        {
+          "role": "CB",
+          "name": "Alessandro Bastoni",
+          "value": "ITA",
+          "number": 95,
+          "uefaPlayerId": "250091199"
+        },
+        {
+          "role": "CB",
+          "name": "Francesco Acerbi",
+          "value": "ITA",
+          "number": 15,
+          "uefaPlayerId": "250052957"
+        },
+        {
+          "role": "CB",
+          "name": "Yann Bisseck",
+          "value": "GER",
+          "number": 31,
+          "uefaPlayerId": "250116951"
+        },
+        {
+          "role": "GK",
+          "name": "Yann Sommer",
+          "value": "CHE",
+          "number": 1,
+          "uefaPlayerId": "97746"
+        }
+      ],
+      "difficulties": [
+        "moderate",
+        "hard"
+      ],
+      "group": "ucl-semi",
+      "uefaMatchId": "2044859",
+      "leg": 2,
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2044859/lineups?language=EN",
+      "hardForward": "Lautaro Martínez"
+    },
+    {
+      "id": "expansion-ucl-semi-2025-05-06-barcelona",
+      "mode": "club",
+      "season": "2025",
+      "tier": "moderate",
+      "team": "barcelona",
+      "date": "2025-05-06",
+      "versus": "Inter Milan",
+      "formation": "4-2-3-1",
+      "competition": "UEFA Champions League",
+      "source": "https://www.uefa.com/uefachampionsleague/match/2044859/",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Ferran Torres",
+          "value": "ESP",
+          "number": 7,
+          "uefaPlayerId": "250088320"
+        },
+        {
+          "role": "LW",
+          "name": "Raphinha",
+          "value": "BRA",
+          "number": 11,
+          "uefaPlayerId": "250112880"
+        },
+        {
+          "role": "AM",
+          "name": "Dani Olmo",
+          "value": "ESP",
+          "number": 20,
+          "uefaPlayerId": "250081720"
+        },
+        {
+          "role": "RW",
+          "name": "Lamine Yamal",
+          "value": "ESP",
+          "number": 19,
+          "uefaPlayerId": "250176450"
+        },
+        {
+          "role": "DM",
+          "name": "Pedri",
+          "value": "ESP",
+          "number": 8,
+          "uefaPlayerId": "250143693"
+        },
+        {
+          "role": "DM",
+          "name": "Frenkie de Jong",
+          "value": "NED",
+          "number": 21,
+          "uefaPlayerId": "50327423"
+        },
+        {
+          "role": "LB",
+          "name": "Gerard Martín",
+          "value": "ESP",
+          "number": 35,
+          "uefaPlayerId": "250197801"
+        },
+        {
+          "role": "CB",
+          "name": "Iñigo Martínez",
+          "value": "ESP",
+          "number": 5,
+          "uefaPlayerId": "250040471"
+        },
+        {
+          "role": "CB",
+          "name": "Pau Cubarsí",
+          "value": "ESP",
+          "number": 2,
+          "uefaPlayerId": "250176453"
+        },
+        {
+          "role": "RB",
+          "name": "Eric García",
+          "value": "ESP",
+          "number": 24,
+          "uefaPlayerId": "250103561"
+        },
+        {
+          "role": "GK",
+          "name": "Wojciech Szczęsny",
+          "value": "POL",
+          "number": 25,
+          "uefaPlayerId": "108501"
+        }
+      ],
+      "difficulties": [
+        "moderate",
+        "hard"
+      ],
+      "group": "ucl-semi",
+      "uefaMatchId": "2044859",
+      "leg": 2,
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2044859/lineups?language=EN",
+      "hardForward": "Raphinha"
+    },
+    {
+      "id": "expansion-ucl-semi-2026-05-06-bayern",
+      "mode": "club",
+      "season": "2026",
+      "tier": "moderate",
+      "team": "bayern",
+      "date": "2026-05-06",
+      "versus": "Paris Saint-Germain",
+      "formation": "4-2-3-1",
+      "competition": "UEFA Champions League",
+      "source": "https://www.uefa.com/uefachampionsleague/match/2048073/",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Harry Kane",
+          "value": "ENG",
+          "number": 9,
+          "uefaPlayerId": "250016833"
+        },
+        {
+          "role": "LW",
+          "name": "Luis Díaz",
+          "value": "COL",
+          "number": 14,
+          "uefaPlayerId": "250132811"
+        },
+        {
+          "role": "AM",
+          "name": "Jamal Musiala",
+          "value": "GER",
+          "number": 10,
+          "uefaPlayerId": "250124430"
+        },
+        {
+          "role": "RW",
+          "name": "Michael Olise",
+          "value": "FRA",
+          "number": 17,
+          "uefaPlayerId": "250171184"
+        },
+        {
+          "role": "DM",
+          "name": "Aleksandar Pavlović",
+          "value": "GER",
+          "number": 45,
+          "uefaPlayerId": "250163777"
+        },
+        {
+          "role": "DM",
+          "name": "Joshua Kimmich",
+          "value": "GER",
+          "number": 6,
+          "uefaPlayerId": "250070417"
+        },
+        {
+          "role": "LB",
+          "name": "Konrad Laimer",
+          "value": "AUT",
+          "number": 27,
+          "uefaPlayerId": "250065413"
+        },
+        {
+          "role": "CB",
+          "name": "Jonathan Tah",
+          "value": "GER",
+          "number": 4,
+          "uefaPlayerId": "250055660"
+        },
+        {
+          "role": "CB",
+          "name": "Dayot Upamecano",
+          "value": "FRA",
+          "number": 2,
+          "uefaPlayerId": "250079545"
+        },
+        {
+          "role": "RB",
+          "name": "Josip Stanišić",
+          "value": "CRO",
+          "number": 44,
+          "uefaPlayerId": "250112220"
+        },
+        {
+          "role": "GK",
+          "name": "Manuel Neuer",
+          "value": "GER",
+          "number": 1,
+          "uefaPlayerId": "97923"
+        }
+      ],
+      "difficulties": [
+        "moderate",
+        "hard"
+      ],
+      "group": "ucl-semi",
+      "uefaMatchId": "2048073",
+      "leg": 2,
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2048073/lineups?language=EN",
+      "hardForward": "Harry Kane"
+    },
+    {
+      "id": "expansion-ucl-semi-2026-05-06-psg",
+      "mode": "club",
+      "season": "2026",
+      "tier": "moderate",
+      "team": "psg",
+      "date": "2026-05-06",
+      "versus": "Bayern Munich",
+      "formation": "4-3-3",
+      "competition": "UEFA Champions League",
+      "source": "https://www.uefa.com/uefachampionsleague/match/2048073/",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Khvicha Kvaratskhelia",
+          "value": "GEO",
+          "number": 7,
+          "uefaPlayerId": "250101808"
+        },
+        {
+          "role": "ST",
+          "name": "Ousmane Dembélé",
+          "value": "FRA",
+          "number": 10,
+          "uefaPlayerId": "250066886"
+        },
+        {
+          "role": "RW",
+          "name": "Désiré Doué",
+          "value": "FRA",
+          "number": 14,
+          "uefaPlayerId": "250162177"
+        },
+        {
+          "role": "CM",
+          "name": "João Neves",
+          "value": "POR",
+          "number": 87,
+          "uefaPlayerId": "250164991"
+        },
+        {
+          "role": "DM",
+          "name": "Vitinha",
+          "value": "POR",
+          "number": 17,
+          "uefaPlayerId": "250101444"
+        },
+        {
+          "role": "CM",
+          "name": "Fabián Ruiz",
+          "value": "ESP",
+          "number": 8,
+          "uefaPlayerId": "250115436"
+        },
+        {
+          "role": "LB",
+          "name": "Nuno Mendes",
+          "value": "POR",
+          "number": 25,
+          "uefaPlayerId": "250136465"
+        },
+        {
+          "role": "CB",
+          "name": "Willian Pacho",
+          "value": "ECU",
+          "number": 51,
+          "uefaPlayerId": "250174126"
+        },
+        {
+          "role": "CB",
+          "name": "Marquinhos",
+          "value": "BRA",
+          "number": 5,
+          "uefaPlayerId": "250064064"
+        },
+        {
+          "role": "RB",
+          "name": "Warren Zaïre-Emery",
+          "value": "FRA",
+          "number": 33,
+          "uefaPlayerId": "250153849"
+        },
+        {
+          "role": "GK",
+          "name": "Matvei Safonov",
+          "value": "RUS",
+          "number": 39,
+          "uefaPlayerId": "250090101"
+        }
+      ],
+      "difficulties": [
+        "moderate",
+        "hard"
+      ],
+      "group": "ucl-semi",
+      "uefaMatchId": "2048073",
+      "leg": 2,
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2048073/lineups?language=EN",
+      "hardForward": "Khvicha Kvaratskhelia"
+    },
+    {
+      "id": "expansion-ucl-semi-2026-05-05-arsenal",
+      "mode": "club",
+      "season": "2026",
+      "tier": "moderate",
+      "team": "arsenal",
+      "date": "2026-05-05",
+      "versus": "Atlético de Madrid",
+      "formation": "4-2-3-1",
+      "competition": "UEFA Champions League",
+      "source": "https://www.uefa.com/uefachampionsleague/match/2048074/",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Viktor Gyökeres",
+          "value": "SWE",
+          "number": 14,
+          "uefaPlayerId": "250105927"
+        },
+        {
+          "role": "LW",
+          "name": "Leandro Trossard",
+          "value": "BEL",
+          "number": 19,
+          "uefaPlayerId": "250023009"
+        },
+        {
+          "role": "AM",
+          "name": "Eberechi Eze",
+          "value": "ENG",
+          "number": 10,
+          "uefaPlayerId": "250134376"
+        },
+        {
+          "role": "RW",
+          "name": "Bukayo Saka",
+          "value": "ENG",
+          "number": 7,
+          "uefaPlayerId": "250106939"
+        },
+        {
+          "role": "DM",
+          "name": "Myles Lewis-Skelly",
+          "value": "ENG",
+          "number": 49,
+          "uefaPlayerId": "250181082"
+        },
+        {
+          "role": "DM",
+          "name": "Declan Rice",
+          "value": "ENG",
+          "number": 41,
+          "uefaPlayerId": "250083732"
+        },
+        {
+          "role": "LB",
+          "name": "Riccardo Calafiori",
+          "value": "ITA",
+          "number": 33,
+          "uefaPlayerId": "250113392"
+        },
+        {
+          "role": "CB",
+          "name": "Gabriel",
+          "value": "BRA",
+          "number": 6,
+          "uefaPlayerId": "250131901"
+        },
+        {
+          "role": "CB",
+          "name": "William Saliba",
+          "value": "FRA",
+          "number": 2,
+          "uefaPlayerId": "250127439"
+        },
+        {
+          "role": "RB",
+          "name": "Ben White",
+          "value": "ENG",
+          "number": 4,
+          "uefaPlayerId": "250156002"
+        },
+        {
+          "role": "GK",
+          "name": "David Raya",
+          "value": "ESP",
+          "number": 1,
+          "uefaPlayerId": "250171278"
+        }
+      ],
+      "difficulties": [
+        "moderate",
+        "hard"
+      ],
+      "group": "ucl-semi",
+      "uefaMatchId": "2048074",
+      "leg": 2,
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2048074/lineups?language=EN",
+      "hardForward": "Viktor Gyökeres"
+    },
+    {
+      "id": "expansion-ucl-semi-2026-05-05-atletico",
+      "mode": "club",
+      "season": "2026",
+      "tier": "moderate",
+      "team": "atletico",
+      "date": "2026-05-05",
+      "versus": "Arsenal",
+      "formation": "4-4-2",
+      "competition": "UEFA Champions League",
+      "source": "https://www.uefa.com/uefachampionsleague/match/2048074/",
+      "players": [
+        {
+          "role": "LS",
+          "name": "Julián Alvarez",
+          "value": "ARG",
+          "number": 19,
+          "uefaPlayerId": "250172668"
+        },
+        {
+          "role": "RS",
+          "name": "Antoine Griezmann",
+          "value": "FRA",
+          "number": 7,
+          "uefaPlayerId": "250019498"
+        },
+        {
+          "role": "LM",
+          "name": "Ademola Lookman",
+          "value": "NGA",
+          "number": 22,
+          "uefaPlayerId": "250099258"
+        },
+        {
+          "role": "CM",
+          "name": "Marcos Llorente",
+          "value": "ESP",
+          "number": 14,
+          "uefaPlayerId": "250079670"
+        },
+        {
+          "role": "CM",
+          "name": "Koke",
+          "value": "ESP",
+          "number": 6,
+          "uefaPlayerId": "1909917"
+        },
+        {
+          "role": "RM",
+          "name": "Giuliano Simeone",
+          "value": "ARG",
+          "number": 20,
+          "uefaPlayerId": "250153634"
+        },
+        {
+          "role": "LB",
+          "name": "Matteo Ruggeri",
+          "value": "ITA",
+          "number": 3,
+          "uefaPlayerId": "250127239"
+        },
+        {
+          "role": "CB",
+          "name": "Dávid Hancko",
+          "value": "SVK",
+          "number": 17,
+          "uefaPlayerId": "250092668"
+        },
+        {
+          "role": "CB",
+          "name": "Robin Le Normand",
+          "value": "ESP",
+          "number": 24,
+          "uefaPlayerId": "250112513"
+        },
+        {
+          "role": "RB",
+          "name": "Marc Pubill",
+          "value": "ESP",
+          "number": 18,
+          "uefaPlayerId": "250194472"
+        },
+        {
+          "role": "GK",
+          "name": "Jan Oblak",
+          "value": "SVN",
+          "number": 13,
+          "uefaPlayerId": "250012069"
+        }
+      ],
+      "difficulties": [
+        "moderate",
+        "hard"
+      ],
+      "group": "ucl-semi",
+      "uefaMatchId": "2048074",
+      "leg": 2,
+      "officialLineupSource": "https://match.uefa.com/v5/matches/2048074/lineups?language=EN",
+      "hardForward": "Ademola Lookman"
+    },
+    {
+      "id": "expansion-wc-semi-2018-07-10-FRA",
+      "mode": "nation",
+      "season": "2018",
+      "tier": "moderate",
+      "team": "FRA",
+      "date": "2018-07-10",
+      "versus": "Belgium",
+      "formation": "4-2-3-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/498142",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Olivier Giroud",
+          "value": "chelsea",
+          "number": "9",
+          "sourcePlayerId": "88965"
+        },
+        {
+          "role": "LW",
+          "name": "Blaise Matuidi",
+          "value": "juventus",
+          "number": "14",
+          "sourcePlayerId": "85010"
+        },
+        {
+          "role": "AM",
+          "name": "Antoine Griezmann",
+          "value": "atletico",
+          "number": "7",
+          "sourcePlayerId": "140416"
+        },
+        {
+          "role": "RW",
+          "name": "Kylian Mbappé",
+          "value": "psg",
+          "number": "10",
+          "sourcePlayerId": "231388"
+        },
+        {
+          "role": "DM",
+          "name": "Paul Pogba",
+          "value": "manunited",
+          "number": "6",
+          "sourcePlayerId": "138860"
+        },
+        {
+          "role": "DM",
+          "name": "N'Golo Kanté",
+          "value": "chelsea",
+          "number": "13",
+          "sourcePlayerId": "173556"
+        },
+        {
+          "role": "LB",
+          "name": "Lucas Hernández",
+          "value": "atletico",
+          "number": "21",
+          "sourcePlayerId": "196200"
+        },
+        {
+          "role": "CB",
+          "name": "Samuel Umtiti",
+          "value": "barcelona",
+          "number": "5",
+          "sourcePlayerId": "150051"
+        },
+        {
+          "role": "CB",
+          "name": "Raphaël Varane",
+          "value": "realmadrid",
+          "number": "4",
+          "sourcePlayerId": "153053"
+        },
+        {
+          "role": "RB",
+          "name": "Benjamin Pavard",
+          "value": "stuttgart",
+          "number": "2",
+          "sourcePlayerId": "215378"
+        },
+        {
+          "role": "GK",
+          "name": "Hugo Lloris",
+          "value": "spurs",
+          "number": "1",
+          "sourcePlayerId": "43372"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-semi",
+      "espnEventId": "498142",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=498142",
+      "hardForward": "Kylian Mbappé"
+    },
+    {
+      "id": "expansion-wc-semi-2018-07-10-BEL",
+      "mode": "nation",
+      "season": "2018",
+      "tier": "moderate",
+      "team": "BEL",
+      "date": "2018-07-10",
+      "versus": "France",
+      "formation": "4-2-3-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/498142",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Romelu Lukaku",
+          "value": "manunited",
+          "number": "9",
+          "sourcePlayerId": "139437"
+        },
+        {
+          "role": "LW",
+          "name": "Eden Hazard",
+          "value": "chelsea",
+          "number": "10",
+          "sourcePlayerId": "101390"
+        },
+        {
+          "role": "AM",
+          "name": "Marouane Fellaini",
+          "value": "manunited",
+          "number": "8",
+          "sourcePlayerId": "84535"
+        },
+        {
+          "role": "RW",
+          "name": "Kevin De Bruyne",
+          "value": "city",
+          "number": "7",
+          "sourcePlayerId": "134947"
+        },
+        {
+          "role": "DM",
+          "name": "Mousa Dembélé",
+          "value": "spurs",
+          "number": "19",
+          "sourcePlayerId": "67490"
+        },
+        {
+          "role": "DM",
+          "name": "Axel Witsel",
+          "value": "tianjinquanjian",
+          "number": "6",
+          "sourcePlayerId": "164895"
+        },
+        {
+          "role": "LB",
+          "name": "Jan Vertonghen",
+          "value": "spurs",
+          "number": "5",
+          "sourcePlayerId": "125086"
+        },
+        {
+          "role": "CB",
+          "name": "Vincent Kompany",
+          "value": "city",
+          "number": "4",
+          "sourcePlayerId": "72935"
+        },
+        {
+          "role": "CB",
+          "name": "Toby Alderweireld",
+          "value": "spurs",
+          "number": "2",
+          "sourcePlayerId": "111306"
+        },
+        {
+          "role": "RB",
+          "name": "Nacer Chadli",
+          "value": "westbrom",
+          "number": "22",
+          "sourcePlayerId": "122633"
+        },
+        {
+          "role": "GK",
+          "name": "Thibaut Courtois",
+          "value": "chelsea",
+          "number": "1",
+          "sourcePlayerId": "134283"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-semi",
+      "espnEventId": "498142",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=498142",
+      "hardForward": "Eden Hazard"
+    },
+    {
+      "id": "expansion-wc-semi-2018-07-11-CRO",
+      "mode": "nation",
+      "season": "2018",
+      "tier": "moderate",
+      "team": "CRO",
+      "date": "2018-07-11",
+      "versus": "England",
+      "formation": "4-1-4-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/498141",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Mario Mandzukic",
+          "value": "juventus",
+          "number": "17",
+          "sourcePlayerId": "105582"
+        },
+        {
+          "role": "LM",
+          "name": "Ivan Perisic",
+          "value": "inter",
+          "number": "4",
+          "sourcePlayerId": "103485"
+        },
+        {
+          "role": "CM",
+          "name": "Ivan Rakitić",
+          "value": "barcelona",
+          "number": "7",
+          "sourcePlayerId": "102251"
+        },
+        {
+          "role": "CM",
+          "name": "Luka Modric",
+          "value": "realmadrid",
+          "number": "10",
+          "sourcePlayerId": "76762"
+        },
+        {
+          "role": "RM",
+          "name": "Ante Rebic",
+          "value": "frankfurt",
+          "number": "18",
+          "sourcePlayerId": "163794"
+        },
+        {
+          "role": "DM",
+          "name": "Marcelo Brozovic",
+          "value": "inter",
+          "number": "11",
+          "sourcePlayerId": "178383"
+        },
+        {
+          "role": "LB",
+          "name": "Ivan Strinic",
+          "value": "milan",
+          "number": "3",
+          "sourcePlayerId": "147178"
+        },
+        {
+          "role": "CB",
+          "name": "Domagoj Vida",
+          "value": "besiktas",
+          "number": "21",
+          "sourcePlayerId": "148110"
+        },
+        {
+          "role": "CB",
+          "name": "Dejan Lovren",
+          "value": "liverpool",
+          "number": "6",
+          "sourcePlayerId": "123560"
+        },
+        {
+          "role": "RB",
+          "name": "Sime Vrsaljko",
+          "value": "atletico",
+          "number": "2",
+          "sourcePlayerId": "152412"
+        },
+        {
+          "role": "GK",
+          "name": "Danijel Subasic",
+          "value": "monaco",
+          "number": "23",
+          "sourcePlayerId": "127704"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-semi",
+      "espnEventId": "498141",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=498141",
+      "hardForward": "Mario Mandzukic"
+    },
+    {
+      "id": "expansion-wc-semi-2018-07-11-ENG",
+      "mode": "nation",
+      "season": "2018",
+      "tier": "moderate",
+      "team": "ENG",
+      "date": "2018-07-11",
+      "versus": "Croatia",
+      "formation": "3-5-2",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/498141",
+      "players": [
+        {
+          "role": "LS",
+          "name": "Raheem Sterling",
+          "value": "city",
+          "number": "10",
+          "sourcePlayerId": "156366"
+        },
+        {
+          "role": "RS",
+          "name": "Harry Kane",
+          "value": "spurs",
+          "number": "9",
+          "sourcePlayerId": "142200"
+        },
+        {
+          "role": "LWB",
+          "name": "Ashley Young",
+          "value": "manunited",
+          "number": "18",
+          "sourcePlayerId": "31810"
+        },
+        {
+          "role": "CM",
+          "name": "Dele Alli",
+          "value": "spurs",
+          "number": "20",
+          "sourcePlayerId": "168787"
+        },
+        {
+          "role": "DM",
+          "name": "Jordan Henderson",
+          "value": "liverpool",
+          "number": "8",
+          "sourcePlayerId": "127262"
+        },
+        {
+          "role": "CM",
+          "name": "Jesse Lingard",
+          "value": "manunited",
+          "number": "7",
+          "sourcePlayerId": "169136"
+        },
+        {
+          "role": "RWB",
+          "name": "Kieran Trippier",
+          "value": "spurs",
+          "number": "12",
+          "sourcePlayerId": "143637"
+        },
+        {
+          "role": "CB",
+          "name": "Harry Maguire",
+          "value": "leicester",
+          "number": "6",
+          "sourcePlayerId": "157073"
+        },
+        {
+          "role": "CB",
+          "name": "John Stones",
+          "value": "city",
+          "number": "5",
+          "sourcePlayerId": "157974"
+        },
+        {
+          "role": "CB",
+          "name": "Kyle Walker",
+          "value": "city",
+          "number": "2",
+          "sourcePlayerId": "129358"
+        },
+        {
+          "role": "GK",
+          "name": "Jordan Pickford",
+          "value": "everton",
+          "number": "1",
+          "sourcePlayerId": "159443"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-semi",
+      "espnEventId": "498141",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=498141",
+      "hardForward": "Harry Kane"
+    },
+    {
+      "id": "expansion-wc-third-2018-07-14-BEL",
+      "mode": "nation",
+      "season": "2018",
+      "tier": "moderate",
+      "team": "BEL",
+      "date": "2018-07-14",
+      "versus": "England",
+      "formation": "3-4-2-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/498140",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Romelu Lukaku",
+          "value": "manunited",
+          "number": "9",
+          "sourcePlayerId": "139437"
+        },
+        {
+          "role": "LW",
+          "name": "Eden Hazard",
+          "value": "chelsea",
+          "number": "10",
+          "sourcePlayerId": "101390"
+        },
+        {
+          "role": "RW",
+          "name": "Kevin De Bruyne",
+          "value": "city",
+          "number": "7",
+          "sourcePlayerId": "134947"
+        },
+        {
+          "role": "LWB",
+          "name": "Nacer Chadli",
+          "value": "westbrom",
+          "number": "22",
+          "sourcePlayerId": "122633"
+        },
+        {
+          "role": "CM",
+          "name": "Axel Witsel",
+          "value": "tianjinquanjian",
+          "number": "6",
+          "sourcePlayerId": "164895"
+        },
+        {
+          "role": "CM",
+          "name": "Youri Tielemans",
+          "value": "monaco",
+          "number": "17",
+          "sourcePlayerId": "193297"
+        },
+        {
+          "role": "RWB",
+          "name": "Thomas Meunier",
+          "value": "psg",
+          "number": "15",
+          "sourcePlayerId": "166473"
+        },
+        {
+          "role": "CB",
+          "name": "Jan Vertonghen",
+          "value": "spurs",
+          "number": "5",
+          "sourcePlayerId": "125086"
+        },
+        {
+          "role": "CB",
+          "name": "Vincent Kompany",
+          "value": "city",
+          "number": "4",
+          "sourcePlayerId": "72935"
+        },
+        {
+          "role": "CB",
+          "name": "Toby Alderweireld",
+          "value": "spurs",
+          "number": "2",
+          "sourcePlayerId": "111306"
+        },
+        {
+          "role": "GK",
+          "name": "Thibaut Courtois",
+          "value": "chelsea",
+          "number": "1",
+          "sourcePlayerId": "134283"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-third",
+      "espnEventId": "498140",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=498140",
+      "hardForward": "Eden Hazard"
+    },
+    {
+      "id": "expansion-wc-third-2018-07-14-ENG",
+      "mode": "nation",
+      "season": "2018",
+      "tier": "moderate",
+      "team": "ENG",
+      "date": "2018-07-14",
+      "versus": "Belgium",
+      "formation": "3-5-2",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/498140",
+      "players": [
+        {
+          "role": "LS",
+          "name": "Raheem Sterling",
+          "value": "city",
+          "number": "10",
+          "sourcePlayerId": "156366"
+        },
+        {
+          "role": "RS",
+          "name": "Harry Kane",
+          "value": "spurs",
+          "number": "9",
+          "sourcePlayerId": "142200"
+        },
+        {
+          "role": "LWB",
+          "name": "Danny Rose",
+          "value": "spurs",
+          "number": "3",
+          "sourcePlayerId": "104991"
+        },
+        {
+          "role": "CM",
+          "name": "Fabian Delph",
+          "value": "city",
+          "number": "17",
+          "sourcePlayerId": "98926"
+        },
+        {
+          "role": "DM",
+          "name": "Eric Dier",
+          "value": "spurs",
+          "number": "4",
+          "sourcePlayerId": "155532"
+        },
+        {
+          "role": "CM",
+          "name": "Ruben Loftus-Cheek",
+          "value": "chelsea",
+          "number": "21",
+          "sourcePlayerId": "186505"
+        },
+        {
+          "role": "RWB",
+          "name": "Kieran Trippier",
+          "value": "spurs",
+          "number": "12",
+          "sourcePlayerId": "143637"
+        },
+        {
+          "role": "CB",
+          "name": "Harry Maguire",
+          "value": "leicester",
+          "number": "6",
+          "sourcePlayerId": "157073"
+        },
+        {
+          "role": "CB",
+          "name": "John Stones",
+          "value": "city",
+          "number": "5",
+          "sourcePlayerId": "157974"
+        },
+        {
+          "role": "CB",
+          "name": "Phil Jones",
+          "value": "manunited",
+          "number": "16",
+          "sourcePlayerId": "140032"
+        },
+        {
+          "role": "GK",
+          "name": "Jordan Pickford",
+          "value": "everton",
+          "number": "1",
+          "sourcePlayerId": "159443"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-third",
+      "espnEventId": "498140",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=498140",
+      "hardForward": "Harry Kane"
+    },
+    {
+      "id": "expansion-wc-semi-2022-12-13-ARG",
+      "mode": "nation",
+      "season": "2022",
+      "tier": "moderate",
+      "team": "ARG",
+      "date": "2022-12-13",
+      "versus": "Croatia",
+      "formation": "4-4-2",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/633847",
+      "players": [
+        {
+          "role": "LS",
+          "name": "Julián Álvarez",
+          "value": "city",
+          "number": "9",
+          "sourcePlayerId": "277206"
+        },
+        {
+          "role": "RS",
+          "name": "Lionel Messi",
+          "value": "psg",
+          "number": "10",
+          "sourcePlayerId": "45843"
+        },
+        {
+          "role": "LM",
+          "name": "Alexis Mac Allister",
+          "value": "brighton",
+          "number": "20",
+          "sourcePlayerId": "249299"
+        },
+        {
+          "role": "CM",
+          "name": "Enzo Fernández",
+          "value": "benfica",
+          "number": "24",
+          "sourcePlayerId": "285450"
+        },
+        {
+          "role": "CM",
+          "name": "Leandro Paredes",
+          "value": "juventus",
+          "number": "5",
+          "sourcePlayerId": "153115"
+        },
+        {
+          "role": "RM",
+          "name": "Rodrigo De Paul",
+          "value": "atletico",
+          "number": "7",
+          "sourcePlayerId": "174466"
+        },
+        {
+          "role": "LB",
+          "name": "Nicolás Tagliafico",
+          "value": "lyon",
+          "number": "3",
+          "sourcePlayerId": "145190"
+        },
+        {
+          "role": "CB",
+          "name": "Nicolás Otamendi",
+          "value": "benfica",
+          "number": "19",
+          "sourcePlayerId": "119289"
+        },
+        {
+          "role": "CB",
+          "name": "Cristian Romero",
+          "value": "spurs",
+          "number": "13",
+          "sourcePlayerId": "96970"
+        },
+        {
+          "role": "RB",
+          "name": "Nahuel Molina",
+          "value": "atletico",
+          "number": "26",
+          "sourcePlayerId": "164826"
+        },
+        {
+          "role": "GK",
+          "name": "Emiliano Martínez",
+          "value": "villa",
+          "number": "23",
+          "sourcePlayerId": "158626"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-semi",
+      "espnEventId": "633847",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=633847",
+      "hardForward": "Lionel Messi"
+    },
+    {
+      "id": "expansion-wc-semi-2022-12-13-CRO",
+      "mode": "nation",
+      "season": "2022",
+      "tier": "moderate",
+      "team": "CRO",
+      "date": "2022-12-13",
+      "versus": "Argentina",
+      "formation": "4-3-3",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/633847",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Ivan Perisic",
+          "value": "spurs",
+          "number": "4",
+          "sourcePlayerId": "103485"
+        },
+        {
+          "role": "ST",
+          "name": "Andrej Kramaric",
+          "value": "hoffenheim",
+          "number": "9",
+          "sourcePlayerId": "139520"
+        },
+        {
+          "role": "RW",
+          "name": "Mario Pasalic",
+          "value": "atalanta",
+          "number": "15",
+          "sourcePlayerId": "189668"
+        },
+        {
+          "role": "CM",
+          "name": "Mateo Kovacic",
+          "value": "chelsea",
+          "number": "8",
+          "sourcePlayerId": "154595"
+        },
+        {
+          "role": "DM",
+          "name": "Marcelo Brozovic",
+          "value": "inter",
+          "number": "11",
+          "sourcePlayerId": "178383"
+        },
+        {
+          "role": "CM",
+          "name": "Luka Modric",
+          "value": "realmadrid",
+          "number": "10",
+          "sourcePlayerId": "76762"
+        },
+        {
+          "role": "LB",
+          "name": "Borna Sosa",
+          "value": "stuttgart",
+          "number": "19",
+          "sourcePlayerId": "228319"
+        },
+        {
+          "role": "CB",
+          "name": "Josko Gvardiol",
+          "value": "leipzig",
+          "number": "20",
+          "sourcePlayerId": "299910"
+        },
+        {
+          "role": "CB",
+          "name": "Dejan Lovren",
+          "value": "zenit",
+          "number": "6",
+          "sourcePlayerId": "123560"
+        },
+        {
+          "role": "RB",
+          "name": "Josip Juranovic",
+          "value": "celtic",
+          "number": "22",
+          "sourcePlayerId": "222567"
+        },
+        {
+          "role": "GK",
+          "name": "Dominik Livakovic",
+          "value": "dinamo",
+          "number": "1",
+          "sourcePlayerId": "187946"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-semi",
+      "espnEventId": "633847",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=633847",
+      "hardForward": "Ivan Perisic"
+    },
+    {
+      "id": "expansion-wc-semi-2022-12-14-FRA",
+      "mode": "nation",
+      "season": "2022",
+      "tier": "moderate",
+      "team": "FRA",
+      "date": "2022-12-14",
+      "versus": "Morocco",
+      "formation": "4-2-3-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/633848",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Olivier Giroud",
+          "value": "milan",
+          "number": "9",
+          "sourcePlayerId": "88965"
+        },
+        {
+          "role": "LW",
+          "name": "Kylian Mbappé",
+          "value": "psg",
+          "number": "10",
+          "sourcePlayerId": "231388"
+        },
+        {
+          "role": "AM",
+          "name": "Antoine Griezmann",
+          "value": "atletico",
+          "number": "7",
+          "sourcePlayerId": "140416"
+        },
+        {
+          "role": "RW",
+          "name": "Ousmane Dembélé",
+          "value": "barcelona",
+          "number": "11",
+          "sourcePlayerId": "229744"
+        },
+        {
+          "role": "DM",
+          "name": "Youssouf Fofana",
+          "value": "monaco",
+          "number": "13",
+          "sourcePlayerId": "277307"
+        },
+        {
+          "role": "DM",
+          "name": "Aurélien Tchouaméni",
+          "value": "realmadrid",
+          "number": "8",
+          "sourcePlayerId": "265919"
+        },
+        {
+          "role": "LB",
+          "name": "Theo Hernández",
+          "value": "milan",
+          "number": "22",
+          "sourcePlayerId": "233621"
+        },
+        {
+          "role": "CB",
+          "name": "Ibrahima Konaté",
+          "value": "liverpool",
+          "number": "24",
+          "sourcePlayerId": "251634"
+        },
+        {
+          "role": "CB",
+          "name": "Raphaël Varane",
+          "value": "manunited",
+          "number": "4",
+          "sourcePlayerId": "153053"
+        },
+        {
+          "role": "RB",
+          "name": "Jules Koundé",
+          "value": "barcelona",
+          "number": "5",
+          "sourcePlayerId": "231692"
+        },
+        {
+          "role": "GK",
+          "name": "Hugo Lloris",
+          "value": "spurs",
+          "number": "1",
+          "sourcePlayerId": "43372"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-semi",
+      "espnEventId": "633848",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=633848",
+      "hardForward": "Kylian Mbappé"
+    },
+    {
+      "id": "expansion-wc-semi-2022-12-14-MAR",
+      "mode": "nation",
+      "season": "2022",
+      "tier": "moderate",
+      "team": "MAR",
+      "date": "2022-12-14",
+      "versus": "France",
+      "formation": "5-4-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/633848",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Youssef En-Nesyri",
+          "value": "seville",
+          "number": "19",
+          "sourcePlayerId": "242736"
+        },
+        {
+          "role": "LM",
+          "name": "Sofiane Boufal",
+          "value": "anger",
+          "number": "17",
+          "sourcePlayerId": "178056"
+        },
+        {
+          "role": "CM",
+          "name": "Sofyan Amrabat",
+          "value": "fiorentina",
+          "number": "4",
+          "sourcePlayerId": "195226"
+        },
+        {
+          "role": "CM",
+          "name": "Azzedine Ounahi",
+          "value": "anger",
+          "number": "8",
+          "sourcePlayerId": "291552"
+        },
+        {
+          "role": "RM",
+          "name": "Hakim Ziyech",
+          "value": "chelsea",
+          "number": "7",
+          "sourcePlayerId": "176733"
+        },
+        {
+          "role": "LWB",
+          "name": "Noussair Mazraoui",
+          "value": "bayern",
+          "number": "3",
+          "sourcePlayerId": "239350"
+        },
+        {
+          "role": "CB",
+          "name": "Jawad El Yamiq",
+          "value": "valladolid",
+          "number": "18",
+          "sourcePlayerId": "232461"
+        },
+        {
+          "role": "CB",
+          "name": "Romain Saïss",
+          "value": "besiktas",
+          "number": "6",
+          "sourcePlayerId": "167686"
+        },
+        {
+          "role": "CB",
+          "name": "Achraf Dari",
+          "value": "brest",
+          "number": "20",
+          "sourcePlayerId": "283557"
+        },
+        {
+          "role": "RWB",
+          "name": "Achraf Hakimi",
+          "value": "psg",
+          "number": "2",
+          "sourcePlayerId": "240233"
+        },
+        {
+          "role": "GK",
+          "name": "Yassine Bounou",
+          "value": "seville",
+          "number": "1",
+          "sourcePlayerId": "175149"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-semi",
+      "espnEventId": "633848",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=633848",
+      "hardForward": "Youssef En-Nesyri"
+    },
+    {
+      "id": "expansion-wc-third-2022-12-17-CRO",
+      "mode": "nation",
+      "season": "2022",
+      "tier": "moderate",
+      "team": "CRO",
+      "date": "2022-12-17",
+      "versus": "Morocco",
+      "formation": "4-2-3-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/633849",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Marko Livaja",
+          "value": "hajduk",
+          "number": "14",
+          "sourcePlayerId": "165580"
+        },
+        {
+          "role": "LW",
+          "name": "Mislav Orsic",
+          "value": "dinamo",
+          "number": "18",
+          "sourcePlayerId": "194277"
+        },
+        {
+          "role": "AM",
+          "name": "Andrej Kramaric",
+          "value": "hoffenheim",
+          "number": "9",
+          "sourcePlayerId": "139520"
+        },
+        {
+          "role": "RW",
+          "name": "Lovro Majer",
+          "value": "rennes",
+          "number": "7",
+          "sourcePlayerId": "237549"
+        },
+        {
+          "role": "DM",
+          "name": "Mateo Kovacic",
+          "value": "chelsea",
+          "number": "8",
+          "sourcePlayerId": "154595"
+        },
+        {
+          "role": "DM",
+          "name": "Luka Modric",
+          "value": "realmadrid",
+          "number": "10",
+          "sourcePlayerId": "76762"
+        },
+        {
+          "role": "LB",
+          "name": "Ivan Perisic",
+          "value": "spurs",
+          "number": "4",
+          "sourcePlayerId": "103485"
+        },
+        {
+          "role": "CB",
+          "name": "Josko Gvardiol",
+          "value": "leipzig",
+          "number": "20",
+          "sourcePlayerId": "299910"
+        },
+        {
+          "role": "CB",
+          "name": "Josip Sutalo",
+          "value": "dinamo",
+          "number": "24",
+          "sourcePlayerId": "305552"
+        },
+        {
+          "role": "RB",
+          "name": "Josip Stanisic",
+          "value": "bayern",
+          "number": "2",
+          "sourcePlayerId": "276329"
+        },
+        {
+          "role": "GK",
+          "name": "Dominik Livakovic",
+          "value": "dinamo",
+          "number": "1",
+          "sourcePlayerId": "187946"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-third",
+      "espnEventId": "633849",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=633849",
+      "hardForward": "Ivan Perisic"
+    },
+    {
+      "id": "expansion-wc-third-2022-12-17-MAR",
+      "mode": "nation",
+      "season": "2022",
+      "tier": "moderate",
+      "team": "MAR",
+      "date": "2022-12-17",
+      "versus": "Croatia",
+      "formation": "4-3-3",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/633849",
+      "players": [
+        {
+          "role": "LW",
+          "name": "Sofiane Boufal",
+          "value": "anger",
+          "number": "17",
+          "sourcePlayerId": "178056"
+        },
+        {
+          "role": "ST",
+          "name": "Youssef En-Nesyri",
+          "value": "seville",
+          "number": "19",
+          "sourcePlayerId": "242736"
+        },
+        {
+          "role": "RW",
+          "name": "Hakim Ziyech",
+          "value": "chelsea",
+          "number": "7",
+          "sourcePlayerId": "176733"
+        },
+        {
+          "role": "CM",
+          "name": "Abdelhamid Sabiri",
+          "value": "sampdoria",
+          "number": "11",
+          "sourcePlayerId": "252293"
+        },
+        {
+          "role": "DM",
+          "name": "Sofyan Amrabat",
+          "value": "fiorentina",
+          "number": "4",
+          "sourcePlayerId": "195226"
+        },
+        {
+          "role": "CM",
+          "name": "Bilal El Khannouss",
+          "value": "genk",
+          "number": "23",
+          "sourcePlayerId": "336595"
+        },
+        {
+          "role": "LB",
+          "name": "Yahia Attiyat Allah",
+          "value": "wydad",
+          "number": "25",
+          "sourcePlayerId": "292736"
+        },
+        {
+          "role": "CB",
+          "name": "Achraf Dari",
+          "value": "brest",
+          "number": "20",
+          "sourcePlayerId": "283557"
+        },
+        {
+          "role": "CB",
+          "name": "Jawad El Yamiq",
+          "value": "valladolid",
+          "number": "18",
+          "sourcePlayerId": "232461"
+        },
+        {
+          "role": "RB",
+          "name": "Achraf Hakimi",
+          "value": "psg",
+          "number": "2",
+          "sourcePlayerId": "240233"
+        },
+        {
+          "role": "GK",
+          "name": "Yassine Bounou",
+          "value": "seville",
+          "number": "1",
+          "sourcePlayerId": "175149"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-third",
+      "espnEventId": "633849",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=633849",
+      "hardForward": "Youssef En-Nesyri"
+    },
+    {
+      "id": "expansion-wc-semi-2026-07-14-FRA",
+      "mode": "nation",
+      "season": "2026",
+      "tier": "moderate",
+      "team": "FRA",
+      "date": "2026-07-14",
+      "versus": "Spain",
+      "formation": "4-2-3-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/760514",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Kylian Mbappé",
+          "value": "realmadrid",
+          "number": "10",
+          "sourcePlayerId": "231388"
+        },
+        {
+          "role": "LW",
+          "name": "Bradley Barcola",
+          "value": "psg",
+          "number": "12",
+          "sourcePlayerId": "328238"
+        },
+        {
+          "role": "AM",
+          "name": "Michael Olise",
+          "value": "bayern",
+          "number": "11",
+          "sourcePlayerId": "286831"
+        },
+        {
+          "role": "RW",
+          "name": "Ousmane Dembélé",
+          "value": "psg",
+          "number": "7",
+          "sourcePlayerId": "229744"
+        },
+        {
+          "role": "DM",
+          "name": "Adrien Rabiot",
+          "value": "milan",
+          "number": "14",
+          "sourcePlayerId": "176203"
+        },
+        {
+          "role": "DM",
+          "name": "Aurélien Tchouaméni",
+          "value": "realmadrid",
+          "number": "8",
+          "sourcePlayerId": "265919"
+        },
+        {
+          "role": "LB",
+          "name": "Lucas Digne",
+          "value": "villa",
+          "number": "3",
+          "sourcePlayerId": "160115"
+        },
+        {
+          "role": "CB",
+          "name": "William Saliba",
+          "value": "arsenal",
+          "number": "17",
+          "sourcePlayerId": "277385"
+        },
+        {
+          "role": "CB",
+          "name": "Dayot Upamecano",
+          "value": "bayern",
+          "number": "4",
+          "sourcePlayerId": "222793"
+        },
+        {
+          "role": "RB",
+          "name": "Jules Koundé",
+          "value": "barcelona",
+          "number": "5",
+          "sourcePlayerId": "231692"
+        },
+        {
+          "role": "GK",
+          "name": "Mike Maignan",
+          "value": "milan",
+          "number": "16",
+          "sourcePlayerId": "189026"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-semi",
+      "espnEventId": "760514",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760514",
+      "hardForward": "Kylian Mbappé",
+      "clubSources": [
+        "https://www.fff.fr/40-les-bleus-en-coupe-du-monde/873-joueurs.html"
+      ]
+    },
+    {
+      "id": "expansion-wc-semi-2026-07-14-ESP",
+      "mode": "nation",
+      "season": "2026",
+      "tier": "moderate",
+      "team": "ESP",
+      "date": "2026-07-14",
+      "versus": "France",
+      "formation": "4-2-3-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/760514",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Mikel Oyarzabal",
+          "value": "sociedad",
+          "number": "21",
+          "sourcePlayerId": "229018"
+        },
+        {
+          "role": "LW",
+          "name": "Álex Baena",
+          "value": "atletico",
+          "number": "15",
+          "sourcePlayerId": "297373"
+        },
+        {
+          "role": "AM",
+          "name": "Dani Olmo",
+          "value": "barcelona",
+          "number": "10",
+          "sourcePlayerId": "227765"
+        },
+        {
+          "role": "RW",
+          "name": "Lamine Yamal",
+          "value": "barcelona",
+          "number": "19",
+          "sourcePlayerId": "362150"
+        },
+        {
+          "role": "DM",
+          "name": "Fabián Ruiz",
+          "value": "psg",
+          "number": "8",
+          "sourcePlayerId": "214596"
+        },
+        {
+          "role": "DM",
+          "name": "Rodri",
+          "value": "city",
+          "number": "16",
+          "sourcePlayerId": "231828"
+        },
+        {
+          "role": "LB",
+          "name": "Marc Cucurella",
+          "value": "chelsea",
+          "number": "24",
+          "sourcePlayerId": "259910"
+        },
+        {
+          "role": "CB",
+          "name": "Aymeric Laporte",
+          "value": "athletic",
+          "number": "14",
+          "sourcePlayerId": "159317"
+        },
+        {
+          "role": "CB",
+          "name": "Pau Cubarsí",
+          "value": "barcelona",
+          "number": "22",
+          "sourcePlayerId": "368992"
+        },
+        {
+          "role": "RB",
+          "name": "Pedro Porro",
+          "value": "spurs",
+          "number": "12",
+          "sourcePlayerId": "268533"
+        },
+        {
+          "role": "GK",
+          "name": "Unai Simón",
+          "value": "athletic",
+          "number": "23",
+          "sourcePlayerId": "222375"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-semi",
+      "espnEventId": "760514",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760514",
+      "hardForward": "Lamine Yamal",
+      "hardMask": [
+        "Dani Olmo",
+        "Pau Cubarsí",
+        "Lamine Yamal"
+      ],
+      "clubSources": [
+        "https://rfef.es/es/node/112700"
+      ]
+    },
+    {
+      "id": "expansion-wc-semi-2026-07-15-ENG",
+      "mode": "nation",
+      "season": "2026",
+      "tier": "moderate",
+      "team": "ENG",
+      "date": "2026-07-15",
+      "versus": "Argentina",
+      "formation": "4-2-3-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/760515",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Harry Kane",
+          "value": "bayern",
+          "number": "9",
+          "sourcePlayerId": "142200"
+        },
+        {
+          "role": "LW",
+          "name": "Anthony Gordon",
+          "value": "barcelona",
+          "number": "18",
+          "sourcePlayerId": "268782"
+        },
+        {
+          "role": "AM",
+          "name": "Jude Bellingham",
+          "value": "realmadrid",
+          "number": "10",
+          "sourcePlayerId": "291281"
+        },
+        {
+          "role": "RW",
+          "name": "Morgan Rogers",
+          "value": "villa",
+          "number": "17",
+          "sourcePlayerId": "265653"
+        },
+        {
+          "role": "DM",
+          "name": "Elliot Anderson",
+          "value": "city",
+          "number": "8",
+          "sourcePlayerId": "238472"
+        },
+        {
+          "role": "DM",
+          "name": "Declan Rice",
+          "value": "arsenal",
+          "number": "4",
+          "sourcePlayerId": "238262"
+        },
+        {
+          "role": "LB",
+          "name": "Djed Spence",
+          "value": "spurs",
+          "number": "25",
+          "sourcePlayerId": "267711"
+        },
+        {
+          "role": "CB",
+          "name": "Marc Guéhi",
+          "value": "city",
+          "number": "6",
+          "sourcePlayerId": "265907"
+        },
+        {
+          "role": "CB",
+          "name": "John Stones",
+          "value": "city",
+          "number": "5",
+          "sourcePlayerId": "157974"
+        },
+        {
+          "role": "RB",
+          "name": "Reece James",
+          "value": "chelsea",
+          "number": "24",
+          "sourcePlayerId": "189007"
+        },
+        {
+          "role": "GK",
+          "name": "Jordan Pickford",
+          "value": "everton",
+          "number": "1",
+          "sourcePlayerId": "159443"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-semi",
+      "espnEventId": "760515",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760515",
+      "hardForward": "Harry Kane",
+      "clubSources": [
+        "https://www.westeurope.englandfootball.com/england/mens-senior-team/fixtures-results/2025-26/World-Cup/england-argentina-fifa-world-cup-quarter-final-wednesday-15-july-2026-match-centre"
+      ]
+    },
+    {
+      "id": "expansion-wc-semi-2026-07-15-ARG",
+      "mode": "nation",
+      "season": "2026",
+      "tier": "moderate",
+      "team": "ARG",
+      "date": "2026-07-15",
+      "versus": "England",
+      "formation": "4-1-4-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/760515",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Lionel Messi",
+          "value": "inter-miami",
+          "number": "10",
+          "sourcePlayerId": "45843"
+        },
+        {
+          "role": "LM",
+          "name": "Julián Álvarez",
+          "value": "atletico",
+          "number": "9",
+          "sourcePlayerId": "277206"
+        },
+        {
+          "role": "CM",
+          "name": "Alexis Mac Allister",
+          "value": "liverpool",
+          "number": "20",
+          "sourcePlayerId": "249299"
+        },
+        {
+          "role": "CM",
+          "name": "Enzo Fernández",
+          "value": "chelsea",
+          "number": "24",
+          "sourcePlayerId": "285450"
+        },
+        {
+          "role": "RM",
+          "name": "Giuliano Simeone",
+          "value": "atletico",
+          "number": "17",
+          "sourcePlayerId": "323838"
+        },
+        {
+          "role": "DM",
+          "name": "Leandro Paredes",
+          "value": "boca",
+          "number": "5",
+          "sourcePlayerId": "153115"
+        },
+        {
+          "role": "LB",
+          "name": "Nicolás Tagliafico",
+          "value": "lyon",
+          "number": "3",
+          "sourcePlayerId": "145190"
+        },
+        {
+          "role": "CB",
+          "name": "Lisandro Martínez",
+          "value": "manunited",
+          "number": "6",
+          "sourcePlayerId": "233937"
+        },
+        {
+          "role": "CB",
+          "name": "Cristian Romero",
+          "value": "spurs",
+          "number": "13",
+          "sourcePlayerId": "96970"
+        },
+        {
+          "role": "RB",
+          "name": "Nahuel Molina",
+          "value": "atletico",
+          "number": "26",
+          "sourcePlayerId": "164826"
+        },
+        {
+          "role": "GK",
+          "name": "Emiliano Martínez",
+          "value": "villa",
+          "number": "23",
+          "sourcePlayerId": "158626"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-semi",
+      "espnEventId": "760515",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760515",
+      "hardForward": "Lionel Messi",
+      "clubSources": [
+        "https://www.afa.com.ar/site/posts/seleccion-mayor-prelista-de-convocados"
+      ]
+    },
+    {
+      "id": "expansion-wc-third-2026-07-18-FRA",
+      "mode": "nation",
+      "season": "2026",
+      "tier": "moderate",
+      "team": "FRA",
+      "date": "2026-07-18",
+      "versus": "England",
+      "formation": "4-2-3-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/760516",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Kylian Mbappé",
+          "value": "realmadrid",
+          "number": "10",
+          "sourcePlayerId": "231388"
+        },
+        {
+          "role": "LW",
+          "name": "Désiré Doué",
+          "value": "psg",
+          "number": "20",
+          "sourcePlayerId": "336388"
+        },
+        {
+          "role": "AM",
+          "name": "Rayan Cherki",
+          "value": "city",
+          "number": "24",
+          "sourcePlayerId": "298008"
+        },
+        {
+          "role": "RW",
+          "name": "Michael Olise",
+          "value": "bayern",
+          "number": "11",
+          "sourcePlayerId": "286831"
+        },
+        {
+          "role": "DM",
+          "name": "Adrien Rabiot",
+          "value": "milan",
+          "number": "14",
+          "sourcePlayerId": "176203"
+        },
+        {
+          "role": "DM",
+          "name": "Warren Zaïre-Emery",
+          "value": "psg",
+          "number": "18",
+          "sourcePlayerId": "345581"
+        },
+        {
+          "role": "LB",
+          "name": "Theo Hernández",
+          "value": "al-hilal",
+          "number": "19",
+          "sourcePlayerId": "233621"
+        },
+        {
+          "role": "CB",
+          "name": "Maxence Lacroix",
+          "value": "crystalpalace",
+          "number": "26",
+          "sourcePlayerId": "265918"
+        },
+        {
+          "role": "CB",
+          "name": "Ibrahima Konaté",
+          "value": "liverpool",
+          "number": "15",
+          "sourcePlayerId": "251634"
+        },
+        {
+          "role": "RB",
+          "name": "Malo Gusto",
+          "value": "chelsea",
+          "number": "2",
+          "sourcePlayerId": "308947"
+        },
+        {
+          "role": "GK",
+          "name": "Mike Maignan",
+          "value": "milan",
+          "number": "16",
+          "sourcePlayerId": "189026"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-third",
+      "espnEventId": "760516",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760516",
+      "hardForward": "Kylian Mbappé",
+      "clubSources": [
+        "https://www.fff.fr/40-les-bleus-en-coupe-du-monde/873-joueurs.html"
+      ]
+    },
+    {
+      "id": "expansion-wc-third-2026-07-18-ENG",
+      "mode": "nation",
+      "season": "2026",
+      "tier": "moderate",
+      "team": "ENG",
+      "date": "2026-07-18",
+      "versus": "France",
+      "formation": "4-1-4-1",
+      "competition": "FIFA World Cup",
+      "source": "https://www.espn.com/soccer/lineups/_/gameId/760516",
+      "players": [
+        {
+          "role": "ST",
+          "name": "Ivan Toney",
+          "value": "al-ahli",
+          "number": "22",
+          "sourcePlayerId": "180639"
+        },
+        {
+          "role": "LM",
+          "name": "Marcus Rashford",
+          "value": "manunited",
+          "number": "11",
+          "sourcePlayerId": "230945"
+        },
+        {
+          "role": "CM",
+          "name": "Eberechi Eze",
+          "value": "arsenal",
+          "number": "21",
+          "sourcePlayerId": "251400"
+        },
+        {
+          "role": "CM",
+          "name": "Morgan Rogers",
+          "value": "villa",
+          "number": "17",
+          "sourcePlayerId": "265653"
+        },
+        {
+          "role": "RM",
+          "name": "Bukayo Saka",
+          "value": "arsenal",
+          "number": "7",
+          "sourcePlayerId": "280555"
+        },
+        {
+          "role": "DM",
+          "name": "Declan Rice",
+          "value": "arsenal",
+          "number": "4",
+          "sourcePlayerId": "238262"
+        },
+        {
+          "role": "LB",
+          "name": "Djed Spence",
+          "value": "spurs",
+          "number": "25",
+          "sourcePlayerId": "267711"
+        },
+        {
+          "role": "CB",
+          "name": "Marc Guéhi",
+          "value": "city",
+          "number": "6",
+          "sourcePlayerId": "265907"
+        },
+        {
+          "role": "CB",
+          "name": "Ezri Konsa",
+          "value": "villa",
+          "number": "2",
+          "sourcePlayerId": "231859"
+        },
+        {
+          "role": "RB",
+          "name": "Jarell Quansah",
+          "value": "leverkusen",
+          "number": "26",
+          "sourcePlayerId": "298524"
+        },
+        {
+          "role": "GK",
+          "name": "Dean Henderson",
+          "value": "crystalpalace",
+          "number": "13",
+          "sourcePlayerId": "234172"
+        }
+      ],
+      "difficulties": [
+        "easy",
+        "moderate",
+        "hard"
+      ],
+      "group": "wc-third",
+      "espnEventId": "760516",
+      "officialLineupSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760516",
+      "hardForward": "Ivan Toney",
+      "clubSources": [
+        "https://www.westeurope.englandfootball.com/england/mens-senior-team/fixtures-results/2025-26/World-Cup/france-england-fifa-world-cup-bronze-medal-match-saturday-18-july-2026-match-centre"
+      ]
+    }
+  ]
+}

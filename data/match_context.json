@@ -59,6 +59,16 @@
       "zh": "美职联常规赛",
       "en": "MLS regular season",
       "es": "la temporada regular de la MLS"
+    },
+    "Serie A": {
+      "zh": "意甲",
+      "en": "Serie A",
+      "es": "la Serie A"
+    },
+    "Copa del Rey": {
+      "zh": "国王杯",
+      "en": "Copa del Rey",
+      "es": "la Copa del Rey"
     }
   },
   "opponents": {
@@ -1297,6 +1307,371 @@
         "https://www.mlssoccer.com/news/robert-lewandowski-era-kicks-off-in-chicago",
         "https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-kicks-off-second-half-of-2026-with-visit-to-inter-miami-cf-s-nu-stadium"
       ]
+    },
+    {
+      "mode": "club",
+      "date": "2001-06-17",
+      "teams": [
+        "roma"
+      ],
+      "note": {
+        "zh": "**卡佩罗**率罗马3–1夺冠，托蒂、蒙特拉和巴蒂斯图塔各入一球。",
+        "en": "**Capello’s Roma** sealed the title with a 3–1 win; Totti, Montella and Batistuta all scored.",
+        "es": "La **Roma de Capello** ganó el título por 3–1 con goles de Totti, Montella y Batistuta."
+      },
+      "sources": [
+        "https://www.asroma.com/en/news/58627/matchday-revisited-scudetto-celebrations-in-2001"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "1987-05-10",
+      "teams": [
+        "napoli"
+      ],
+      "note": {
+        "zh": "马拉多纳领衔的那不勒斯1–1战平佛罗伦萨，**首次夺得意甲冠军**。",
+        "en": "Maradona’s Napoli drew 1–1 with Fiorentina to secure their **first Serie A title**.",
+        "es": "El Nápoles de Maradona empató 1–1 ante la Fiorentina y ganó su **primer título de la Serie A**."
+      },
+      "sources": [
+        "https://archivio.unita.news/assets/derived/1987/05/11/issue_full.pdf"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2026-04-18",
+      "teams": [
+        "sociedad"
+      ],
+      "note": {
+        "zh": "皇家社会2–2后点球夺冠，**马雷罗两扑点球**，巴勃罗·马林罚入制胜球。",
+        "en": "Real Sociedad won on penalties after a 2–2 draw; **Marrero saved twice** and Pablo Marín converted the decisive kick.",
+        "es": "La Real Sociedad ganó en los penaltis tras el 2–2; **Marrero paró dos lanzamientos** y Pablo Marín convirtió el decisivo."
+      },
+      "sources": [
+        "https://rfef.es/es/noticias/los-penaltis-coronan-la-real-sociedad-en-una-final-trepidante-2-2"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      }
+    },
+    {
+      "mode": "club",
+      "date": "2024-05-08",
+      "teams": [
+        "realmadrid",
+        "bayern"
+      ],
+      "note": {
+        "zh": "替补何塞卢连入两球，皇马2–1逆转，**总比分4–3晋级决赛**。",
+        "en": "Substitute Joselu scored twice as Real Madrid came back to win 2–1 and reach the final **4–3 on aggregate**.",
+        "es": "El suplente Joselu marcó dos goles para la remontada del Madrid por 2–1 y el pase a la final por **4–3 en el global**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/2040503/"
+      ],
+      "stage": {
+        "zh": "半决赛次回合",
+        "en": "semi-final second leg",
+        "es": "la vuelta de semifinales"
+      }
+    },
+    {
+      "mode": "club",
+      "date": "2024-05-07",
+      "teams": [
+        "psg",
+        "dortmund"
+      ],
+      "note": {
+        "zh": "胡梅尔斯头球制胜，多特蒙德**总比分2–0晋级欧冠决赛**。",
+        "en": "Hummels’ header sent Dortmund into the final with a **2–0 aggregate win**.",
+        "es": "El cabezazo de Hummels llevó al Dortmund a la final por **2–0 en el global**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/2040502/"
+      ],
+      "stage": {
+        "zh": "半决赛次回合",
+        "en": "semi-final second leg",
+        "es": "la vuelta de semifinales"
+      }
+    },
+    {
+      "mode": "club",
+      "date": "2025-05-07",
+      "teams": [
+        "psg",
+        "arsenal"
+      ],
+      "note": {
+        "zh": "巴黎2–1取胜，**总比分3–1淘汰阿森纳**，晋级决赛。",
+        "en": "Paris won 2–1 to reach the final, **beating Arsenal 3–1 on aggregate**.",
+        "es": "El París ganó 2–1 y llegó a la final al **eliminar al Arsenal por 3–1 en el global**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/2044858/"
+      ],
+      "stage": {
+        "zh": "半决赛次回合",
+        "en": "semi-final second leg",
+        "es": "la vuelta de semifinales"
+      }
+    },
+    {
+      "mode": "club",
+      "date": "2025-05-06",
+      "teams": [
+        "inter",
+        "barcelona"
+      ],
+      "note": {
+        "zh": "阿切尔比补时扳平，弗拉泰西加时制胜，国米**总比分7–6晋级决赛**。",
+        "en": "Acerbi equalised in added time and Frattesi won it in extra time as Inter advanced **7–6 on aggregate**.",
+        "es": "Acerbi empató en el descuento y Frattesi decidió en la prórroga para el pase del Inter por **7–6 en el global**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/2044859/"
+      ],
+      "stage": {
+        "zh": "半决赛次回合",
+        "en": "semi-final second leg",
+        "es": "la vuelta de semifinales"
+      }
+    },
+    {
+      "mode": "club",
+      "date": "2026-05-06",
+      "teams": [
+        "bayern",
+        "psg"
+      ],
+      "note": {
+        "zh": "双方1–1战平，巴黎**总比分6–5晋级决赛**，继续卫冕之路。",
+        "en": "A 1–1 draw sent holders Paris back to the final with a **6–5 aggregate win**.",
+        "es": "El empate 1–1 devolvió al campeón París a la final por **6–5 en el global**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/2048073/"
+      ],
+      "stage": {
+        "zh": "半决赛次回合",
+        "en": "semi-final second leg",
+        "es": "la vuelta de semifinales"
+      }
+    },
+    {
+      "mode": "club",
+      "date": "2026-05-05",
+      "teams": [
+        "arsenal",
+        "atletico"
+      ],
+      "note": {
+        "zh": "萨卡打入制胜球，阿森纳**总比分2–1晋级决赛**，结束20年等待。",
+        "en": "Saka scored the winner as Arsenal reached their first final in 20 years, **winning 2–1 on aggregate**.",
+        "es": "Saka marcó el gol decisivo y el Arsenal volvió a la final tras 20 años con un **2–1 en el global**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/2048074/"
+      ],
+      "stage": {
+        "zh": "半决赛次回合",
+        "en": "semi-final second leg",
+        "es": "la vuelta de semifinales"
+      }
+    },
+    {
+      "mode": "nation",
+      "date": "2018-07-10",
+      "teams": [
+        "FRA",
+        "BEL"
+      ],
+      "note": {
+        "zh": "乌姆蒂蒂头球制胜，法国1–0取胜，**晋级世界杯决赛**。",
+        "en": "Umtiti’s header gave France a 1–0 win and a **place in the World Cup final**.",
+        "es": "El cabezazo de Umtiti dio a Francia el 1–0 y el **pase a la final del Mundial**."
+      },
+      "sources": [
+        "https://www.espn.com/soccer/lineups/_/gameId/498142"
+      ],
+      "stage": {
+        "zh": "半决赛",
+        "en": "semi-final",
+        "es": "la semifinal"
+      }
+    },
+    {
+      "mode": "nation",
+      "date": "2018-07-11",
+      "teams": [
+        "CRO",
+        "ENG"
+      ],
+      "note": {
+        "zh": "曼朱基奇加时制胜，克罗地亚2–1逆转，**首次闯入世界杯决赛**。",
+        "en": "Mandžukić’s extra-time winner completed a 2–1 comeback and sent Croatia into their **first World Cup final**.",
+        "es": "Mandžukić decidió en la prórroga la remontada por 2–1 y el pase de Croacia a su **primera final mundialista**."
+      },
+      "sources": [
+        "https://www.espn.com/soccer/lineups/_/gameId/498141"
+      ],
+      "stage": {
+        "zh": "半决赛",
+        "en": "semi-final",
+        "es": "la semifinal"
+      }
+    },
+    {
+      "mode": "nation",
+      "date": "2018-07-14",
+      "teams": [
+        "BEL",
+        "ENG"
+      ],
+      "note": {
+        "zh": "穆尼耶和阿扎尔破门，比利时2–0取胜，获得**队史最佳的世界杯季军**。",
+        "en": "Meunier and Hazard scored in a 2–0 win as Belgium achieved their **best World Cup finish: third place**.",
+        "es": "Meunier y Hazard marcaron en el 2–0 con el que Bélgica logró su **mejor puesto mundialista: tercera**."
+      },
+      "sources": [
+        "https://www.espn.com/soccer/lineups/_/gameId/498140"
+      ],
+      "stage": {
+        "zh": "季军赛",
+        "en": "third-place play-off",
+        "es": "el partido por el tercer puesto"
+      }
+    },
+    {
+      "mode": "nation",
+      "date": "2022-12-13",
+      "teams": [
+        "ARG",
+        "CRO"
+      ],
+      "note": {
+        "zh": "梅西传射，阿尔瓦雷斯梅开二度，阿根廷**3–0晋级决赛**。",
+        "en": "Messi scored and assisted, and Álvarez struck twice as Argentina **reached the final with a 3–0 win**.",
+        "es": "Messi marcó y asistió, y Álvarez firmó un doblete para el **pase de Argentina a la final por 3–0**."
+      },
+      "sources": [
+        "https://www.espn.com/soccer/lineups/_/gameId/633847"
+      ],
+      "stage": {
+        "zh": "半决赛",
+        "en": "semi-final",
+        "es": "la semifinal"
+      }
+    },
+    {
+      "mode": "nation",
+      "date": "2022-12-14",
+      "teams": [
+        "FRA",
+        "MAR"
+      ],
+      "note": {
+        "zh": "特奥和穆阿尼破门，法国2–0取胜，**连续两届晋级世界杯决赛**。",
+        "en": "Theo Hernández and Kolo Muani scored as France won 2–0 to reach a **second consecutive World Cup final**.",
+        "es": "Theo Hernández y Kolo Muani marcaron en el 2–0 que llevó a Francia a su **segunda final mundialista consecutiva**."
+      },
+      "sources": [
+        "https://www.espn.com/soccer/lineups/_/gameId/633848"
+      ],
+      "stage": {
+        "zh": "半决赛",
+        "en": "semi-final",
+        "es": "la semifinal"
+      }
+    },
+    {
+      "mode": "nation",
+      "date": "2022-12-17",
+      "teams": [
+        "CRO",
+        "MAR"
+      ],
+      "note": {
+        "zh": "奥尔西奇打入制胜球，克罗地亚2–1取胜，获得**世界杯季军**。",
+        "en": "Oršić scored the winner as Croatia won 2–1 to take **third place at the World Cup**.",
+        "es": "Oršić marcó el gol decisivo del 2–1 con el que Croacia logró el **tercer puesto mundialista**."
+      },
+      "sources": [
+        "https://www.espn.com/soccer/lineups/_/gameId/633849"
+      ],
+      "stage": {
+        "zh": "季军赛",
+        "en": "third-place play-off",
+        "es": "el partido por el tercer puesto"
+      }
+    },
+    {
+      "mode": "nation",
+      "date": "2026-07-14",
+      "teams": [
+        "FRA",
+        "ESP"
+      ],
+      "note": {
+        "zh": "西班牙2–0击败法国，**时隔16年再进世界杯决赛**。",
+        "en": "Spain beat France 2–0 to reach their **first World Cup final in 16 years**.",
+        "es": "España venció 2–0 a Francia y volvió a la **final del Mundial tras 16 años**."
+      },
+      "sources": [
+        "https://rfef.es/es/node/112700"
+      ],
+      "stage": {
+        "zh": "半决赛",
+        "en": "semi-final",
+        "es": "la semifinal"
+      }
+    },
+    {
+      "mode": "nation",
+      "date": "2026-07-15",
+      "teams": [
+        "ENG",
+        "ARG"
+      ],
+      "note": {
+        "zh": "梅西送出两次助攻，阿根廷终场前连进两球，**2–1逆转晋级决赛**。",
+        "en": "Messi supplied two assists as Argentina struck twice late on to **come from behind and reach the final 2–1**.",
+        "es": "Messi dio dos asistencias y Argentina marcó dos goles al final para **remontar 2–1 y pasar a la final**."
+      },
+      "sources": [
+        "https://www.fifa.com/en/articles/england-argentina-match-report-highlights"
+      ],
+      "stage": {
+        "zh": "半决赛",
+        "en": "semi-final",
+        "es": "la semifinal"
+      }
+    },
+    {
+      "mode": "nation",
+      "date": "2026-07-18",
+      "teams": [
+        "FRA",
+        "ENG"
+      ],
+      "note": {
+        "zh": "萨卡上演帽子戏法，英格兰6–4取胜，赢得**世界杯季军**。",
+        "en": "Saka scored a hat-trick as England won 6–4 to take **third place at the World Cup**.",
+        "es": "Saka firmó un triplete en el 6–4 con el que Inglaterra obtuvo el **tercer puesto mundialista**."
+      },
+      "sources": [
+        "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-england-report-highlights-bronze-final"
+      ],
+      "stage": {
+        "zh": "季军赛",
+        "en": "third-place play-off",
+        "es": "el partido por el tercer puesto"
+      }
     }
   ]
 }

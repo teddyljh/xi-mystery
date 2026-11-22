@@ -15,7 +15,7 @@ const counts={easyClubs:pool('club','easy').length,easyNations:pool('nation','ea
 if(process.argv.includes('--json')){console.log(JSON.stringify({counts,removedEasy:removed,hardAdded:additions},null,2));process.exit(0);}
 console.log('# 2026-11-22 题库调整与 Hard 新增隐藏清单\n');
 console.log(`相对版本 ${baseline.revision}：Easy 移除${removed.length}套首发，Hard 新增${additions.length}套不同首发。Easy 为${counts.easyClubs}套俱乐部、${counts.easyNations}套国家队；Medium 为${counts.moderateClubs}、${counts.moderateNations}套；Hard 为${counts.hardClubs}、${counts.hardNations}套。\n`);
-console.log('## Easy 移除的球队\n\n所有移除题目均保留在 Medium 和 Hard；同一球队所有年代的首发使用同一个 Easy 准入规则。\n');
+console.log('## Easy 移除的球队\n\n所有移除题目均保留在 Hard。Medium 按当前筛选保留，法兰克福仅在 Hard；本次明确指定的经典及世界杯首发可单独进入 Easy。\n');
 console.log('| 类型 | 球队 | 首发数量 | 日期 |\n|---|---|---|---|');
 const groups=new Map();for(const f of removed){const k=f.mode+'|'+f.team;if(!groups.has(k))groups.set(k,[]);groups.get(k).push(f);}
 for(const rows of groups.values()){const f=rows[0];console.log(`| ${f.mode==='club'?'俱乐部':'国家队'} | ${(f.mode==='club'?data.teams:data.nations)[f.team].zh} | ${rows.length} | ${rows.map(f=>f.date).sort().join('、')} |`);}

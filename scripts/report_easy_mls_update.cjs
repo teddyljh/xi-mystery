@@ -32,6 +32,6 @@ const africa=new Set('MAR SEN NGA CIV EGY CMR DZA GHA TUN ZAF RSA MLI GAB COD CO
 for(const difficulty of ['easy','moderate','hard']){
   const rows=pool('nation',difficulty).filter(f=>africa.has(f.team));
   if(!rows.length)console.log(`| ${difficulty==='easy'?'Easy':'Medium'} | 无 | — |`);
-  for(const f of rows)console.log(`| ${difficulty==='hard'?'Hard':'Medium'} | ${data.nations[f.team].zh} | ${f.date} |`);
+  for(const f of rows)console.log(`| ${difficulty==='hard'?'Hard':difficulty==='easy'?'Easy':'Medium'} | ${data.nations[f.team].zh} | ${f.date} |`);
 }
 console.log('\n作为错误选项出现、但没有可抽取首发的国家队不计入此表。');

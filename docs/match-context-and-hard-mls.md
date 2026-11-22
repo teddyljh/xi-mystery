@@ -2,7 +2,7 @@
 
 所有难度在“本题 + 分数”下方显示赛事及对手；与得分使用相同字体和字号，关键内容加粗。只在答案揭晓后显示，答对、用尽次数和放弃均适用。中英西三种语言同步，换题清空旧说明。
 
-为58场决赛或经典比赛补充简短重点，涵盖题库全部欧冠、世界杯、欧洲杯决赛。其他比赛仅显示简洁的赛事及对手说明。原有题目的隐藏与提示方案保持一致；保留卡卡和施魏因施泰格的历史首发，另加入格里兹曼、莱万多夫斯基的2026年首发。
+为76场决赛或经典比赛补充简短重点，涵盖题库全部欧冠、世界杯、欧洲杯决赛。其他比赛仅显示简洁的赛事及对手说明。原有题目的隐藏与提示方案保持一致；保留卡卡和施魏因施泰格的历史首发，另加入格里兹曼、莱万多夫斯基的2026年首发。
 
 ## 新增首发 · 仅 Hard
 
@@ -114,11 +114,29 @@ Jonathan Bamba（科特迪瓦，LW）；Robert Lewandowski（波兰，ST）；Ph
 | 2017-04-01 | 芝加哥火焰 | **施魏因施泰格首秀即进球**，芝加哥火焰补时扳平，双方2–2战平。 | [官方记录](https://www.chicagofirefc.com/news/schweinsteiger-scores-chicago-fire-rally-2-2-draw-against-montreal-impact) |
 | 2026-07-22 | 奥兰多城 | **格里兹曼美职联首秀即进球**，奥兰多城4–0击败圣何塞地震。 | [官方记录](https://www.orlandocitysc.com/news/match-report-orlando-city-sc-routs-san-jose-earthquakes-4-0-on-the-road) |
 | 2026-07-22 | 芝加哥火焰 | 这是**莱万多夫斯基的美职联首秀**，芝加哥火焰2–3惜败迈阿密国际。 | [官方记录](https://www.mlssoccer.com/news/robert-lewandowski-era-kicks-off-in-chicago) |
+| 2001-06-17 | 罗马 | **卡佩罗**率罗马3–1夺冠，托蒂、蒙特拉和巴蒂斯图塔各入一球。 | [官方记录](https://www.asroma.com/en/news/58627/matchday-revisited-scudetto-celebrations-in-2001) |
+| 1987-05-10 | 那不勒斯 | 马拉多纳领衔的那不勒斯1–1战平佛罗伦萨，**首次夺得意甲冠军**。 | [官方记录](https://archivio.unita.news/assets/derived/1987/05/11/issue_full.pdf) |
+| 2026-04-18 | 皇家社会 | 皇家社会2–2后点球夺冠，**马雷罗两扑点球**，巴勃罗·马林罚入制胜球。 | [官方记录](https://rfef.es/es/noticias/los-penaltis-coronan-la-real-sociedad-en-una-final-trepidante-2-2) |
+| 2024-05-08 | 皇家马德里／拜仁慕尼黑 | 替补何塞卢连入两球，皇马2–1逆转，**总比分4–3晋级决赛**。 | [官方记录](https://www.uefa.com/uefachampionsleague/match/2040503/) |
+| 2024-05-07 | 巴黎圣日耳曼／多特蒙德 | 胡梅尔斯头球制胜，多特蒙德**总比分2–0晋级欧冠决赛**。 | [官方记录](https://www.uefa.com/uefachampionsleague/match/2040502/) |
+| 2025-05-07 | 巴黎圣日耳曼／阿森纳 | 巴黎2–1取胜，**总比分3–1淘汰阿森纳**，晋级决赛。 | [官方记录](https://www.uefa.com/uefachampionsleague/match/2044858/) |
+| 2025-05-06 | 国际米兰／巴塞罗那 | 阿切尔比补时扳平，弗拉泰西加时制胜，国米**总比分7–6晋级决赛**。 | [官方记录](https://www.uefa.com/uefachampionsleague/match/2044859/) |
+| 2026-05-06 | 拜仁慕尼黑／巴黎圣日耳曼 | 双方1–1战平，巴黎**总比分6–5晋级决赛**，继续卫冕之路。 | [官方记录](https://www.uefa.com/uefachampionsleague/match/2048073/) |
+| 2026-05-05 | 阿森纳／马德里竞技 | 萨卡打入制胜球，阿森纳**总比分2–1晋级决赛**，结束20年等待。 | [官方记录](https://www.uefa.com/uefachampionsleague/match/2048074/) |
+| 2018-07-10 | 法国／比利时 | 乌姆蒂蒂头球制胜，法国1–0取胜，**晋级世界杯决赛**。 | [官方记录](https://www.espn.com/soccer/lineups/_/gameId/498142) |
+| 2018-07-11 | 克罗地亚／英格兰 | 曼朱基奇加时制胜，克罗地亚2–1逆转，**首次闯入世界杯决赛**。 | [官方记录](https://www.espn.com/soccer/lineups/_/gameId/498141) |
+| 2018-07-14 | 比利时／英格兰 | 穆尼耶和阿扎尔破门，比利时2–0取胜，获得**队史最佳的世界杯季军**。 | [官方记录](https://www.espn.com/soccer/lineups/_/gameId/498140) |
+| 2022-12-13 | 阿根廷／克罗地亚 | 梅西传射，阿尔瓦雷斯梅开二度，阿根廷**3–0晋级决赛**。 | [官方记录](https://www.espn.com/soccer/lineups/_/gameId/633847) |
+| 2022-12-14 | 法国／摩洛哥 | 特奥和穆阿尼破门，法国2–0取胜，**连续两届晋级世界杯决赛**。 | [官方记录](https://www.espn.com/soccer/lineups/_/gameId/633848) |
+| 2022-12-17 | 克罗地亚／摩洛哥 | 奥尔西奇打入制胜球，克罗地亚2–1取胜，获得**世界杯季军**。 | [官方记录](https://www.espn.com/soccer/lineups/_/gameId/633849) |
+| 2026-07-14 | 法国／西班牙 | 西班牙2–0击败法国，**时隔16年再进世界杯决赛**。 | [官方记录](https://rfef.es/es/node/112700) |
+| 2026-07-15 | 英格兰／阿根廷 | 梅西送出两次助攻，阿根廷终场前连进两球，**2–1逆转晋级决赛**。 | [官方记录](https://www.fifa.com/en/articles/england-argentina-match-report-highlights) |
+| 2026-07-18 | 法国／英格兰 | 萨卡上演帽子戏法，英格兰6–4取胜，赢得**世界杯季军**。 | [官方记录](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-england-report-highlights-bronze-final) |
 
 ## 当前题库
 
 | 难度 | 俱乐部 | 国家队 |
 |---|---|---|
-| Easy | 98 | 69 |
-| Medium | 92 | 79 |
-| Hard | 130 | 114 |
+| Easy | 100 | 87 |
+| Medium | 109 | 97 |
+| Hard | 145 | 132 |

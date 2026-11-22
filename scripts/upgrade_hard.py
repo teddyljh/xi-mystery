@@ -176,7 +176,8 @@ RULES = r"""
   const isRestoredEasyTeam=f=>(f.mode==='club'?EASY_RESTORED_CLUBS:EASY_RESTORED_NATIONS).has(f.team);
   const EASY_FAMOUS_CLUBS=new Set([...HARD_FAMOUS_CLUBS,'spurs',...EASY_RESTORED_CLUBS]);
   const EASY_FAMOUS_NATIONS=new Set([...HARD_FAMOUS_NATIONS,'BEL','CRO','URU',...EASY_RESTORED_NATIONS]);
-  const easyFixtureAllowed=f=>(f.mode==='club'?EASY_FAMOUS_CLUBS:EASY_FAMOUS_NATIONS).has(f.team);
+  const EXTRA_EASY_IDS=new Set((DATA.lineupExpansion||[]).filter(e=>e.difficulties.includes('easy')).map(e=>typeof e.fixture==='string'?e.fixture:e.fixture.id));
+  const easyFixtureAllowed=f=>(f.mode==='club'?EASY_FAMOUS_CLUBS:EASY_FAMOUS_NATIONS).has(f.team)||EXTRA_EASY_IDS.has(f.id);
   function isImportedHardFixture(f){
     if(f.id.startsWith('mls-stars-'))return true;
     // New underdog classics retain the legacy two-clue policy.
@@ -202,19 +203,21 @@ RULES = r"""
   const MLS_STAR_FIXTURES=resolveFinalFixtures(DATA.mlsStars);
   const HARD_MLS_STAR_FIXTURES=resolveFinalFixtures(DATA.hardMlsStars);
   const AFRICAN_CLASSIC_FIXTURES=resolveFinalFixtures(DATA.africanClassics);
+  const EXPANDED_LINEUPS=(DATA.lineupExpansion||[]).map(e=>({...e,fixture:resolveFinalFixtures([e.fixture])[0]}));
+  const expansionFixtures=difficulty=>EXPANDED_LINEUPS.filter(e=>e.difficulties.includes(difficulty)).map(e=>e.fixture);
   function uniqueFixtures(fixtures){
     const seen=new Set();
     return fixtures.filter(f=>{const key=fixtureIdentity(f);if(seen.has(key))return false;seen.add(key);return true;});
   }
-  const FORMER_EASY_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='easy'),...DATA.fixtures.filter(f=>f.tier==='moderate'),...CLASSIC_FINAL_FIXTURES]);
+  const FORMER_EASY_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='easy'),...DATA.fixtures.filter(f=>f.tier==='moderate'),...CLASSIC_FINAL_FIXTURES,...expansionFixtures('easy')]);
   const EASY_REMOVED_FIXTURES=FORMER_EASY_FIXTURES.filter(f=>!easyFixtureAllowed(f));
   const EASY_FIXTURES=FORMER_EASY_FIXTURES.filter(easyFixtureAllowed);
   // Restoring Easy eligibility must not remove previously promoted XIs from
   // Medium/Hard. MLS additions are exclusive to these two higher difficulties.
   const HIGHER_DIFFICULTY_FIXTURES=FORMER_EASY_FIXTURES.filter(f=>!easyFixtureAllowed(f)||isRestoredEasyTeam(f));
-  const MODERATE_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='moderate'),...CLASSIC_FINAL_FIXTURES,...HIGHER_DIFFICULTY_FIXTURES,...MLS_STAR_FIXTURES,...AFRICAN_CLASSIC_FIXTURES]);
-  const HARD_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='hard'||isImportedHardFixture(f)),...CLASSIC_FINAL_FIXTURES,...HIGHER_DIFFICULTY_FIXTURES,...MLS_STAR_FIXTURES,...AFRICAN_CLASSIC_FIXTURES,...HARD_MLS_STAR_FIXTURES]);
-  const quizFixtureCount=()=>new Set([...DATA.fixtures,...CLASSIC_FINAL_FIXTURES,...MLS_STAR_FIXTURES,...AFRICAN_CLASSIC_FIXTURES,...HARD_MLS_STAR_FIXTURES].map(f=>f.id)).size;
+  const MODERATE_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='moderate'),...CLASSIC_FINAL_FIXTURES,...HIGHER_DIFFICULTY_FIXTURES,...MLS_STAR_FIXTURES,...AFRICAN_CLASSIC_FIXTURES,...expansionFixtures('moderate')]).filter(f=>f.mode!=='club'||!(DATA.mediumExcludedClubs||[]).includes(f.team));
+  const HARD_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='hard'||isImportedHardFixture(f)),...CLASSIC_FINAL_FIXTURES,...HIGHER_DIFFICULTY_FIXTURES,...MLS_STAR_FIXTURES,...AFRICAN_CLASSIC_FIXTURES,...HARD_MLS_STAR_FIXTURES,...expansionFixtures('hard')]);
+  const quizFixtureCount=()=>new Set([...DATA.fixtures,...CLASSIC_FINAL_FIXTURES,...MLS_STAR_FIXTURES,...AFRICAN_CLASSIC_FIXTURES,...HARD_MLS_STAR_FIXTURES,...EXPANDED_LINEUPS.map(e=>e.fixture)].map(f=>f.id)).size;
   function available(){
     if(state.difficulty==='easy')return EASY_FIXTURES.filter(f=>f.mode===state.mode);
     if(state.difficulty==='moderate')return MODERATE_FIXTURES.filter(f=>f.mode===state.mode);
@@ -239,8 +242,10 @@ RULES = r"""
   const hardName=n=>n.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
   // Shared by the easy/moderate copies of each historical match. Names allow
   // iconic attackers listed as AM/LM/RM (e.g. Ronaldo in 2008) to stay hidden.
-  const HARD_FORWARD_PICKS=Object.freeze(__HARD_FORWARD_PICKS__);
-  const HARD_KNOWN_FORWARDS=new Set(Object.values(HARD_FORWARD_PICKS).map(hardName));
+  const HARD_ARCHIVE_FORWARD_PICKS=Object.freeze(__HARD_FORWARD_PICKS__);
+  // Keep the recognition heuristic stable for all previously reviewed XIs.
+  const HARD_KNOWN_FORWARDS=new Set(Object.values(HARD_ARCHIVE_FORWARD_PICKS).map(hardName));
+  const HARD_FORWARD_PICKS=Object.freeze({...HARD_ARCHIVE_FORWARD_PICKS,...Object.fromEntries(EXPANDED_LINEUPS.filter(e=>e.hardForward).map(e=>[e.fixture.id,e.hardForward]))});
   // Curated match-specific masks. Their order also specifies the hint order
   // for top-tier nations; middle-band nations still prefer overseas clues.
   const HARD_NATION_MASK_OVERRIDES=Object.freeze({
@@ -252,7 +257,8 @@ RULES = r"""
     'historic-nation-NED-2014-06-13-47':['Robin van Persie','Wesley Sneijder','Daley Blind','Bruno Martins Indi','Stefan de Vrij'],
     'nation-2026/27-12':['Kevin De Bruyne','Jérémy Doku','Brandon Mechele'],
     'nation-2025/26-106':['Gianluigi Donnarumma','Francesco Pio Esposito','Federico Dimarco','Nicolò Barella'],
-    'nation-2026/27-75':['Gianluigi Donnarumma','Francesco Pio Esposito','Nicolò Fagioli','Alessandro Bastoni']
+    'nation-2026/27-75':['Gianluigi Donnarumma','Francesco Pio Esposito','Nicolò Fagioli','Alessandro Bastoni'],
+    ...Object.fromEntries(EXPANDED_LINEUPS.filter(e=>e.hardMask).map(e=>[e.fixture.id,e.hardMask]))
   });
   function hardNationMaskOverride(f){
     if(f.mode!=='nation')return null;
@@ -339,7 +345,7 @@ RULES = r"""
   }
   function hardAttackerSlots(f){
     return f.players.map((_,i)=>i).filter(i=>HARD_FORWARD_ROLES.has(f.players[i].role)||
-      (HARD_ATTACKING_ROLES.has(f.players[i].role)&&HARD_KNOWN_FORWARDS.has(hardName(f.players[i].name))));
+      (HARD_ATTACKING_ROLES.has(f.players[i].role)&&(HARD_KNOWN_FORWARDS.has(hardName(f.players[i].name))||hardName(f.players[i].name)===hardName(HARD_FORWARD_PICKS[f.id]||''))));
   }
   function usesLeagueHardMask(f){
     const nation=hardLeagueNation(f);

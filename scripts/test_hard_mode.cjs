@@ -37,6 +37,9 @@ vm.runInContext(rules + '\n' + hints + `
     mediumNations:HARD_MEDIUM_NATIONS};
 `, context);
 const api = context.api;
+const expansion=d=>(data.lineupExpansion||[]).filter(e=>e.difficulties.includes(d)).map(e=>typeof e.fixture==='string'?data.fixtures.find(f=>f.id===e.fixture):e.fixture);
+const extraEasyIds=new Set(expansion('easy').map(f=>f.id));
+
 const midfield = new Set(['AM', 'CM', 'DM', 'LM', 'RM']);
 const defense = new Set(['LB', 'CB', 'RB', 'LWB', 'RWB']);
 const attack = new Set(['ST', 'LS', 'RS', 'LW', 'RW', 'AM', 'LM', 'RM']);
@@ -338,17 +341,17 @@ for (const mode of ['club', 'nation']) {
       if(f.mode===mode&&f.tier===tier&&!union.has(key(f)))union.set(key(f),f);
     }
     const finals=[...(data.uclFinals||[]),...(data.nationalFinals||[])].map(entry=>typeof entry==='string'?data.fixtures.find(f=>f.id===entry):entry).filter(f=>f.mode===mode);
-    for(const f of finals)if(!union.has(key(f)))union.set(key(f),f);
+    for(const f of [...finals,...expansion('easy').filter(f=>f.mode===mode)])if(!union.has(key(f)))union.set(key(f),f);
     const moderate=new Map();
     for(const f of [...data.fixtures.filter(f=>f.mode===mode&&f.tier==='moderate'),...finals])if(!moderate.has(key(f)))moderate.set(key(f),f);
-    const keep=f=>(mode==='club'?new Set('realmadrid barcelona bayern city liverpool manunited arsenal chelsea psg inter milan juventus atletico dortmund spurs napoli benfica porto sporting ajax psv galatasaray fenerbahce celtic villa brugge athletic'.split(' ')):new Set('ENG FRA GER ESP POR BRA ARG ITA NED BEL CRO URU NOR POL SWE GRE TUR CHE'.split(' '))).has(f.team);
+    const keep=f=>(mode==='club'?new Set('realmadrid barcelona bayern city liverpool manunited arsenal chelsea psg inter milan juventus atletico dortmund spurs napoli benfica porto sporting ajax psv galatasaray fenerbahce celtic villa brugge athletic'.split(' ')):new Set('ENG FRA GER ESP POR BRA ARG ITA NED BEL CRO URU NOR POL SWE GRE TUR CHE'.split(' '))).has(f.team)||extraEasyIds.has(f.id);
     const restored=f=>(mode==='club'?['villa','brugge','athletic']:['NOR','POL','SWE','GRE','TUR','CHE']).includes(f.team);
     const moved=[...union.values()].filter(f=>!keep(f)||restored(f));
     const mls=[...(data.mlsStars||[]),...(data.africanClassics||[]).map(f=>typeof f==='string'?data.fixtures.find(x=>x.id===f):f)].filter(f=>f.mode===mode);
-    for(const f of [...moved,...mls])if(!moderate.has(key(f)))moderate.set(key(f),f);
+    for(const f of [...moved,...mls,...expansion('moderate').filter(f=>f.mode===mode)])if(!moderate.has(key(f)))moderate.set(key(f),f);
     const hardPool=new Map();
-    for(const f of [...data.fixtures.filter(f=>f.mode===mode&&(f.tier==='hard'||api.isImportedHardFixture(f))),...finals,...moved,...mls,...(data.hardMlsStars||[]).filter(f=>f.mode===mode)])if(!hardPool.has(key(f)))hardPool.set(key(f),f);
-    const expected = difficulty==='easy'?[...union.values()].filter(keep):difficulty==='moderate'?[...moderate.values()]:[...hardPool.values()];
+    for(const f of [...data.fixtures.filter(f=>f.mode===mode&&(f.tier==='hard'||api.isImportedHardFixture(f))),...finals,...moved,...mls,...(data.hardMlsStars||[]).filter(f=>f.mode===mode),...expansion('hard').filter(f=>f.mode===mode)])if(!hardPool.has(key(f)))hardPool.set(key(f),f);
+    const expected = difficulty==='easy'?[...union.values()].filter(keep):difficulty==='moderate'?[...moderate.values()].filter(f=>f.mode!=='club'||!(data.mediumExcludedClubs||[]).includes(f.team)):[...hardPool.values()];
     assert.deepEqual([...api.available()].map(f => f.id), expected.map(f => f.id));
   }
 }

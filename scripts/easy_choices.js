@@ -2,7 +2,7 @@
 // These explicit country-league maps also serve Moderate hint choices.
 const EASY_CLUB_LEAGUES={
   england:'city arsenal liverpool chelsea manunited spurs newcastle villa westham brighton',
-  spain:'realmadrid barcelona atletico athletic sevilla villarreal realbetis valencia girona',
+  spain:'realmadrid barcelona atletico athletic sociedad sevilla villarreal realbetis valencia girona',
   germany:'bayern dortmund leverkusen leipzig stuttgart frankfurt wolfsburg',
   italy:'inter milan juventus atalanta napoli roma lazio fiorentina bologna como',
   france:'psg marseille lyon monaco lille nice lens reims',
@@ -29,7 +29,7 @@ for(const [league,keys] of Object.entries(EASY_CLUB_LEAGUES)){
 const EASY_CLUB_LEVELS=[
   'realmadrid barcelona bayern city liverpool arsenal chelsea psg inter',
   'manunited milan juventus atletico dortmund leverkusen spurs newcastle villa napoli roma atalanta marseille lyon monaco leipzig galatasaray fenerbahce benfica porto sporting ajax psv',
-  'athletic sevilla villarreal realbetis valencia stuttgart frankfurt westham brighton lille nice lens fiorentina lazio bologna girona wolfsburg feyenoord braga celtic rangers brugge anderlecht salzburg olympiacos dinamo inter-miami lac lagalaxy',
+  'athletic sociedad sevilla villarreal realbetis valencia stuttgart frankfurt westham brighton lille nice lens fiorentina lazio bologna girona wolfsburg feyenoord braga celtic rangers brugge anderlecht salzburg olympiacos dinamo inter-miami lac lagalaxy',
   'besiktas como reims alkmaar youngboys basel shakhtar union-sg sturm aek paok dynamokyiv hajduk rijeka'
 ].map(keys=>keys.split(' '));
 const EASY_CLUB_LEVEL_BY_KEY={};
