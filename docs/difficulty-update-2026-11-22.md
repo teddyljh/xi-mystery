@@ -1,6 +1,6 @@
 # 2026-11-22 题库调整与 Hard 新增隐藏清单
 
-相对版本 fc20d03：Easy 移除31套首发，Hard 新增87套不同首发。Easy 为98套俱乐部、69套国家队；Medium 为92、79套；Hard 为125、114套。
+相对版本 fc20d03：Easy 移除31套首发，Hard 新增90套不同首发。Easy 为98套俱乐部、69套国家队；Medium 为92、79套；Hard 为128、114套。
 
 ## Easy 移除的球队
 
@@ -45,6 +45,7 @@
 | 俱乐部／布鲁日 | 2024-11-06 | Hans Vanaken（比利时） | Maxim De Cuyper（比利时）／Brandon Mechele（比利时） | Christos Tzolis（希腊） |
 | 俱乐部／布鲁日 | 2025-11-05 | Hans Vanaken（比利时） | Brandon Mechele（比利时） | Christos Tzolis（希腊） |
 | 俱乐部／切尔西 | 2021-05-29 | N'Golo Kanté（法国） | Reece James（英格兰） | Kai Havertz（德国） |
+| 俱乐部／芝加哥火焰 | 2017-04-01 | Dax McCarty（美国） | Bastian Schweinsteiger（德国） | — |
 | 俱乐部／曼城 | 2021-05-29 | Bernardo Silva（葡萄牙） | John Stones（英格兰） | Riyad Mahrez（阿尔及利亚） |
 | 俱乐部／萨格勒布迪纳摩（随机方案1） | 2024-11-05 | Martin Baturina（克罗地亚） | Petar Sučić（克罗地亚） | Marko Pjaca（克罗地亚） |
 | 俱乐部／萨格勒布迪纳摩（随机方案2） | 2024-11-05 | Petar Sučić（克罗地亚） | Josip Mišić（克罗地亚） | Marko Pjaca（克罗地亚） |
@@ -64,6 +65,7 @@
 | 俱乐部／AC米兰 | 2003-05-28 | Andrea Pirlo（意大利） | Paolo Maldini（意大利） | Andriy Shevchenko（乌克兰） |
 | 俱乐部／摩纳哥 | 2024-11-05 | Lamine Camara（塞内加尔） | Wilfried Singo（科特迪瓦） | — |
 | 俱乐部／纽卡斯尔联 | 2025-11-05 | Sandro Tonali（意大利） | Malick Thiaw（德国） | — |
+| 俱乐部／奥兰多城 | 2015-03-08 | Brek Shea（美国） | Kaká（巴西） | — |
 | 俱乐部／巴黎圣日耳曼 | 2025-05-31 | Fabián Ruiz（西班牙） | Marquinhos（巴西）／Achraf Hakimi（摩洛哥） | Khvicha Kvaratskhelia（格鲁吉亚） |
 | 俱乐部／巴黎圣日耳曼 | 2026-05-30 | Fabián Ruiz（西班牙） | Marquinhos（巴西）／Achraf Hakimi（摩洛哥） | Khvicha Kvaratskhelia（格鲁吉亚） |
 | 俱乐部／皇家马德里 | 2002-05-15 | Claude Makelele（法国） | Roberto Carlos（巴西） | Luís Figo（葡萄牙） |
@@ -72,6 +74,7 @@
 | 俱乐部／皇家马德里 | 2018-05-26 | Luka Modrić（克罗地亚） | Raphaël Varane（法国） | Cristiano Ronaldo（葡萄牙） |
 | 俱乐部／皇家马德里 | 2022-05-28 | Luka Modrić（克罗地亚） | Dani Carvajal（西班牙） | Federico Valverde（乌拉圭） |
 | 俱乐部／皇家马德里 | 2024-06-01 | Toni Kroos（德国） | Dani Carvajal（西班牙） | Jude Bellingham（英格兰） |
+| 俱乐部／温哥华白浪 | 2025-09-13 | Sebastian Berhalter（美国） | Thomas Müller（德国） | — |
 | 俱乐部／阿斯顿维拉 | 2024-11-06 | Boubacar Kamara（法国） | Diego Carlos（巴西） | — |
 | 俱乐部／阿斯顿维拉 | 2026-11-03 | João Gomes（巴西） | Victor Lindelöf（瑞典） | — |
 | 俱乐部／比利亚雷亚尔 | 2025-11-05 | Pape Gueye（塞内加尔） | Juan Foyth（阿根廷） | — |

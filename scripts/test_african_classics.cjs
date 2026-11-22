@@ -17,7 +17,7 @@ const combined=d=>['club','nation'].flatMap(m=>pool(m,d));
 const easy=combined('easy'),medium=combined('moderate'),hard=combined('hard');
 assert.deepEqual(easy.map(f=>f.id),baseline.pools.easy,'Easy pool unchanged');
 assert.equal(medium.length,baseline.pools.moderate.length+6);
-assert.equal(hard.length,baseline.pools.hard.length+5);
+assert.equal(hard.length,baseline.pools.hard.length+5+data.hardMlsStars.length);
 for(const difficulty of ['moderate','hard']){
   const current=combined(difficulty),keys=new Set(current.map(key));
   assert.equal(keys.size,current.length,'deduplicate every XI in '+difficulty);

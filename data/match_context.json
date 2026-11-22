@@ -1,0 +1,1260 @@
+{
+  "competitions": {
+    "UEFA Champions League": {
+      "zh": "欧冠",
+      "en": "UEFA Champions League",
+      "es": "la Liga de Campeones"
+    },
+    "FIFA World Cup": {
+      "zh": "世界杯",
+      "en": "FIFA World Cup",
+      "es": "la Copa Mundial"
+    },
+    "FIFA Club World Cup": {
+      "zh": "世俱杯",
+      "en": "FIFA Club World Cup",
+      "es": "el Mundial de Clubes"
+    },
+    "UEFA EURO": {
+      "zh": "欧洲杯",
+      "en": "European Championship",
+      "es": "la Eurocopa"
+    },
+    "UEFA Nations League": {
+      "zh": "欧国联",
+      "en": "UEFA Nations League",
+      "es": "la Liga de Naciones de la UEFA"
+    },
+    "World Cup Qualifiers": {
+      "zh": "世界杯预选赛",
+      "en": "World Cup qualifiers",
+      "es": "las clasificatorias mundialistas"
+    },
+    "International Friendly": {
+      "zh": "国际友谊赛",
+      "en": "international friendly",
+      "es": "un amistoso internacional"
+    },
+    "Africa Cup of Nations": {
+      "zh": "非洲杯",
+      "en": "Africa Cup of Nations",
+      "es": "la Copa Africana de Naciones"
+    },
+    "Leagues Cup": {
+      "zh": "北美联赛杯",
+      "en": "Leagues Cup",
+      "es": "la Leagues Cup"
+    },
+    "MLS Cup Playoffs": {
+      "zh": "美职联季后赛",
+      "en": "MLS Cup Playoffs",
+      "es": "los playoffs de la MLS"
+    },
+    "MLS Cup": {
+      "zh": "美职联总决赛",
+      "en": "MLS Cup final",
+      "es": "la final de la MLS Cup"
+    },
+    "MLS Regular Season": {
+      "zh": "美职联常规赛",
+      "en": "MLS regular season",
+      "es": "la temporada regular de la MLS"
+    }
+  },
+  "opponents": {
+    "Porto": {
+      "zh": "波尔图",
+      "en": "Porto",
+      "es": "Oporto"
+    },
+    "Pafos": {
+      "zh": "帕福斯",
+      "en": "Pafos",
+      "es": "Pafos"
+    },
+    "Sabah": {
+      "zh": "沙巴",
+      "en": "Sabah",
+      "es": "Sabah"
+    },
+    "Houston Dynamo": {
+      "zh": "休斯敦迪纳摩",
+      "en": "Houston Dynamo",
+      "es": "Houston Dynamo"
+    },
+    "Nashville SC": {
+      "zh": "纳什维尔",
+      "en": "Nashville SC",
+      "es": "Nashville SC"
+    },
+    "Philadelphia Union": {
+      "zh": "费城联合",
+      "en": "Philadelphia Union",
+      "es": "Philadelphia Union"
+    },
+    "New York City FC": {
+      "zh": "纽约城",
+      "en": "New York City FC",
+      "es": "New York City FC"
+    },
+    "Montreal Impact": {
+      "zh": "蒙特利尔冲击",
+      "en": "Montreal Impact",
+      "es": "Montreal Impact"
+    }
+  },
+  "matches": [
+    {
+      "mode": "club",
+      "date": "2002-05-15",
+      "teams": [
+        "leverkusen",
+        "realmadrid"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "齐达内的**凌空抽射**帮助皇马2–1夺冠。",
+        "en": "**Zidane’s volley** sealed a 2–1 win and the title for Real Madrid.",
+        "es": "La **volea de Zidane** dio el título al Real Madrid por 2–1."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/69489/"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2003-05-28",
+      "teams": [
+        "juventus",
+        "milan"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "AC米兰在**点球大战**中击败尤文图斯夺冠。",
+        "en": "AC Milan beat Juventus on **penalties** to take the title.",
+        "es": "El Milan ganó el título ante la Juventus en los **penaltis**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/71176/"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2004-05-26",
+      "teams": [
+        "monaco",
+        "porto"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "**穆里尼奥**执教的波尔图3–0击败**德尚**执教的摩纳哥，黑马夺冠。",
+        "en": "**Mourinho’s Porto** beat **Deschamps’ Monaco** 3–0 to complete an unlikely title run.",
+        "es": "El **Oporto de Mourinho** sorprendió al conquistar el título por 3–0 ante el **Mónaco de Deschamps**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/news/0250-0c50f100f076-ecb0d9d85bb1-1000--2003-04-porto-pull-off-biggest-surprise/"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2005-05-25",
+      "teams": [
+        "milan",
+        "liverpool"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "利物浦半场0–3落后，追平后点球夺冠，缔造**“伊斯坦布尔奇迹”**。",
+        "en": "Liverpool recovered from 3–0 down at half-time to win on penalties: the **“Miracle of Istanbul.”**",
+        "es": "El Liverpool remontó un 0–3 al descanso y ganó en los penaltis: el **«milagro de Estambul»**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/80813--ac-milan-vs-liverpool/",
+        "https://www.lfchistory.net/games/4928"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2006-05-17",
+      "teams": [
+        "barcelona",
+        "arsenal"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "巴萨在落后后**2–1逆转夺冠**；阿森纳门将莱曼开场不久被罚下。",
+        "en": "Barcelona **came from behind to win 2–1** after Arsenal keeper Lehmann’s early red card.",
+        "es": "El Barcelona **remontó para ganar 2–1** tras la temprana expulsión de Lehmann."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/84101/"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2007-05-23",
+      "teams": [
+        "milan",
+        "liverpool"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "因扎吉梅开二度，帮助**AC米兰2–1夺冠**。",
+        "en": "Inzaghi scored twice as **AC Milan won the title 2–1**.",
+        "es": "Un doblete de Inzaghi dio el título al **Milan por 2–1**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/300099--milan-vs-liverpool/",
+        "https://www.lfchistory.net/games/5048"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2008-05-21",
+      "teams": [
+        "manunited",
+        "chelsea"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "**弗格森**带领曼联在点球大战中击败切尔西夺冠。",
+        "en": "**Ferguson’s Manchester United** beat Chelsea on penalties to win the trophy.",
+        "es": "El **Manchester United de Ferguson** venció al Chelsea en los penaltis para ser campeón."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/301604--man-utd-vs-chelsea/",
+        "https://www.theguardian.com/football/2008/may/21/championsleague.manchesterunited6"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2009-05-27",
+      "teams": [
+        "barcelona",
+        "manunited"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "**瓜迪奥拉**带领巴萨2–0夺冠，完成赛季三冠王。",
+        "en": "**Guardiola’s Barcelona** won 2–0 to complete the season’s treble.",
+        "es": "El **Barcelona de Guardiola** ganó 2–0 y completó el triplete."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/302813/"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2010-05-22",
+      "teams": [
+        "bayern",
+        "inter"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "米利托梅开二度，**穆里尼奥**率国际米兰完成三冠王。",
+        "en": "Milito scored twice as **Mourinho’s Inter** completed the treble.",
+        "es": "Un doblete de Milito permitió al **Inter de Mourinho** completar el triplete."
+      },
+      "sources": [
+        "https://www.inter.it/en/news/history-inter-bayern-m%C3%BCnchen-previous-24-25",
+        "https://www.skysports.com/football/bayern-munich-vs-inter-milan/teams/213137"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2011-05-28",
+      "teams": [
+        "barcelona",
+        "manunited"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "**瓜迪奥拉**带领巴萨3–1击败曼联，再夺欧冠。",
+        "en": "**Guardiola’s Barcelona** beat Manchester United 3–1 to regain the trophy.",
+        "es": "El **Barcelona de Guardiola** recuperó el título al vencer 3–1 al Manchester United."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/2003352--barcelona-vs-man-utd/",
+        "https://www.skysports.com/football/barcelona-vs-man-utd/teams/234950"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2012-05-19",
+      "teams": [
+        "bayern",
+        "chelsea"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "德罗巴扳平并罚入制胜点球，切尔西**首次夺得欧冠**。",
+        "en": "Drogba equalised and scored the winning penalty as Chelsea claimed their **first Champions League title**.",
+        "es": "Drogba empató y marcó el penalti decisivo para el **primer título de Champions del Chelsea**."
+      },
+      "sources": [
+        "https://www.skysports.com/football/bayern-munich-vs-chelsea/teams/256128"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2013-05-25",
+      "teams": [
+        "dortmund",
+        "bayern"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "罗本打入制胜球，拜仁**2–1夺冠**并完成三冠王。",
+        "en": "Robben’s winner gave Bayern a **2–1 victory** and completed their treble.",
+        "es": "El gol decisivo de Robben dio al Bayern el título por **2–1** y el triplete."
+      },
+      "sources": [
+        "https://www.skysports.com/football/borussia-dortmund-vs-bayern-munich/teams/285071"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2014-05-24",
+      "teams": [
+        "realmadrid",
+        "atletico"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "拉莫斯补时扳平，皇马加时4–1逆转，赢得**第十座欧冠**。",
+        "en": "Ramos equalised in added time; Real Madrid won 4–1 after extra time for **La Décima**.",
+        "es": "Ramos empató en el descuento; el Madrid remontó 4–1 en la prórroga para ganar **la Décima**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/2011883--real-madrid-vs-atleti/"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2015-06-06",
+      "teams": [
+        "juventus",
+        "barcelona"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "**MSN组合**领衔巴萨3–1夺冠，完成赛季三冠王。",
+        "en": "Barcelona’s **MSN attack** helped secure a 3–1 win and the treble.",
+        "es": "El Barcelona de la **MSN** ganó 3–1 y completó el triplete."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/2015227--juventus-vs-barcelona/",
+        "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefachampionsleague/2015/match/2015227/"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2016-05-28",
+      "teams": [
+        "realmadrid",
+        "atletico"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "**齐达内**执教的皇马点球击败马竞，开启欧冠三连冠。",
+        "en": "**Zidane’s Real Madrid** won on penalties, the first of three straight Champions League titles.",
+        "es": "El **Real Madrid de Zidane** ganó en los penaltis, el primero de tres títulos de Champions consecutivos."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/2015789/"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2017-06-03",
+      "teams": [
+        "juventus",
+        "realmadrid"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "C罗梅开二度，皇马4–1夺冠，成为改制后**首支卫冕球队**。",
+        "en": "Ronaldo scored twice in a 4–1 win as Real Madrid became the Champions League era’s **first back-to-back winners**.",
+        "es": "Un doblete de Cristiano en el 4–1 convirtió al Madrid en el **primer campeón consecutivo de la era Champions**."
+      },
+      "sources": [
+        "https://www.skysports.com/football/juventus-vs-real-madrid/teams/371636",
+        "https://www.uefa.com/uefachampionsleague/match/2019641/"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2018-05-26",
+      "teams": [
+        "realmadrid",
+        "liverpool"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "贝尔替补梅开二度并打入倒钩，皇马完成**欧冠三连冠**。",
+        "en": "Bale scored twice off the bench, including an overhead kick, as Real Madrid won a **third straight title**.",
+        "es": "Bale marcó dos goles como suplente, incluida una chilena, para la **tercera Champions consecutiva del Madrid**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/2021711/"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2019-06-01",
+      "teams": [
+        "spurs",
+        "liverpool"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "**克洛普**带领利物浦2–0击败热刺，赢得队史第六座欧冠。",
+        "en": "**Klopp’s Liverpool** beat Tottenham 2–0 to claim their sixth European crown.",
+        "es": "El **Liverpool de Klopp** venció 2–0 al Tottenham y conquistó su sexta Copa de Europa."
+      },
+      "sources": [
+        "https://www.liverpoolfc.com/info/2019-champions-league-final",
+        "https://www.skysports.com/football/tottenham-hotspur-vs-liverpool/teams/407101"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2020-08-23",
+      "teams": [
+        "psg",
+        "bayern"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "科曼打入唯一进球，拜仁1–0夺冠，完成**三冠王**。",
+        "en": "Coman scored the only goal as Bayern won 1–0 to complete the **treble**.",
+        "es": "Coman marcó el único gol del 1–0 con el que el Bayern completó el **triplete**."
+      },
+      "sources": [
+        "https://fcbayern.com/en/news/matchreports/2020/08/match-report-champions-league-final-paris-saint-german-v-fc-bayern-230820"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2021-05-29",
+      "teams": [
+        "city",
+        "chelsea"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "哈弗茨打入唯一进球，**图赫尔**率切尔西1–0夺冠。",
+        "en": "Havertz scored the only goal as **Tuchel’s Chelsea** won the title 1–0.",
+        "es": "Havertz marcó el único gol del 1–0 que dio el título al **Chelsea de Tuchel**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/2029498/"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2022-05-28",
+      "teams": [
+        "liverpool",
+        "realmadrid"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "维尼修斯一击制胜，皇马1–0夺冠，库尔图瓦多次关键扑救。",
+        "en": "Vinícius scored the winner and Courtois made crucial saves as **Real Madrid won 1–0**.",
+        "es": "Vinícius marcó y Courtois realizó paradas decisivas para el título del **Madrid por 1–0**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/2034586/"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2023-06-10",
+      "teams": [
+        "city",
+        "inter"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "罗德里一击制胜，**瓜迪奥拉**率曼城首夺欧冠并完成三冠王。",
+        "en": "Rodri’s winner gave **Guardiola’s Manchester City** their first Champions League title and the treble.",
+        "es": "El gol de Rodri dio al **Manchester City de Guardiola** su primera Champions y el triplete."
+      },
+      "sources": [
+        "https://www.inter.it/en/news/manchester-city-inter-team-news-champions-league-final"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2024-06-01",
+      "teams": [
+        "dortmund",
+        "realmadrid"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "皇马2–0击败多特蒙德，赢得**第十五座欧冠**。",
+        "en": "Real Madrid won 2–0 to claim their **15th European crown**.",
+        "es": "El Real Madrid ganó 2–0 y conquistó su **decimoquinta Copa de Europa**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/2039970/"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2025-05-31",
+      "teams": [
+        "psg",
+        "inter"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "**恩里克**率巴黎5–0夺得队史首冠，创欧冠决赛最大比分差。",
+        "en": "**Luis Enrique’s Paris** won their first title 5–0, a record winning margin in a European Cup final.",
+        "es": "El **París de Luis Enrique** ganó su primer título por 5–0, la mayor diferencia en una final de Copa de Europa."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/2044466/"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2026-05-30",
+      "teams": [
+        "psg",
+        "arsenal"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "巴黎1–1后点球击败阿森纳，**成功卫冕欧冠**。",
+        "en": "Paris beat Arsenal on penalties after a 1–1 draw to **retain the Champions League title**.",
+        "es": "El París venció al Arsenal en los penaltis tras el 1–1 para **revalidar la Champions**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefachampionsleague/match/2047742/"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2002-06-30",
+      "teams": [
+        "BRA",
+        "GER"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "罗纳尔多梅开二度，巴西2–0夺得**第五座世界杯**。",
+        "en": "Ronaldo scored twice as Brazil won 2–0 to take their **fifth World Cup**.",
+        "es": "Ronaldo marcó dos goles para el 2–0 que dio a Brasil su **quinta Copa Mundial**."
+      },
+      "sources": [
+        "https://www.rsssf.org/tables/2002full.html"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2004-07-04",
+      "teams": [
+        "GRE",
+        "POR"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "**雷哈格尔**率希腊1–0击败东道主葡萄牙，上演**“希腊神话”**，黑马夺冠。",
+        "en": "**Rehhagel’s Greece** stunned hosts Portugal 1–0 to win an unlikely European title.",
+        "es": "La **Grecia de Rehhagel** sorprendió a la anfitriona Portugal por 1–0 y conquistó la Eurocopa."
+      },
+      "sources": [
+        "https://www.uefa.com/uefaeuro/match/79185/"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2006-07-09",
+      "teams": [
+        "FRA",
+        "ITA"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "意大利点球夺冠；齐达内加时赛被罚下，**里皮**捧起世界杯。",
+        "en": "Italy won on penalties under **Lippi**; Zidane was sent off in extra time.",
+        "es": "Italia ganó en los penaltis con **Lippi**; Zidane fue expulsado en la prórroga."
+      },
+      "sources": [
+        "https://www.skysports.com/football/italy-vs-france/teams/73218"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2008-06-29",
+      "teams": [
+        "ESP",
+        "GER"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "托雷斯打入唯一进球，西班牙**时隔44年再夺欧洲杯**。",
+        "en": "Torres scored the only goal as Spain won their **first European title in 44 years**.",
+        "es": "Torres marcó el único gol para la **primera Eurocopa de España en 44 años**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefaeuro/match/301696/"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2010-07-11",
+      "teams": [
+        "ESP",
+        "NED"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "伊涅斯塔加时绝杀，西班牙**首次夺得世界杯**。",
+        "en": "Iniesta’s extra-time winner gave Spain their **first World Cup**.",
+        "es": "El gol de Iniesta en la prórroga dio a España su **primera Copa Mundial**."
+      },
+      "sources": [
+        "https://www.skysports.com/football/niederlande-vs-spain/teams/221760"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2012-07-01",
+      "teams": [
+        "ESP",
+        "ITA"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "西班牙4–0夺冠，完成**欧洲杯—世界杯—欧洲杯三连冠**。",
+        "en": "Spain won 4–0 to complete a **EURO–World Cup–EURO title hat-trick**.",
+        "es": "España ganó 4–0 y encadenó los títulos de **Eurocopa, Mundial y Eurocopa**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefaeuro/history/news/0252-0cdc4f07099d-36a02f333f87-1000--spain-overpower-exhausted-italy-to-win-uefa-euro-2012-final/",
+        "https://www.uefa.com/uefaeuro/match/2003351/"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2014-07-13",
+      "teams": [
+        "ARG",
+        "GER"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "格策加时打入制胜球，德国**第四次夺得世界杯**。",
+        "en": "Götze scored in extra time as Germany claimed their **fourth World Cup**.",
+        "es": "Götze marcó en la prórroga y Alemania conquistó su **cuarta Copa Mundial**."
+      },
+      "sources": [
+        "https://www.skysports.com/football/germany-vs-argentina/teams/319572"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2016-07-10",
+      "teams": [
+        "FRA",
+        "POR"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "C罗伤退后，埃德尔加时绝杀，葡萄牙**首夺欧洲杯**。",
+        "en": "After Ronaldo went off injured, Éder’s extra-time winner gave Portugal their **first European title**.",
+        "es": "Tras la lesión de Cristiano, Éder marcó en la prórroga para la **primera Eurocopa de Portugal**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefaeuro/history/news/0253-0d81c3763c88-e741506b5589-1000/",
+        "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaeuro/2016/match/2017907/"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2018-07-15",
+      "teams": [
+        "CRO",
+        "FRA"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "**德尚**率法国4–2夺冠，成为以球员和教练身份夺得世界杯的人之一。",
+        "en": "**Deschamps** led France to a 4–2 win, joining the select group of World Cup winners as both player and coach.",
+        "es": "**Deschamps** ganó 4–2 con Francia y entró en el grupo de campeones mundiales como jugador y entrenador."
+      },
+      "sources": [
+        "https://www.fifa.com/en/tournaments/mens/worldcup/2018russia/news/worldcupathome-france-croatia-russia-2018-3072767",
+        "https://www.skysports.com/football/france-vs-kroatien/teams/385232"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2021-07-11",
+      "teams": [
+        "ENG",
+        "ITA"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "意大利1–1后点球击败英格兰，**曼奇尼**率队夺冠。",
+        "en": "**Mancini’s Italy** beat England on penalties after a 1–1 draw to win the trophy.",
+        "es": "La **Italia de Mancini** ganó el título ante Inglaterra en los penaltis tras el 1–1."
+      },
+      "sources": [
+        "https://www.uefa.com/uefaeuro/match/2024491/"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2022-12-18",
+      "teams": [
+        "ARG",
+        "FRA"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "梅西领衔阿根廷点球夺冠；姆巴佩上演**决赛帽子戏法**。",
+        "en": "Messi’s Argentina won on penalties, while Mbappé scored a **hat-trick in the final**.",
+        "es": "La Argentina de Messi ganó en los penaltis; Mbappé marcó un **triplete en la final**."
+      },
+      "sources": [
+        "https://www.sportingnews.com/uk/football/news/argentina-vs-france-lineup-starting-11-world-cup-2022/ish6hq2weaskigcvvgphhnf5"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2024-07-14",
+      "teams": [
+        "ENG",
+        "ESP"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "奥亚萨瓦尔打入制胜球，西班牙2–1赢得**第四座欧洲杯**。",
+        "en": "Oyarzabal scored the winner as Spain won 2–1 for a **record fourth European title**.",
+        "es": "Oyarzabal marcó el gol decisivo del 2–1 para la **cuarta Eurocopa de España**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefaeuro/history/news/028f-1b5e5c2b7b67-d5faab9be20b-1000--spain-2-1-england-late-oyarzabal-winner-earns-la-roja-reco/"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2026-07-19",
+      "teams": [
+        "ARG",
+        "ESP"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "西班牙加时1–0击败阿根廷，**第二次夺得世界杯**。",
+        "en": "Spain beat Argentina 1–0 after extra time to win their **second World Cup**.",
+        "es": "España venció 1–0 a Argentina en la prórroga y ganó su **segunda Copa Mundial**."
+      },
+      "sources": [
+        "https://www.fifa.com/en/articles/final-tournament-standings"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2005-03-08",
+      "teams": [
+        "chelsea",
+        "barcelona"
+      ],
+      "stage": {
+        "zh": "1/8决赛次回合",
+        "en": "round of 16 second leg",
+        "es": "los octavos de final, vuelta"
+      },
+      "note": {
+        "zh": "切尔西4–2取胜、总比分5–4晋级，**穆里尼奥**赢下这场经典对决。",
+        "en": "Chelsea won 4–2 and progressed 5–4 on aggregate in a classic tie under **Mourinho**.",
+        "es": "El Chelsea de **Mourinho** ganó 4–2 y avanzó por 5–4 en el global de una eliminatoria clásica."
+      },
+      "sources": [
+        "https://www.theguardian.com/football/2005/mar/08/minutebyminute.sport1"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2014-06-13",
+      "teams": [
+        "NED"
+      ],
+      "stage": {
+        "zh": "小组赛",
+        "en": "group stage",
+        "es": "la fase de grupos"
+      },
+      "note": {
+        "zh": "范佩西打入**鱼跃头球**，荷兰5–1逆转卫冕冠军西班牙。",
+        "en": "Van Persie’s **diving header** sparked a 5–1 comeback win over holders Spain.",
+        "es": "El **cabezazo en plancha de Van Persie** impulsó la remontada por 5–1 ante la campeona España."
+      },
+      "sources": [
+        "https://www.fifa.com/en/articles/robin-van-persie-netherlands-spain-2014"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2022-12-10",
+      "teams": [
+        "MAR"
+      ],
+      "stage": {
+        "zh": "1/4决赛",
+        "en": "quarter-final",
+        "es": "los cuartos de final"
+      },
+      "note": {
+        "zh": "摩洛哥1–0取胜，成为**首支晋级世界杯四强的非洲球队**。",
+        "en": "Morocco won 1–0 to become the **first African team to reach a World Cup semi-final**.",
+        "es": "Marruecos ganó 1–0 y fue la **primera selección africana en llegar a semifinales de un Mundial**."
+      },
+      "sources": [
+        "https://www.fifa.com/en/articles/morocco-portugal"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2022-11-23",
+      "teams": [
+        "JPN"
+      ],
+      "stage": {
+        "zh": "小组赛",
+        "en": "group stage",
+        "es": "la fase de grupos"
+      },
+      "note": {
+        "zh": "日本在落后后**2–1逆转德国**，堂安律和浅野拓磨替补建功。",
+        "en": "Substitutes Dōan and Asano scored as Japan **came from behind to beat Germany 2–1**.",
+        "es": "Los suplentes Dōan y Asano marcaron para que Japón **remontara 2–1 ante Alemania**."
+      },
+      "sources": [
+        "https://www.skysports.com/football/germany-vs-japan/teams/462968"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2022-12-02",
+      "teams": [
+        "KOR"
+      ],
+      "stage": {
+        "zh": "小组赛",
+        "en": "group stage",
+        "es": "la fase de grupos"
+      },
+      "note": {
+        "zh": "黄喜灿补时绝杀，韩国**2–1逆转并晋级16强**。",
+        "en": "Hwang Hee-chan’s stoppage-time winner completed a **2–1 comeback and sent Korea Republic into the last 16**.",
+        "es": "Hwang Hee-chan marcó en el descuento para la **remontada por 2–1 y el pase de Corea a octavos**."
+      },
+      "sources": [
+        "https://www.skysports.com/football/south-korea-vs-portugal/teams/462995"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2022-11-22",
+      "teams": [
+        "KSA"
+      ],
+      "stage": {
+        "zh": "小组赛",
+        "en": "group stage",
+        "es": "la fase de grupos"
+      },
+      "note": {
+        "zh": "沙特**2–1逆转阿根廷**，爆出本届世界杯的大冷门。",
+        "en": "Saudi Arabia **came from behind to beat Argentina 2–1**, a major World Cup upset.",
+        "es": "Arabia Saudí **remontó 2–1 ante Argentina**, una de las grandes sorpresas del Mundial."
+      },
+      "sources": [
+        "https://www.skysports.com/football/argentina-vs-saudi-arabia/teams/462963"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2014-06-14",
+      "teams": [
+        "CRC"
+      ],
+      "stage": {
+        "zh": "小组赛",
+        "en": "group stage",
+        "es": "la fase de grupos"
+      },
+      "note": {
+        "zh": "哥斯达黎加**3–1逆转乌拉圭**，开启黑马八强之旅。",
+        "en": "Costa Rica **came from behind to beat Uruguay 3–1**, launching their surprise run to the quarter-finals.",
+        "es": "Costa Rica **remontó 3–1 ante Uruguay**, iniciando su sorprendente camino hasta cuartos de final."
+      },
+      "sources": [
+        "https://www.skysports.com/football/uruguay-vs-costa-rica/teams/317486"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2016-07-01",
+      "teams": [
+        "WAL"
+      ],
+      "stage": {
+        "zh": "1/4决赛",
+        "en": "quarter-final",
+        "es": "los cuartos de final"
+      },
+      "note": {
+        "zh": "威尔士3–1逆转比利时，**首次参加欧洲杯便闯入四强**。",
+        "en": "Wales came from behind to win 3–1 and **reached the semi-finals on their EURO debut**.",
+        "es": "Gales remontó 3–1 y **alcanzó las semifinales en su primera Eurocopa**."
+      },
+      "sources": [
+        "https://www.uefa.com/uefaeuro/history/news/0253-0d81b0c19f08-954fdc458315-1000--remarkable-wales-shock-belgium-to-reach-euro-2016-semis/"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2016-06-27",
+      "teams": [
+        "ISL"
+      ],
+      "stage": {
+        "zh": "1/8决赛",
+        "en": "round of 16",
+        "es": "los octavos de final"
+      },
+      "note": {
+        "zh": "冰岛**2–1逆转英格兰**，首次参加欧洲杯便闯入八强。",
+        "en": "Iceland **came from behind to beat England 2–1**, reaching the last eight on their EURO debut.",
+        "es": "Islandia **remontó 2–1 ante Inglaterra** y llegó a cuartos en su primera Eurocopa."
+      },
+      "sources": [
+        "https://www.skysports.com/football/england-vs-iceland/teams/353099"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2022-02-06",
+      "teams": [
+        "SEN",
+        "EGY"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "塞内加尔点球击败埃及，**首次夺得非洲杯**。",
+        "en": "Senegal beat Egypt on penalties to claim their **first Africa Cup of Nations title**.",
+        "es": "Senegal ganó a Egipto en los penaltis y conquistó su **primera Copa Africana**."
+      },
+      "sources": [
+        "https://www.cafonline.com/caf-africa-cup-of-nations/news/senegal-champion-of-africa"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2024-02-11",
+      "teams": [
+        "NGA",
+        "CIV"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "东道主科特迪瓦**2–1逆转夺冠**，阿莱打入制胜球。",
+        "en": "Hosts Côte d’Ivoire **came from behind to win the title 2–1**, with Haller scoring the winner.",
+        "es": "La anfitriona Costa de Marfil **remontó 2–1 para ganar el título**, con el gol decisivo de Haller."
+      },
+      "sources": [
+        "https://www.cafonline.com/en/caf-africa-cup-of-nations/news/sebastian-haller-inspires-elephants-to-glorious-afcon-triumph/"
+      ]
+    },
+    {
+      "mode": "nation",
+      "date": "2002-06-06",
+      "teams": [
+        "CMR"
+      ],
+      "stage": {
+        "zh": "小组赛",
+        "en": "group stage",
+        "es": "la fase de grupos"
+      },
+      "note": {
+        "zh": "埃托奥打入唯一进球，喀麦隆**1–0取胜**。",
+        "en": "Eto’o scored the only goal as Cameroon **won 1–0**.",
+        "es": "Eto’o marcó el único gol de la **victoria de Camerún por 1–0**."
+      },
+      "sources": [
+        "https://www.plus.fifa.com/en/content/cameroon-v-saudi-arabia-group-e-2002-fifa-world-cup-korea-japan-full-match-replay/affde0fa-b734-4d9f-b83b-282c7869999c"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2023-08-19",
+      "teams": [
+        "inter-miami"
+      ],
+      "stage": {
+        "zh": "决赛",
+        "en": "final",
+        "es": "la final"
+      },
+      "note": {
+        "zh": "梅西破门，迈阿密国际点球夺冠，赢得**队史首座奖杯**。",
+        "en": "Messi scored as Inter Miami won on penalties to claim the **first trophy in club history**.",
+        "es": "Messi marcó y el Inter Miami ganó en los penaltis para conquistar el **primer trofeo de su historia**."
+      },
+      "sources": [
+        "https://www.intermiamicf.com/news/match-recap-inter-miami-cf-wins-2023-leagues-cup-title-to-clinch-historic-first-"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2025-11-02",
+      "teams": [
+        "lac"
+      ],
+      "stage": {
+        "zh": "首轮第二场",
+        "en": "round one, game two",
+        "es": "la primera ronda, segundo partido"
+      },
+      "note": {
+        "zh": "孙兴慜破门，洛杉矶FC**4–1取胜并晋级下一轮**。",
+        "en": "Son scored as LAFC **won 4–1 to advance to the next round**.",
+        "es": "Son marcó en la **victoria por 4–1 de LAFC para pasar a la siguiente ronda**."
+      },
+      "sources": [
+        "https://www.lafc.com/news/recap-lafc-4-1-austin-fc-game-2-2025-mls-cup-playoffs-round-one-best-of-3-series"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2012-12-01",
+      "teams": [
+        "lagalaxy"
+      ],
+      "note": {
+        "zh": "银河3–1夺冠，这是**贝克汉姆在球队的告别战**。",
+        "en": "LA Galaxy won the title 3–1 in **Beckham’s farewell match for the club**.",
+        "es": "LA Galaxy ganó el título por 3–1 en el **partido de despedida de Beckham**."
+      },
+      "sources": [
+        "https://www.houstondynamofc.com/news/recap-gonzalez-donovan-lift-galaxy-fourth-mls-cup"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2025-09-13",
+      "teams": [
+        "vancouver"
+      ],
+      "note": {
+        "zh": "穆勒在36岁生日上演**帽子戏法**，温哥华白浪7–0大胜。",
+        "en": "Müller scored a **hat-trick on his 36th birthday** as Vancouver won 7–0.",
+        "es": "Müller firmó un **triplete en su 36.º cumpleaños** en la victoria por 7–0 de Vancouver."
+      },
+      "sources": [
+        "https://www.whitecapsfc.com/news/statement-made"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2015-03-08",
+      "teams": [
+        "orlando"
+      ],
+      "note": {
+        "zh": "这是奥兰多城的**美职联首秀**，卡卡补时任意球扳平，双方1–1战平。",
+        "en": "In Orlando City’s **first MLS match**, Kaká’s stoppage-time free-kick secured a 1–1 draw.",
+        "es": "En el **debut de Orlando City en la MLS**, Kaká empató de falta en el descuento para el 1–1."
+      },
+      "sources": [
+        "https://www.orlandocitysc.com/news/orlando-city-nycfc-battle-1-1-draw-front-62k"
+      ]
+    },
+    {
+      "mode": "club",
+      "date": "2017-04-01",
+      "teams": [
+        "chicago"
+      ],
+      "note": {
+        "zh": "**施魏因施泰格首秀即进球**，芝加哥火焰补时扳平，双方2–2战平。",
+        "en": "**Schweinsteiger scored on his debut** as Chicago Fire earned a stoppage-time equaliser in a 2–2 draw.",
+        "es": "**Schweinsteiger marcó en su debut** y Chicago Fire empató en el descuento para el 2–2."
+      },
+      "sources": [
+        "https://www.chicagofirefc.com/news/schweinsteiger-scores-chicago-fire-rally-2-2-draw-against-montreal-impact"
+      ]
+    }
+  ]
+}

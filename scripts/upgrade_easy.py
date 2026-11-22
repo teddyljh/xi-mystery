@@ -16,7 +16,10 @@ def main() -> None:
     ):
         source = source.replace(old, new)
     start = source.index("  // Easy multiple choice")
-    end = source.index("  function renderGame(){", start)
+    # The post-answer renderer lives between choice rules and renderGame.
+    # Regenerating distractors must preserve that independent module.
+    boundary = "  // Answer-reveal match context."
+    end = source.index(boundary, start) if boundary in source[start:] else source.index("  function renderGame(){", start)
     rules = (ROOT / "scripts/easy_choices.js").read_text(encoding="utf-8")
     rules = "\n".join("  " + line if line else "" for line in rules.rstrip().splitlines()) + "\n"
     updated = source[:start] + rules + source[end:]

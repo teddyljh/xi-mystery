@@ -45,8 +45,9 @@ const featured = hard.filter(api.isFeaturedHardFixture);
 const league = hard.filter(api.usesLeagueHardMask);
 const nations = hard.filter(api.usesNationHardMask);
 const isNetherlands2014=f=>f.mode==='nation'&&f.team==='NED'&&f.date==='2014-06-13';
-const threeClues = hard.filter(f => !api.hardNationMaskOverride(f) && !api.usesNationHardMask(f) && (api.isFeaturedHardFixture(f) || api.usesLeagueHardMask(f)));
-const underdogs = hard.filter(f => !api.isFeaturedHardFixture(f) && !api.usesLeagueHardMask(f) && !api.usesNationHardMask(f));
+const isNewMls=f=>(data.hardMlsStars||[]).some(x=>x.id===f.id);
+const threeClues = hard.filter(f => !isNewMls(f) && !api.hardNationMaskOverride(f) && !api.usesNationHardMask(f) && (api.isFeaturedHardFixture(f) || api.usesLeagueHardMask(f)));
+const underdogs = hard.filter(f => !isNewMls(f) && !api.isFeaturedHardFixture(f) && !api.usesLeagueHardMask(f) && !api.usesNationHardMask(f));
 
 function reset(mask, difficulty = 'hard') {
   context.state = {difficulty, mode: fixture.mode, masked: [...mask], hints: 0,
@@ -346,7 +347,7 @@ for (const mode of ['club', 'nation']) {
     const mls=[...(data.mlsStars||[]),...(data.africanClassics||[]).map(f=>typeof f==='string'?data.fixtures.find(x=>x.id===f):f)].filter(f=>f.mode===mode);
     for(const f of [...moved,...mls])if(!moderate.has(key(f)))moderate.set(key(f),f);
     const hardPool=new Map();
-    for(const f of [...data.fixtures.filter(f=>f.mode===mode&&(f.tier==='hard'||api.isImportedHardFixture(f))),...finals,...moved,...mls])if(!hardPool.has(key(f)))hardPool.set(key(f),f);
+    for(const f of [...data.fixtures.filter(f=>f.mode===mode&&(f.tier==='hard'||api.isImportedHardFixture(f))),...finals,...moved,...mls,...(data.hardMlsStars||[]).filter(f=>f.mode===mode)])if(!hardPool.has(key(f)))hardPool.set(key(f),f);
     const expected = difficulty==='easy'?[...union.values()].filter(keep):difficulty==='moderate'?[...moderate.values()]:[...hardPool.values()];
     assert.deepEqual([...api.available()].map(f => f.id), expected.map(f => f.id));
   }

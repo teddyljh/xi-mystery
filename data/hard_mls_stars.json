@@ -1,0 +1,300 @@
+{
+  "clubs": {
+    "vancouver": {
+      "zh": "温哥华白浪",
+      "en": "Vancouver Whitecaps",
+      "es": "Vancouver Whitecaps",
+      "aliases": [
+        "Vancouver Whitecaps FC",
+        "Whitecaps",
+        "温哥华",
+        "温哥华白帽",
+        "温哥华白浪队"
+      ],
+      "crestPath": "usa/Vancouver_Whitecaps_FC.svg"
+    },
+    "orlando": {
+      "en": "Orlando City",
+      "zh": "奥兰多城",
+      "es": "Orlando City",
+      "aliases": [],
+      "crestPath": "usa/Orlando_City.svg"
+    },
+    "chicago": {
+      "en": "Chicago Fire",
+      "zh": "芝加哥火焰",
+      "es": "Chicago Fire",
+      "aliases": [],
+      "crestPath": "usa/Chicago_Fire_FC.svg"
+    }
+  },
+  "nations": {
+    "TRI": {
+      "zh": "特立尼达和多巴哥",
+      "en": "Trinidad and Tobago",
+      "es": "Trinidad y Tobago",
+      "aliases": []
+    },
+    "PAR": {
+      "zh": "巴拉圭",
+      "en": "Paraguay",
+      "es": "Paraguay",
+      "aliases": []
+    },
+    "SYR": {
+      "zh": "叙利亚",
+      "en": "Syria",
+      "es": "Siria",
+      "aliases": []
+    }
+  },
+  "flags": {
+    "TRI": {
+      "path": "data/flags/TRI.png",
+      "source": "https://flagcdn.com/w160/tt.png"
+    },
+    "PAR": {
+      "path": "data/flags/PAR.png",
+      "source": "https://flagcdn.com/w160/py.png"
+    },
+    "SYR": {
+      "path": "data/flags/SYR.png",
+      "source": "https://flagcdn.com/w160/sy.png"
+    }
+  },
+  "fixtures": [
+    {
+      "id": "hard-mls-stars-2025-09-13-vancouver",
+      "mode": "club",
+      "season": "2025",
+      "tier": "hard",
+      "team": "vancouver",
+      "date": "2025-09-13",
+      "versus": "Philadelphia Union",
+      "formation": "4-2-3-1",
+      "competition": "MLS Regular Season",
+      "source": "https://www.whitecapsfc.com/news/statement-made",
+      "star": "Thomas Müller",
+      "hardHintOrder": [
+        "Sebastian Berhalter",
+        "Thomas Müller"
+      ],
+      "players": [
+        {
+          "role": "ST",
+          "name": "Daniel Ríos",
+          "value": "MEX"
+        },
+        {
+          "role": "LW",
+          "name": "Ali Ahmed",
+          "value": "CAN"
+        },
+        {
+          "role": "AM",
+          "name": "Thomas Müller",
+          "value": "GER"
+        },
+        {
+          "role": "RW",
+          "name": "Emmanuel Sabbi",
+          "value": "USA"
+        },
+        {
+          "role": "DM",
+          "name": "Sebastian Berhalter",
+          "value": "USA"
+        },
+        {
+          "role": "DM",
+          "name": "Andrés Cubas",
+          "value": "PAR"
+        },
+        {
+          "role": "LB",
+          "name": "Mathías Laborda",
+          "value": "URU"
+        },
+        {
+          "role": "CB",
+          "name": "Tristan Blackmon",
+          "value": "USA"
+        },
+        {
+          "role": "CB",
+          "name": "Belal Halbouni",
+          "value": "SYR"
+        },
+        {
+          "role": "RB",
+          "name": "Édier Ocampo",
+          "value": "COL"
+        },
+        {
+          "role": "GK",
+          "name": "Yohei Takaoka",
+          "value": "JPN"
+        }
+      ],
+      "nationalitySources": [
+        "https://www.whitecapsfc.com/players/belal-halbouni/",
+        "https://www.whitecapsfc.com/players/andres-cubas/"
+      ]
+    },
+    {
+      "id": "hard-mls-stars-2015-03-08-orlando",
+      "mode": "club",
+      "season": "2015",
+      "tier": "hard",
+      "team": "orlando",
+      "date": "2015-03-08",
+      "versus": "New York City FC",
+      "formation": "4-2-3-1",
+      "competition": "MLS Regular Season",
+      "source": "https://www.orlandocitysc.com/news/orlando-city-nycfc-battle-1-1-draw-front-62k",
+      "star": "Kaká",
+      "hardHintOrder": [
+        "Brek Shea",
+        "Kaká"
+      ],
+      "players": [
+        {
+          "role": "ST",
+          "name": "Carlos Rivas",
+          "value": "COL"
+        },
+        {
+          "role": "LW",
+          "name": "Lewis Neal",
+          "value": "ENG"
+        },
+        {
+          "role": "AM",
+          "name": "Kaká",
+          "value": "BRA"
+        },
+        {
+          "role": "RW",
+          "name": "Kevin Molino",
+          "value": "TRI"
+        },
+        {
+          "role": "DM",
+          "name": "Amobi Okugo",
+          "value": "USA"
+        },
+        {
+          "role": "DM",
+          "name": "Cristian Higuita",
+          "value": "COL"
+        },
+        {
+          "role": "LB",
+          "name": "Brek Shea",
+          "value": "USA"
+        },
+        {
+          "role": "CB",
+          "name": "Seb Hines",
+          "value": "ENG"
+        },
+        {
+          "role": "CB",
+          "name": "Aurélien Collin",
+          "value": "FRA"
+        },
+        {
+          "role": "RB",
+          "name": "Rafael Ramos",
+          "value": "POR"
+        },
+        {
+          "role": "GK",
+          "name": "Donovan Ricketts",
+          "value": "JAM"
+        }
+      ],
+      "nationalitySources": [
+        "https://www.orlandocitysc.com/news/orlando-city-acquires-defender-seb-hines-loan-option-extend",
+        "https://www.orlandocitysc.com/news/orlando-city-signs-kevin-molino-first-mls-player"
+      ]
+    },
+    {
+      "id": "hard-mls-stars-2017-04-01-chicago",
+      "mode": "club",
+      "season": "2017",
+      "tier": "hard",
+      "team": "chicago",
+      "date": "2017-04-01",
+      "versus": "Montreal Impact",
+      "formation": "4-2-3-1",
+      "competition": "MLS Regular Season",
+      "source": "https://www.chicagofirefc.com/news/schweinsteiger-scores-chicago-fire-rally-2-2-draw-against-montreal-impact",
+      "star": "Bastian Schweinsteiger",
+      "hardHintOrder": [
+        "Dax McCarty",
+        "Bastian Schweinsteiger"
+      ],
+      "players": [
+        {
+          "role": "ST",
+          "name": "Nemanja Nikolić",
+          "value": "HUN"
+        },
+        {
+          "role": "LW",
+          "name": "David Accam",
+          "value": "GHA"
+        },
+        {
+          "role": "AM",
+          "name": "Bastian Schweinsteiger",
+          "value": "GER"
+        },
+        {
+          "role": "RW",
+          "name": "Arturo Álvarez",
+          "value": "SLV"
+        },
+        {
+          "role": "DM",
+          "name": "Juninho",
+          "value": "BRA"
+        },
+        {
+          "role": "DM",
+          "name": "Dax McCarty",
+          "value": "USA"
+        },
+        {
+          "role": "LB",
+          "name": "Brandon Vincent",
+          "value": "USA"
+        },
+        {
+          "role": "CB",
+          "name": "João Meira",
+          "value": "POR"
+        },
+        {
+          "role": "CB",
+          "name": "Jonathan Campbell",
+          "value": "USA"
+        },
+        {
+          "role": "RB",
+          "name": "Michael Harrington",
+          "value": "USA"
+        },
+        {
+          "role": "GK",
+          "name": "Jorge Bava",
+          "value": "URU"
+        }
+      ],
+      "nationalitySources": [
+        "https://www.chicagofirefc.com/players/arturo-alvarez/"
+      ]
+    }
+  ]
+}

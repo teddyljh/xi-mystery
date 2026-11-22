@@ -24,7 +24,7 @@ for(const [difficulty,current] of [['moderate',medium],['hard',hard]]){
   for(const id of old.pools[difficulty])assert.ok(currentKeys.has(key(registry.get(id))),id+': restoring Easy never drops higher difficulty membership');
   const previousKeys=new Set(old.pools[difficulty].map(id=>key(registry.get(id))));
   const africanAdded=(data.africanClassics||[]).map(f=>typeof f==='string'?registry.get(f):f).filter(f=>!previousKeys.has(key(f)));
-  assert.equal(current.length,old.pools[difficulty].length+3+africanAdded.length,'three MLS XIs plus the later African catalog in '+difficulty);
+  assert.equal(current.length,old.pools[difficulty].length+3+africanAdded.length+(difficulty==='hard'?data.hardMlsStars.length:0),'three MLS XIs plus the later African catalog in '+difficulty);
 }
 assert.equal(Object.keys(old.hardMasks).length,231);
 for(const [id,expected] of Object.entries(old.hardMasks)){

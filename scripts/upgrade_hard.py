@@ -200,6 +200,7 @@ RULES = r"""
   const NATIONAL_FINAL_FIXTURES=resolveFinalFixtures(DATA.nationalFinals);
   const CLASSIC_FINAL_FIXTURES=[...UCL_FINAL_FIXTURES,...NATIONAL_FINAL_FIXTURES];
   const MLS_STAR_FIXTURES=resolveFinalFixtures(DATA.mlsStars);
+  const HARD_MLS_STAR_FIXTURES=resolveFinalFixtures(DATA.hardMlsStars);
   const AFRICAN_CLASSIC_FIXTURES=resolveFinalFixtures(DATA.africanClassics);
   function uniqueFixtures(fixtures){
     const seen=new Set();
@@ -212,8 +213,8 @@ RULES = r"""
   // Medium/Hard. MLS additions are exclusive to these two higher difficulties.
   const HIGHER_DIFFICULTY_FIXTURES=FORMER_EASY_FIXTURES.filter(f=>!easyFixtureAllowed(f)||isRestoredEasyTeam(f));
   const MODERATE_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='moderate'),...CLASSIC_FINAL_FIXTURES,...HIGHER_DIFFICULTY_FIXTURES,...MLS_STAR_FIXTURES,...AFRICAN_CLASSIC_FIXTURES]);
-  const HARD_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='hard'||isImportedHardFixture(f)),...CLASSIC_FINAL_FIXTURES,...HIGHER_DIFFICULTY_FIXTURES,...MLS_STAR_FIXTURES,...AFRICAN_CLASSIC_FIXTURES]);
-  const quizFixtureCount=()=>new Set([...DATA.fixtures,...CLASSIC_FINAL_FIXTURES,...MLS_STAR_FIXTURES,...AFRICAN_CLASSIC_FIXTURES].map(f=>f.id)).size;
+  const HARD_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='hard'||isImportedHardFixture(f)),...CLASSIC_FINAL_FIXTURES,...HIGHER_DIFFICULTY_FIXTURES,...MLS_STAR_FIXTURES,...AFRICAN_CLASSIC_FIXTURES,...HARD_MLS_STAR_FIXTURES]);
+  const quizFixtureCount=()=>new Set([...DATA.fixtures,...CLASSIC_FINAL_FIXTURES,...MLS_STAR_FIXTURES,...AFRICAN_CLASSIC_FIXTURES,...HARD_MLS_STAR_FIXTURES].map(f=>f.id)).size;
   function available(){
     if(state.difficulty==='easy')return EASY_FIXTURES.filter(f=>f.mode===state.mode);
     if(state.difficulty==='moderate')return MODERATE_FIXTURES.filter(f=>f.mode===state.mode);
@@ -425,6 +426,9 @@ RULES = r"""
     return [...pair,striker];
   }
   function buildHardMask(f){
+    // These three MLS XIs explicitly restore the other player, then the star.
+    const mls=HARD_MLS_STAR_FIXTURES.find(x=>fixtureIdentity(x)===fixtureIdentity(f));
+    if(mls)return mls.hardHintOrder.map(name=>f.players.findIndex(p=>p.name===name));
     const override=hardNationMaskOverride(f);
     if(override)return override;
     if(usesNationHardMask(f))return buildNationHardMask(f);
