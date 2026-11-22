@@ -39,7 +39,10 @@ NON_BIG_FIVE_NATIONS = {
     "kairat": "KAZ",
     "union-sg": "BEL",
     "viking": "NOR",
-    "dinamo": "CRO"
+    "dinamo": "CRO",
+    "inter-miami": "USA",
+    "lac": "USA",
+    "lagalaxy": "USA"
 }
 
 # The -medium copies share their original match's attacking clue.
@@ -151,22 +154,29 @@ FORWARD_PICKS = {
     "classic-euro-final-2021-ENG": "Harry Kane",
     "classic-euro-final-2021-ITA": "Ciro Immobile",
     "classic-world-cup-final-2026-ARG": "Lionel Messi",
-    "classic-world-cup-final-2026-ESP": "Lamine Yamal"
+    "classic-world-cup-final-2026-ESP": "Lamine Yamal",
+    "mls-stars-2023-08-19-inter-miami": "Lionel Messi",
+    "mls-stars-2025-11-02-lac": "Son Heung-Min",
+    "mls-stars-2012-12-01-lagalaxy": "Landon Donovan"
 }
 
 # User-approved Easy recognition boundary. Applies to every era of a team.
-EASY_FAMOUS_CLUBS = set('realmadrid barcelona bayern city liverpool manunited arsenal chelsea psg inter milan juventus atletico dortmund spurs napoli benfica porto sporting ajax psv galatasaray fenerbahce celtic'.split())
-EASY_FAMOUS_NATIONS = set('ENG FRA GER ESP POR BRA ARG ITA NED BEL CRO URU'.split())
+EASY_FAMOUS_CLUBS = set('realmadrid barcelona bayern city liverpool manunited arsenal chelsea psg inter milan juventus atletico dortmund spurs napoli benfica porto sporting ajax psv galatasaray fenerbahce celtic villa brugge athletic'.split())
+EASY_FAMOUS_NATIONS = set('ENG FRA GER ESP POR BRA ARG ITA NED BEL CRO URU NOR POL SWE GRE TUR CHE'.split())
 
 RULES = r"""
   // Hard includes every historical XI from Easy/Moderate and prominent
   // teams from Moderate. The original fixture tiers remain unchanged.
   const HARD_FAMOUS_CLUBS=new Set('realmadrid barcelona bayern city liverpool manunited arsenal chelsea psg inter milan juventus atletico dortmund napoli benfica porto sporting ajax psv galatasaray fenerbahce celtic'.split(' '));
   const HARD_FAMOUS_NATIONS=new Set('ENG FRA GER ESP POR BRA ARG ITA NED'.split(' '));
-  const EASY_FAMOUS_CLUBS=new Set([...HARD_FAMOUS_CLUBS,'spurs']);
-  const EASY_FAMOUS_NATIONS=new Set([...HARD_FAMOUS_NATIONS,'BEL','CRO','URU']);
+  const EASY_RESTORED_CLUBS=new Set('villa brugge athletic'.split(' '));
+  const EASY_RESTORED_NATIONS=new Set('NOR POL SWE GRE TUR CHE'.split(' '));
+  const isRestoredEasyTeam=f=>(f.mode==='club'?EASY_RESTORED_CLUBS:EASY_RESTORED_NATIONS).has(f.team);
+  const EASY_FAMOUS_CLUBS=new Set([...HARD_FAMOUS_CLUBS,'spurs',...EASY_RESTORED_CLUBS]);
+  const EASY_FAMOUS_NATIONS=new Set([...HARD_FAMOUS_NATIONS,'BEL','CRO','URU',...EASY_RESTORED_NATIONS]);
   const easyFixtureAllowed=f=>(f.mode==='club'?EASY_FAMOUS_CLUBS:EASY_FAMOUS_NATIONS).has(f.team);
   function isImportedHardFixture(f){
+    if(f.id.startsWith('mls-stars-'))return true;
     // New underdog classics retain the legacy two-clue policy.
     if(f.id.startsWith('classic-ucl-final-')&&!EASY_FAMOUS_CLUBS.has(f.team))return false;
     const historical=f.id.startsWith('historic-')||f.date<'2024-01-01';
@@ -187,6 +197,7 @@ RULES = r"""
   const UCL_FINAL_FIXTURES=resolveFinalFixtures(DATA.uclFinals);
   const NATIONAL_FINAL_FIXTURES=resolveFinalFixtures(DATA.nationalFinals);
   const CLASSIC_FINAL_FIXTURES=[...UCL_FINAL_FIXTURES,...NATIONAL_FINAL_FIXTURES];
+  const MLS_STAR_FIXTURES=resolveFinalFixtures(DATA.mlsStars);
   function uniqueFixtures(fixtures){
     const seen=new Set();
     return fixtures.filter(f=>{const key=fixtureIdentity(f);if(seen.has(key))return false;seen.add(key);return true;});
@@ -194,9 +205,12 @@ RULES = r"""
   const FORMER_EASY_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='easy'),...DATA.fixtures.filter(f=>f.tier==='moderate'),...CLASSIC_FINAL_FIXTURES]);
   const EASY_REMOVED_FIXTURES=FORMER_EASY_FIXTURES.filter(f=>!easyFixtureAllowed(f));
   const EASY_FIXTURES=FORMER_EASY_FIXTURES.filter(easyFixtureAllowed);
-  const MODERATE_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='moderate'),...CLASSIC_FINAL_FIXTURES,...EASY_REMOVED_FIXTURES]);
-  const HARD_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='hard'||isImportedHardFixture(f)),...CLASSIC_FINAL_FIXTURES,...EASY_REMOVED_FIXTURES]);
-  const quizFixtureCount=()=>new Set([...DATA.fixtures,...CLASSIC_FINAL_FIXTURES].map(f=>f.id)).size;
+  // Restoring Easy eligibility must not remove previously promoted XIs from
+  // Medium/Hard. MLS additions are exclusive to these two higher difficulties.
+  const HIGHER_DIFFICULTY_FIXTURES=FORMER_EASY_FIXTURES.filter(f=>!easyFixtureAllowed(f)||isRestoredEasyTeam(f));
+  const MODERATE_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='moderate'),...CLASSIC_FINAL_FIXTURES,...HIGHER_DIFFICULTY_FIXTURES,...MLS_STAR_FIXTURES]);
+  const HARD_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='hard'||isImportedHardFixture(f)),...CLASSIC_FINAL_FIXTURES,...HIGHER_DIFFICULTY_FIXTURES,...MLS_STAR_FIXTURES]);
+  const quizFixtureCount=()=>new Set([...DATA.fixtures,...CLASSIC_FINAL_FIXTURES,...MLS_STAR_FIXTURES].map(f=>f.id)).size;
   function available(){
     if(state.difficulty==='easy')return EASY_FIXTURES.filter(f=>f.mode===state.mode);
     if(state.difficulty==='moderate')return MODERATE_FIXTURES.filter(f=>f.mode===state.mode);

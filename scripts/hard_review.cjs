@@ -12,7 +12,7 @@ function loadHardReview(source){
   const hints=source.slice(source.indexOf('  function getHint(){'),source.indexOf('  function next(){'));
   vm.runInContext(rules+'\n'+hints+'\nglobalThis.api={available,buildHardMask,getHint,fixtureIdentity,finals:CLASSIC_FINAL_FIXTURES};',context);
   const pool=(mode,difficulty)=>{context.state={mode,difficulty};return [...context.api.available()];};
-  const registry=new Map([...data.fixtures,...context.api.finals].map(f=>[f.id,f]));
+  const registry=new Map([...data.fixtures,...context.api.finals,...(data.mlsStars||[])].map(f=>[f.id,f]));
   function review(f){
     fixture=f;const masks=new Map();
     function enumerate(rolls=[]){

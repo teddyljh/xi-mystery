@@ -15,7 +15,8 @@ const EASY_CLUB_LEAGUES={
   greece:'olympiacos aek paok',
   switzerland:'basel youngboys',
   ukraine:'shakhtar dynamokyiv',
-  croatia:'dinamo hajduk rijeka'
+  croatia:'dinamo hajduk rijeka',
+  usa:'inter-miami lac lagalaxy'
 };
 const EASY_CLUB_LEAGUE_BY_KEY={};
 for(const [league,keys] of Object.entries(EASY_CLUB_LEAGUES)){
@@ -28,7 +29,7 @@ for(const [league,keys] of Object.entries(EASY_CLUB_LEAGUES)){
 const EASY_CLUB_LEVELS=[
   'realmadrid barcelona bayern city liverpool arsenal chelsea psg inter',
   'manunited milan juventus atletico dortmund leverkusen spurs newcastle villa napoli roma atalanta marseille lyon monaco leipzig galatasaray fenerbahce benfica porto sporting ajax psv',
-  'athletic sevilla villarreal realbetis valencia stuttgart frankfurt westham brighton lille nice lens fiorentina lazio bologna girona wolfsburg feyenoord braga celtic rangers brugge anderlecht salzburg olympiacos dinamo',
+  'athletic sevilla villarreal realbetis valencia stuttgart frankfurt westham brighton lille nice lens fiorentina lazio bologna girona wolfsburg feyenoord braga celtic rangers brugge anderlecht salzburg olympiacos dinamo inter-miami lac lagalaxy',
   'besiktas como reims alkmaar youngboys basel shakhtar union-sg sturm aek paok dynamokyiv hajduk rijeka'
 ].map(keys=>keys.split(' '));
 const EASY_CLUB_LEVEL_BY_KEY={};

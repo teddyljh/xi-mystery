@@ -16,7 +16,7 @@ assert.equal(new Set(records.map(f=>f.team+'|'+f.date)).size,26);
 assert.equal(data.fixtures.length,274,'base archive receives no clones');
 assert.equal(data.nationalFinals.filter(f=>typeof f==='string').length,17);
 assert.equal(data.nationalFinals.filter(f=>typeof f!=='string').length,9);
-assert.equal(context.api.quizFixtureCount(),305);
+assert.equal(context.api.quizFixtureCount(),308);
 for(const [event,years] of [['WORLD_CUP',[2002,2006,2010,2014,2018,2022,2026]],['EURO',[2004,2008,2012,2016,2020,2024]]]){
   for(const year of years){
     const pair=records.filter(f=>f.event===event&&f.eventYear===year);
@@ -27,11 +27,10 @@ for(const [event,years] of [['WORLD_CUP',[2002,2006,2010,2014,2018,2022,2026]],[
 }
 for(const difficulty of ['easy','moderate','hard']){
   context.state={mode:'nation',difficulty};const pool=[...context.api.available()];
-  assert.equal(pool.length,{easy:54,moderate:73,hard:109}[difficulty]);
+  assert.equal(pool.length,{easy:69,moderate:73,hard:109}[difficulty]);
   assert.equal(new Set(pool.map(f=>f.team+'|'+f.date)).size,pool.length,'one question per team/date');
   for(const f of records){
     const matches=pool.filter(x=>x.team===f.team&&x.date===f.date);
-    if(difficulty==='easy'&&f.team==='GRE'){assert.equal(matches.length,0,f.id+': Greece retained in higher difficulties');continue;}
     assert.equal(matches.length,1,f.id);
     assert.equal(matches[0].formation,f.formation);
     assert.deepEqual(JSON.parse(JSON.stringify(matches[0].players)),f.players.map(({role,name,value})=>({role,name,value})));
@@ -69,4 +68,4 @@ try{
   update();assert.equal(fs.readFileSync(index,'utf8'),source,'updater removes competition clues while preserving full sentences');
   update();assert.equal(fs.readFileSync(index,'utf8'),source,'repeated updates do not duplicate XIs');
 }finally{fs.rmSync(temp,{recursive:true,force:true});}
-console.log('PASS: all 26 national finals in Moderate/Hard once; 25 famous-country finals in Easy; historical club clues, crests and all updater checks passed.');
+console.log('PASS: all 26 national finals in Moderate/Hard once; all 26 national finals in Easy; historical club clues, crests and all updater checks passed.');

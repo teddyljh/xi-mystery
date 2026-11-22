@@ -1,6 +1,6 @@
 # 2002—2026年世界杯、欧洲杯决赛首发
 
-世界杯7届、欧洲杯6届，共13场决赛、26套首发，全部在 Medium 和 Hard 中各出现一次；Easy 保留豪门国家队的25套，希腊仅在较高难度。17套复用已有题目，9套补充首发单独保存。欧洲杯2020届的实际决赛日期为2021-07-11。
+世界杯7届、欧洲杯6届，共13场决赛、26套首发，全部在 Medium 和 Hard 中各出现一次；Easy 按当前准入范围保留26套。17套复用已有题目，9套补充首发单独保存。欧洲杯2020届的实际决赛日期为2021-07-11。
 
 新增首发按欧足联、FIFA及足协官方资料核对，历史俱乐部线索采用赛事报名/当时官方名单，未使用球员现在的俱乐部。游戏阵型用于位置排列。Medium、Hard题干保留完整的首发说明句和日期高亮，不显示世界杯、欧洲杯等赛事名称；隐藏与提示由既定题库规则处理。
 
@@ -16,7 +16,7 @@ Ronaldo（国际米兰，LS）；Rivaldo（巴塞罗那，RS）；Ronaldinho（�
 
 Oliver Neuville（勒沃库森，LS）；Miroslav Klose（凯泽斯劳滕，RS）；Marco Bode（云达不莱梅，LWB）；Bernd Schneider（勒沃库森，CM）；Dietmar Hamann（利物浦，DM）；Jens Jeremies（拜仁慕尼黑，CM）；Torsten Frings（云达不莱梅，RWB）；Christoph Metzelder（多特蒙德，CB）；Carsten Ramelow（勒沃库森，CB）；Thomas Linke（拜仁慕尼黑，CB）；Oliver Kahn（拜仁慕尼黑，GK）
 
-## 欧洲杯2004 · 2004-07-04 · 希腊 · 补充首发；仅 Medium/Hard
+## 欧洲杯2004 · 2004-07-04 · 希腊 · 补充首发；Easy/Medium/Hard
 
 阵型：4-3-3 · [比赛及首发来源](https://www.uefa.com/uefaeuro/match/79185/)
 

@@ -1,0 +1,300 @@
+{
+  "clubs": {
+    "lagalaxy": {
+      "en": "LA Galaxy",
+      "zh": "洛杉矶银河",
+      "es": "LA Galaxy",
+      "aliases": [
+        "Los Angeles Galaxy",
+        "Galaxy",
+        "洛杉矶银河队",
+        "luoshanjiyinhe",
+        "lsjyh"
+      ],
+      "crestPath": "usa/Los_Angeles_Galaxy.svg"
+    }
+  },
+  "nations": {
+    "PUR": {
+      "en": "Puerto Rico",
+      "zh": "波多黎各",
+      "es": "Puerto Rico",
+      "aliases": []
+    },
+    "SLV": {
+      "en": "El Salvador",
+      "zh": "萨尔瓦多",
+      "es": "El Salvador",
+      "aliases": []
+    }
+  },
+  "flags": {
+    "PUR": {
+      "path": "data/flags/PUR.png",
+      "source": "https://flagcdn.com/w160/pr.png"
+    },
+    "SLV": {
+      "path": "data/flags/SLV.png",
+      "source": "https://flagcdn.com/w160/sv.png"
+    }
+  },
+  "fixtures": [
+    {
+      "id": "mls-stars-2023-08-19-inter-miami",
+      "mode": "club",
+      "season": "2023",
+      "tier": "moderate",
+      "team": "inter-miami",
+      "date": "2023-08-19",
+      "versus": "Nashville SC",
+      "formation": "4-3-3",
+      "competition": "Leagues Cup",
+      "source": "https://www.intermiamicf.com/news/match-recap-inter-miami-cf-wins-2023-leagues-cup-title-to-clinch-historic-first-",
+      "stars": [
+        "Lionel Messi",
+        "Sergio Busquets",
+        "Jordi Alba"
+      ],
+      "players": [
+        {
+          "role": "LW",
+          "name": "Robert Taylor",
+          "value": "FIN"
+        },
+        {
+          "role": "ST",
+          "name": "Josef Martínez",
+          "value": "VEN"
+        },
+        {
+          "role": "RW",
+          "name": "Lionel Messi",
+          "value": "ARG"
+        },
+        {
+          "role": "CM",
+          "name": "Benjamin Cremaschi",
+          "value": "USA"
+        },
+        {
+          "role": "DM",
+          "name": "Sergio Busquets",
+          "value": "ESP"
+        },
+        {
+          "role": "CM",
+          "name": "Dixon Arroyo",
+          "value": "ECU"
+        },
+        {
+          "role": "LB",
+          "name": "Jordi Alba",
+          "value": "ESP"
+        },
+        {
+          "role": "CB",
+          "name": "Kamal Miller",
+          "value": "CAN"
+        },
+        {
+          "role": "CB",
+          "name": "Sergii Kryvtsov",
+          "value": "UKR"
+        },
+        {
+          "role": "RB",
+          "name": "DeAndre Yedlin",
+          "value": "USA"
+        },
+        {
+          "role": "GK",
+          "name": "Drake Callender",
+          "value": "USA"
+        }
+      ],
+      "nationalitySources": [
+        "https://www.mlssoccer.com/news/usa-roster-benjamin-cremaschi-called-up-for-september-friendlies"
+      ]
+    },
+    {
+      "id": "mls-stars-2025-11-02-lac",
+      "mode": "club",
+      "season": "2025",
+      "tier": "moderate",
+      "team": "lac",
+      "date": "2025-11-02",
+      "versus": "Austin FC",
+      "formation": "4-3-3",
+      "competition": "MLS Cup Playoffs",
+      "source": "https://www.lafc.com/news/recap-lafc-4-1-austin-fc-game-2-2025-mls-cup-playoffs-round-one-best-of-3-series",
+      "stars": [
+        "Son Heung-Min",
+        "Hugo Lloris",
+        "Denis Bouanga"
+      ],
+      "players": [
+        {
+          "role": "LW",
+          "name": "Denis Bouanga",
+          "value": "GAB",
+          "jersey": 99,
+          "mlsPlayerId": "MLS-OBJ-0000CX"
+        },
+        {
+          "role": "ST",
+          "name": "Son Heung-Min",
+          "value": "KOR",
+          "jersey": 7,
+          "mlsPlayerId": "MLS-OBJ-000C5Q"
+        },
+        {
+          "role": "RW",
+          "name": "Nathan Ordaz",
+          "value": "SLV",
+          "jersey": 27,
+          "mlsPlayerId": "MLS-OBJ-0000CV"
+        },
+        {
+          "role": "CM",
+          "name": "Mark Delgado",
+          "value": "USA",
+          "jersey": 8,
+          "mlsPlayerId": "MLS-OBJ-0000BN"
+        },
+        {
+          "role": "DM",
+          "name": "Jailson",
+          "value": "BRA",
+          "jersey": 16,
+          "mlsPlayerId": "MLS-OBJ-000C7K"
+        },
+        {
+          "role": "CM",
+          "name": "Timothy Tillman",
+          "value": "USA",
+          "jersey": 11,
+          "mlsPlayerId": "MLS-OBJ-0001KA"
+        },
+        {
+          "role": "LB",
+          "name": "Ryan Hollingshead",
+          "value": "USA",
+          "jersey": 24,
+          "mlsPlayerId": "MLS-OBJ-0000CE"
+        },
+        {
+          "role": "CB",
+          "name": "Eddie Segura",
+          "value": "COL",
+          "jersey": 4,
+          "mlsPlayerId": "MLS-OBJ-0000CA"
+        },
+        {
+          "role": "CB",
+          "name": "Ryan Porteous",
+          "value": "SCO",
+          "jersey": 5,
+          "mlsPlayerId": "MLS-OBJ-000C5V"
+        },
+        {
+          "role": "RB",
+          "name": "Sergi Palencia",
+          "value": "ESP",
+          "jersey": 14,
+          "mlsPlayerId": "MLS-OBJ-0001JL"
+        },
+        {
+          "role": "GK",
+          "name": "Hugo Lloris",
+          "value": "FRA",
+          "jersey": 1,
+          "mlsPlayerId": "MLS-OBJ-000581"
+        }
+      ],
+      "officialLineupSource": "https://stats-api.mlssoccer.com/matches/MLS-MAT-000992",
+      "officialLineupPage": "https://www.mlssoccer.com/competitions/mls-cup-playoffs/2025/matches/atxvslafc-11-02-2025/lineups",
+      "nationalitySources": [
+        "https://www.mlssoccer.com/news/every-mls-call-up-november-2025-international-window",
+        "https://www.mlssoccer.com/players/timothy-tillman/"
+      ],
+      "matchSportecId": "MLS-MAT-000992"
+    },
+    {
+      "id": "mls-stars-2012-12-01-lagalaxy",
+      "mode": "club",
+      "season": "2012",
+      "tier": "moderate",
+      "team": "lagalaxy",
+      "date": "2012-12-01",
+      "versus": "Houston Dynamo",
+      "formation": "4-4-2",
+      "competition": "MLS Cup",
+      "source": "https://www.houstondynamofc.com/news/recap-gonzalez-donovan-lift-galaxy-fourth-mls-cup",
+      "stars": [
+        "David Beckham",
+        "Landon Donovan",
+        "Robbie Keane"
+      ],
+      "players": [
+        {
+          "role": "LS",
+          "name": "Robbie Keane",
+          "value": "IRL"
+        },
+        {
+          "role": "RS",
+          "name": "Landon Donovan",
+          "value": "USA"
+        },
+        {
+          "role": "LM",
+          "name": "Mike Magee",
+          "value": "USA"
+        },
+        {
+          "role": "CM",
+          "name": "Juninho",
+          "value": "BRA"
+        },
+        {
+          "role": "CM",
+          "name": "David Beckham",
+          "value": "ENG"
+        },
+        {
+          "role": "RM",
+          "name": "Christian Wilhelmsson",
+          "value": "SWE"
+        },
+        {
+          "role": "LB",
+          "name": "Todd Dunivant",
+          "value": "USA"
+        },
+        {
+          "role": "CB",
+          "name": "Omar Gonzalez",
+          "value": "USA"
+        },
+        {
+          "role": "CB",
+          "name": "Tommy Meyer",
+          "value": "USA"
+        },
+        {
+          "role": "RB",
+          "name": "Sean Franklin",
+          "value": "USA"
+        },
+        {
+          "role": "GK",
+          "name": "Josh Saunders",
+          "value": "PUR"
+        }
+      ],
+      "nationalitySources": [
+        "https://www.mlssoccer.com/news/new-york-city-fc-add-mls-experience-signing-veteran-goalkeeper-josh-saunders"
+      ]
+    }
+  ]
+}
