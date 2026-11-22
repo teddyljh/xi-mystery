@@ -136,7 +136,8 @@ for (const f of threeClues) {
     if (api.usesLeagueHardMask(f)) {
       const nation = api.hardLeagueNation(f);
       assert.ok(mask.slice(0, 2).every(i => f.players[i].value === nation), f.id + ': two OTHER domestic clues');
-      const forwards = f.players.filter(p => ['ST','LS','RS','LW','RW'].includes(p.role));
+      // Curated attackers can be listed as AM/LM/RM (e.g. Deco in 2004).
+      const forwards = f.players.filter(p => ['ST','LS','RS','LW','RW'].includes(p.role)||p.name===preferred);
       if (forwards.some(p => p.value === nation)) {
         assert.equal(f.players[mask[2]].value, nation, f.id + ': domestic forward first');
       } else {
@@ -327,7 +328,7 @@ for (const id of ['club-2026/27-24', 'club-2026/27-34', 'club-2025/26-89', 'club
 assert.equal(api.hardLeagueNation(data.fixtures.find(f => f.team === 'arsenal')), undefined);
 for (const f of data.fixtures.filter(f => f.mode === 'nation'))assert.equal(api.usesLeagueHardMask(f), false, f.id);
 
-// Moderate and Hard membership stay unchanged; Easy is the deduplicated union.
+// Easy/Moderate share the final catalog; Hard retains its base membership.
 for (const mode of ['club', 'nation']) {
   for (const difficulty of ['easy', 'moderate', 'hard']) {
     context.state = {mode, difficulty};
@@ -336,7 +337,11 @@ for (const mode of ['club', 'nation']) {
     for(const tier of ['easy','moderate'])for(const f of data.fixtures){
       if(f.mode===mode&&f.tier===tier&&!union.has(key(f)))union.set(key(f),f);
     }
-    const expected = difficulty==='easy'?[...union.values()]:data.fixtures.filter(f => f.mode === mode &&
+    const finals=(data.uclFinals||[]).map(entry=>typeof entry==='string'?data.fixtures.find(f=>f.id===entry):entry).filter(f=>f.mode===mode);
+    for(const f of finals)if(!union.has(key(f)))union.set(key(f),f);
+    const moderate=new Map();
+    for(const f of [...data.fixtures.filter(f=>f.mode===mode&&f.tier==='moderate'),...finals])if(!moderate.has(key(f)))moderate.set(key(f),f);
+    const expected = difficulty==='easy'?[...union.values()]:difficulty==='moderate'?[...moderate.values()]:data.fixtures.filter(f => f.mode === mode &&
       (f.tier === difficulty || (difficulty === 'hard' && api.isImportedHardFixture(f))));
     assert.deepEqual([...api.available()].map(f => f.id), expected.map(f => f.id));
   }

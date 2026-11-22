@@ -5,6 +5,16 @@ This repository contains the public XI Mystery football lineup quiz, v3.9.
 
 Public URL: https://teddyljh.github.io/xi-mystery/
 
+## Champions League final catalog 2026-11-21
+
+Every men's Champions League final from 2002 through 2026 now has both starting XIs available in Easy and Moderate: 25 matches and 50 distinct team/date questions. Twenty-eight XIs reuse existing archive entries; 22 are new. Each difficulty gains 29 questions, including seven finals previously available only in Hard. Easy now has 109 club and 80 national-team questions; Moderate has 88 club and 55 national-team questions. The three difficulty pools deduplicate XIs within Easy/Moderate while retaining the existing Hard membership.
+
+The reviewed source is `data/ucl_finals.json`: official UEFA match IDs, starting player IDs, jersey numbers, nationalities and source URLs accompany all 50 XIs. Run `python3 scripts/sync_ucl_finals.py`, then the Hard/Easy updaters, to synchronize the offline HTML. New finals are stored separately from the base archive so they do not enter Hard or inflate its player-frequency heuristic. Existing finals are referenced by ID. See the [complete 2002–2026 list, with every starting XI](docs/ucl-finals-2002-2026.md).
+
+The official starting lists also correct three existing XIs: Porto 2004 starts Deco rather than substitute Benni McCarthy; Monaco 2004 starts Édouard Cissé and Julien Rodriguez rather than Dado Pršo and Sébastien Squillaci; Atlético 2016 starts Saúl Ñíguez rather than substitute Yannick Carrasco. Porto's designated Hard attacking clue is now Deco. Other Hard masking policies are retained.
+
+Moderate and Hard question subtitles show only the match date in all three languages, with competition names omitted. Easy retains its original date/competition prompt. Match sources remain available after the answer reveal. Run `node scripts/test_ucl_finals.cjs` alongside the Easy/Hard checks to verify final coverage, reuse, corrections and updater idempotence.
+
 `index.html` is a self-contained static HTML version of the game. Some club crests and archived reaction photos are requested from online sources, so visitors need Internet access for those. The 64 locally supplied reaction images and user-supplied homepage pictures are embedded.
 
 This is an independent fan project. Verify image rights before publishing.

@@ -1,0 +1,4652 @@
+[
+  {
+    "id": "classic-ucl-final-2002-leverkusen",
+    "mode": "club",
+    "season": "2001/02",
+    "tier": "moderate",
+    "team": "leverkusen",
+    "date": "2002-05-15",
+    "versus": "Real Madrid",
+    "formation": "4-4-1-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/69489/",
+    "uefaMatchId": "69489",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/69489/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Oliver Neuville",
+        "value": "GER",
+        "number": 27,
+        "uefaPlayerId": "22647"
+      },
+      {
+        "role": "AM",
+        "name": "Yıldıray Baştürk",
+        "value": "TUR",
+        "number": 10,
+        "uefaPlayerId": "26637"
+      },
+      {
+        "role": "LM",
+        "name": "Thomas Brdaric",
+        "value": "GER",
+        "number": 23,
+        "uefaPlayerId": "38751"
+      },
+      {
+        "role": "CM",
+        "name": "Michael Ballack",
+        "value": "GER",
+        "number": 13,
+        "uefaPlayerId": "34908"
+      },
+      {
+        "role": "DM",
+        "name": "Carsten Ramelow",
+        "value": "GER",
+        "number": 28,
+        "uefaPlayerId": "13917"
+      },
+      {
+        "role": "RM",
+        "name": "Bernd Schneider",
+        "value": "GER",
+        "number": 25,
+        "uefaPlayerId": "10596"
+      },
+      {
+        "role": "LB",
+        "name": "Diego Placente",
+        "value": "ARG",
+        "number": 35,
+        "uefaPlayerId": "60839"
+      },
+      {
+        "role": "CB",
+        "name": "Lúcio",
+        "value": "BRA",
+        "number": 19,
+        "uefaPlayerId": "60837"
+      },
+      {
+        "role": "CB",
+        "name": "Boris Živković",
+        "value": "CRO",
+        "number": 6,
+        "uefaPlayerId": "30948"
+      },
+      {
+        "role": "RB",
+        "name": "Zoltán Sebescen",
+        "value": "GER",
+        "number": 26,
+        "uefaPlayerId": "51679"
+      },
+      {
+        "role": "GK",
+        "name": "Jörg Butt",
+        "value": "GER",
+        "number": 1,
+        "uefaPlayerId": "38786"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2002-realmadrid",
+    "mode": "club",
+    "season": "2001/02",
+    "tier": "moderate",
+    "team": "realmadrid",
+    "date": "2002-05-15",
+    "versus": "Bayer Leverkusen",
+    "formation": "4-1-3-2",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/69489/",
+    "uefaMatchId": "69489",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/69489/lineups?language=EN",
+    "players": [
+      {
+        "role": "LS",
+        "name": "Raúl González",
+        "value": "ESP",
+        "number": 7,
+        "uefaPlayerId": "26583"
+      },
+      {
+        "role": "RS",
+        "name": "Fernando Morientes",
+        "value": "ESP",
+        "number": 9,
+        "uefaPlayerId": "150082979"
+      },
+      {
+        "role": "LM",
+        "name": "Santiago Solari",
+        "value": "ARG",
+        "number": 21,
+        "uefaPlayerId": "48378"
+      },
+      {
+        "role": "AM",
+        "name": "Zinédine Zidane",
+        "value": "FRA",
+        "number": 5,
+        "uefaPlayerId": "3996"
+      },
+      {
+        "role": "RM",
+        "name": "Luís Figo",
+        "value": "POR",
+        "number": 10,
+        "uefaPlayerId": "4065"
+      },
+      {
+        "role": "DM",
+        "name": "Claude Makelele",
+        "value": "FRA",
+        "number": 24,
+        "uefaPlayerId": "22485"
+      },
+      {
+        "role": "LB",
+        "name": "Roberto Carlos",
+        "value": "BRA",
+        "number": 3,
+        "uefaPlayerId": "17387"
+      },
+      {
+        "role": "CB",
+        "name": "Iván Helguera",
+        "value": "ESP",
+        "number": 6,
+        "uefaPlayerId": "48847"
+      },
+      {
+        "role": "CB",
+        "name": "Fernando Hierro",
+        "value": "ESP",
+        "number": 4,
+        "uefaPlayerId": "5678"
+      },
+      {
+        "role": "RB",
+        "name": "Míchel Salgado",
+        "value": "ESP",
+        "number": 2,
+        "uefaPlayerId": "24736"
+      },
+      {
+        "role": "GK",
+        "name": "César Sánchez",
+        "value": "ESP",
+        "number": 13,
+        "uefaPlayerId": "40829"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2003-juventus",
+    "mode": "club",
+    "season": "2002/03",
+    "tier": "moderate",
+    "team": "juventus",
+    "date": "2003-05-28",
+    "versus": "AC Milan",
+    "formation": "4-4-2",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/71176/",
+    "uefaMatchId": "71176",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/71176/lineups?language=EN",
+    "players": [
+      {
+        "role": "LS",
+        "name": "Alessandro Del Piero",
+        "value": "ITA",
+        "number": 10,
+        "uefaPlayerId": "13768"
+      },
+      {
+        "role": "RS",
+        "name": "David Trezeguet",
+        "value": "FRA",
+        "number": 17,
+        "uefaPlayerId": "32874"
+      },
+      {
+        "role": "LM",
+        "name": "Gianluca Zambrotta",
+        "value": "ITA",
+        "number": 19,
+        "uefaPlayerId": "46178"
+      },
+      {
+        "role": "CM",
+        "name": "Edgar Davids",
+        "value": "NED",
+        "number": 26,
+        "uefaPlayerId": "6216"
+      },
+      {
+        "role": "CM",
+        "name": "Alessio Tacchinardi",
+        "value": "ITA",
+        "number": 3,
+        "uefaPlayerId": "20524"
+      },
+      {
+        "role": "RM",
+        "name": "Mauro Camoranesi",
+        "value": "ITA",
+        "number": 16,
+        "uefaPlayerId": "66728"
+      },
+      {
+        "role": "LB",
+        "name": "Paolo Montero",
+        "value": "URU",
+        "number": 4,
+        "uefaPlayerId": "17296"
+      },
+      {
+        "role": "CB",
+        "name": "Igor Tudor",
+        "value": "CRO",
+        "number": 5,
+        "uefaPlayerId": "23742"
+      },
+      {
+        "role": "CB",
+        "name": "Ciro Ferrara",
+        "value": "ITA",
+        "number": 2,
+        "uefaPlayerId": "847"
+      },
+      {
+        "role": "RB",
+        "name": "Lilian Thuram",
+        "value": "FRA",
+        "number": 21,
+        "uefaPlayerId": "5439"
+      },
+      {
+        "role": "GK",
+        "name": "Gianluigi Buffon",
+        "value": "ITA",
+        "number": 1,
+        "uefaPlayerId": "21307"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2003-milan",
+    "mode": "club",
+    "season": "2002/03",
+    "tier": "moderate",
+    "team": "milan",
+    "date": "2003-05-28",
+    "versus": "Juventus",
+    "formation": "4-3-1-2",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/71176/",
+    "uefaMatchId": "71176",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/71176/lineups?language=EN",
+    "players": [
+      {
+        "role": "LS",
+        "name": "Filippo Inzaghi",
+        "value": "ITA",
+        "number": 9,
+        "uefaPlayerId": "24353"
+      },
+      {
+        "role": "RS",
+        "name": "Andriy Shevchenko",
+        "value": "UKR",
+        "number": 7,
+        "uefaPlayerId": "24271"
+      },
+      {
+        "role": "AM",
+        "name": "Rui Costa",
+        "value": "POR",
+        "number": 10,
+        "uefaPlayerId": "11043"
+      },
+      {
+        "role": "CM",
+        "name": "Clarence Seedorf",
+        "value": "NED",
+        "number": 20,
+        "uefaPlayerId": "150723445"
+      },
+      {
+        "role": "DM",
+        "name": "Andrea Pirlo",
+        "value": "ITA",
+        "number": 21,
+        "uefaPlayerId": "26917"
+      },
+      {
+        "role": "CM",
+        "name": "Gennaro Gattuso",
+        "value": "ITA",
+        "number": 8,
+        "uefaPlayerId": "30014"
+      },
+      {
+        "role": "LB",
+        "name": "Kakha Kaladze",
+        "value": "GEO",
+        "number": 4,
+        "uefaPlayerId": "23793"
+      },
+      {
+        "role": "CB",
+        "name": "Paolo Maldini",
+        "value": "ITA",
+        "number": 3,
+        "uefaPlayerId": "428"
+      },
+      {
+        "role": "CB",
+        "name": "Alessandro Nesta",
+        "value": "ITA",
+        "number": 13,
+        "uefaPlayerId": "22763"
+      },
+      {
+        "role": "RB",
+        "name": "Alessandro Costacurta",
+        "value": "ITA",
+        "number": 19,
+        "uefaPlayerId": "420"
+      },
+      {
+        "role": "GK",
+        "name": "Dida",
+        "value": "BRA",
+        "number": 12,
+        "uefaPlayerId": "55394"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-monaco-2004-05-26-25",
+    "mode": "club",
+    "season": "2003/04",
+    "tier": "hard",
+    "team": "monaco",
+    "date": "2004-05-26",
+    "versus": "FC Porto",
+    "formation": "4-3-3",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/75433/",
+    "uefaMatchId": "75433",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/75433/lineups?language=EN",
+    "players": [
+      {
+        "role": "LW",
+        "name": "Jérôme Rothen",
+        "value": "FRA",
+        "number": 25,
+        "uefaPlayerId": "60277"
+      },
+      {
+        "role": "ST",
+        "name": "Fernando Morientes",
+        "value": "ESP",
+        "number": 10,
+        "uefaPlayerId": "150082979"
+      },
+      {
+        "role": "RW",
+        "name": "Ludovic Giuly",
+        "value": "FRA",
+        "number": 8,
+        "uefaPlayerId": "29356"
+      },
+      {
+        "role": "CM",
+        "name": "Lucas Bernardi",
+        "value": "ARG",
+        "number": 7,
+        "uefaPlayerId": "72539"
+      },
+      {
+        "role": "DM",
+        "name": "Akis Zikos",
+        "value": "GRE",
+        "number": 15,
+        "uefaPlayerId": "26624"
+      },
+      {
+        "role": "CM",
+        "name": "Édouard Cissé",
+        "value": "FRA",
+        "number": 14,
+        "uefaPlayerId": "40160"
+      },
+      {
+        "role": "LB",
+        "name": "Patrice Evra",
+        "value": "FRA",
+        "number": 3,
+        "uefaPlayerId": "68468"
+      },
+      {
+        "role": "CB",
+        "name": "Gaël Givet",
+        "value": "FRA",
+        "number": 32,
+        "uefaPlayerId": "42636"
+      },
+      {
+        "role": "CB",
+        "name": "Julien Rodriguez",
+        "value": "FRA",
+        "number": 27,
+        "uefaPlayerId": "51533"
+      },
+      {
+        "role": "RB",
+        "name": "Hugo Ibarra",
+        "value": "ARG",
+        "number": 4,
+        "uefaPlayerId": "58634"
+      },
+      {
+        "role": "GK",
+        "name": "Flavio Roma",
+        "value": "ITA",
+        "number": 30,
+        "uefaPlayerId": "72545"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-porto-2004-05-26-24",
+    "mode": "club",
+    "season": "2003/04",
+    "tier": "hard",
+    "team": "porto",
+    "date": "2004-05-26",
+    "versus": "Monaco",
+    "formation": "4-3-1-2",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/75433/",
+    "uefaMatchId": "75433",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/75433/lineups?language=EN",
+    "players": [
+      {
+        "role": "LS",
+        "name": "Derlei",
+        "value": "BRA",
+        "number": 11,
+        "uefaPlayerId": "66737"
+      },
+      {
+        "role": "RS",
+        "name": "Carlos Alberto",
+        "value": "BRA",
+        "number": 19,
+        "uefaPlayerId": "91278"
+      },
+      {
+        "role": "AM",
+        "name": "Deco",
+        "value": "POR",
+        "number": 10,
+        "uefaPlayerId": "51643"
+      },
+      {
+        "role": "CM",
+        "name": "Maniche",
+        "value": "POR",
+        "number": 18,
+        "uefaPlayerId": "29561"
+      },
+      {
+        "role": "DM",
+        "name": "Costinha",
+        "value": "POR",
+        "number": 6,
+        "uefaPlayerId": "40746"
+      },
+      {
+        "role": "CM",
+        "name": "Pedro Mendes",
+        "value": "POR",
+        "number": 23,
+        "uefaPlayerId": "34949"
+      },
+      {
+        "role": "LB",
+        "name": "Nuno Valente",
+        "value": "POR",
+        "number": 8,
+        "uefaPlayerId": "21802"
+      },
+      {
+        "role": "CB",
+        "name": "Ricardo Carvalho",
+        "value": "POR",
+        "number": 4,
+        "uefaPlayerId": "31429"
+      },
+      {
+        "role": "CB",
+        "name": "Jorge Costa",
+        "value": "POR",
+        "number": 2,
+        "uefaPlayerId": "7728"
+      },
+      {
+        "role": "RB",
+        "name": "Paulo Ferreira",
+        "value": "POR",
+        "number": 22,
+        "uefaPlayerId": "55954"
+      },
+      {
+        "role": "GK",
+        "name": "Vítor Baía",
+        "value": "POR",
+        "number": 99,
+        "uefaPlayerId": "4390"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-milan-2005-05-25-1",
+    "mode": "club",
+    "season": "2004/05",
+    "tier": "easy",
+    "team": "milan",
+    "date": "2005-05-25",
+    "versus": "Liverpool",
+    "formation": "4-3-1-2",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/80813/",
+    "uefaMatchId": "80813",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/80813/lineups?language=EN",
+    "players": [
+      {
+        "role": "LS",
+        "name": "Andriy Shevchenko",
+        "value": "UKR",
+        "number": 7,
+        "uefaPlayerId": "24271"
+      },
+      {
+        "role": "RS",
+        "name": "Hernan Crespo",
+        "value": "ARG",
+        "number": 11,
+        "uefaPlayerId": "33820"
+      },
+      {
+        "role": "AM",
+        "name": "Kaka",
+        "value": "BRA",
+        "number": 22,
+        "uefaPlayerId": "64775"
+      },
+      {
+        "role": "CM",
+        "name": "Clarence Seedorf",
+        "value": "NED",
+        "number": 20,
+        "uefaPlayerId": "150723445"
+      },
+      {
+        "role": "DM",
+        "name": "Andrea Pirlo",
+        "value": "ITA",
+        "number": 21,
+        "uefaPlayerId": "26917"
+      },
+      {
+        "role": "CM",
+        "name": "Gennaro Gattuso",
+        "value": "ITA",
+        "number": 8,
+        "uefaPlayerId": "30014"
+      },
+      {
+        "role": "LB",
+        "name": "Paolo Maldini",
+        "value": "ITA",
+        "number": 3,
+        "uefaPlayerId": "428"
+      },
+      {
+        "role": "CB",
+        "name": "Alessandro Nesta",
+        "value": "ITA",
+        "number": 13,
+        "uefaPlayerId": "22763"
+      },
+      {
+        "role": "CB",
+        "name": "Jaap Stam",
+        "value": "NED",
+        "number": 31,
+        "uefaPlayerId": "250064152"
+      },
+      {
+        "role": "RB",
+        "name": "Cafu",
+        "value": "BRA",
+        "number": 2,
+        "uefaPlayerId": "27319"
+      },
+      {
+        "role": "GK",
+        "name": "Dida",
+        "value": "BRA",
+        "number": 1,
+        "uefaPlayerId": "55394"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-liverpool-2005-05-25-2",
+    "mode": "club",
+    "season": "2004/05",
+    "tier": "easy",
+    "team": "liverpool",
+    "date": "2005-05-25",
+    "versus": "AC Milan",
+    "formation": "4-4-1-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/80813/",
+    "uefaMatchId": "80813",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/80813/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Milan Baros",
+        "value": "CZE",
+        "number": 5,
+        "uefaPlayerId": "43545"
+      },
+      {
+        "role": "AM",
+        "name": "Harry Kewell",
+        "value": "AUS",
+        "number": 7,
+        "uefaPlayerId": "46333"
+      },
+      {
+        "role": "LM",
+        "name": "John Arne Riise",
+        "value": "NOR",
+        "number": 6,
+        "uefaPlayerId": "34234"
+      },
+      {
+        "role": "CM",
+        "name": "Steven Gerrard",
+        "value": "ENG",
+        "number": 8,
+        "uefaPlayerId": "31484"
+      },
+      {
+        "role": "CM",
+        "name": "Xabi Alonso",
+        "value": "ESP",
+        "number": 14,
+        "uefaPlayerId": "54091"
+      },
+      {
+        "role": "RM",
+        "name": "Luis Garcia",
+        "value": "ESP",
+        "number": 10,
+        "uefaPlayerId": "72722"
+      },
+      {
+        "role": "LB",
+        "name": "Djimi Traore",
+        "value": "MLI",
+        "number": 21,
+        "uefaPlayerId": "46886"
+      },
+      {
+        "role": "CB",
+        "name": "Sami Hyypia",
+        "value": "FIN",
+        "number": 4,
+        "uefaPlayerId": "13926"
+      },
+      {
+        "role": "CB",
+        "name": "Jamie Carragher",
+        "value": "ENG",
+        "number": 23,
+        "uefaPlayerId": "24144"
+      },
+      {
+        "role": "RB",
+        "name": "Steve Finnan",
+        "value": "IRL",
+        "number": 3,
+        "uefaPlayerId": "34371"
+      },
+      {
+        "role": "GK",
+        "name": "Jerzy Dudek",
+        "value": "POL",
+        "number": 1,
+        "uefaPlayerId": "33860"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2006-barcelona",
+    "mode": "club",
+    "season": "2005/06",
+    "tier": "moderate",
+    "team": "barcelona",
+    "date": "2006-05-17",
+    "versus": "Arsenal",
+    "formation": "4-3-3",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/84101/",
+    "uefaMatchId": "84101",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/84101/lineups?language=EN",
+    "players": [
+      {
+        "role": "LW",
+        "name": "Ronaldinho",
+        "value": "BRA",
+        "number": 10,
+        "uefaPlayerId": "61659"
+      },
+      {
+        "role": "ST",
+        "name": "Samuel Eto'o",
+        "value": "CMR",
+        "number": 9,
+        "uefaPlayerId": "45996"
+      },
+      {
+        "role": "RW",
+        "name": "Ludovic Giuly",
+        "value": "FRA",
+        "number": 8,
+        "uefaPlayerId": "29356"
+      },
+      {
+        "role": "CM",
+        "name": "Deco",
+        "value": "POR",
+        "number": 20,
+        "uefaPlayerId": "51643"
+      },
+      {
+        "role": "DM",
+        "name": "Edmílson",
+        "value": "BRA",
+        "number": 15,
+        "uefaPlayerId": "56478"
+      },
+      {
+        "role": "CM",
+        "name": "Mark van Bommel",
+        "value": "NED",
+        "number": 17,
+        "uefaPlayerId": "24714"
+      },
+      {
+        "role": "LB",
+        "name": "Giovanni van Bronckhorst",
+        "value": "NED",
+        "number": 12,
+        "uefaPlayerId": "13131"
+      },
+      {
+        "role": "CB",
+        "name": "Carles Puyol",
+        "value": "ESP",
+        "number": 5,
+        "uefaPlayerId": "42872"
+      },
+      {
+        "role": "CB",
+        "name": "Rafael Márquez",
+        "value": "MEX",
+        "number": 4,
+        "uefaPlayerId": "51534"
+      },
+      {
+        "role": "RB",
+        "name": "Oleguer",
+        "value": "ESP",
+        "number": 23,
+        "uefaPlayerId": "61530"
+      },
+      {
+        "role": "GK",
+        "name": "Víctor Valdés",
+        "value": "ESP",
+        "number": 1,
+        "uefaPlayerId": "56455"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2006-arsenal",
+    "mode": "club",
+    "season": "2005/06",
+    "tier": "moderate",
+    "team": "arsenal",
+    "date": "2006-05-17",
+    "versus": "Barcelona",
+    "formation": "4-4-1-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/84101/",
+    "uefaMatchId": "84101",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/84101/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Thierry Henry",
+        "value": "FRA",
+        "number": 14,
+        "uefaPlayerId": "24057"
+      },
+      {
+        "role": "AM",
+        "name": "Fredrik Ljungberg",
+        "value": "SWE",
+        "number": 8,
+        "uefaPlayerId": "19918"
+      },
+      {
+        "role": "LM",
+        "name": "Aleksandr Hleb",
+        "value": "BLR",
+        "number": 13,
+        "uefaPlayerId": "41331"
+      },
+      {
+        "role": "CM",
+        "name": "Cesc Fàbregas",
+        "value": "ESP",
+        "number": 15,
+        "uefaPlayerId": "70072"
+      },
+      {
+        "role": "DM",
+        "name": "Gilberto Silva",
+        "value": "BRA",
+        "number": 19,
+        "uefaPlayerId": "64769"
+      },
+      {
+        "role": "RM",
+        "name": "Robert Pirès",
+        "value": "FRA",
+        "number": 7,
+        "uefaPlayerId": "27875"
+      },
+      {
+        "role": "LB",
+        "name": "Ashley Cole",
+        "value": "ENG",
+        "number": 3,
+        "uefaPlayerId": "51553"
+      },
+      {
+        "role": "CB",
+        "name": "Sol Campbell",
+        "value": "ENG",
+        "number": 23,
+        "uefaPlayerId": "14690"
+      },
+      {
+        "role": "CB",
+        "name": "Kolo Touré",
+        "value": "CIV",
+        "number": 28,
+        "uefaPlayerId": "66613"
+      },
+      {
+        "role": "RB",
+        "name": "Emmanuel Eboué",
+        "value": "CIV",
+        "number": 27,
+        "uefaPlayerId": "95238"
+      },
+      {
+        "role": "GK",
+        "name": "Jens Lehmann",
+        "value": "GER",
+        "number": 1,
+        "uefaPlayerId": "4291"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-milan-2007-05-23-19",
+    "mode": "club",
+    "season": "2006/07",
+    "tier": "moderate",
+    "team": "milan",
+    "date": "2007-05-23",
+    "versus": "Liverpool",
+    "formation": "4-3-2-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/300099/",
+    "uefaMatchId": "300099",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/300099/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Filippo Inzaghi",
+        "value": "ITA",
+        "number": 9,
+        "uefaPlayerId": "24353"
+      },
+      {
+        "role": "AM",
+        "name": "Kaka",
+        "value": "BRA",
+        "number": 22,
+        "uefaPlayerId": "64775"
+      },
+      {
+        "role": "AM",
+        "name": "Clarence Seedorf",
+        "value": "NED",
+        "number": 10,
+        "uefaPlayerId": "150723445"
+      },
+      {
+        "role": "CM",
+        "name": "Massimo Ambrosini",
+        "value": "ITA",
+        "number": 23,
+        "uefaPlayerId": "27139"
+      },
+      {
+        "role": "DM",
+        "name": "Andrea Pirlo",
+        "value": "ITA",
+        "number": 21,
+        "uefaPlayerId": "26917"
+      },
+      {
+        "role": "CM",
+        "name": "Gennaro Gattuso",
+        "value": "ITA",
+        "number": 8,
+        "uefaPlayerId": "30014"
+      },
+      {
+        "role": "LB",
+        "name": "Marek Jankulovski",
+        "value": "CZE",
+        "number": 18,
+        "uefaPlayerId": "21678"
+      },
+      {
+        "role": "CB",
+        "name": "Paolo Maldini",
+        "value": "ITA",
+        "number": 3,
+        "uefaPlayerId": "428"
+      },
+      {
+        "role": "CB",
+        "name": "Alessandro Nesta",
+        "value": "ITA",
+        "number": 13,
+        "uefaPlayerId": "22763"
+      },
+      {
+        "role": "RB",
+        "name": "Massimo Oddo",
+        "value": "ITA",
+        "number": 44,
+        "uefaPlayerId": "66327"
+      },
+      {
+        "role": "GK",
+        "name": "Dida",
+        "value": "BRA",
+        "number": 1,
+        "uefaPlayerId": "55394"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-liverpool-2007-05-23-23",
+    "mode": "club",
+    "season": "2006/07",
+    "tier": "hard",
+    "team": "liverpool",
+    "date": "2007-05-23",
+    "versus": "AC Milan",
+    "formation": "4-4-1-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/300099/",
+    "uefaMatchId": "300099",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/300099/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Dirk Kuyt",
+        "value": "NED",
+        "number": 18,
+        "uefaPlayerId": "47551"
+      },
+      {
+        "role": "AM",
+        "name": "Steven Gerrard",
+        "value": "ENG",
+        "number": 8,
+        "uefaPlayerId": "31484"
+      },
+      {
+        "role": "LM",
+        "name": "Bolo Zenden",
+        "value": "NED",
+        "number": 32,
+        "uefaPlayerId": "20556"
+      },
+      {
+        "role": "CM",
+        "name": "Javier Mascherano",
+        "value": "ARG",
+        "number": 20,
+        "uefaPlayerId": "104264"
+      },
+      {
+        "role": "CM",
+        "name": "Xabi Alonso",
+        "value": "ESP",
+        "number": 14,
+        "uefaPlayerId": "54091"
+      },
+      {
+        "role": "RM",
+        "name": "Jermaine Pennant",
+        "value": "ENG",
+        "number": 16,
+        "uefaPlayerId": "51552"
+      },
+      {
+        "role": "LB",
+        "name": "John Arne Riise",
+        "value": "NOR",
+        "number": 6,
+        "uefaPlayerId": "34234"
+      },
+      {
+        "role": "CB",
+        "name": "Daniel Agger",
+        "value": "DEN",
+        "number": 5,
+        "uefaPlayerId": "71865"
+      },
+      {
+        "role": "CB",
+        "name": "Jamie Carragher",
+        "value": "ENG",
+        "number": 23,
+        "uefaPlayerId": "24144"
+      },
+      {
+        "role": "RB",
+        "name": "Steve Finnan",
+        "value": "IRL",
+        "number": 3,
+        "uefaPlayerId": "34371"
+      },
+      {
+        "role": "GK",
+        "name": "Pepe Reina",
+        "value": "ESP",
+        "number": 25,
+        "uefaPlayerId": "48716"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-manunited-2008-05-21-3",
+    "mode": "club",
+    "season": "2007/08",
+    "tier": "easy",
+    "team": "manunited",
+    "date": "2008-05-21",
+    "versus": "Chelsea",
+    "formation": "4-4-2",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/301604/",
+    "uefaMatchId": "301604",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/301604/lineups?language=EN",
+    "players": [
+      {
+        "role": "LS",
+        "name": "Wayne Rooney",
+        "value": "ENG",
+        "number": 10,
+        "uefaPlayerId": "63891"
+      },
+      {
+        "role": "RS",
+        "name": "Carlos Tevez",
+        "value": "ARG",
+        "number": 32,
+        "uefaPlayerId": "74939"
+      },
+      {
+        "role": "LM",
+        "name": "Cristiano Ronaldo",
+        "value": "POR",
+        "number": 7,
+        "uefaPlayerId": "63706"
+      },
+      {
+        "role": "CM",
+        "name": "Paul Scholes",
+        "value": "ENG",
+        "number": 18,
+        "uefaPlayerId": "14681"
+      },
+      {
+        "role": "CM",
+        "name": "Michael Carrick",
+        "value": "ENG",
+        "number": 16,
+        "uefaPlayerId": "50909"
+      },
+      {
+        "role": "RM",
+        "name": "Owen Hargreaves",
+        "value": "ENG",
+        "number": 4,
+        "uefaPlayerId": "55966"
+      },
+      {
+        "role": "LB",
+        "name": "Patrice Evra",
+        "value": "FRA",
+        "number": 3,
+        "uefaPlayerId": "68468"
+      },
+      {
+        "role": "CB",
+        "name": "Nemanja Vidic",
+        "value": "SRB",
+        "number": 15,
+        "uefaPlayerId": "41382"
+      },
+      {
+        "role": "CB",
+        "name": "Rio Ferdinand",
+        "value": "ENG",
+        "number": 5,
+        "uefaPlayerId": "31384"
+      },
+      {
+        "role": "RB",
+        "name": "Wes Brown",
+        "value": "ENG",
+        "number": 6,
+        "uefaPlayerId": "30548"
+      },
+      {
+        "role": "GK",
+        "name": "Edwin van der Sar",
+        "value": "NED",
+        "number": 1,
+        "uefaPlayerId": "14622"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-chelsea-2008-05-21-4",
+    "mode": "club",
+    "season": "2007/08",
+    "tier": "easy",
+    "team": "chelsea",
+    "date": "2008-05-21",
+    "versus": "Manchester United",
+    "formation": "4-1-4-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/301604/",
+    "uefaMatchId": "301604",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/301604/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Didier Drogba",
+        "value": "CIV",
+        "number": 11,
+        "uefaPlayerId": "70482"
+      },
+      {
+        "role": "LW",
+        "name": "Florent Malouda",
+        "value": "FRA",
+        "number": 15,
+        "uefaPlayerId": "46895"
+      },
+      {
+        "role": "CM",
+        "name": "Michael Ballack",
+        "value": "GER",
+        "number": 13,
+        "uefaPlayerId": "34908"
+      },
+      {
+        "role": "CM",
+        "name": "Frank Lampard",
+        "value": "ENG",
+        "number": 8,
+        "uefaPlayerId": "31609"
+      },
+      {
+        "role": "RW",
+        "name": "Joe Cole",
+        "value": "ENG",
+        "number": 10,
+        "uefaPlayerId": "43567"
+      },
+      {
+        "role": "DM",
+        "name": "Claude Makelele",
+        "value": "FRA",
+        "number": 4,
+        "uefaPlayerId": "22485"
+      },
+      {
+        "role": "LB",
+        "name": "Ashley Cole",
+        "value": "ENG",
+        "number": 3,
+        "uefaPlayerId": "51553"
+      },
+      {
+        "role": "CB",
+        "name": "Ricardo Carvalho",
+        "value": "POR",
+        "number": 6,
+        "uefaPlayerId": "31429"
+      },
+      {
+        "role": "CB",
+        "name": "John Terry",
+        "value": "ENG",
+        "number": 26,
+        "uefaPlayerId": "45902"
+      },
+      {
+        "role": "RB",
+        "name": "Michael Essien",
+        "value": "GHA",
+        "number": 5,
+        "uefaPlayerId": "48311"
+      },
+      {
+        "role": "GK",
+        "name": "Petr Cech",
+        "value": "CZE",
+        "number": 1,
+        "uefaPlayerId": "49029"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2009-barcelona",
+    "mode": "club",
+    "season": "2008/09",
+    "tier": "moderate",
+    "team": "barcelona",
+    "date": "2009-05-27",
+    "versus": "Manchester United",
+    "formation": "4-3-3",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/302813/",
+    "uefaMatchId": "302813",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/302813/lineups?language=EN",
+    "players": [
+      {
+        "role": "LW",
+        "name": "Thierry Henry",
+        "value": "FRA",
+        "number": 14,
+        "uefaPlayerId": "24057"
+      },
+      {
+        "role": "ST",
+        "name": "Lionel Messi",
+        "value": "ARG",
+        "number": 10,
+        "uefaPlayerId": "95803"
+      },
+      {
+        "role": "RW",
+        "name": "Samuel Eto'o",
+        "value": "CMR",
+        "number": 9,
+        "uefaPlayerId": "45996"
+      },
+      {
+        "role": "CM",
+        "name": "Andrés Iniesta",
+        "value": "ESP",
+        "number": 8,
+        "uefaPlayerId": "58031"
+      },
+      {
+        "role": "DM",
+        "name": "Sergio Busquets",
+        "value": "ESP",
+        "number": 28,
+        "uefaPlayerId": "250002704"
+      },
+      {
+        "role": "CM",
+        "name": "Xavi Hernández",
+        "value": "ESP",
+        "number": 6,
+        "uefaPlayerId": "35018"
+      },
+      {
+        "role": "LB",
+        "name": "Sylvinho",
+        "value": "BRA",
+        "number": 16,
+        "uefaPlayerId": "51551"
+      },
+      {
+        "role": "CB",
+        "name": "Yaya Touré",
+        "value": "CIV",
+        "number": 24,
+        "uefaPlayerId": "95082"
+      },
+      {
+        "role": "CB",
+        "name": "Gerard Piqué",
+        "value": "ESP",
+        "number": 3,
+        "uefaPlayerId": "93148"
+      },
+      {
+        "role": "RB",
+        "name": "Carles Puyol",
+        "value": "ESP",
+        "number": 5,
+        "uefaPlayerId": "42872"
+      },
+      {
+        "role": "GK",
+        "name": "Víctor Valdés",
+        "value": "ESP",
+        "number": 1,
+        "uefaPlayerId": "56455"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2009-manunited",
+    "mode": "club",
+    "season": "2008/09",
+    "tier": "moderate",
+    "team": "manunited",
+    "date": "2009-05-27",
+    "versus": "Barcelona",
+    "formation": "4-3-3",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/302813/",
+    "uefaMatchId": "302813",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/302813/lineups?language=EN",
+    "players": [
+      {
+        "role": "LW",
+        "name": "Wayne Rooney",
+        "value": "ENG",
+        "number": 10,
+        "uefaPlayerId": "63891"
+      },
+      {
+        "role": "ST",
+        "name": "Cristiano Ronaldo",
+        "value": "POR",
+        "number": 7,
+        "uefaPlayerId": "63706"
+      },
+      {
+        "role": "RW",
+        "name": "Park Ji-Sung",
+        "value": "KOR",
+        "number": 13,
+        "uefaPlayerId": "64490"
+      },
+      {
+        "role": "CM",
+        "name": "Ryan Giggs",
+        "value": "WAL",
+        "number": 11,
+        "uefaPlayerId": "11369"
+      },
+      {
+        "role": "DM",
+        "name": "Michael Carrick",
+        "value": "ENG",
+        "number": 16,
+        "uefaPlayerId": "50909"
+      },
+      {
+        "role": "CM",
+        "name": "Anderson",
+        "value": "BRA",
+        "number": 8,
+        "uefaPlayerId": "106612"
+      },
+      {
+        "role": "LB",
+        "name": "Patrice Evra",
+        "value": "FRA",
+        "number": 3,
+        "uefaPlayerId": "68468"
+      },
+      {
+        "role": "CB",
+        "name": "Nemanja Vidić",
+        "value": "SRB",
+        "number": 15,
+        "uefaPlayerId": "41382"
+      },
+      {
+        "role": "CB",
+        "name": "Rio Ferdinand",
+        "value": "ENG",
+        "number": 5,
+        "uefaPlayerId": "31384"
+      },
+      {
+        "role": "RB",
+        "name": "John O'Shea",
+        "value": "IRL",
+        "number": 22,
+        "uefaPlayerId": "43465"
+      },
+      {
+        "role": "GK",
+        "name": "Edwin van der Sar",
+        "value": "NED",
+        "number": 1,
+        "uefaPlayerId": "14622"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-bayern-2010-05-22-8",
+    "mode": "club",
+    "season": "2009/10",
+    "tier": "easy",
+    "team": "bayern",
+    "date": "2010-05-22",
+    "versus": "Inter Milan",
+    "formation": "4-4-2",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2000488/",
+    "uefaMatchId": "2000488",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2000488/lineups?language=EN",
+    "players": [
+      {
+        "role": "LS",
+        "name": "Ivica Olic",
+        "value": "CRO",
+        "number": 11,
+        "uefaPlayerId": "31465"
+      },
+      {
+        "role": "RS",
+        "name": "Thomas Muller",
+        "value": "GER",
+        "number": 25,
+        "uefaPlayerId": "250003318"
+      },
+      {
+        "role": "LM",
+        "name": "Hamit Altintop",
+        "value": "TUR",
+        "number": 8,
+        "uefaPlayerId": "58613"
+      },
+      {
+        "role": "CM",
+        "name": "Bastian Schweinsteiger",
+        "value": "GER",
+        "number": 31,
+        "uefaPlayerId": "67496"
+      },
+      {
+        "role": "CM",
+        "name": "Mark van Bommel",
+        "value": "NED",
+        "number": 17,
+        "uefaPlayerId": "24714"
+      },
+      {
+        "role": "RM",
+        "name": "Arjen Robben",
+        "value": "NED",
+        "number": 10,
+        "uefaPlayerId": "57134"
+      },
+      {
+        "role": "LB",
+        "name": "Holger Badstuber",
+        "value": "GER",
+        "number": 28,
+        "uefaPlayerId": "250000142"
+      },
+      {
+        "role": "CB",
+        "name": "Martin Demichelis",
+        "value": "ARG",
+        "number": 6,
+        "uefaPlayerId": "72455"
+      },
+      {
+        "role": "CB",
+        "name": "Daniel van Buyten",
+        "value": "BEL",
+        "number": 5,
+        "uefaPlayerId": "49151"
+      },
+      {
+        "role": "RB",
+        "name": "Philipp Lahm",
+        "value": "GER",
+        "number": 21,
+        "uefaPlayerId": "63033"
+      },
+      {
+        "role": "GK",
+        "name": "Hans-Jorg Butt",
+        "value": "GER",
+        "number": 22,
+        "uefaPlayerId": "38786"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-inter-2010-05-22-7",
+    "mode": "club",
+    "season": "2009/10",
+    "tier": "easy",
+    "team": "inter",
+    "date": "2010-05-22",
+    "versus": "Bayern Munich",
+    "formation": "4-2-3-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2000488/",
+    "uefaMatchId": "2000488",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2000488/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Diego Milito",
+        "value": "ARG",
+        "number": 22,
+        "uefaPlayerId": "1906209"
+      },
+      {
+        "role": "LW",
+        "name": "Goran Pandev",
+        "value": "MKD",
+        "number": 27,
+        "uefaPlayerId": "52148"
+      },
+      {
+        "role": "AM",
+        "name": "Wesley Sneijder",
+        "value": "NED",
+        "number": 10,
+        "uefaPlayerId": "57132"
+      },
+      {
+        "role": "RW",
+        "name": "Samuel Eto’o",
+        "value": "CMR",
+        "number": 9,
+        "uefaPlayerId": "45996"
+      },
+      {
+        "role": "DM",
+        "name": "Javier Zanetti",
+        "value": "ARG",
+        "number": 4,
+        "uefaPlayerId": "29332"
+      },
+      {
+        "role": "DM",
+        "name": "Esteban Cambiasso",
+        "value": "ARG",
+        "number": 19,
+        "uefaPlayerId": "66176"
+      },
+      {
+        "role": "LB",
+        "name": "Cristian Chivu",
+        "value": "ROU",
+        "number": 26,
+        "uefaPlayerId": "40958"
+      },
+      {
+        "role": "CB",
+        "name": "Walter Samuel",
+        "value": "ARG",
+        "number": 25,
+        "uefaPlayerId": "56199"
+      },
+      {
+        "role": "CB",
+        "name": "Lucio",
+        "value": "BRA",
+        "number": 6,
+        "uefaPlayerId": "60837"
+      },
+      {
+        "role": "RB",
+        "name": "Maicon",
+        "value": "BRA",
+        "number": 13,
+        "uefaPlayerId": "95291"
+      },
+      {
+        "role": "GK",
+        "name": "Julio Cesar",
+        "value": "BRA",
+        "number": 12,
+        "uefaPlayerId": "91862"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-barcelona-2011-05-28-5",
+    "mode": "club",
+    "season": "2010/11",
+    "tier": "easy",
+    "team": "barcelona",
+    "date": "2011-05-28",
+    "versus": "Manchester United",
+    "formation": "4-3-3",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2003352/",
+    "uefaMatchId": "2003352",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2003352/lineups?language=EN",
+    "players": [
+      {
+        "role": "LW",
+        "name": "David Villa",
+        "value": "ESP",
+        "number": 7,
+        "uefaPlayerId": "66414"
+      },
+      {
+        "role": "ST",
+        "name": "Lionel Messi",
+        "value": "ARG",
+        "number": 10,
+        "uefaPlayerId": "95803"
+      },
+      {
+        "role": "RW",
+        "name": "Pedro Rodriguez",
+        "value": "ESP",
+        "number": 17,
+        "uefaPlayerId": "250002701"
+      },
+      {
+        "role": "CM",
+        "name": "Andres Iniesta",
+        "value": "ESP",
+        "number": 8,
+        "uefaPlayerId": "58031"
+      },
+      {
+        "role": "DM",
+        "name": "Sergio Busquets",
+        "value": "ESP",
+        "number": 16,
+        "uefaPlayerId": "250002704"
+      },
+      {
+        "role": "CM",
+        "name": "Xavi Hernandez",
+        "value": "ESP",
+        "number": 6,
+        "uefaPlayerId": "35018"
+      },
+      {
+        "role": "LB",
+        "name": "Eric Abidal",
+        "value": "FRA",
+        "number": 22,
+        "uefaPlayerId": "56293"
+      },
+      {
+        "role": "CB",
+        "name": "Javier Mascherano",
+        "value": "ARG",
+        "number": 14,
+        "uefaPlayerId": "104264"
+      },
+      {
+        "role": "CB",
+        "name": "Gerard Pique",
+        "value": "ESP",
+        "number": 3,
+        "uefaPlayerId": "93148"
+      },
+      {
+        "role": "RB",
+        "name": "Dani Alves",
+        "value": "BRA",
+        "number": 2,
+        "uefaPlayerId": "95724"
+      },
+      {
+        "role": "GK",
+        "name": "Victor Valdes",
+        "value": "ESP",
+        "number": 1,
+        "uefaPlayerId": "56455"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-manunited-2011-05-28-6",
+    "mode": "club",
+    "season": "2010/11",
+    "tier": "easy",
+    "team": "manunited",
+    "date": "2011-05-28",
+    "versus": "Barcelona",
+    "formation": "4-4-1-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2003352/",
+    "uefaMatchId": "2003352",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2003352/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Javier Hernandez",
+        "value": "MEX",
+        "number": 14,
+        "uefaPlayerId": "250017851"
+      },
+      {
+        "role": "AM",
+        "name": "Wayne Rooney",
+        "value": "ENG",
+        "number": 10,
+        "uefaPlayerId": "63891"
+      },
+      {
+        "role": "LM",
+        "name": "Park Ji-sung",
+        "value": "KOR",
+        "number": 13,
+        "uefaPlayerId": "64490"
+      },
+      {
+        "role": "CM",
+        "name": "Ryan Giggs",
+        "value": "WAL",
+        "number": 11,
+        "uefaPlayerId": "11369"
+      },
+      {
+        "role": "CM",
+        "name": "Michael Carrick",
+        "value": "ENG",
+        "number": 16,
+        "uefaPlayerId": "50909"
+      },
+      {
+        "role": "RM",
+        "name": "Antonio Valencia",
+        "value": "ECU",
+        "number": 25,
+        "uefaPlayerId": "101303"
+      },
+      {
+        "role": "LB",
+        "name": "Patrice Evra",
+        "value": "FRA",
+        "number": 3,
+        "uefaPlayerId": "68468"
+      },
+      {
+        "role": "CB",
+        "name": "Nemanja Vidic",
+        "value": "SRB",
+        "number": 15,
+        "uefaPlayerId": "41382"
+      },
+      {
+        "role": "CB",
+        "name": "Rio Ferdinand",
+        "value": "ENG",
+        "number": 5,
+        "uefaPlayerId": "31384"
+      },
+      {
+        "role": "RB",
+        "name": "Fabio da Silva",
+        "value": "BRA",
+        "number": 20,
+        "uefaPlayerId": "250002766"
+      },
+      {
+        "role": "GK",
+        "name": "Edwin van der Sar",
+        "value": "NED",
+        "number": 1,
+        "uefaPlayerId": "14622"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-bayern-2012-05-19-22",
+    "mode": "club",
+    "season": "2011/12",
+    "tier": "hard",
+    "team": "bayern",
+    "date": "2012-05-19",
+    "versus": "Chelsea",
+    "formation": "4-2-3-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2007693/",
+    "uefaMatchId": "2007693",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2007693/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Mario Gomez",
+        "value": "GER",
+        "number": 33,
+        "uefaPlayerId": "62588"
+      },
+      {
+        "role": "LW",
+        "name": "Franck Ribery",
+        "value": "FRA",
+        "number": 7,
+        "uefaPlayerId": "95665"
+      },
+      {
+        "role": "AM",
+        "name": "Thomas Muller",
+        "value": "GER",
+        "number": 25,
+        "uefaPlayerId": "250003318"
+      },
+      {
+        "role": "RW",
+        "name": "Arjen Robben",
+        "value": "NED",
+        "number": 10,
+        "uefaPlayerId": "57134"
+      },
+      {
+        "role": "DM",
+        "name": "Toni Kroos",
+        "value": "GER",
+        "number": 39,
+        "uefaPlayerId": "103147"
+      },
+      {
+        "role": "DM",
+        "name": "Bastian Schweinsteiger",
+        "value": "GER",
+        "number": 31,
+        "uefaPlayerId": "67496"
+      },
+      {
+        "role": "LB",
+        "name": "Diego Contento",
+        "value": "GER",
+        "number": 26,
+        "uefaPlayerId": "250011961"
+      },
+      {
+        "role": "CB",
+        "name": "Jerome Boateng",
+        "value": "GER",
+        "number": 17,
+        "uefaPlayerId": "98865"
+      },
+      {
+        "role": "CB",
+        "name": "Anatoliy Tymoshchuk",
+        "value": "UKR",
+        "number": 44,
+        "uefaPlayerId": "34629"
+      },
+      {
+        "role": "RB",
+        "name": "Philipp Lahm",
+        "value": "GER",
+        "number": 21,
+        "uefaPlayerId": "63033"
+      },
+      {
+        "role": "GK",
+        "name": "Manuel Neuer",
+        "value": "GER",
+        "number": 1,
+        "uefaPlayerId": "97923"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-chelsea-2012-05-19-20",
+    "mode": "club",
+    "season": "2011/12",
+    "tier": "moderate",
+    "team": "chelsea",
+    "date": "2012-05-19",
+    "versus": "Bayern Munich",
+    "formation": "4-2-3-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2007693/",
+    "uefaMatchId": "2007693",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2007693/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Didier Drogba",
+        "value": "CIV",
+        "number": 11,
+        "uefaPlayerId": "70482"
+      },
+      {
+        "role": "LW",
+        "name": "Ryan Bertrand",
+        "value": "ENG",
+        "number": 34,
+        "uefaPlayerId": "103869"
+      },
+      {
+        "role": "AM",
+        "name": "Juan Mata",
+        "value": "ESP",
+        "number": 10,
+        "uefaPlayerId": "104584"
+      },
+      {
+        "role": "RW",
+        "name": "Salomon Kalou",
+        "value": "CIV",
+        "number": 21,
+        "uefaPlayerId": "72739"
+      },
+      {
+        "role": "DM",
+        "name": "John Obi Mikel",
+        "value": "NGA",
+        "number": 12,
+        "uefaPlayerId": "69271"
+      },
+      {
+        "role": "DM",
+        "name": "Frank Lampard",
+        "value": "ENG",
+        "number": 8,
+        "uefaPlayerId": "31609"
+      },
+      {
+        "role": "LB",
+        "name": "Ashley Cole",
+        "value": "ENG",
+        "number": 3,
+        "uefaPlayerId": "51553"
+      },
+      {
+        "role": "CB",
+        "name": "Gary Cahill",
+        "value": "ENG",
+        "number": 24,
+        "uefaPlayerId": "1902472"
+      },
+      {
+        "role": "CB",
+        "name": "David Luiz",
+        "value": "BRA",
+        "number": 4,
+        "uefaPlayerId": "1900733"
+      },
+      {
+        "role": "RB",
+        "name": "Jose Bosingwa",
+        "value": "POR",
+        "number": 17,
+        "uefaPlayerId": "48669"
+      },
+      {
+        "role": "GK",
+        "name": "Petr Cech",
+        "value": "CZE",
+        "number": 1,
+        "uefaPlayerId": "49029"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-dortmund-2013-05-25-21",
+    "mode": "club",
+    "season": "2012/13",
+    "tier": "moderate",
+    "team": "dortmund",
+    "date": "2013-05-25",
+    "versus": "Bayern Munich",
+    "formation": "4-2-3-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2009612/",
+    "uefaMatchId": "2009612",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2009612/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Robert Lewandowski",
+        "value": "POL",
+        "number": 9,
+        "uefaPlayerId": "250002096"
+      },
+      {
+        "role": "LW",
+        "name": "Kevin Grosskreutz",
+        "value": "GER",
+        "number": 19,
+        "uefaPlayerId": "250015937"
+      },
+      {
+        "role": "AM",
+        "name": "Marco Reus",
+        "value": "GER",
+        "number": 11,
+        "uefaPlayerId": "250011791"
+      },
+      {
+        "role": "RW",
+        "name": "Jakub Blaszczykowski",
+        "value": "POL",
+        "number": 16,
+        "uefaPlayerId": "150786482"
+      },
+      {
+        "role": "DM",
+        "name": "Sven Bender",
+        "value": "GER",
+        "number": 6,
+        "uefaPlayerId": "103791"
+      },
+      {
+        "role": "DM",
+        "name": "Ilkay Gundogan",
+        "value": "GER",
+        "number": 8,
+        "uefaPlayerId": "250005335"
+      },
+      {
+        "role": "LB",
+        "name": "Marcel Schmelzer",
+        "value": "GER",
+        "number": 29,
+        "uefaPlayerId": "250003420"
+      },
+      {
+        "role": "CB",
+        "name": "Mats Hummels",
+        "value": "GER",
+        "number": 15,
+        "uefaPlayerId": "106587"
+      },
+      {
+        "role": "CB",
+        "name": "Neven Subotic",
+        "value": "SRB",
+        "number": 4,
+        "uefaPlayerId": "250003411"
+      },
+      {
+        "role": "RB",
+        "name": "Lukasz Piszczek",
+        "value": "POL",
+        "number": 26,
+        "uefaPlayerId": "74029"
+      },
+      {
+        "role": "GK",
+        "name": "Roman Weidenfeller",
+        "value": "GER",
+        "number": 1,
+        "uefaPlayerId": "35414"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-bayern-2013-05-25-29",
+    "mode": "club",
+    "season": "2012/13",
+    "tier": "hard",
+    "team": "bayern",
+    "date": "2013-05-25",
+    "versus": "Borussia Dortmund",
+    "formation": "4-2-3-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2009612/",
+    "uefaMatchId": "2009612",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2009612/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Mario Mandzukic",
+        "value": "CRO",
+        "number": 9,
+        "uefaPlayerId": "99350"
+      },
+      {
+        "role": "LW",
+        "name": "Franck Ribery",
+        "value": "FRA",
+        "number": 7,
+        "uefaPlayerId": "95665"
+      },
+      {
+        "role": "AM",
+        "name": "Thomas Muller",
+        "value": "GER",
+        "number": 25,
+        "uefaPlayerId": "250003318"
+      },
+      {
+        "role": "RW",
+        "name": "Arjen Robben",
+        "value": "NED",
+        "number": 10,
+        "uefaPlayerId": "57134"
+      },
+      {
+        "role": "DM",
+        "name": "Javi Martinez",
+        "value": "ESP",
+        "number": 8,
+        "uefaPlayerId": "98953"
+      },
+      {
+        "role": "DM",
+        "name": "Bastian Schweinsteiger",
+        "value": "GER",
+        "number": 31,
+        "uefaPlayerId": "67496"
+      },
+      {
+        "role": "LB",
+        "name": "David Alaba",
+        "value": "AUT",
+        "number": 27,
+        "uefaPlayerId": "1906540"
+      },
+      {
+        "role": "CB",
+        "name": "Dante",
+        "value": "BRA",
+        "number": 4,
+        "uefaPlayerId": "93921"
+      },
+      {
+        "role": "CB",
+        "name": "Jerome Boateng",
+        "value": "GER",
+        "number": 17,
+        "uefaPlayerId": "98865"
+      },
+      {
+        "role": "RB",
+        "name": "Philipp Lahm",
+        "value": "GER",
+        "number": 21,
+        "uefaPlayerId": "63033"
+      },
+      {
+        "role": "GK",
+        "name": "Manuel Neuer",
+        "value": "GER",
+        "number": 1,
+        "uefaPlayerId": "97923"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-realmadrid-2014-05-24-11",
+    "mode": "club",
+    "season": "2013/14",
+    "tier": "easy",
+    "team": "realmadrid",
+    "date": "2014-05-24",
+    "versus": "Atlético de Madrid",
+    "formation": "4-3-3",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2011883/",
+    "uefaMatchId": "2011883",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2011883/lineups?language=EN",
+    "players": [
+      {
+        "role": "LW",
+        "name": "Cristiano Ronaldo",
+        "value": "POR",
+        "number": 7,
+        "uefaPlayerId": "63706"
+      },
+      {
+        "role": "ST",
+        "name": "Karim Benzema",
+        "value": "FRA",
+        "number": 9,
+        "uefaPlayerId": "93321"
+      },
+      {
+        "role": "RW",
+        "name": "Gareth Bale",
+        "value": "WAL",
+        "number": 11,
+        "uefaPlayerId": "102225"
+      },
+      {
+        "role": "CM",
+        "name": "Angel Di Maria",
+        "value": "ARG",
+        "number": 22,
+        "uefaPlayerId": "1905153"
+      },
+      {
+        "role": "DM",
+        "name": "Sami Khedira",
+        "value": "GER",
+        "number": 6,
+        "uefaPlayerId": "74327"
+      },
+      {
+        "role": "CM",
+        "name": "Luka Modric",
+        "value": "CRO",
+        "number": 19,
+        "uefaPlayerId": "74699"
+      },
+      {
+        "role": "LB",
+        "name": "Fabio Coentrao",
+        "value": "POR",
+        "number": 5,
+        "uefaPlayerId": "107951"
+      },
+      {
+        "role": "CB",
+        "name": "Sergio Ramos",
+        "value": "ESP",
+        "number": 4,
+        "uefaPlayerId": "93649"
+      },
+      {
+        "role": "CB",
+        "name": "Raphael Varane",
+        "value": "FRA",
+        "number": 2,
+        "uefaPlayerId": "250025891"
+      },
+      {
+        "role": "RB",
+        "name": "Dani Carvajal",
+        "value": "ESP",
+        "number": 15,
+        "uefaPlayerId": "250024448"
+      },
+      {
+        "role": "GK",
+        "name": "Iker Casillas",
+        "value": "ESP",
+        "number": 1,
+        "uefaPlayerId": "34694"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-atletico-2014-05-24-12",
+    "mode": "club",
+    "season": "2013/14",
+    "tier": "easy",
+    "team": "atletico",
+    "date": "2014-05-24",
+    "versus": "Real Madrid",
+    "formation": "4-4-2",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2011883/",
+    "uefaMatchId": "2011883",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2011883/lineups?language=EN",
+    "players": [
+      {
+        "role": "LS",
+        "name": "Diego Costa",
+        "value": "ESP",
+        "number": 19,
+        "uefaPlayerId": "1900730"
+      },
+      {
+        "role": "RS",
+        "name": "David Villa",
+        "value": "ESP",
+        "number": 9,
+        "uefaPlayerId": "66414"
+      },
+      {
+        "role": "LM",
+        "name": "Koke",
+        "value": "ESP",
+        "number": 6,
+        "uefaPlayerId": "1909917"
+      },
+      {
+        "role": "CM",
+        "name": "Tiago Mendes",
+        "value": "POR",
+        "number": 5,
+        "uefaPlayerId": "52694"
+      },
+      {
+        "role": "CM",
+        "name": "Gabi",
+        "value": "ESP",
+        "number": 14,
+        "uefaPlayerId": "93951"
+      },
+      {
+        "role": "RM",
+        "name": "Raul Garcia",
+        "value": "ESP",
+        "number": 8,
+        "uefaPlayerId": "98674"
+      },
+      {
+        "role": "LB",
+        "name": "Filipe Luis",
+        "value": "BRA",
+        "number": 3,
+        "uefaPlayerId": "95813"
+      },
+      {
+        "role": "CB",
+        "name": "Diego Godin",
+        "value": "URU",
+        "number": 2,
+        "uefaPlayerId": "1906224"
+      },
+      {
+        "role": "CB",
+        "name": "Miranda",
+        "value": "BRA",
+        "number": 23,
+        "uefaPlayerId": "250038946"
+      },
+      {
+        "role": "RB",
+        "name": "Juanfran",
+        "value": "ESP",
+        "number": 20,
+        "uefaPlayerId": "69172"
+      },
+      {
+        "role": "GK",
+        "name": "Thibaut Courtois",
+        "value": "BEL",
+        "number": 13,
+        "uefaPlayerId": "250011668"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-juventus-2015-06-06-10",
+    "mode": "club",
+    "season": "2014/15",
+    "tier": "easy",
+    "team": "juventus",
+    "date": "2015-06-06",
+    "versus": "Barcelona",
+    "formation": "4-3-1-2",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2015227/",
+    "uefaMatchId": "2015227",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2015227/lineups?language=EN",
+    "players": [
+      {
+        "role": "LS",
+        "name": "Alvaro Morata",
+        "value": "ESP",
+        "number": 9,
+        "uefaPlayerId": "250024456"
+      },
+      {
+        "role": "RS",
+        "name": "Carlos Tevez",
+        "value": "ARG",
+        "number": 10,
+        "uefaPlayerId": "74939"
+      },
+      {
+        "role": "AM",
+        "name": "Arturo Vidal",
+        "value": "CHI",
+        "number": 23,
+        "uefaPlayerId": "1906016"
+      },
+      {
+        "role": "CM",
+        "name": "Paul Pogba",
+        "value": "FRA",
+        "number": 6,
+        "uefaPlayerId": "250015808"
+      },
+      {
+        "role": "DM",
+        "name": "Andrea Pirlo",
+        "value": "ITA",
+        "number": 21,
+        "uefaPlayerId": "26917"
+      },
+      {
+        "role": "CM",
+        "name": "Claudio Marchisio",
+        "value": "ITA",
+        "number": 8,
+        "uefaPlayerId": "1902468"
+      },
+      {
+        "role": "LB",
+        "name": "Patrice Evra",
+        "value": "FRA",
+        "number": 33,
+        "uefaPlayerId": "68468"
+      },
+      {
+        "role": "CB",
+        "name": "Leonardo Bonucci",
+        "value": "ITA",
+        "number": 19,
+        "uefaPlayerId": "250017925"
+      },
+      {
+        "role": "CB",
+        "name": "Andrea Barzagli",
+        "value": "ITA",
+        "number": 15,
+        "uefaPlayerId": "74055"
+      },
+      {
+        "role": "RB",
+        "name": "Stephan Lichtsteiner",
+        "value": "CHE",
+        "number": 26,
+        "uefaPlayerId": "56942"
+      },
+      {
+        "role": "GK",
+        "name": "Gianluigi Buffon",
+        "value": "ITA",
+        "number": 1,
+        "uefaPlayerId": "21307"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-barcelona-2015-06-06-9",
+    "mode": "club",
+    "season": "2014/15",
+    "tier": "easy",
+    "team": "barcelona",
+    "date": "2015-06-06",
+    "versus": "Juventus",
+    "formation": "4-3-3",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2015227/",
+    "uefaMatchId": "2015227",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2015227/lineups?language=EN",
+    "players": [
+      {
+        "role": "LW",
+        "name": "Neymar",
+        "value": "BRA",
+        "number": 11,
+        "uefaPlayerId": "250039508"
+      },
+      {
+        "role": "ST",
+        "name": "Luis Suarez",
+        "value": "URU",
+        "number": 9,
+        "uefaPlayerId": "106375"
+      },
+      {
+        "role": "RW",
+        "name": "Lionel Messi",
+        "value": "ARG",
+        "number": 10,
+        "uefaPlayerId": "95803"
+      },
+      {
+        "role": "CM",
+        "name": "Andres Iniesta",
+        "value": "ESP",
+        "number": 8,
+        "uefaPlayerId": "58031"
+      },
+      {
+        "role": "DM",
+        "name": "Sergio Busquets",
+        "value": "ESP",
+        "number": 5,
+        "uefaPlayerId": "250002704"
+      },
+      {
+        "role": "CM",
+        "name": "Ivan Rakitic",
+        "value": "CRO",
+        "number": 4,
+        "uefaPlayerId": "97744"
+      },
+      {
+        "role": "LB",
+        "name": "Jordi Alba",
+        "value": "ESP",
+        "number": 18,
+        "uefaPlayerId": "250000036"
+      },
+      {
+        "role": "CB",
+        "name": "Javier Mascherano",
+        "value": "ARG",
+        "number": 14,
+        "uefaPlayerId": "104264"
+      },
+      {
+        "role": "CB",
+        "name": "Gerard Pique",
+        "value": "ESP",
+        "number": 3,
+        "uefaPlayerId": "93148"
+      },
+      {
+        "role": "RB",
+        "name": "Dani Alves",
+        "value": "BRA",
+        "number": 22,
+        "uefaPlayerId": "95724"
+      },
+      {
+        "role": "GK",
+        "name": "Marc-Andre ter Stegen",
+        "value": "GER",
+        "number": 1,
+        "uefaPlayerId": "250007631"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2016-realmadrid",
+    "mode": "club",
+    "season": "2015/16",
+    "tier": "moderate",
+    "team": "realmadrid",
+    "date": "2016-05-28",
+    "versus": "Atlético de Madrid",
+    "formation": "4-3-3",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2015789/",
+    "uefaMatchId": "2015789",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2015789/lineups?language=EN",
+    "players": [
+      {
+        "role": "LW",
+        "name": "Cristiano Ronaldo",
+        "value": "POR",
+        "number": 7,
+        "uefaPlayerId": "63706"
+      },
+      {
+        "role": "ST",
+        "name": "Karim Benzema",
+        "value": "FRA",
+        "number": 9,
+        "uefaPlayerId": "93321"
+      },
+      {
+        "role": "RW",
+        "name": "Gareth Bale",
+        "value": "WAL",
+        "number": 11,
+        "uefaPlayerId": "102225"
+      },
+      {
+        "role": "CM",
+        "name": "Toni Kroos",
+        "value": "GER",
+        "number": 8,
+        "uefaPlayerId": "103147"
+      },
+      {
+        "role": "DM",
+        "name": "Casemiro",
+        "value": "BRA",
+        "number": 14,
+        "uefaPlayerId": "250057680"
+      },
+      {
+        "role": "CM",
+        "name": "Luka Modrić",
+        "value": "CRO",
+        "number": 19,
+        "uefaPlayerId": "74699"
+      },
+      {
+        "role": "LB",
+        "name": "Marcelo",
+        "value": "BRA",
+        "number": 12,
+        "uefaPlayerId": "1900737"
+      },
+      {
+        "role": "CB",
+        "name": "Sergio Ramos",
+        "value": "ESP",
+        "number": 4,
+        "uefaPlayerId": "93649"
+      },
+      {
+        "role": "CB",
+        "name": "Pepe",
+        "value": "POR",
+        "number": 3,
+        "uefaPlayerId": "95417"
+      },
+      {
+        "role": "RB",
+        "name": "Dani Carvajal",
+        "value": "ESP",
+        "number": 15,
+        "uefaPlayerId": "250024448"
+      },
+      {
+        "role": "GK",
+        "name": "Keylor Navas",
+        "value": "CRC",
+        "number": 1,
+        "uefaPlayerId": "250031037"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-atletico-2016-05-28-27",
+    "mode": "club",
+    "season": "2015/16",
+    "tier": "hard",
+    "team": "atletico",
+    "date": "2016-05-28",
+    "versus": "Real Madrid",
+    "formation": "4-4-2",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2015789/",
+    "uefaMatchId": "2015789",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2015789/lineups?language=EN",
+    "players": [
+      {
+        "role": "LS",
+        "name": "Antoine Griezmann",
+        "value": "FRA",
+        "number": 7,
+        "uefaPlayerId": "250019498"
+      },
+      {
+        "role": "RS",
+        "name": "Fernando Torres",
+        "value": "ESP",
+        "number": 9,
+        "uefaPlayerId": "58686"
+      },
+      {
+        "role": "LM",
+        "name": "Koke",
+        "value": "ESP",
+        "number": 6,
+        "uefaPlayerId": "1909917"
+      },
+      {
+        "role": "CM",
+        "name": "Gabi",
+        "value": "ESP",
+        "number": 14,
+        "uefaPlayerId": "93951"
+      },
+      {
+        "role": "CM",
+        "name": "Augusto Fernández",
+        "value": "ARG",
+        "number": 12,
+        "uefaPlayerId": "250035859"
+      },
+      {
+        "role": "RM",
+        "name": "Saúl Ñíguez",
+        "value": "ESP",
+        "number": 17,
+        "uefaPlayerId": "250017725"
+      },
+      {
+        "role": "LB",
+        "name": "Filipe Luís",
+        "value": "BRA",
+        "number": 3,
+        "uefaPlayerId": "95813"
+      },
+      {
+        "role": "CB",
+        "name": "Diego Godín",
+        "value": "URU",
+        "number": 2,
+        "uefaPlayerId": "1906224"
+      },
+      {
+        "role": "CB",
+        "name": "Stefan Savić",
+        "value": "MNE",
+        "number": 15,
+        "uefaPlayerId": "1907998"
+      },
+      {
+        "role": "RB",
+        "name": "Juanfran",
+        "value": "ESP",
+        "number": 20,
+        "uefaPlayerId": "69172"
+      },
+      {
+        "role": "GK",
+        "name": "Jan Oblak",
+        "value": "SVN",
+        "number": 13,
+        "uefaPlayerId": "250012069"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-juventus-2017-06-03-26",
+    "mode": "club",
+    "season": "2016/17",
+    "tier": "hard",
+    "team": "juventus",
+    "date": "2017-06-03",
+    "versus": "Real Madrid",
+    "formation": "4-2-3-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2019641/",
+    "uefaMatchId": "2019641",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2019641/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Gonzalo Higuain",
+        "value": "ARG",
+        "number": 9,
+        "uefaPlayerId": "1900739"
+      },
+      {
+        "role": "LW",
+        "name": "Mario Mandzukic",
+        "value": "CRO",
+        "number": 17,
+        "uefaPlayerId": "99350"
+      },
+      {
+        "role": "AM",
+        "name": "Paulo Dybala",
+        "value": "ARG",
+        "number": 21,
+        "uefaPlayerId": "250086333"
+      },
+      {
+        "role": "RW",
+        "name": "Dani Alves",
+        "value": "BRA",
+        "number": 23,
+        "uefaPlayerId": "95724"
+      },
+      {
+        "role": "DM",
+        "name": "Miralem Pjanic",
+        "value": "BIH",
+        "number": 5,
+        "uefaPlayerId": "104071"
+      },
+      {
+        "role": "DM",
+        "name": "Sami Khedira",
+        "value": "GER",
+        "number": 6,
+        "uefaPlayerId": "74327"
+      },
+      {
+        "role": "LB",
+        "name": "Alex Sandro",
+        "value": "BRA",
+        "number": 12,
+        "uefaPlayerId": "250039930"
+      },
+      {
+        "role": "CB",
+        "name": "Giorgio Chiellini",
+        "value": "ITA",
+        "number": 3,
+        "uefaPlayerId": "59142"
+      },
+      {
+        "role": "CB",
+        "name": "Leonardo Bonucci",
+        "value": "ITA",
+        "number": 19,
+        "uefaPlayerId": "250017925"
+      },
+      {
+        "role": "RB",
+        "name": "Andrea Barzagli",
+        "value": "ITA",
+        "number": 15,
+        "uefaPlayerId": "74055"
+      },
+      {
+        "role": "GK",
+        "name": "Gianluigi Buffon",
+        "value": "ITA",
+        "number": 1,
+        "uefaPlayerId": "21307"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2017-realmadrid",
+    "mode": "club",
+    "season": "2016/17",
+    "tier": "moderate",
+    "team": "realmadrid",
+    "date": "2017-06-03",
+    "versus": "Juventus",
+    "formation": "4-3-1-2",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2019641/",
+    "uefaMatchId": "2019641",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2019641/lineups?language=EN",
+    "players": [
+      {
+        "role": "LS",
+        "name": "Cristiano Ronaldo",
+        "value": "POR",
+        "number": 7,
+        "uefaPlayerId": "63706"
+      },
+      {
+        "role": "RS",
+        "name": "Karim Benzema",
+        "value": "FRA",
+        "number": 9,
+        "uefaPlayerId": "93321"
+      },
+      {
+        "role": "AM",
+        "name": "Isco",
+        "value": "ESP",
+        "number": 22,
+        "uefaPlayerId": "250024454"
+      },
+      {
+        "role": "CM",
+        "name": "Toni Kroos",
+        "value": "GER",
+        "number": 8,
+        "uefaPlayerId": "103147"
+      },
+      {
+        "role": "DM",
+        "name": "Casemiro",
+        "value": "BRA",
+        "number": 14,
+        "uefaPlayerId": "250057680"
+      },
+      {
+        "role": "CM",
+        "name": "Luka Modrić",
+        "value": "CRO",
+        "number": 19,
+        "uefaPlayerId": "74699"
+      },
+      {
+        "role": "LB",
+        "name": "Marcelo",
+        "value": "BRA",
+        "number": 12,
+        "uefaPlayerId": "1900737"
+      },
+      {
+        "role": "CB",
+        "name": "Sergio Ramos",
+        "value": "ESP",
+        "number": 4,
+        "uefaPlayerId": "93649"
+      },
+      {
+        "role": "CB",
+        "name": "Raphaël Varane",
+        "value": "FRA",
+        "number": 5,
+        "uefaPlayerId": "250025891"
+      },
+      {
+        "role": "RB",
+        "name": "Dani Carvajal",
+        "value": "ESP",
+        "number": 2,
+        "uefaPlayerId": "250024448"
+      },
+      {
+        "role": "GK",
+        "name": "Keylor Navas",
+        "value": "CRC",
+        "number": 1,
+        "uefaPlayerId": "250031037"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2018-realmadrid",
+    "mode": "club",
+    "season": "2017/18",
+    "tier": "moderate",
+    "team": "realmadrid",
+    "date": "2018-05-26",
+    "versus": "Liverpool",
+    "formation": "4-3-1-2",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2021711/",
+    "uefaMatchId": "2021711",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2021711/lineups?language=EN",
+    "players": [
+      {
+        "role": "LS",
+        "name": "Cristiano Ronaldo",
+        "value": "POR",
+        "number": 7,
+        "uefaPlayerId": "63706"
+      },
+      {
+        "role": "RS",
+        "name": "Karim Benzema",
+        "value": "FRA",
+        "number": 9,
+        "uefaPlayerId": "93321"
+      },
+      {
+        "role": "AM",
+        "name": "Isco",
+        "value": "ESP",
+        "number": 22,
+        "uefaPlayerId": "250024454"
+      },
+      {
+        "role": "CM",
+        "name": "Toni Kroos",
+        "value": "GER",
+        "number": 8,
+        "uefaPlayerId": "103147"
+      },
+      {
+        "role": "DM",
+        "name": "Casemiro",
+        "value": "BRA",
+        "number": 14,
+        "uefaPlayerId": "250057680"
+      },
+      {
+        "role": "CM",
+        "name": "Luka Modrić",
+        "value": "CRO",
+        "number": 10,
+        "uefaPlayerId": "74699"
+      },
+      {
+        "role": "LB",
+        "name": "Marcelo",
+        "value": "BRA",
+        "number": 12,
+        "uefaPlayerId": "1900737"
+      },
+      {
+        "role": "CB",
+        "name": "Sergio Ramos",
+        "value": "ESP",
+        "number": 4,
+        "uefaPlayerId": "93649"
+      },
+      {
+        "role": "CB",
+        "name": "Raphaël Varane",
+        "value": "FRA",
+        "number": 5,
+        "uefaPlayerId": "250025891"
+      },
+      {
+        "role": "RB",
+        "name": "Dani Carvajal",
+        "value": "ESP",
+        "number": 2,
+        "uefaPlayerId": "250024448"
+      },
+      {
+        "role": "GK",
+        "name": "Keylor Navas",
+        "value": "CRC",
+        "number": 1,
+        "uefaPlayerId": "250031037"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2018-liverpool",
+    "mode": "club",
+    "season": "2017/18",
+    "tier": "moderate",
+    "team": "liverpool",
+    "date": "2018-05-26",
+    "versus": "Real Madrid",
+    "formation": "4-3-3",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2021711/",
+    "uefaMatchId": "2021711",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2021711/lineups?language=EN",
+    "players": [
+      {
+        "role": "LW",
+        "name": "Sadio Mané",
+        "value": "SEN",
+        "number": 19,
+        "uefaPlayerId": "250061119"
+      },
+      {
+        "role": "ST",
+        "name": "Roberto Firmino",
+        "value": "BRA",
+        "number": 9,
+        "uefaPlayerId": "250080619"
+      },
+      {
+        "role": "RW",
+        "name": "Mohamed Salah",
+        "value": "EGY",
+        "number": 11,
+        "uefaPlayerId": "250052469"
+      },
+      {
+        "role": "CM",
+        "name": "James Milner",
+        "value": "ENG",
+        "number": 7,
+        "uefaPlayerId": "70120"
+      },
+      {
+        "role": "DM",
+        "name": "Jordan Henderson",
+        "value": "ENG",
+        "number": 14,
+        "uefaPlayerId": "250010260"
+      },
+      {
+        "role": "CM",
+        "name": "Georginio Wijnaldum",
+        "value": "NED",
+        "number": 5,
+        "uefaPlayerId": "250187661"
+      },
+      {
+        "role": "LB",
+        "name": "Andy Robertson",
+        "value": "SCO",
+        "number": 26,
+        "uefaPlayerId": "250066157"
+      },
+      {
+        "role": "CB",
+        "name": "Virgil van Dijk",
+        "value": "NED",
+        "number": 4,
+        "uefaPlayerId": "50327420"
+      },
+      {
+        "role": "CB",
+        "name": "Dejan Lovren",
+        "value": "CRO",
+        "number": 6,
+        "uefaPlayerId": "97219"
+      },
+      {
+        "role": "RB",
+        "name": "Trent Alexander-Arnold",
+        "value": "ENG",
+        "number": 66,
+        "uefaPlayerId": "250076357"
+      },
+      {
+        "role": "GK",
+        "name": "Loris Karius",
+        "value": "GER",
+        "number": 1,
+        "uefaPlayerId": "250014327"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-spurs-2019-06-01-18",
+    "mode": "club",
+    "season": "2018/19",
+    "tier": "easy",
+    "team": "spurs",
+    "date": "2019-06-01",
+    "versus": "Liverpool",
+    "formation": "4-2-3-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2025486/",
+    "uefaMatchId": "2025486",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2025486/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Harry Kane",
+        "value": "ENG",
+        "number": 10,
+        "uefaPlayerId": "250016833"
+      },
+      {
+        "role": "LW",
+        "name": "Son Heung-min",
+        "value": "KOR",
+        "number": 7,
+        "uefaPlayerId": "250043463"
+      },
+      {
+        "role": "AM",
+        "name": "Dele Alli",
+        "value": "ENG",
+        "number": 20,
+        "uefaPlayerId": "250058217"
+      },
+      {
+        "role": "RW",
+        "name": "Christian Eriksen",
+        "value": "DEN",
+        "number": 23,
+        "uefaPlayerId": "1905884"
+      },
+      {
+        "role": "DM",
+        "name": "Harry Winks",
+        "value": "ENG",
+        "number": 8,
+        "uefaPlayerId": "250068846"
+      },
+      {
+        "role": "DM",
+        "name": "Moussa Sissoko",
+        "value": "FRA",
+        "number": 17,
+        "uefaPlayerId": "103722"
+      },
+      {
+        "role": "LB",
+        "name": "Danny Rose",
+        "value": "ENG",
+        "number": 3,
+        "uefaPlayerId": "108212"
+      },
+      {
+        "role": "CB",
+        "name": "Jan Vertonghen",
+        "value": "BEL",
+        "number": 5,
+        "uefaPlayerId": "103704"
+      },
+      {
+        "role": "CB",
+        "name": "Toby Alderweireld",
+        "value": "BEL",
+        "number": 4,
+        "uefaPlayerId": "103333"
+      },
+      {
+        "role": "RB",
+        "name": "Kieran Trippier",
+        "value": "ENG",
+        "number": 2,
+        "uefaPlayerId": "250000919"
+      },
+      {
+        "role": "GK",
+        "name": "Hugo Lloris",
+        "value": "FRA",
+        "number": 1,
+        "uefaPlayerId": "93846"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-liverpool-2019-06-01-17",
+    "mode": "club",
+    "season": "2018/19",
+    "tier": "easy",
+    "team": "liverpool",
+    "date": "2019-06-01",
+    "versus": "Tottenham Hotspur",
+    "formation": "4-3-3",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2025486/",
+    "uefaMatchId": "2025486",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2025486/lineups?language=EN",
+    "players": [
+      {
+        "role": "LW",
+        "name": "Sadio Mane",
+        "value": "SEN",
+        "number": 10,
+        "uefaPlayerId": "250061119"
+      },
+      {
+        "role": "ST",
+        "name": "Roberto Firmino",
+        "value": "BRA",
+        "number": 9,
+        "uefaPlayerId": "250080619"
+      },
+      {
+        "role": "RW",
+        "name": "Mohamed Salah",
+        "value": "EGY",
+        "number": 11,
+        "uefaPlayerId": "250052469"
+      },
+      {
+        "role": "CM",
+        "name": "Georginio Wijnaldum",
+        "value": "NED",
+        "number": 5,
+        "uefaPlayerId": "250187661"
+      },
+      {
+        "role": "DM",
+        "name": "Fabinho",
+        "value": "BRA",
+        "number": 3,
+        "uefaPlayerId": "250053907"
+      },
+      {
+        "role": "CM",
+        "name": "Jordan Henderson",
+        "value": "ENG",
+        "number": 14,
+        "uefaPlayerId": "250010260"
+      },
+      {
+        "role": "LB",
+        "name": "Andrew Robertson",
+        "value": "SCO",
+        "number": 26,
+        "uefaPlayerId": "250066157"
+      },
+      {
+        "role": "CB",
+        "name": "Virgil van Dijk",
+        "value": "NED",
+        "number": 4,
+        "uefaPlayerId": "50327420"
+      },
+      {
+        "role": "CB",
+        "name": "Joel Matip",
+        "value": "CMR",
+        "number": 32,
+        "uefaPlayerId": "250018116"
+      },
+      {
+        "role": "RB",
+        "name": "Trent Alexander-Arnold",
+        "value": "ENG",
+        "number": 66,
+        "uefaPlayerId": "250076357"
+      },
+      {
+        "role": "GK",
+        "name": "Alisson Becker",
+        "value": "BRA",
+        "number": 13,
+        "uefaPlayerId": "250099867"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-psg-2020-08-23-13",
+    "mode": "club",
+    "season": "2019/20",
+    "tier": "easy",
+    "team": "psg",
+    "date": "2020-08-23",
+    "versus": "Bayern Munich",
+    "formation": "4-3-3",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2030150/",
+    "uefaMatchId": "2030150",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2030150/lineups?language=EN",
+    "players": [
+      {
+        "role": "LW",
+        "name": "Kylian Mbappe",
+        "value": "FRA",
+        "number": 7,
+        "uefaPlayerId": "250076574"
+      },
+      {
+        "role": "ST",
+        "name": "Neymar",
+        "value": "BRA",
+        "number": 10,
+        "uefaPlayerId": "250039508"
+      },
+      {
+        "role": "RW",
+        "name": "Angel Di Maria",
+        "value": "ARG",
+        "number": 11,
+        "uefaPlayerId": "1905153"
+      },
+      {
+        "role": "CM",
+        "name": "Ander Herrera",
+        "value": "ESP",
+        "number": 21,
+        "uefaPlayerId": "250014680"
+      },
+      {
+        "role": "DM",
+        "name": "Marquinhos",
+        "value": "BRA",
+        "number": 5,
+        "uefaPlayerId": "250064064"
+      },
+      {
+        "role": "CM",
+        "name": "Leandro Paredes",
+        "value": "ARG",
+        "number": 8,
+        "uefaPlayerId": "250075844"
+      },
+      {
+        "role": "LB",
+        "name": "Juan Bernat",
+        "value": "ESP",
+        "number": 14,
+        "uefaPlayerId": "250013892"
+      },
+      {
+        "role": "CB",
+        "name": "Presnel Kimpembe",
+        "value": "FRA",
+        "number": 3,
+        "uefaPlayerId": "250064583"
+      },
+      {
+        "role": "CB",
+        "name": "Thiago Silva",
+        "value": "BRA",
+        "number": 2,
+        "uefaPlayerId": "250011954"
+      },
+      {
+        "role": "RB",
+        "name": "Thilo Kehrer",
+        "value": "GER",
+        "number": 4,
+        "uefaPlayerId": "250055663"
+      },
+      {
+        "role": "GK",
+        "name": "Keylor Navas",
+        "value": "CRC",
+        "number": 1,
+        "uefaPlayerId": "250031037"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-bayern-2020-08-23-14",
+    "mode": "club",
+    "season": "2019/20",
+    "tier": "easy",
+    "team": "bayern",
+    "date": "2020-08-23",
+    "versus": "Paris Saint-Germain",
+    "formation": "4-2-3-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2030150/",
+    "uefaMatchId": "2030150",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2030150/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Robert Lewandowski",
+        "value": "POL",
+        "number": 9,
+        "uefaPlayerId": "250002096"
+      },
+      {
+        "role": "LW",
+        "name": "Kingsley Coman",
+        "value": "FRA",
+        "number": 29,
+        "uefaPlayerId": "250054949"
+      },
+      {
+        "role": "AM",
+        "name": "Thomas Muller",
+        "value": "GER",
+        "number": 25,
+        "uefaPlayerId": "250003318"
+      },
+      {
+        "role": "RW",
+        "name": "Serge Gnabry",
+        "value": "GER",
+        "number": 22,
+        "uefaPlayerId": "250041770"
+      },
+      {
+        "role": "DM",
+        "name": "Thiago Alcantara",
+        "value": "ESP",
+        "number": 6,
+        "uefaPlayerId": "1906776"
+      },
+      {
+        "role": "DM",
+        "name": "Leon Goretzka",
+        "value": "GER",
+        "number": 18,
+        "uefaPlayerId": "250041771"
+      },
+      {
+        "role": "LB",
+        "name": "Alphonso Davies",
+        "value": "CAN",
+        "number": 19,
+        "uefaPlayerId": "250128120"
+      },
+      {
+        "role": "CB",
+        "name": "David Alaba",
+        "value": "AUT",
+        "number": 27,
+        "uefaPlayerId": "1906540"
+      },
+      {
+        "role": "CB",
+        "name": "Jerome Boateng",
+        "value": "GER",
+        "number": 17,
+        "uefaPlayerId": "98865"
+      },
+      {
+        "role": "RB",
+        "name": "Joshua Kimmich",
+        "value": "GER",
+        "number": 32,
+        "uefaPlayerId": "250070417"
+      },
+      {
+        "role": "GK",
+        "name": "Manuel Neuer",
+        "value": "GER",
+        "number": 1,
+        "uefaPlayerId": "97923"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2021-city",
+    "mode": "club",
+    "season": "2020/21",
+    "tier": "moderate",
+    "team": "city",
+    "date": "2021-05-29",
+    "versus": "Chelsea",
+    "formation": "4-3-3",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2029498/",
+    "uefaMatchId": "2029498",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2029498/lineups?language=EN",
+    "players": [
+      {
+        "role": "LW",
+        "name": "Raheem Sterling",
+        "value": "ENG",
+        "number": 7,
+        "uefaPlayerId": "250024795"
+      },
+      {
+        "role": "ST",
+        "name": "Kevin De Bruyne",
+        "value": "BEL",
+        "number": 17,
+        "uefaPlayerId": "250008901"
+      },
+      {
+        "role": "RW",
+        "name": "Riyad Mahrez",
+        "value": "DZA",
+        "number": 26,
+        "uefaPlayerId": "250070687"
+      },
+      {
+        "role": "CM",
+        "name": "Phil Foden",
+        "value": "ENG",
+        "number": 47,
+        "uefaPlayerId": "250101534"
+      },
+      {
+        "role": "DM",
+        "name": "İlkay Gündoğan",
+        "value": "GER",
+        "number": 8,
+        "uefaPlayerId": "250005335"
+      },
+      {
+        "role": "CM",
+        "name": "Bernardo Silva",
+        "value": "POR",
+        "number": 20,
+        "uefaPlayerId": "250059115"
+      },
+      {
+        "role": "LB",
+        "name": "Oleksandr Zinchenko",
+        "value": "UKR",
+        "number": 11,
+        "uefaPlayerId": "250056861"
+      },
+      {
+        "role": "CB",
+        "name": "Rúben Dias",
+        "value": "POR",
+        "number": 3,
+        "uefaPlayerId": "250058220"
+      },
+      {
+        "role": "CB",
+        "name": "John Stones",
+        "value": "ENG",
+        "number": 5,
+        "uefaPlayerId": "250064233"
+      },
+      {
+        "role": "RB",
+        "name": "Kyle Walker",
+        "value": "ENG",
+        "number": 2,
+        "uefaPlayerId": "250010259"
+      },
+      {
+        "role": "GK",
+        "name": "Ederson",
+        "value": "BRA",
+        "number": 31,
+        "uefaPlayerId": "250073809"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2021-chelsea",
+    "mode": "club",
+    "season": "2020/21",
+    "tier": "moderate",
+    "team": "chelsea",
+    "date": "2021-05-29",
+    "versus": "Manchester City",
+    "formation": "3-4-2-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2029498/",
+    "uefaMatchId": "2029498",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2029498/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Timo Werner",
+        "value": "GER",
+        "number": 11,
+        "uefaPlayerId": "250049183"
+      },
+      {
+        "role": "AM",
+        "name": "Mason Mount",
+        "value": "ENG",
+        "number": 19,
+        "uefaPlayerId": "250076240"
+      },
+      {
+        "role": "AM",
+        "name": "Kai Havertz",
+        "value": "GER",
+        "number": 29,
+        "uefaPlayerId": "250087938"
+      },
+      {
+        "role": "LWB",
+        "name": "Ben Chilwell",
+        "value": "ENG",
+        "number": 21,
+        "uefaPlayerId": "250078763"
+      },
+      {
+        "role": "CM",
+        "name": "Jorginho",
+        "value": "ITA",
+        "number": 5,
+        "uefaPlayerId": "250067749"
+      },
+      {
+        "role": "CM",
+        "name": "N'Golo Kanté",
+        "value": "FRA",
+        "number": 7,
+        "uefaPlayerId": "250097248"
+      },
+      {
+        "role": "RWB",
+        "name": "Reece James",
+        "value": "ENG",
+        "number": 24,
+        "uefaPlayerId": "250110362"
+      },
+      {
+        "role": "CB",
+        "name": "Antonio Rüdiger",
+        "value": "GER",
+        "number": 2,
+        "uefaPlayerId": "250028211"
+      },
+      {
+        "role": "CB",
+        "name": "Thiago Silva",
+        "value": "BRA",
+        "number": 6,
+        "uefaPlayerId": "250011954"
+      },
+      {
+        "role": "CB",
+        "name": "César Azpilicueta",
+        "value": "ESP",
+        "number": 28,
+        "uefaPlayerId": "103827"
+      },
+      {
+        "role": "GK",
+        "name": "Edouard Mendy",
+        "value": "SEN",
+        "number": 16,
+        "uefaPlayerId": "250134380"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2022-liverpool",
+    "mode": "club",
+    "season": "2021/22",
+    "tier": "moderate",
+    "team": "liverpool",
+    "date": "2022-05-28",
+    "versus": "Real Madrid",
+    "formation": "4-3-3",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2034586/",
+    "uefaMatchId": "2034586",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2034586/lineups?language=EN",
+    "players": [
+      {
+        "role": "LW",
+        "name": "Luis Díaz",
+        "value": "COL",
+        "number": 23,
+        "uefaPlayerId": "250132811"
+      },
+      {
+        "role": "ST",
+        "name": "Sadio Mané",
+        "value": "SEN",
+        "number": 10,
+        "uefaPlayerId": "250061119"
+      },
+      {
+        "role": "RW",
+        "name": "Mohamed Salah",
+        "value": "EGY",
+        "number": 11,
+        "uefaPlayerId": "250052469"
+      },
+      {
+        "role": "CM",
+        "name": "Thiago Alcántara",
+        "value": "ESP",
+        "number": 6,
+        "uefaPlayerId": "1906776"
+      },
+      {
+        "role": "DM",
+        "name": "Fabinho",
+        "value": "BRA",
+        "number": 3,
+        "uefaPlayerId": "250053907"
+      },
+      {
+        "role": "CM",
+        "name": "Jordan Henderson",
+        "value": "ENG",
+        "number": 14,
+        "uefaPlayerId": "250010260"
+      },
+      {
+        "role": "LB",
+        "name": "Andy Robertson",
+        "value": "SCO",
+        "number": 26,
+        "uefaPlayerId": "250066157"
+      },
+      {
+        "role": "CB",
+        "name": "Virgil van Dijk",
+        "value": "NED",
+        "number": 4,
+        "uefaPlayerId": "50327420"
+      },
+      {
+        "role": "CB",
+        "name": "Ibrahima Konaté",
+        "value": "FRA",
+        "number": 5,
+        "uefaPlayerId": "250091013"
+      },
+      {
+        "role": "RB",
+        "name": "Trent Alexander-Arnold",
+        "value": "ENG",
+        "number": 66,
+        "uefaPlayerId": "250076357"
+      },
+      {
+        "role": "GK",
+        "name": "Alisson Becker",
+        "value": "BRA",
+        "number": 1,
+        "uefaPlayerId": "250099867"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2022-realmadrid",
+    "mode": "club",
+    "season": "2021/22",
+    "tier": "moderate",
+    "team": "realmadrid",
+    "date": "2022-05-28",
+    "versus": "Liverpool",
+    "formation": "4-3-3",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2034586/",
+    "uefaMatchId": "2034586",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2034586/lineups?language=EN",
+    "players": [
+      {
+        "role": "LW",
+        "name": "Vinícius Júnior",
+        "value": "BRA",
+        "number": 20,
+        "uefaPlayerId": "250121533"
+      },
+      {
+        "role": "ST",
+        "name": "Karim Benzema",
+        "value": "FRA",
+        "number": 9,
+        "uefaPlayerId": "93321"
+      },
+      {
+        "role": "RW",
+        "name": "Federico Valverde",
+        "value": "URU",
+        "number": 15,
+        "uefaPlayerId": "250101284"
+      },
+      {
+        "role": "CM",
+        "name": "Toni Kroos",
+        "value": "GER",
+        "number": 8,
+        "uefaPlayerId": "103147"
+      },
+      {
+        "role": "DM",
+        "name": "Casemiro",
+        "value": "BRA",
+        "number": 14,
+        "uefaPlayerId": "250057680"
+      },
+      {
+        "role": "CM",
+        "name": "Luka Modrić",
+        "value": "CRO",
+        "number": 10,
+        "uefaPlayerId": "74699"
+      },
+      {
+        "role": "LB",
+        "name": "Ferland Mendy",
+        "value": "FRA",
+        "number": 23,
+        "uefaPlayerId": "250112803"
+      },
+      {
+        "role": "CB",
+        "name": "David Alaba",
+        "value": "AUT",
+        "number": 4,
+        "uefaPlayerId": "1906540"
+      },
+      {
+        "role": "CB",
+        "name": "Éder Militão",
+        "value": "BRA",
+        "number": 3,
+        "uefaPlayerId": "250121965"
+      },
+      {
+        "role": "RB",
+        "name": "Dani Carvajal",
+        "value": "ESP",
+        "number": 2,
+        "uefaPlayerId": "250024448"
+      },
+      {
+        "role": "GK",
+        "name": "Thibaut Courtois",
+        "value": "BEL",
+        "number": 1,
+        "uefaPlayerId": "250011668"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-city-2023-06-10-15",
+    "mode": "club",
+    "season": "2022/23",
+    "tier": "easy",
+    "team": "city",
+    "date": "2023-06-10",
+    "versus": "Inter Milan",
+    "formation": "3-2-4-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2037765/",
+    "uefaMatchId": "2037765",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2037765/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Erling Haaland",
+        "value": "NOR",
+        "number": 9,
+        "uefaPlayerId": "250103758"
+      },
+      {
+        "role": "LW",
+        "name": "Jack Grealish",
+        "value": "ENG",
+        "number": 10,
+        "uefaPlayerId": "250042329"
+      },
+      {
+        "role": "AM",
+        "name": "Ilkay Gundogan",
+        "value": "GER",
+        "number": 8,
+        "uefaPlayerId": "250005335"
+      },
+      {
+        "role": "AM",
+        "name": "Kevin De Bruyne",
+        "value": "BEL",
+        "number": 17,
+        "uefaPlayerId": "250008901"
+      },
+      {
+        "role": "RW",
+        "name": "Bernardo Silva",
+        "value": "POR",
+        "number": 20,
+        "uefaPlayerId": "250059115"
+      },
+      {
+        "role": "DM",
+        "name": "John Stones",
+        "value": "ENG",
+        "number": 5,
+        "uefaPlayerId": "250064233"
+      },
+      {
+        "role": "DM",
+        "name": "Rodri",
+        "value": "ESP",
+        "number": 16,
+        "uefaPlayerId": "250082664"
+      },
+      {
+        "role": "CB",
+        "name": "Nathan Ake",
+        "value": "NED",
+        "number": 6,
+        "uefaPlayerId": "250027008"
+      },
+      {
+        "role": "CB",
+        "name": "Ruben Dias",
+        "value": "POR",
+        "number": 3,
+        "uefaPlayerId": "250058220"
+      },
+      {
+        "role": "CB",
+        "name": "Manuel Akanji",
+        "value": "CHE",
+        "number": 25,
+        "uefaPlayerId": "250085369"
+      },
+      {
+        "role": "GK",
+        "name": "Ederson",
+        "value": "BRA",
+        "number": 31,
+        "uefaPlayerId": "250073809"
+      }
+    ]
+  },
+  {
+    "id": "historic-club-inter-2023-06-10-16",
+    "mode": "club",
+    "season": "2022/23",
+    "tier": "easy",
+    "team": "inter",
+    "date": "2023-06-10",
+    "versus": "Manchester City",
+    "formation": "3-5-2",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2037765/",
+    "uefaMatchId": "2037765",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2037765/lineups?language=EN",
+    "players": [
+      {
+        "role": "LS",
+        "name": "Edin Dzeko",
+        "value": "BIH",
+        "number": 9,
+        "uefaPlayerId": "72048"
+      },
+      {
+        "role": "RS",
+        "name": "Lautaro Martinez",
+        "value": "ARG",
+        "number": 10,
+        "uefaPlayerId": "250118281"
+      },
+      {
+        "role": "LWB",
+        "name": "Federico Dimarco",
+        "value": "ITA",
+        "number": 32,
+        "uefaPlayerId": "250056189"
+      },
+      {
+        "role": "CM",
+        "name": "Hakan Calhanoglu",
+        "value": "TUR",
+        "number": 20,
+        "uefaPlayerId": "250022829"
+      },
+      {
+        "role": "DM",
+        "name": "Marcelo Brozovic",
+        "value": "CRO",
+        "number": 77,
+        "uefaPlayerId": "250040564"
+      },
+      {
+        "role": "CM",
+        "name": "Nicolo Barella",
+        "value": "ITA",
+        "number": 23,
+        "uefaPlayerId": "250066739"
+      },
+      {
+        "role": "RWB",
+        "name": "Denzel Dumfries",
+        "value": "NED",
+        "number": 2,
+        "uefaPlayerId": "250112690"
+      },
+      {
+        "role": "CB",
+        "name": "Alessandro Bastoni",
+        "value": "ITA",
+        "number": 95,
+        "uefaPlayerId": "250091199"
+      },
+      {
+        "role": "CB",
+        "name": "Francesco Acerbi",
+        "value": "ITA",
+        "number": 15,
+        "uefaPlayerId": "250052957"
+      },
+      {
+        "role": "CB",
+        "name": "Matteo Darmian",
+        "value": "ITA",
+        "number": 36,
+        "uefaPlayerId": "103806"
+      },
+      {
+        "role": "GK",
+        "name": "Andre Onana",
+        "value": "CMR",
+        "number": 24,
+        "uefaPlayerId": "250076171"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2024-dortmund",
+    "mode": "club",
+    "season": "2023/24",
+    "tier": "moderate",
+    "team": "dortmund",
+    "date": "2024-06-01",
+    "versus": "Real Madrid",
+    "formation": "4-2-3-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2039970/",
+    "uefaMatchId": "2039970",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2039970/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Niclas Füllkrug",
+        "value": "GER",
+        "number": 14,
+        "uefaPlayerId": "250041844"
+      },
+      {
+        "role": "LW",
+        "name": "Karim Adeyemi",
+        "value": "GER",
+        "number": 27,
+        "uefaPlayerId": "250127347"
+      },
+      {
+        "role": "AM",
+        "name": "Julian Brandt",
+        "value": "GER",
+        "number": 19,
+        "uefaPlayerId": "250046522"
+      },
+      {
+        "role": "RW",
+        "name": "Jadon Sancho",
+        "value": "ENG",
+        "number": 10,
+        "uefaPlayerId": "250102216"
+      },
+      {
+        "role": "DM",
+        "name": "Emre Can",
+        "value": "GER",
+        "number": 23,
+        "uefaPlayerId": "250017824"
+      },
+      {
+        "role": "DM",
+        "name": "Marcel Sabitzer",
+        "value": "AUT",
+        "number": 20,
+        "uefaPlayerId": "250024349"
+      },
+      {
+        "role": "LB",
+        "name": "Ian Maatsen",
+        "value": "NED",
+        "number": 22,
+        "uefaPlayerId": "250117581"
+      },
+      {
+        "role": "CB",
+        "name": "Nico Schlotterbeck",
+        "value": "GER",
+        "number": 4,
+        "uefaPlayerId": "250134856"
+      },
+      {
+        "role": "CB",
+        "name": "Mats Hummels",
+        "value": "GER",
+        "number": 15,
+        "uefaPlayerId": "106587"
+      },
+      {
+        "role": "RB",
+        "name": "Julian Ryerson",
+        "value": "NOR",
+        "number": 26,
+        "uefaPlayerId": "250092517"
+      },
+      {
+        "role": "GK",
+        "name": "Gregor Kobel",
+        "value": "CHE",
+        "number": 1,
+        "uefaPlayerId": "250069832"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2024-realmadrid",
+    "mode": "club",
+    "season": "2023/24",
+    "tier": "moderate",
+    "team": "realmadrid",
+    "date": "2024-06-01",
+    "versus": "Borussia Dortmund",
+    "formation": "4-3-1-2",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2039970/",
+    "uefaMatchId": "2039970",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2039970/lineups?language=EN",
+    "players": [
+      {
+        "role": "LS",
+        "name": "Vinícius Júnior",
+        "value": "BRA",
+        "number": 7,
+        "uefaPlayerId": "250121533"
+      },
+      {
+        "role": "RS",
+        "name": "Rodrygo",
+        "value": "BRA",
+        "number": 11,
+        "uefaPlayerId": "250132829"
+      },
+      {
+        "role": "AM",
+        "name": "Jude Bellingham",
+        "value": "ENG",
+        "number": 5,
+        "uefaPlayerId": "250128377"
+      },
+      {
+        "role": "CM",
+        "name": "Toni Kroos",
+        "value": "GER",
+        "number": 8,
+        "uefaPlayerId": "103147"
+      },
+      {
+        "role": "DM",
+        "name": "Eduardo Camavinga",
+        "value": "FRA",
+        "number": 12,
+        "uefaPlayerId": "250128270"
+      },
+      {
+        "role": "CM",
+        "name": "Federico Valverde",
+        "value": "URU",
+        "number": 15,
+        "uefaPlayerId": "250101284"
+      },
+      {
+        "role": "LB",
+        "name": "Ferland Mendy",
+        "value": "FRA",
+        "number": 23,
+        "uefaPlayerId": "250112803"
+      },
+      {
+        "role": "CB",
+        "name": "Nacho",
+        "value": "ESP",
+        "number": 6,
+        "uefaPlayerId": "1900122"
+      },
+      {
+        "role": "CB",
+        "name": "Antonio Rüdiger",
+        "value": "GER",
+        "number": 22,
+        "uefaPlayerId": "250028211"
+      },
+      {
+        "role": "RB",
+        "name": "Dani Carvajal",
+        "value": "ESP",
+        "number": 2,
+        "uefaPlayerId": "250024448"
+      },
+      {
+        "role": "GK",
+        "name": "Thibaut Courtois",
+        "value": "BEL",
+        "number": 1,
+        "uefaPlayerId": "250011668"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2025-psg",
+    "mode": "club",
+    "season": "2024/25",
+    "tier": "moderate",
+    "team": "psg",
+    "date": "2025-05-31",
+    "versus": "Inter Milan",
+    "formation": "4-3-3",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2044466/",
+    "uefaMatchId": "2044466",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2044466/lineups?language=EN",
+    "players": [
+      {
+        "role": "LW",
+        "name": "Khvicha Kvaratskhelia",
+        "value": "GEO",
+        "number": 7,
+        "uefaPlayerId": "250101808"
+      },
+      {
+        "role": "ST",
+        "name": "Ousmane Dembélé",
+        "value": "FRA",
+        "number": 10,
+        "uefaPlayerId": "250066886"
+      },
+      {
+        "role": "RW",
+        "name": "Désiré Doué",
+        "value": "FRA",
+        "number": 14,
+        "uefaPlayerId": "250162177"
+      },
+      {
+        "role": "CM",
+        "name": "Fabián Ruiz",
+        "value": "ESP",
+        "number": 8,
+        "uefaPlayerId": "250115436"
+      },
+      {
+        "role": "DM",
+        "name": "Vitinha",
+        "value": "POR",
+        "number": 17,
+        "uefaPlayerId": "250101444"
+      },
+      {
+        "role": "CM",
+        "name": "João Neves",
+        "value": "POR",
+        "number": 87,
+        "uefaPlayerId": "250164991"
+      },
+      {
+        "role": "LB",
+        "name": "Nuno Mendes",
+        "value": "POR",
+        "number": 25,
+        "uefaPlayerId": "250136465"
+      },
+      {
+        "role": "CB",
+        "name": "Willian Pacho",
+        "value": "ECU",
+        "number": 51,
+        "uefaPlayerId": "250174126"
+      },
+      {
+        "role": "CB",
+        "name": "Marquinhos",
+        "value": "BRA",
+        "number": 5,
+        "uefaPlayerId": "250064064"
+      },
+      {
+        "role": "RB",
+        "name": "Achraf Hakimi",
+        "value": "MAR",
+        "number": 2,
+        "uefaPlayerId": "250088061"
+      },
+      {
+        "role": "GK",
+        "name": "Gianluigi Donnarumma",
+        "value": "ITA",
+        "number": 1,
+        "uefaPlayerId": "250078922"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2025-inter",
+    "mode": "club",
+    "season": "2024/25",
+    "tier": "moderate",
+    "team": "inter",
+    "date": "2025-05-31",
+    "versus": "Paris Saint-Germain",
+    "formation": "3-5-2",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2044466/",
+    "uefaMatchId": "2044466",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2044466/lineups?language=EN",
+    "players": [
+      {
+        "role": "LS",
+        "name": "Lautaro Martínez",
+        "value": "ARG",
+        "number": 10,
+        "uefaPlayerId": "250118281"
+      },
+      {
+        "role": "RS",
+        "name": "Marcus Thuram",
+        "value": "FRA",
+        "number": 9,
+        "uefaPlayerId": "250068805"
+      },
+      {
+        "role": "LWB",
+        "name": "Federico Dimarco",
+        "value": "ITA",
+        "number": 32,
+        "uefaPlayerId": "250056189"
+      },
+      {
+        "role": "CM",
+        "name": "Henrikh Mkhitaryan",
+        "value": "ARM",
+        "number": 22,
+        "uefaPlayerId": "98023"
+      },
+      {
+        "role": "DM",
+        "name": "Hakan Çalhanoğlu",
+        "value": "TUR",
+        "number": 20,
+        "uefaPlayerId": "250022829"
+      },
+      {
+        "role": "CM",
+        "name": "Nicolò Barella",
+        "value": "ITA",
+        "number": 23,
+        "uefaPlayerId": "250066739"
+      },
+      {
+        "role": "RWB",
+        "name": "Denzel Dumfries",
+        "value": "NED",
+        "number": 2,
+        "uefaPlayerId": "250112690"
+      },
+      {
+        "role": "CB",
+        "name": "Alessandro Bastoni",
+        "value": "ITA",
+        "number": 95,
+        "uefaPlayerId": "250091199"
+      },
+      {
+        "role": "CB",
+        "name": "Francesco Acerbi",
+        "value": "ITA",
+        "number": 15,
+        "uefaPlayerId": "250052957"
+      },
+      {
+        "role": "CB",
+        "name": "Benjamin Pavard",
+        "value": "FRA",
+        "number": 28,
+        "uefaPlayerId": "250081921"
+      },
+      {
+        "role": "GK",
+        "name": "Yann Sommer",
+        "value": "CHE",
+        "number": 1,
+        "uefaPlayerId": "97746"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2026-psg",
+    "mode": "club",
+    "season": "2025/26",
+    "tier": "moderate",
+    "team": "psg",
+    "date": "2026-05-30",
+    "versus": "Arsenal",
+    "formation": "4-3-3",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2047742/",
+    "uefaMatchId": "2047742",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2047742/lineups?language=EN",
+    "players": [
+      {
+        "role": "LW",
+        "name": "Khvicha Kvaratskhelia",
+        "value": "GEO",
+        "number": 7,
+        "uefaPlayerId": "250101808"
+      },
+      {
+        "role": "ST",
+        "name": "Ousmane Dembélé",
+        "value": "FRA",
+        "number": 10,
+        "uefaPlayerId": "250066886"
+      },
+      {
+        "role": "RW",
+        "name": "Désiré Doué",
+        "value": "FRA",
+        "number": 14,
+        "uefaPlayerId": "250162177"
+      },
+      {
+        "role": "CM",
+        "name": "Fabián Ruiz",
+        "value": "ESP",
+        "number": 8,
+        "uefaPlayerId": "250115436"
+      },
+      {
+        "role": "DM",
+        "name": "Vitinha",
+        "value": "POR",
+        "number": 17,
+        "uefaPlayerId": "250101444"
+      },
+      {
+        "role": "CM",
+        "name": "João Neves",
+        "value": "POR",
+        "number": 87,
+        "uefaPlayerId": "250164991"
+      },
+      {
+        "role": "LB",
+        "name": "Nuno Mendes",
+        "value": "POR",
+        "number": 25,
+        "uefaPlayerId": "250136465"
+      },
+      {
+        "role": "CB",
+        "name": "Willian Pacho",
+        "value": "ECU",
+        "number": 51,
+        "uefaPlayerId": "250174126"
+      },
+      {
+        "role": "CB",
+        "name": "Marquinhos",
+        "value": "BRA",
+        "number": 5,
+        "uefaPlayerId": "250064064"
+      },
+      {
+        "role": "RB",
+        "name": "Achraf Hakimi",
+        "value": "MAR",
+        "number": 2,
+        "uefaPlayerId": "250088061"
+      },
+      {
+        "role": "GK",
+        "name": "Matvei Safonov",
+        "value": "RUS",
+        "number": 39,
+        "uefaPlayerId": "250090101"
+      }
+    ]
+  },
+  {
+    "id": "classic-ucl-final-2026-arsenal",
+    "mode": "club",
+    "season": "2025/26",
+    "tier": "moderate",
+    "team": "arsenal",
+    "date": "2026-05-30",
+    "versus": "Paris Saint-Germain",
+    "formation": "4-2-3-1",
+    "competition": "UEFA Champions League",
+    "source": "https://www.uefa.com/uefachampionsleague/match/2047742/",
+    "uefaMatchId": "2047742",
+    "officialLineupSource": "https://match.uefa.com/v5/matches/2047742/lineups?language=EN",
+    "players": [
+      {
+        "role": "ST",
+        "name": "Kai Havertz",
+        "value": "GER",
+        "number": 29,
+        "uefaPlayerId": "250087938"
+      },
+      {
+        "role": "LW",
+        "name": "Leandro Trossard",
+        "value": "BEL",
+        "number": 19,
+        "uefaPlayerId": "250023009"
+      },
+      {
+        "role": "AM",
+        "name": "Martin Ødegaard",
+        "value": "NOR",
+        "number": 8,
+        "uefaPlayerId": "250081341"
+      },
+      {
+        "role": "RW",
+        "name": "Bukayo Saka",
+        "value": "ENG",
+        "number": 7,
+        "uefaPlayerId": "250106939"
+      },
+      {
+        "role": "DM",
+        "name": "Declan Rice",
+        "value": "ENG",
+        "number": 41,
+        "uefaPlayerId": "250083732"
+      },
+      {
+        "role": "DM",
+        "name": "Myles Lewis-Skelly",
+        "value": "ENG",
+        "number": 49,
+        "uefaPlayerId": "250181082"
+      },
+      {
+        "role": "LB",
+        "name": "Piero Hincapié",
+        "value": "ECU",
+        "number": 5,
+        "uefaPlayerId": "250163454"
+      },
+      {
+        "role": "CB",
+        "name": "Gabriel",
+        "value": "BRA",
+        "number": 6,
+        "uefaPlayerId": "250131901"
+      },
+      {
+        "role": "CB",
+        "name": "William Saliba",
+        "value": "FRA",
+        "number": 2,
+        "uefaPlayerId": "250127439"
+      },
+      {
+        "role": "RB",
+        "name": "Cristhian Mosquera",
+        "value": "ESP",
+        "number": 3,
+        "uefaPlayerId": "250129972"
+      },
+      {
+        "role": "GK",
+        "name": "David Raya",
+        "value": "ESP",
+        "number": 1,
+        "uefaPlayerId": "250171278"
+      }
+    ]
+  }
+]

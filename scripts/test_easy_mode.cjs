@@ -10,6 +10,7 @@ const {execFileSync}=require('node:child_process');
 const root=path.resolve(__dirname,'..');
 const source=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const data=JSON.parse(source.split('window.LINEUP_DATA = ')[1].split(';\n')[0]);
+const finals=(data.uclFinals||[]).map(entry=>typeof entry==='string'?data.fixtures.find(f=>f.id===entry):entry);
 const rules=source.slice(source.indexOf('  // Hard includes every historical XI'),source.indexOf('  // Shuffle-bag rotation'));
 const choices=source.slice(source.indexOf('  // Easy multiple choice'),source.indexOf('  function renderGame(){'));
 const math=Object.create(Math);
@@ -22,18 +23,19 @@ vm.runInContext(`function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){cons
     originalHardChoices:f=>shuffle([f.team,...shuffle(Object.keys(f.mode==='club'?DATA.teams:DATA.nations).filter(key=>key!==f.team)).slice(0,3)])};`,context);
 const api=context.api;
 const identity=f=>JSON.stringify([f.mode,f.team,f.date,f.formation,f.players.map(p=>[p.name,p.role,p.value])]);
+const unique=fixtures=>fixtures.filter((f,i)=>fixtures.findIndex(other=>identity(other)===identity(f))===i);
 let added=0,checked=0;
 for(const mode of ['club','nation']){
   context.state={mode,difficulty:'easy'};
   const easy=[...api.available()];
   const original=data.fixtures.filter(f=>f.mode===mode&&f.tier==='easy');
-  const moderate=data.fixtures.filter(f=>f.mode===mode&&f.tier==='moderate');
+  const moderate=unique([...data.fixtures.filter(f=>f.mode===mode&&f.tier==='moderate'),...finals.filter(f=>f.mode===mode)]);
   const keys=new Set(easy.map(identity));
-  assert.equal(easy.length,80,mode+': expected expanded pool');
+  assert.equal(easy.length,mode==='club'?109:80,mode+': expected expanded pool');
   assert.equal(keys.size,easy.length,mode+': no duplicate XIs');
   for(const f of [...original,...moderate])assert.ok(keys.has(identity(f)),f.id+': included in Easy');
   for(const f of original)assert.ok(easy.includes(f),f.id+': prefer original Easy copy');
-  assert.ok(easy.every(f=>f.tier==='easy'||f.tier==='moderate'));
+  assert.ok(easy.every(f=>f.tier==='easy'||f.tier==='moderate'||finals.some(x=>identity(x)===identity(f))));
   added+=easy.length-original.length;
   // Check both modes against their actual pools. All extreme values and a
   // seeded stream exercise each pick, including the last selectable club.
@@ -92,4 +94,4 @@ try{
   fs.writeFileSync(index,source.replace("const first=randomPick(foreign);","const first=randomPick(options);"));
   update();assert.equal(fs.readFileSync(index,'utf8'),source,'Easy updater repairs stale rules');
 }finally{fs.rmSync(temp,{recursive:true,force:true});}
-console.log(`PASS: ${added} new Easy XIs, 160 unique Easy fixtures; ${checked} four-option sets satisfy league/era rules; Moderate pools and Hard choices unchanged; updater checks passed.`);
+console.log(`PASS: ${added} Easy XIs added to original tiers, 189 unique Easy fixtures; ${checked} four-option sets satisfy league/era rules; expected Moderate pools and unchanged Hard choices; updater checks passed.`);

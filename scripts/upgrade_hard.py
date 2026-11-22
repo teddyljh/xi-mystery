@@ -117,7 +117,7 @@ FORWARD_PICKS = {
     "historic-nation-POR-2024-06-26-48": "Cristiano Ronaldo",
     "historic-club-bayern-2012-05-19-22": "Arjen Robben",
     "historic-club-liverpool-2007-05-23-23": "Dirk Kuyt",
-    "historic-club-porto-2004-05-26-24": "Benni McCarthy",
+    "historic-club-porto-2004-05-26-24": "Deco",
     "historic-club-juventus-2017-06-03-26": "Mario Mandzukic",
     "historic-club-atletico-2016-05-28-27": "Antoine Griezmann",
     "historic-club-barcelona-2005-03-08-28": "Ronaldinho",
@@ -137,17 +137,24 @@ RULES = r"""
   function fixtureIdentity(f){
     return JSON.stringify([f.mode,f.team,f.date,f.formation,f.players.map(p=>[p.name,p.role,p.value])]);
   }
-  // Share source fixtures instead of cloning them: adding Easy questions must
-  // not change archive frequencies, Hard selections or the Moderate pool.
-  const EASY_FIXTURES=[];
-  const easyFixtureKeys=new Set();
-  for(const tier of ['easy','moderate'])for(const f of DATA.fixtures){
-    if(f.tier!==tier)continue;
-    const key=fixtureIdentity(f);
-    if(!easyFixtureKeys.has(key)){easyFixtureKeys.add(key);EASY_FIXTURES.push(f);}
+  // Finals reuse existing source XIs by ID. New finals are kept out of the
+  // base archive so they do not expand Hard or bias its player frequencies.
+  const UCL_FINAL_FIXTURES=(DATA.uclFinals||[]).map(entry=>{
+    if(typeof entry!=='string')return entry;
+    const fixture=DATA.fixtures.find(f=>f.id===entry);
+    if(!fixture)throw Error('Missing UEFA final fixture: '+entry);
+    return fixture;
+  });
+  function uniqueFixtures(fixtures){
+    const seen=new Set();
+    return fixtures.filter(f=>{const key=fixtureIdentity(f);if(seen.has(key))return false;seen.add(key);return true;});
   }
+  const EASY_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='easy'),...DATA.fixtures.filter(f=>f.tier==='moderate'),...UCL_FINAL_FIXTURES]);
+  const MODERATE_FIXTURES=uniqueFixtures([...DATA.fixtures.filter(f=>f.tier==='moderate'),...UCL_FINAL_FIXTURES]);
+  const quizFixtureCount=()=>new Set([...DATA.fixtures,...UCL_FINAL_FIXTURES].map(f=>f.id)).size;
   function available(){
     if(state.difficulty==='easy')return EASY_FIXTURES.filter(f=>f.mode===state.mode);
+    if(state.difficulty==='moderate')return MODERATE_FIXTURES.filter(f=>f.mode===state.mode);
     return DATA.fixtures.filter(f=>f.mode===state.mode&&
       (f.tier===state.difficulty||(state.difficulty==='hard'&&isImportedHardFixture(f))));
   }
