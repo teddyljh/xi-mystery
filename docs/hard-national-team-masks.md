@@ -47,7 +47,7 @@
 | 英格兰 | 2021-07-11 | Declan Rice（西汉姆联）；John Stones（曼城）；Harry Kane（托特纳姆热刺） | Declan Rice（西汉姆联） | John Stones（曼城） |
 | 英格兰 | 2024-07-14 | Declan Rice（阿森纳）；John Stones（曼城）；Harry Kane（拜仁慕尼黑） | Declan Rice（阿森纳） | John Stones（曼城） |
 | 英格兰 | 2026-07-15 | Declan Rice（阿森纳）；John Stones（曼城）；Harry Kane（拜仁慕尼黑） | Declan Rice（阿森纳） | John Stones（曼城） |
-| 英格兰 | 2026-07-18 | Declan Rice（阿森纳）；Marc Guéhi（曼城）／Ezri Konsa（阿斯顿维拉）（随机选1）；Bukayo Saka（阿森纳） | Declan Rice（阿森纳） | Marc Guéhi（曼城）／Ezri Konsa（阿斯顿维拉） |
+| 英格兰 | 2026-07-18 | Declan Rice（阿森纳）；Marc Guéhi（曼城）／Ezri Konsa（阿斯顿维拉）（随机选1）；Ivan Toney（吉达国民） | Declan Rice（阿森纳） | Marc Guéhi（曼城）／Ezri Konsa（阿斯顿维拉） |
 | 英格兰 | 2026-11-12 | Declan Rice（阿森纳）；Trent Alexander-Arnold（皇家马德里）；Harry Kane（拜仁慕尼黑） | Declan Rice（阿森纳） | Trent Alexander-Arnold（皇家马德里） |
 | 西班牙 | 2008-06-29 | Andrés Iniesta（巴塞罗那）；Sergio Ramos（皇家马德里）；Fernando Torres（利物浦） | Andrés Iniesta（巴塞罗那） | Sergio Ramos（皇家马德里） |
 | 西班牙 | 2010-07-11 | Sergio Busquets（巴塞罗那）；Gerard Pique（巴塞罗那）；David Villa（巴塞罗那） | Sergio Busquets（巴塞罗那） | Gerard Pique（巴塞罗那） |
